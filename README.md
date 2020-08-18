@@ -8,7 +8,7 @@ This mod is for Alpha 11 only.
 
 **Workshop:** https://steamcommunity.com/sharedfiles/filedetails/?id=2186957033
 
-**DRM-Free:** Simply download the latest version from this GitHub page. To install, place the folder into the Mods folder at your game directory.
+**DRM-Free:** Simply download the latest release from this GitHub page. To install, place the folder into the Mods folder at your game directory.
 
 # License
 Copyright © 2020 Michael Villeneuve

@@ -24,3 +24,5 @@ If you'd like to add a localization, hopefully you can do that (update this).
 
 # Contact
 Discord: mrnewcity#6216
+Twitter: @mrnewcity15
+Steam: MrNewcity

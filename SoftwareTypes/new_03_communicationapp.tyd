@@ -1,0 +1,200 @@
+SoftwareType
+	{
+	Name			"Communication Application"
+	Category		Communication
+	Description		"Communication applications allow people to interact with others via internet"
+	Unlock			1985
+	Random			0.2
+	Popularity		0.75
+	Retention		24
+	IdealPrice		70
+	OptimalDevTime	30
+	SubmarketNames	[ Consumer; Business; Gaming ]
+	Iterative		1
+	NameGenerator	namer_communicationapp
+	OSSupport		[ Computer; Phone; Car ]
+	InHouse			False
+	Features
+		[
+			{
+			Name		"Interface"#5
+			Spec		2D
+			Description "If you can't see the chat, what's the point?"
+			DevTime		4
+			CodeArt		0.75
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Read receipts"#6
+					Description "Find out who is ghosting you on purpose"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Emojis and avatars"#7
+					DevTime		4
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"In-app overlay"#8
+					Description "An overlay for quick access to communication while in another program"
+					DevTime		4
+					Level		2
+					CodeArt		0.8
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Contacts list"#9
+					Description	"As if anyone wants to memorize their friends"
+					DevTime		3
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"System"#10
+			Spec		System
+			DevTime		1
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Codecs"#11
+					Description	"You gotta compress. Bandwidth does not grow on trees!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Encryption"#12
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+					}
+					{
+					Name		"Custom channels"#13
+					Description	"Allow users to create and manage their own channels or 'servers' for a group of people"
+					Server		0.0001
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"File sharing"#14
+					Description	"Let users share pictures, videos and files"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Network"#15
+			Spec		Network
+			Server		0.002
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Auto-update"#16
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Cloud sync"#17
+					Description	"Allow users to sync contacts, messages, etc. across their devices"
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"VoIP"#1
+			Spec		Audio
+			Unlock		1990
+			Optional	True
+			Description "That's enough clacking, just talk to people!"
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Voice messages"#2
+					Description	"Because some people can't always be there for you"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Speech to text"#3
+					Description	"The ability to translate speech to text is useful for hearing-impaired users, or just people who don't want to hear their friends' voices"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Voice changer"#4
+					Description	"This gimmick will never get old... right?"
+					DevTime		3
+					Level		2
+					CodeArt		0.9
+					Submarkets	[ 1; 0; 2 ]
+					}
+				]
+			}
+			{
+			Name		"Videotelephony"#18
+			Spec		Video
+			Description	"Enable users to see each other's beautiful faces"
+			Server		0.0005
+			Optional	True
+			Unlock		1995
+			DevTime		5
+			CodeArt		1
+			Submarkets	[ 1; 1; 0 ]
+			Features
+				[
+					{
+					Name		"Group video calls"#19
+					Description	"Have lots of people together in one video call. Perfect if there's ever a major virus outbreak!"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Screen sharing"#20
+					Description	"People really like watching other people play games for some reason"
+					DevTime		4
+					Level		2
+					CodeArt		2
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+		]
+	}

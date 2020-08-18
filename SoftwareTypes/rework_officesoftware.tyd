@@ -1,0 +1,345 @@
+SoftwareType
+	{
+	Name			"Office Software"
+	Override		True
+	Category		Productivity
+	Description		"For all your officing needs"
+	Categories
+		[
+			{
+			Name			"Word Processor"
+			Description 	"For typing words"
+			Popularity		0.7
+			Retention		16
+			TimeScale		1
+			Iterative		1
+			NameGenerator	namer_wordprocessor
+			Submarkets		[ 1; 2; 0 ]
+			}
+			{
+			Name			"Presentation"
+			Description		"For making slides"
+			Popularity		0.7
+			Retention		16
+			TimeScale		1
+			Iterative		1
+			NameGenerator	namer_presentation
+			Submarkets		[ 1; 1; 2 ]
+			}
+			{
+			Name			"Spreadsheet"
+			Description		"For graphing numbers"
+			Popularity		0.65
+			Retention		16
+			TimeScale		1
+			Iterative		1
+			NameGenerator	namer_spreadsheet
+			Submarkets		[ 0; 1; 0 ]
+			}
+			{
+			Name			"Publisher"
+			Description		"For creating layouts"
+			Popularity		0.65
+			Retention		16
+			TimeScale		1
+			Iterative		1
+			NameGenerator	namer_publisher
+			Submarkets		[ 1; 2; 1 ]
+			}
+		]		
+	Random			0.2
+	IdealPrice		90
+	OptimalDevTime	35
+	SubmarketNames	[ Simplicity; Productivity; Collaboration ]
+	NameGenerator	Office
+	OSSupport		Computer
+	InHouse			False
+	Features
+		[
+			{
+			Name			Interface
+			Spec			2D
+			Description 	"Can't make office documents if you can't see them"
+			DevTime			5
+			CodeArt			0.75
+			Dependencies	"2D Editor"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Equation rendering"#0
+					Description "y=(1/(σ·sqrt(2·π)))e^(-(x-μ)^2/(2·σ^2))... Doesn't look good, does it?"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Auto page layout"#1
+					Description "I.e. spending 30 minutes trying to make the picture fit in the place"
+					DevTime		3
+					Level		1
+					CodeArt		0.5
+					SoftwareCategories	[ Word Processor ]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Auto layout"#1
+					Description "I.e. spending 30 minutes trying to make the picture fit in the place"
+					DevTime		3
+					Level		1
+					CodeArt		0.5
+					SoftwareCategories	[ Presentation; Spreadsheet; Publisher ]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Charts and graphs"#2
+					DevTime		3
+					Level		2
+					CodeArt		0.5
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Guides and grids"
+					DevTime		4
+					Level		1
+					CodeArt		0.9
+					SoftwareCategories	[ Publisher ]
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Vector graphics"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Publisher ]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Clipart"#3
+					Description "*Stick figure pointing at chart*"
+					DevTime		4
+					Level		1
+					CodeArt		0
+					SoftwareCategories	[ Presentation; Word Processor; Publisher ]
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Animations"#4
+					Description "Just slides and text gliding in from every which way and angle"
+					DevTime		3
+					Level		1
+					CodeArt		0.8
+					SoftwareCategories	[ Presentation ]
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Search box"#4
+					Description "It's easy to lose things in a wall of text or numbers"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					SoftwareCategories	[ Spreadsheet; Word Processor ]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Templates"#5
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 2; 1; 0 ]
+					}
+					{
+					Name		"Complex text rendering"#14
+					Description "Those unreadable cursive fonts just wouldn't be the same without this"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					SoftwareCategories	[ Word Processor; Publisher ]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Virtual assistant"#7
+					Description "Helps bug reports slowly resolve on their own"
+					DevTime		4
+					Level		3
+					CodeArt		0
+					Submarkets	0
+					Script_EndOfDay
+"var supportWork = PlayerCompany.WorkItems.FindFirst(x is SupportWork && x.TargetProduct == Product);//Find support work for product
+if (supportWork != null)
+	{
+	var remove = Floor(supportWork.Tickets.Count * 0.25 / DaysPerMonth);//Calculate the amount of support tickets to remove
+	if (remove > 0)
+		{
+		supportWork.Tickets.RemoveRange(0, remove);//Remove tickets in FIFO fashion
+		}
+	}"
+					}
+				]
+			}
+			{
+			Name		System
+			Spec		System
+			Description ""
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Spellcheck"#8
+					Description "Make anyone seem even more competent"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Interactive slides"#9
+					Description "At this point you might as well make a website"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					SoftwareCategories	[ Presentation ]
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"Command buttons"#9
+					Description "Inserting buttons lets you execute commands with one click"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					SoftwareCategories	[ Spreadsheet ]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Dictionary"#10
+					Description "Make anyone seem competent"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Thesaurus"#11
+					Description "Make anyone seem more competent"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Math functions library"#12
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Spreadsheet ]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"XML support"#12
+					Description	"XML. It lives halfway between writing and coding"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Word Processor ]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Scripting"#15
+					DevTime		6
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Spreadsheet ]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Plug-in support"#21
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		Network
+			Spec		Network
+			Optional	True
+			Description ""
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 2 ]
+			Features
+				[
+					{
+					Name		"Cloud sync"#16
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Auto-update"#22
+					Description	"Why not?"
+					Server		0.0002
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Simultaneous collaboration"#23
+					Description	"Let multiple users work on a project at the same time"
+					Server		0.0005
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Database connections"#17
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			"Audio playback"
+			Spec			Audio
+			Optional		True
+			Dependencies	"Audio Tool"
+			DevTime			2
+			CodeArt			1
+			Submarkets		[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Sound effect library"#18
+					Description "Bring some much unneeded excitement to your work!"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			"Video playback"#14
+			Spec			Video
+			Optional		True
+			Dependencies	"Video Editor"
+			DevTime			2
+			SoftwareCategories	[ Presentation ]
+			CodeArt			1
+			Submarkets		[ 0; 1; 1 ]
+			Features
+				[
+				]
+			}
+		]
+	}

@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Communications"
+	PerYear				0.2
+	Min					2
+	Max					3
+	Types
+		[
+			{
+			Software	"Communication Application"
+			Chance		1
+			}
+		]
+	}

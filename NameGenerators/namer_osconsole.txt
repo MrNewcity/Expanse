@@ -1,0 +1,32 @@
+-start(pre,base,base,base,base)
+-pre(base,base,ext)
+The 
+-base(base2,ext,stop)
+Couch
+Home
+House
+Room
+Set
+Screen
+Window
+Game
+Game
+Play
+Epic
+-base2(ext,stop)
+Player
+Gamer
+ Shade
+ Blinds
+ Thing
+Bro
+Boy
+Girl
+Zone
+ Box
+-ext(stop)
+OS
+X
+ X
+ OS
+ OS

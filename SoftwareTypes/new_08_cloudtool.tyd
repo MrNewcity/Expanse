@@ -1,0 +1,179 @@
+SoftwareType
+	{
+	Name			"Cloud Storage Tool"#balanced by being kinda expensive for the devtime, but it uses a lot of server
+	Category		Cloud Storage
+	Description		"Store files and data in the C L O U D"
+	Unlock			2000
+	Random			0.3
+	Popularity		0.7
+	Retention		24
+	IdealPrice		100
+	OptimalDevTime	30
+	SubmarketNames	[ Security; Speed; Sharing ]
+	Iterative		1
+	NameGenerator	namer_cloudservice
+	OSSupport		[ Computer; Phone ]#extend to server os in the future
+	InHouse			False
+	Features
+		[
+			{
+			Name			Interface
+			Spec			2D
+			DevTime			4
+			CodeArt			0.9
+			Submarkets		[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Search"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Storage reports"
+					Description	"Show users a nice chart of how their cloud space is being used"
+					DevTime		4
+					Level		2
+					CodeArt		0.8
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		System
+			Spec		System
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"File encryption"
+					Server		0.0001
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Lossless compression"
+					Description	"Files can be very squishy, and you can take advantage of that to make them smaller before transferring"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"File spanning"
+					Description	"Automatically break large files down into smaller files before transferring them to make it a bit easier"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"File locking"
+					Description	"Enter a password every time you want to see a file. Not annoying at all!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		Network
+			Spec		Network
+			Description	"Starting a cloud service? You better have plenty of server capacity!"
+			Server		0.0035
+			DevTime		5
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Auto-update"
+					Description	"Ensure users are using the latest tweaks"
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Trash retention"
+					Description	"Keep files in the trash for a while just in case someone changes their mind"
+					Server		0.0003
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Remote device management"
+					Description	"Stolen device? Nuke it!"
+					Server		0.0003
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Public file sharing"
+					Server		0.0004
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"High-speed transfer"
+					Server		0.0006
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Media streaming"
+					Description	"Stream media files straight from the cloud drive"
+					Server		0.0001
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Automatic backup"
+					Description	"Backup users' devices to the cloud"
+					Server		0.002
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Folder sharing"
+					Description	"Give other people access to an entire folder"
+					Server		0.0001
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Bulk transfer"
+					Server		0.0005
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+				]
+			}
+		]
+	}
+			

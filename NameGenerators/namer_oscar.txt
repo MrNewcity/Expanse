@@ -1,0 +1,28 @@
+-start(pre,base,base,base,base)
+-pre(base,base,ext)
+The 
+-base(base2,ext,stop)
+Car
+Zoom
+Wheel
+Vroom
+Road
+Tint
+Rim
+Highway
+Way
+-base2(ext,stop)
+Side
+View
+Play
+ Player
+ Unit
+Driver
+Helper
+Line
+-ext(stop)
+OS
+X
+ X
+ OS
+ OS

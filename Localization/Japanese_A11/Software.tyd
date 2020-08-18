@@ -1,0 +1,1549 @@
+Software
+    {
+    OperatingSystem	[]
+    Features
+        [
+		Feature
+            {
+            Haptictechnologysupport
+                [
+                "触覚技術"
+                ]
+            }
+		Feature
+            {
+            Fingerprintrecognition
+                [
+                "指紋認識"
+                ]
+            }
+		Feature
+            {
+            Automaticdrivermanagement
+                [
+                "自動ドライバー管理"
+                ]
+            }
+		Feature
+            {
+            Integratedscreencapture
+                [
+                "統合された画面キャプチャ"
+                ]
+            }
+        Feature { Pushnotifications "プッシュ通知" }
+		Feature
+            {
+            Securityalerts
+                [
+                "セキュリティ警告"
+                ]
+            }
+		Feature
+            {
+            Universaldarkmode
+                [
+                "Universal dark mode"
+                "Automatically change settings for apps across the system to avoid burning your eyes out"
+                ]
+            }
+		Feature { Video "Video" }
+		Feature { Highdefinitionvideo "High definition video" }
+		Feature { Spatialheadphonesupport "Spatial headphone support" }
+        Feature { Cloudbackup "Cloud backup" }
+		Feature
+            {
+            Hotspotcreation
+                [
+                "Hotspot creation"
+                "Enable cellular devices to create wi-fi hotspots for the non-cellular plebs"
+                ]
+            }
+        ]
+    Categories
+        [
+		Category
+            {
+            Watch [ "Watch"; "For the wrist" ]
+            }
+		Category
+            {
+            Car [ "Car"; "For the dashboard" ]
+            }
+        ]
+    }
+
+Software
+    {
+    2DEditor	[]
+    Features
+        [
+		Feature { Imagecodecs "Image codecs" }
+		Feature { Pluginsupport "Plug-in support" }
+		Feature { Network "Network" }
+		Feature
+            {
+            Integratedsocialmediauploader
+                [
+                "Integrated social media uploader"
+                "Upload your beautiful images straight to your friends' faces"
+                ]
+            }
+		Feature
+            {
+            Autoupdate
+                [
+                "Auto-update"
+                "Sometimes, this feature works correctly!"
+                ]
+            }
+		Feature { Cloudsync "Cloudsync" }
+        ]
+    }
+
+Software
+    {
+    3DEditor	[]
+    Features
+        [
+		Feature { Interface "Interface" }
+		Feature
+            {
+            Keyframetimeline
+                [
+                "Keyframe timeline"
+                "The frames are the key to animation"
+                ]
+            }
+		Feature
+            {
+            Grapheditor
+                [
+                "Graph editor"
+                "Look at those motion curves!"
+                ]
+            }
+		Feature { Videoediting "Video editing" }
+		Feature
+            {
+            Compositor
+                [
+                "Compositor"
+                "Fix it in post!"
+                ]
+            }
+		Feature { Tracking "Tracking" }
+		Feature { Pluginsupport "Plug-in support" }
+		Feature { Network "Network" }
+		Feature { Autoupdate "Auto-update" }
+		Feature
+            {
+            Cloudsync [ "Cloud sync"; "Store your points in the cloud" ]
+            }
+        ]
+    }
+
+Software
+    {
+    AudioTool	[]
+    Features
+        [
+		Feature { VSTintegration "VST integration" }
+		Feature { Network "Network" }
+		Feature
+			{
+            Autoupdate
+                [
+                "Auto-update"
+                "Users will appreciate auto-updates causing new problems with each release"
+                ]
+            }
+		Feature
+			{
+            Cloudsync
+                [
+                "Cloud sync"
+                "Cloud sync is the new wave, get your sound waves on it too!"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    Game	[]
+    Features
+        [
+		Feature
+            {
+            Economy
+                [
+                "Economy"
+                "Simulate a live economy to bring the excitement of the real world into your game"
+                ]
+            }
+		Feature
+            {
+            Teammanagement
+                [
+                "Team management"
+                "Players love feeling in charge, especially when sports teams are involved"
+                ]
+            }
+		Feature
+            {
+            Cutscenes
+                [
+                "Cutscenes"
+                "Make your game C I N E M A T I C"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    OfficeSoftware	[]
+    Features
+        [
+		Feature
+            {
+            Autolayour
+                [
+                "Auto layout"
+                "I.e. spending 30 minutes trying to make the picture fit in the place"
+                ]
+            }
+		Feature { Guidesandgrids "Guides and grids" }
+		Feature
+            {
+            Searchbox
+                [
+                "Search box"
+                "It's easy to lose things in a wall of text or numbers"
+                ]
+            }
+        Feature { Templates "Templates" }
+        Feature
+            {
+            Complextextrendering
+                [
+                "Complex text rendering"
+                "Those unreadable cursive fonts just wouldn't be the same without this"
+                ]
+            }
+		Feature
+            {
+            Commandbuttons
+                [
+                "Command buttons"
+                "Inserting buttons lets you execute commands with one click"
+                ]
+            }
+        Feature { Mathfunctionslibrary "Math functions library" }
+		Feature
+            {
+            XMLsupport
+                [
+                "XML support"
+                "XML. It lives halfway between writing and coding"
+                ]
+            }
+		Feature { Pluginsupport "Plug-in support" }
+        Feature { Cloudsync "Cloud sync" }
+		Feature { Autoupdate "Auto-update" }
+		Feature
+            {
+            Simultaneouscollaboration
+                [
+                "Simultaneous collaboration"
+                "Let multiple users work on a project at the same time"
+                ]
+            }
+		Feature { Videoplayback "Video playback" }
+        ]
+	Categories
+        [
+        Category
+            {
+            Wordprocessor [ "Word Processor"; "For typing words" ]
+            }
+        Category
+            {
+            Presentation [ "Presentation"; "For making slides" ]
+            }
+        Category
+            {
+            Spreadsheet [ "Spreadsheet"; "For graphing numbers" ]
+            }
+		Category
+            {
+            Publisher [ "Publisher"; "For creating layouts" ]
+            }
+        ]
+    }
+
+Software
+    {
+    Antivirus	[]
+    Features
+		[
+		Feature
+            {
+            Virtualprivatenetwork
+                [
+                "Virtual private network"
+                "There's many uses for a VPN, but let's be honest, it's mostly used to watch movies that are not available in your region"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    VideoEditor
+        [
+        "Video Editor"
+        "A video editor is used for post-production of digital video"
+        ]
+    Features
+        [
+		Feature
+            {
+            Video
+                [
+                "Video"
+                "Video is one of the more crucial aspects of a video editor"
+                ]
+            }
+		Feature
+            {
+            Videotransitions
+                [
+                "Video transitions"
+                "Wipe. Fade. Cross Dissolve. Cut. Slide. And more!"
+                ]
+            }
+		Feature
+            {
+            Textrendering
+                [
+                "Text rendering"
+                "How else will you add a dozen studio credits before a movie?"
+                ]
+            }
+		Feature
+            {
+            Noisereduction
+                [
+                "Noise reduction"
+                "Get crispy video from grainy video"
+                ]
+            }
+		Feature
+            {
+            Colourcorrection
+                [
+                "Colour correction"
+                "Everyone's doing it nowadays"
+                ]
+            }
+		Feature
+            {
+            Videoeffects
+                [
+                "Video effects"
+                "Explosions! Blur! Rain! Warp! Smoke!"
+                ]
+            }
+        Feature { Stabilization "Stabilization" }
+		Feature { Tracking "Tracking" }
+		Feature
+            {
+            Transformations
+                [
+                "Transformations"
+                "Zoom in, zoom out, spin around, etc."
+                ]
+            }
+		Feature { Interface "Interface" }
+		Feature
+            {
+            Multitracktimeline
+                [
+                "Multi-track timeline"
+                "Assuming that you want more than one thing in your video, this is essential."
+                ]
+            }
+		Feature
+            {
+            Multicamediting
+                [
+                "Multicam editing"
+                "Up to a million angles of the same subject. Wow, how exciting."
+                ]
+            }
+		Feature { System "System" }
+		Feature { RAWvideoimport "RAW video import" }
+		Feature
+            {
+            Videocodecs
+                [
+                "Video codecs"
+                "These are quite essential thanks to the existence of about 48 billion different video formats!"
+                ]
+            }
+		Feature { Pluginsupport "Plug-in support" }
+		Feature
+            {
+            Bundledhardwarecontrolpanel
+                [
+                "Bundled hardware control panel"
+                "Physical sales bring in an extra {Currency:75}, but copies cost an extra {Currency:50} to produce"
+                ]
+            }
+		Feature
+            {
+            Audio
+                [
+                "Audio"
+                "Video and audio go together like milk and cookies"
+                ]
+            }
+		Feature { Audiomixing "Audio mixing" }
+		Feature { Audioeffects "Audio effects" }
+		Feature
+            {
+            3Dworkspace
+                [
+                "3D workspace"
+                "Work with 3D objects right in the editor"
+                ]
+            }
+		Feature { 3Deffects "3D effects" }
+		Feature { Network "Network" }
+		Feature
+            {
+            Autoupdate
+                [
+                "Auto-update"
+                "Fingers crossed that your project doesn't get corrupted with the new release!"
+                ]
+            }
+		Feature { Cloudsync "Cloud sync" }
+        ]
+    }
+	
+Software
+    {
+    StreamingSoftware
+        [
+        "ストリーミングソフトウェア"
+        "Livestreaming is a very technically annoying thing to do. Make it slightly easier with your own streaming software"
+        ]
+    Features
+        [
+        Feature { Audio "Audio" }
+		Feature
+            {
+            Audiomixing
+                [
+                "Audio mixing"
+                "All the best streamers are doing it"
+                ]
+            }
+		Feature
+            {
+            Texttospeech
+                [
+                "Text to speech"
+                "Have a robot read out the disgusting messages donators send streamers"
+                ]
+            }
+		Feature
+            {
+            Musiclibrary
+                [
+                "Music library"
+                "Streaming websites are getting crazy with the copyright strikes. Give users some copyright-free music to use on their streams"
+                ]
+            }
+		Feature
+            {
+            Interface
+                [
+                "Interface"
+                "You gotta have that sick streaming overlay!"
+                ]
+            }
+		Feature
+            {
+            Widgets
+                [
+                "Widgets"
+                "Block the view of the game with chat, donations and more!"
+                ]
+            }
+		Feature
+            {
+            Interfacelayouteditor
+                [
+                "Interface layout editor"
+                "Let streamers move their interface around"
+                ]
+            }
+		Feature
+            {
+            Ingameoverlay
+                [
+                "In-game overlay"
+                "Allow streamers to control the stream while in game! True multitasking at work!"
+                ]
+            }
+		Feature { System "System" }
+		Feature
+            {
+            Codecs
+                [
+                "Codecs"
+                "You should have this unless you want streamers to pay $10,000 a month in network bills"
+                ]
+            }
+		Feature { Pluginsupport "Plug-in support" }
+		Feature
+            {
+            Randomizer
+                [
+                "Randomizer"
+                "Pick a random follower, subscriber or viewer. Do with that what you will"
+                ]
+            }
+		Feature
+            {
+            Donationrevenuesplit
+                [
+                "Donation revenue split"
+                "Take a cut of donations made through your streaming software. This can net some extra money, but may also lead to decreased sales due to frustrated streamers"
+                ]
+            }
+		Feature
+            {
+            Network
+                [
+                "Network"
+                "Livestreaming pretty much relies on this"
+                ]
+            }
+		Feature
+            {
+            Multiplatformstreaming
+                [
+                "Multi-platform streaming"
+                "Really desperate for views? Stream to several platforms at the same time!"
+                ]
+            }
+		Feature
+            {
+            Automaticsocialmediapost
+                [
+                "Automatic social media post"
+                "Automatically post when starting a stream"
+                ]
+            }
+		Feature
+            {
+            Autoupdate
+                [
+                "Auto-update"
+                "Streaming is technical hell. Make it less hellish by automatically updating"
+                ]
+            }
+		Feature
+            {
+            Chatbot
+                [
+                "Chat bot"
+                "If robots can beat you at chess, they can keep some kids in check for you"
+                ]
+            }
+		Feature { Video "Video" }
+		Feature
+            {
+            Filters
+                [
+                "Filters"
+                "Add dramatic colours for dramatic apology streams"
+                ]
+            }
+		Feature
+            {
+            Integrateddisplaycapture
+                [
+                "Integrated display capture"
+                "Instead of leaving users to download another screen capture software, integrate screen capture tools into your own program!"
+                ]
+            }
+		Feature
+            {
+            Backgrounddetection
+                [
+                "Background detection"
+                "Enable streamers to change what's behind them without a green screen"
+                ]
+            }
+        ]
+    }
+	
+Software
+    {
+    CommunicationApplication
+        [
+        "Communication Application"
+        "Communication applications allow people to interact with others via internet"
+        ]
+    Features
+        [
+        Feature
+            {
+            Interface
+                [
+                "Interface"
+                "If you can't see the chat, what's the point?"
+                ]
+            }
+		Feature
+            {
+            Readreceipts
+                [
+                "Read receipts"
+                "Find out who is ghosting you on purpose"
+                ]
+            }
+		Feature { Emojisandavatars "Emojis and avatars" }
+		Feature
+            {
+            Inappoverlay
+                [
+                "In-app overlay"
+                "An overlay for quick access to communication while in another program"
+                ]
+            }
+		Feature
+            {
+            Contactslist
+                [
+                "Contacts list"
+                "As if anyone wants to memorize their friends"
+                ]
+            }
+		Feature { System "System" }
+		Feature
+            {
+            Codecs
+                [
+                "Codecs"
+                "You gotta compress. Bandwidth does not grow on trees!"
+                ]
+            }
+		Feature { Encryption "Encryption" }
+		Feature
+            {
+            Customchannels
+                [
+                "Custom channels"
+                "Allow users to create and manage their own channels or 'servers' for a group of people"
+                ]
+            }
+		Feature
+            {
+            Filesharing
+                [
+                "File sharing"
+                "Let users share pictures, videos and files"
+                ]
+            }
+		Feature { Network "Network" }
+		Feature { Autoupdate "Auto-update" }
+		Feature
+            {
+            Cloudsync
+                [
+                "Cloud sync"
+                "Allow users to sync contacts, messages, etc. across their devices"
+                ]
+            }
+		Feature
+            {
+            VoIP
+                [
+                "VoIP"
+                "That's enough clacking, just talk to people!"
+                ]
+            }
+		Feature
+            {
+            Voicemessages
+                [
+                "Voice messages"
+                "Because some people can't always be there for you"
+                ]
+            }
+		Feature
+            {
+            Speechtotext
+                [
+                "Speech to text"
+                "The ability to translate speech to text is useful for hearing-impaired users, or just people who don't want to hear their friends' voices"
+                ]
+            }
+		Feature
+            {
+            Voicechanger
+                [
+                "Voice changer"
+                "This gimmick will never get old... right?"
+                ]
+            }
+		Feature
+            {
+            Videotelephony
+                [
+                "Videotelephony"
+                "Enable users to see each other's beautiful faces"
+                ]
+            }
+		Feature
+            {
+            Groupvideocalls
+                [
+                "Group video calls"
+                "Have lots of people together in one video call. Perfect if there's ever a major virus outbreak!"
+                ]
+            }
+		Feature
+            {
+            Screensharing
+                [
+                "Screen sharing"
+                "People really like watching other people play games for some reason"
+                ]
+            }
+        ]
+    }
+	
+Software
+    {
+    RobotSoftware
+        [
+        "Robot Software"
+        "Without this software, robots are nothing. Without robots, this software is nothing."
+        ]
+    Features
+        [
+        Feature
+            {
+            System
+                [
+                "System"
+                "Think of it like the robot's soul. Or maybe don't"
+                ]
+            }
+		Feature { Timecodesupport "Timecode support" }
+		Feature
+            {
+            Deploymenttools
+                [
+                "Deployment tools"
+                "If you're trying to take over the world, you can't be slowly upgrading robots one at a time"
+                ]
+            }
+		Feature
+            {
+            GPSintegration
+                [
+                "GPS integration"
+                "\"Now, where did those darn robots go off to?\" is something you probably don't want to hear"
+                ]
+            }
+		Feature { Robotcalibration "Robotcalibration" }
+		Feature
+            {
+            Postprocessors
+                [
+                "Post processors"
+                "Enable the generation of programs for many different proprietary robot languages"
+                ]
+            }
+		Feature
+            {
+            Metricsaggregation
+                [
+                "Metrics aggregation"
+                "Enable the keeping and viewing of lots of information about robots"
+                ]
+            }
+		Feature { Rootcauseanalysis "Root cause analysis" }
+		Feature
+            {
+            Softwaredevelopmentkit
+                [
+                "Software development kit"
+                "Users might want to create custom applications for their robots"
+                ]
+            }
+		Feature { Pluginsupport "Plug-in support" }
+		Feature { Interface "Interface" }
+		Feature
+            {
+            Customizableinterface
+                [
+                "Customizable interface"
+                "Only see what you want to see"
+                ]
+            }
+		Feature
+            {
+            2Dvisualization
+                [
+                "2D visualization"
+                "It's much easier to program robots when you have diagrams"
+                ]
+            }
+		Feature
+            {
+            Multicameraview
+                [
+                "Multi-camera view"
+                "See your whole army of robots at once"
+                ]
+            }
+		Feature { 3Dvisualization "3D visualization" }
+		Feature
+            {
+            Roboticsimulation
+                [
+                "Robotic simulation"
+                "Much easier to simulate a program ahead of time than have a robot crash through a wall"
+                ]
+            }
+		Feature
+            {
+            VRvisualization
+                [
+                "VR visualization"
+                "Get immersed"
+                ]
+            }
+		Feature { Network "Network" }
+		Feature
+            {
+            Teleoperation
+                [
+                "Teleoperation"
+                "Bored of the automated programs getting to have all the fun? Now you can control the robot from your computer!"
+                ]
+            }
+		Feature
+            {
+            Remotecontrols
+                [
+                "Remote controls"
+                "Connect phones, gamepads, etc. to be controllers for your robot"
+                ]
+            }
+        ]
+    }
+	
+Software
+    {
+    IntegratedDevelopmentEnvironment
+        [
+        "Integrated Development Environment"
+        "An IDE is a software platform that provides a set of tools for software development in a single application."
+        ]
+    Features
+        [
+        Feature { System "System" }
+		Feature
+            {
+            Compiler
+                [
+                "Compiler"
+                "This nifty tool will translate your code into computer-speak"
+                ]
+            }
+		Feature { Debugger "Debugger" }
+		Feature
+            {
+            Liveerrordetection
+                [
+                "Live error detection"
+                "Now you don't have to wait until build time to learn how bad you are at programming!"
+                ]
+            }
+		Feature
+            {
+            Multipleprogramminglanguages
+                [
+                "Multiple programming languages"
+                "Free your users to be multi-lingual"
+                ]
+            }
+		Feature { Versioncontrolsystem "Version control system" }
+		Feature { Pluginsupport "Plug-in support" }
+		Feature
+            {
+            Intelligentcodecompletion
+                [
+                "Intelligent code completion"
+                "Let the computer guess what you're going to type. Sometimes it guesses correctly!"
+                ]
+            }
+		Feature
+            {
+            Devicesimulator
+                [
+                "Device simulator"
+                "Play on your phone from the comfort of your computer"
+                ]
+            }
+		Feature
+            {
+            AIenhancedcodecompletion
+                [
+                "AI-enhanced code completion"
+                "Look into user's projects with AI to improve code completion. This may decrease sales due to privacy concerns, or it may increase sales due to the better coding experience"
+                ]
+            }
+		Feature { Interface "Interface" }
+		Feature
+            {
+            Syntaxhighlighting
+                [
+                "Syntax highlighting"
+                "The code that you know and love, now in colour!"
+                ]
+            }
+		Feature
+            {
+            Filebrowser
+                [
+                "File browser"
+                "Well, you're not only going to make one file, are you?"
+                ]
+            }
+		Feature
+            {
+            Searchbox
+                [
+                "Search box"
+                "Lost something? Try searching for it!"
+                ]
+            }
+		Feature
+            {
+            Visualprogramming
+                [
+                "Visual programming"
+                "Instead of typing code, why not try programming by moving blocks with your mouse?"
+                ]
+            }
+		Feature { Network "Network" }
+		Feature
+            {
+            Cloudsync
+                [
+                "Cloud sync"
+                "Worried about your hard drive failing? Entrust your project to servers instead!"
+                ]
+            }
+		Feature
+            {
+            Databaseintegration
+                [
+                "Database integration"
+                "Access databases straight from the IDE! How amazing! Wow!"
+                ]
+            }
+		Feature
+            {
+            Simultaneouscollaboration
+                [
+                "Simultaneous collaboration"
+                "Let programmers argue with each other via code in real time"
+                ]
+            }
+        ]
+    }
+	
+Software
+    {
+    EmailClient
+        [
+        "Email Client"
+        "Email is one of the better ways of connecting with people. Solid top fiver. Maybe top ten."
+        ]
+    Features
+        [
+        Feature { Interface "Interface" }
+		Feature
+            {
+            HTMLrendering
+                [
+                "HTML rendering"
+                "Enough of those boring, plain text emails. Use HTML!"
+                ]
+            }
+		Feature
+            {
+            Emailtemplates
+                [
+                "Email templates"
+                "Because most people really can't be bothered to learn HTML"
+                ]
+            }
+		Feature
+            {
+            Unifiedsearch
+                [
+                "Unified search"
+                "With one search box, look through emails, calendars, and contacts!"
+                ]
+            }
+		Feature
+            {
+            Calendars
+                [
+                "Calendars"
+                "Nobody uses paper calendars anymore"
+                ]
+            }
+		Feature { Contactslist "Contacts list" }
+		Feature { System "System" }
+		Feature
+            {
+            Spamfiltering
+                [
+                "Spam filtering"
+                "The Prince of Nigeria won't be fooling anyone again"
+                ]
+            }
+		Feature
+            {
+            Remoteimageblocking
+                [
+                "Remote image blocking"
+                "Automatically block those pesky images from being viewed"
+                ]
+            }
+		Feature
+            {
+            Spellcheck
+                [
+                "Spellcheck"
+                "You know you'll need those red underlines"
+                ]
+            }
+		Feature { Emailencryption "Email encryption" }
+		Feature { Multipleaccounts "Multiple accounts" }
+		Feature
+            {
+            Opticalcharacterrecognition
+                [
+                "Optical character recognition"
+                "OCR technology can massively improve spam filtering, which makes users less likely to be scammed and refund your software"
+                ]
+            }
+		Feature { Network "Network" }
+		Feature
+            {
+            Autoupdate
+                [
+                "Auto-update"
+                "Because email clients really live on the cutting edge of technology"
+                ]
+            }
+		Feature
+            {
+            Cloudsync
+                [
+                "Cloud sync"
+                "Sync calendars and contacts across all your devices! How fun!"
+                ]
+            }
+		Feature
+            {
+            Webmail
+                [
+                "Webmail"
+                "Give users the ability to access their account online"
+                ]
+            }
+		Feature
+            {
+            IMAPsupport
+                [
+                "IMAP support"
+                "The Internet Message Access Protocol!"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    PDFTool
+        [
+        "PDF Tool"
+        "PDFs, one of the document few file formats that gets their own dedicated software for some reason"
+        ]
+    Features
+        [
+        Feature
+            {
+            Interface
+                [
+                "Interface"
+                "PDFs are pretty much meant to be seen"
+                ]
+            }
+		Feature
+            {
+            Commenting
+                [
+                "Commenting"
+                "Freely criticize your coworkers' work. It's like a dream come true!"
+                ]
+            }
+		Feature { Pagereordering "Page reordering" }
+		Feature { Electronicsignatures "Electronic signatures" }
+		Feature
+            {
+            Sidebysidecomparison
+                [
+                "Side-by-side comparison"
+                "It's like those 'spot the difference' games, but for adults"
+                ]
+            }
+		Feature
+            {
+            Forms
+                [
+                "Forms"
+                "Create forms. Collect data. So exciting."
+                ]
+            }
+		Feature { Templates "Templates" }
+		Feature { Autolayout "Auto layout" }
+		Feature { System "System" }
+		Feature { Passwordprotection "Password protection" }
+		Feature
+            {
+            Merging
+                [
+                "Merging"
+                "Smash some documents together into one PDF"
+                ]
+            }
+		Feature
+            {
+            Opticalcharacterrecognition
+                [
+                "Optical character recognition"
+                "Make scanned text editable... like magic!"
+                ]
+            }
+		Feature { Conversions "Conversions" }
+		Feature { Pluginsupport "Plug-in support" }
+		Feature
+            {
+            Signaturevalidation
+                [
+                "Signature validation"
+                "Use certificates to verify the legit-ness of digital signatures"
+                ]
+            }
+		Feature { Network "Network" }
+		Feature { Sharing "Sharing" }
+		Feature
+            {
+            Autoupdate
+                [
+                "Auto-update"
+                "Is this really necessary in a PDF editor? I guess that's up to you"
+                ]
+            }
+		Feature { Cloudsync "Cloud sync" }
+        ]
+    }
+	
+Software
+    {
+    CloudStorageTool
+        [
+        "Cloud Storage Tool"
+        "Store files and data in the C L O U D"
+        ]
+    Features
+        [
+        Feature { Interface "Interface" }
+		Feature { Search "Search" }
+		Feature
+            {
+            Storagereports
+                [
+                "Storage reports"
+                "Show users a nice chart of how their cloud space is being used"
+                ]
+            }
+		Feature { System "System" }
+		Feature { Fileencryption "File encryption" }
+		Feature
+            {
+            Losslesscompression
+                [
+                "Lossless compression"
+                "Files can be very squishy, and you can take advantage of that to make them smaller before transferring"
+                ]
+            }
+		Feature
+            {
+            Filespanning
+                [
+                "File spanning"
+                "Automatically break large files down into smaller files before transferring them to make it a bit easier"
+                ]
+            }
+		Feature
+            {
+            Filelocking
+                [
+                "File locking"
+                "Enter a password every time you want to see a file. Not annoying at all!"
+                ]
+            }
+		Feature
+            {
+            Network
+                [
+                "Network"
+                "Starting a cloud service? You better have plenty of server capacity!"
+                ]
+            }
+		Feature
+            {
+            Autoupdate
+                [
+                "Auto-update"
+                "Ensure users are using the latest tweaks"
+                ]
+            }
+		Feature
+            {
+            Trashretention
+                [
+                "Trash retention"
+                "Keep files in the trash for a while just in case someone changes their mind"
+                ]
+            }
+		Feature
+            {
+            Remotedevicemanagement
+                [
+                "Remote device management"
+                "Stolen device? Nuke it!"
+                ]
+            }
+		Feature { Publicfilesharing "Public file sharing" }
+		Feature { Highspeedtransfer "High-speed transfer" }
+		Feature
+            {
+            Mediastreaming
+                [
+                "Media streaming"
+                "Stream media files straight from the cloud drive"
+                ]
+            }
+		Feature
+            {
+            Automaticbackup
+                [
+                "Automatic backup"
+                "Backup users' devices to the cloud"
+                ]
+            }
+		Feature
+            {
+            Foldersharing
+                [
+                "Folder sharing"
+                "Give other people access to an entire folder"
+                ]
+            }
+		Feature { Bulktransfer "Bulk transfer" }
+        ]
+    }
+
+Software
+    {
+    SecurityCameraSoftware
+        [
+        "Security Camera Software"
+        "Keep an eye on potential hooligans with security camera software"
+        ]
+    Features
+        [
+        Feature
+            {
+            Interface
+                [
+                "Interface"
+                "If you can't see the thief... what's the point?"
+                ]
+            }
+		Feature { Multicameraview "Multi-camera view" }
+		Feature { Customizableinterface "Customizable interface" }
+		Feature { System "System" }
+		Feature { Analogwirelesssupport "Analog wireless support" }
+		Feature
+            {
+            Motiondetection
+                [
+                "Motion detection"
+                "Detect motion from camera input"
+                ]
+            }
+		Feature
+            {
+            Businessanalyticsdetectors
+                [
+                "Business analytics detectors"
+                "Use big brain technology to detect data such as business traffic, gender recognition, age recognition, and more. Trust me, it's definitely not invading privacy"
+                ]
+            }
+		Feature { Smarthomeintegration "Smart home integration" }
+		Feature { Video "Video" }
+		Feature { Highdefinitionvideosupport "High definition video support" }
+		Feature { Panoramicvideo "Panoramic video" }
+		Feature { Audio "Audio" }
+		Feature
+            {
+            Audiooutput
+                [
+                "Audio output"
+                "Yell at would-be vandals if your cameras have microphones, and if they don't stop, yell again!"
+                ]
+            }
+		Feature { Audiodetection "Audio detection" }
+		Feature { Network "Network" }
+		Feature
+            {
+            Alerts
+                [
+                "Alerts"
+                "Send email or SMS alerts automatically"
+                ]
+            }
+		Feature
+            {
+            IPnetworking
+                [
+                "IP networking"
+                "Support IP cameras as an alternative to CCTV"
+                ]
+            }
+		Feature { Cloudbackup "Cloud backup" }
+        ]
+    }
+
+Software
+    {
+    MappingApplication
+        [
+        "Mapping Application"
+        "Maps apps give users access to global map data"
+        ]
+    Features
+        [
+        Feature { System "System" }
+		Feature
+            {
+            Mapdownloading
+                [
+                "Map downloading"
+                "Now you don't need a network connection to drive somewhere!"
+                ]
+            }
+		Feature
+            {
+            Routestops
+                [
+                "Route stops"
+                "Not only can you drive from A to B, but you can drive from A to B to C!"
+                ]
+            }
+		Feature
+            {
+            Livefuelprices
+                [
+                "Live fuel prices"
+                "Show users the cheapest place to fill up along their route"
+                ]
+            }
+		Feature
+            {
+            Editor
+                [
+                "Editor"
+                "Users can do your work and fix missing things for you, and you can call it a feature"
+                ]
+            }
+		Feature
+            {
+            Ratings
+                [
+                "Ratings"
+                "Let users rate businesses and services right in the app"
+                ]
+            }
+		Feature
+            {
+            Promotebusinesses
+                [
+                "Promote businesses"
+                "Allow businesses to pay {Currency:2} per day to be slightly higher up in listings on the app"
+                ]
+            }
+		Feature { Interface "Interface" }
+		Feature
+            {
+            Satelliteview
+                [
+                "Satellite view"
+                "You should check out Area 51"
+                ]
+            }
+		Feature { Turnbyturnnavigation "Turn-by-turn navigation" }
+		Feature { Network "Network" }
+		Feature
+            {
+            Realtimedatatransmission
+                [
+                "Real-time data transmission"
+                "Have users' devices automatically transmit data about their speed and length of trip to change traffic information and optimal routing in real time"
+                ]
+            }
+		Feature
+            {
+            Cloudsync
+                [
+                "Cloud sync"
+                "Just in case you forget where your house is, you have peace of mind knowing it's in the cloud"
+                ]
+            }
+		Feature
+            {
+            Informationcrowdsourcing
+                [
+                "Information crowdsourcing"
+                "Let users submit traffic and business information while they are driving. Surely that won't be a problem"
+                ]
+            }
+		Feature { Audio "Audio" }
+		Feature
+            {
+            Customvoices
+                [
+                "Custom voices"
+                "Don't you want Darth Vader to give you directions?"
+                ]
+            }
+		Feature
+            {
+            3Dmapview
+                [
+                "3D map view"
+                "It's like a virtual vacation, from the comfort of your own phone!"
+                ]
+            }
+        ]
+    }
+
+	
+Software
+    {
+    HealthApplication
+        [
+        "Health Application"
+        "Health apps assist users in setting and meeting health and fitness goals"
+        ]
+    Features
+        [
+        Feature { System "System" }
+		Feature { Healthrecords "Health records" }
+		Feature { Hearingtest "Hearing test" }
+		Feature { Heartratemonitor "Heart rate monitor" }
+		Feature
+            {
+            Distancetracker
+                [
+                "Distance tracker"
+                "Half the fun of going for a run is annoying your friends with how far you went, right?"
+                ]
+            }
+		Feature { Interface "Interface" }
+		Feature
+            {
+            Progressbar
+                [
+                "Progress bar"
+                "Get addicted to filling in that bar will be like it's a drug! A health drug, of course"
+                ]
+            }
+		Feature { Calendar "Calendar" }
+		Feature
+            {
+            Workoutplanner
+                [
+                "Workout planner"
+                "Planning workouts ahead of time can be a great time-waster while at work"
+                ]
+            }
+		Feature { Dietplanner "Diet planner" }
+		Feature
+            {
+            Awardsystem
+                [
+                "Award system"
+                "Adults are really just kids. All they want is little stickers on their phone as rewards"
+                ]
+            }
+		Feature { Network "Network" }
+		Feature
+            {
+            Medicalalertsystem
+                [
+                "Medical alert system"
+                "Contact emergency services if a fall, crash or a dangerous health condition is detected"
+                ]
+            }
+		Feature { Cloudsync "Cloud sync" }
+		Feature
+            {
+            Socialfeatures
+                [
+                "Social features"
+                "Everyone knows that personal wellness is always more fun when it's competitive"
+                ]
+            }
+		Feature
+            {
+            Datamining
+                [
+                "Datamining"
+                "Sell users' health data to Big Pharma to net {Currency:0.25} for each active user, but beware of getting caught by Big Watchdog"
+                ]
+            }
+		Feature { Instructionalvideos "Instructional videos" }
+        ]
+    }

@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Email"
+	PerYear				0.2
+	Min					2
+	Max					2
+	Types
+		[
+			{
+			Software	"Email Client"
+			Chance		1
+			}
+		]
+	}

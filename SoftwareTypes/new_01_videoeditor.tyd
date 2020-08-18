@@ -1,0 +1,246 @@
+SoftwareType
+	{
+	Name			"Video Editor"
+	Category		Video
+	Unlock			1985
+	Description		"A video editor is used for post-production of digital video"
+	Random			0.1
+	Popularity		0.7
+	Retention		24
+	IdealPrice		100
+	OptimalDevTime	40
+	SubmarketNames	[ Editing; Retouching; Effects ]
+	Iterative		1
+	NameGenerator	namer_videoeditor
+	OSSupport		Computer
+	InHouse			False
+Features
+		[
+			{
+			Name			"Video"
+			Spec			Video
+			Description 	"Video is one of the more crucial aspects of a video editor"
+			DevTime			6
+			CodeArt			0.8
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Video transitions"
+					Description	"Wipe. Fade. Cross Dissolve. Cut. Slide. And more!"
+					DevTime		4
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Text rendering"
+					Description	"How else will you add a dozen studio credits before a movie?"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Noise reduction"
+					Description	"Get crispy video from grainy video"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Colour correction"
+					Description	"Everyone's doing it nowadays"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Video effects"
+					Description	"Explosions! Blur! Rain! Warp! Smoke!"
+					DevTime		4
+					Level		1
+					CodeArt		0.6
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Stabilization"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Tracking"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Transformations"
+					Description	"Zoom in, zoom out, spin around, etc."
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name				"Interface"
+			Spec				2D
+			DevTime				5
+			CodeArt				0.9
+			Dependencies		"2D Editor"	
+			Submarkets			[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Multi-track timeline"
+					Description	"Assuming that you want more than one thing in your video, this is essential."
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Multicam editing"
+					Description	"Up to a million angles of the same subject. Wow, how exciting."
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name			"System"
+			Spec			System
+			DevTime			2
+			CodeArt			1
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"RAW video import"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Video codecs"
+					Description	"These are quite essential thanks to the existence of about 48 billion different video formats!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Bundled hardware control panel"
+					Description	"Physical sales bring in an extra {Currency:75}, but copies cost an extra {Currency:50} to produce"
+					DevTime		10
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					
+					Script_NewCopies
+"var loss = NewCopies * 50;//Calculate $50 per copy
+Product.DevCompany.MakeTransaction(-loss, Distribution, \"Video hardware\");//Remove money
+Product.AddLoss(loss);//Save to product stats"
+
+					Script_AfterSales
+"var extra = PhysicalSales * 75;//Calculate $75 each copy extra income from physical sales
+Product.DevCompany.MakeTransaction(extra, Sales, \"Video hardware\");//Add money
+Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart"
+					}
+				]
+			}
+			{
+			Name			"Audio"
+			Spec			Audio
+			Description 	"Video and audio go together like milk and cookies"
+			DevTime			4
+			CodeArt			1
+			Dependencies	"Audio Tool"
+			Submarkets		[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Audio mixing"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Audio effects"
+					DevTime		5
+					Level		1
+					CodeArt		0.8
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			"3D workspace"
+			Unlock			1985
+			Description		"Work with 3D objects right in the editor"
+			Spec			3D
+			Optional		True
+			Dependencies	"3D Editor"
+			DevTime			3
+			CodeArt			1
+			Submarkets		[ 0; 1; 1 ]
+			Features
+				[
+					{
+					Name		"3D effects"
+					DevTime		4
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Spec		Network
+			Optional	True
+			Unlock		1985
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Auto-update"
+					Description	"Fingers crossed that your project doesn't get corrupted with the new release!"
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Cloud sync"
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+		]
+	}

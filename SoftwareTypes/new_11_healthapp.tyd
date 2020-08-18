@@ -1,0 +1,179 @@
+SoftwareType
+	{
+	Name			"Health Application"
+	Category		Health
+	Description		"Health apps assist users in setting and meeting health and fitness goals"
+	Unlock			2000
+	Random			0.3
+	Popularity		0.65
+	Retention		18
+	IdealPrice		60
+	OptimalDevTime	25
+	SubmarketNames	[ Fitness; Health; Gamification ]
+	Iterative		1
+	NameGenerator	namer_healthapp
+	OSSupport		[ Phone; Watch ]
+	InHouse			False
+	Features
+		[
+			{
+			Name		"System"
+			Spec		System
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Health records"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Hearing test"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Heart rate monitor"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Distance tracker"
+					Description	"Half the fun of going for a run is annoying your friends with how far you went, right?"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 4; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Interface"
+			Spec		2D
+			DevTime		4
+			CodeArt		0.75
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Progress bar"
+					Description "Get addicted to filling in that bar will be like it's a drug! A health drug, of course"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Calendar"
+					DevTime		6
+					Level		2
+					CodeArt		0.9
+					Submarkets	[ 2; 1; 0 ]
+					}
+					{
+					Name		"Workout planner"
+					Description "Planning workouts ahead of time can be a great time-waster while at work"
+					DevTime		4
+					Level		2
+					CodeArt		0.9
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Diet planner"
+					DevTime		4
+					Level		2
+					CodeArt		0.9
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Award system"
+					Description "Adults are really just kids. All they want is little stickers on their phone as rewards"
+					DevTime		3
+					Level		2
+					CodeArt		0.5
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Spec		Network
+			Server		0.0002
+			Optional	True
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Medical alert system"
+					Description "Contact emergency services if a fall, crash or a dangerous health condition is detected"
+					DevTime		4
+					Server		0.0001
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Cloud sync"
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 0 ]
+					}
+					{
+					Name		"Social features"
+					Description "Everyone knows that personal wellness is always more fun when it's competitive"
+					DevTime		6
+					Server		0.0015
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Datamining"
+					Description	"Sell users' health data to Big Pharma to net {Currency:0.25} for each active user, but beware of getting caught by Big Watchdog"
+					Server		0.0005
+					DevTime		4
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+"if (Product.GetVar(\"Datamining\", true))//Check if player has been caught
+	{
+	var extra = Product.Userbase * 0.25;//Calculate extra income
+	Product.DevCompany.MakeTransaction(extra, Sales, \"Datamining\");//Add money
+	Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
+	if (Random() * Product.Userbase > 250000)//Random chance of getting caught
+		{
+		LaunchLawsuit(\"SpyingOnUsers\", Product.Sum, 1);//Create anonymous lawsuit
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);//Remove fans and market recognition from player in category
+		Product.Userbase = Product.Userbase * 0.05;//Remove 95% of active users
+		Product.KillAwareness();//Remove all marketing
+		Product.PutVar(\"Datamining\", false);//Mark player as caught for this product
+		}
+	}"
+					}
+				]
+			}
+			{
+			Name		"Instructional videos"
+			Spec		Video
+			Optional	True
+			DevTime		3
+			CodeArt		0.2
+			Submarkets	[ 2; 1; 2 ]
+			Features	[ ]
+			}
+		]
+	}

@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"IDE"
+	PerYear				0.2
+	Min					2
+	Max					2
+	Types
+		[
+			{
+			Software	"Integrated Development Environment"
+			Chance		1
+			}
+		]
+	}

@@ -1,0 +1,35 @@
+-start(pre,base)
+-pre(base)
+Mc
+The 
+Cool 
+The 
+-base(smallsecond,largesecond,ext)
+Chicken
+Pit
+Cow
+Car
+Street
+City
+Metro
+Eco
+Green
+Pro
+Sky
+-smallsecond(ext,largesecond,stop)
+Fang
+Fat
+Dump
+Tweak
+Way
+-largesecond(ext,stop)
+ Sausage
+ Carrot
+ Fan
+ Stop
+ and Eat
+-ext(stop)
+ Inc.
+ Corp.
+ Ltd.
+ LLC

@@ -1,0 +1,27 @@
+-start(base)
+-base(base2)
+Team
+Group
+Squad
+Peep
+Folk
+Friend
+Pal
+Bud
+Buddy
+Family
+What
+Yap
+-base2(stop)
+Yap
+Speak
+ Speak
+Talk
+ Talk
+Chat
+Chatter
+Yo
+Bubbles
+Connect
+ Connect
+See

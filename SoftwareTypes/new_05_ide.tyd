@@ -1,0 +1,190 @@
+SoftwareType
+	{
+	Name			"Integrated Development Environment"
+	Category		Development
+	Description		"An IDE is a software platform that provides a set of tools for software development in a single application."
+	Random			0.2
+	Popularity		0.3
+	Retention		36
+	IdealPrice		80
+	OptimalDevTime	40
+	SubmarketNames	[ Simplicity; Professionalism; Collaboration ]
+	Iterative		1
+	NameGenerator	namer_ide
+	OSSupport		[ Computer ]
+	InHouse			False
+	Features
+		[
+			{
+			Name		"System"
+			Spec		System
+			Description "The base features that are essential for an IDE, like a source code editor"
+			DevTime		5
+			CodeArt		1
+			Submarkets	[ 0; 1; 0 ]
+			Features
+				[
+					{
+					Name		"Compiler"
+					Description	"This nifty tool will translate your code into computer-speak"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Debugger"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Live error detection"
+					Description	"Now you don't have to wait until build time to learn how bad you are at programming!"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Multiple programming languages"
+					Description	"Free your users to be multi-lingual"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 2 ]
+					}
+					{
+					Name		"Version control system"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 2 ]
+					}
+					{
+					Name		"Plug-in support"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Intelligent code completion"
+					Description	"Let the computer guess what you're going to type. Sometimes it guesses correctly!"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 0 ]
+					}
+					{
+					Name		"Device simulator"
+					Description	"Play on your phone from the comfort of your computer"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 2; 1 ]
+					}
+					{
+					Name		"AI-enhanced code completion"
+					Description	"Look into user's projects with AI to improve code completion. This may decrease sales due to privacy concerns, or it may increase sales due to the better coding experience"
+					Server		0.0001
+					DevTime		7
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_AfterSales 
+   "var dsr = (RandomRange(0.79, 1.21) * DigitalSales);  //Range of digital sales is 80% to 120% of normal sales
+	var psr = (RandomRange(0.89, 1.11) * PhysicalSales);//Range of physical sales is 90% to 110% of normal sales
+		DigitalSales = dsr;PhysicalSales = psr;"
+					}
+				]
+			}
+			{
+			Name			"Interface"
+			Spec			2D
+			Description		"A user interface will make development a lot easier"
+			DevTime			4
+			CodeArt			0.9
+			Dependencies	"2D Editor"
+			Submarkets		[ 5; 1; 0 ]
+			Features
+				[
+					{
+					Name		"Syntax highlighting"
+					Description	"The code that you know and love, now in colour!"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 3; 1; 0 ]
+					}
+					{
+					Name		"File browser"
+					Description	"Well, you're not only going to make one file, are you?"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Search box"
+					Description	"Lost something? Try searching for it!"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Visual programming"
+					Description	"Instead of typing code, why not try programming by moving blocks with your mouse?"
+					DevTime		6
+					Level		2
+					CodeArt		0.9
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Spec		Network
+			Optional	True
+			Unlock		1985
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 0; 3 ]
+			Features
+				[
+					{
+					Name		"Cloud sync"
+					Description	"Worried about your hard drive failing? Entrust your project to servers instead!"
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Database integration"
+					Description	"Access databases straight from the IDE! How amazing! Wow!"
+					Server		0.0001
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 2 ]
+					}
+					{
+					Name		"Simultaneous collaboration"
+					Description	"Let programmers argue with each other via code in real time"
+					Server		0.0005
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+		]
+	}
+	
+			
+			

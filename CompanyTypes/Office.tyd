@@ -1,0 +1,18 @@
+CompanyType
+	{
+	Specialization		"Office"
+	PerYear				0.2
+	Min					2
+	Max					4
+	Types
+		[
+			{
+			Software	"Office Software"
+			Chance		1
+			}
+			{
+			Software	"PDF Tool"
+			Chance		1
+			}
+		]
+	}

@@ -1,0 +1,30 @@
+-start(base)
+-base(base2,base2,ext)
+Cinema
+Theater
+Experience
+Picasso
+Final
+Leonardo
+Leo
+Scissor
+Premiere
+Hollywood
+Clip
+Bollywood
+-base2(stop,stop,ext)
+Studio
+ Studio
+ Cut
+ Trim
+Editor
+Edit
+ Edit
+ Express
+ Director
+Direct
+-ext(stop)
+ Pro
+ X
+ Max
+

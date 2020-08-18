@@ -1,0 +1,383 @@
+SoftwareType
+	{
+	Name			"Operating System"
+	Category		Computing
+	Override		True
+	Description		"The Operating System is the largest piece of software in Software Inc.
+Most software needs an Operating System to run on. When people stop buying a line of Operating Systems, they will also stop buying software for them."
+	Categories
+		[
+			{
+			Name		Computer
+			Description	"For the table"
+			Popularity	0.95
+			Retention	72
+			TimeScale	1
+			Iterative	1
+			Submarkets	[ 1; 4; 4]
+			}
+			{
+			Name		Console
+			Description	"For the TV"
+			LagBehind	5
+			Popularity	0.75
+			Retention	48
+			TimeScale	0.8
+			Iterative	1
+			Submarkets	[ 4; 1; 0]
+			NameGenerator	namer_osconsole
+			}
+			{
+			Name		Phone
+			Description	"For the pocket"
+			LagBehind	10
+			Popularity	1
+			Retention	36
+			TimeScale	0.7
+			Iterative	1
+			Unlock		1995
+			Submarkets	[ 4; 1; 2]
+			NameGenerator	namer_osphone
+			}
+			{
+			Name		Watch
+			Description	"For the wrist"
+			LagBehind	10
+			Popularity	0.75
+			Retention	36
+			TimeScale	0.65
+			Iterative	1
+			Unlock		2005
+			Submarkets	[ 4; 1; 1]
+			NameGenerator	namer_oswatch
+			}
+			{
+			Name		Car
+			Description	"For the dashboard"
+			LagBehind	10
+			Popularity	0.7
+			Retention	48
+			TimeScale	0.7
+			Iterative	1
+			Unlock		2010
+			Submarkets	[ 4; 1; 0]
+			NameGenerator	namer_oscar
+			}
+			#for future: Server "For the rack", similar properties to computer OS, but costs more and has lower popularity
+		]
+	Random			0
+	IdealPrice		160
+	OptimalDevTime	75
+	SubmarketNames	[ Simplicity; Security; Customization ]
+	NameGenerator	OS
+	Features
+		[
+			{
+			Name		"System"#1
+			Spec		System
+			DevTime		10
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Multitasking"#2
+					Description "Let your users pretend they can multitask by having several applications open at any one time"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Touch"#3
+					Description "You can never have enough greasy finger prints on a surface"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"User accounts"#4
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Computer; Console; Car ]
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Haptic technology support"#4
+					Description	"Vibration is old news. Haptic technology is cool!"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Watch; Phone ]
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Plug'n'Play"#5
+					Description	"Allow the user to interact with the operating system in any number of ways"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 3; 0; 1 ]
+					}
+					{
+					Name		"File encryption"#6
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"System recovery"#7
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Virtualization"#8
+					Description "I put an OS in your OS, etc."
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Code signing"#9
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Fingerprint recognition"#10
+					Description	"Integrate fingerprint recognition into the OS to allow users to feel like spies when they unlock their system"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Automatic driver management"#11 
+					Description	"Driver issues are the number 1 cause of smashed systems. Help alleviate that issue with this feature"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Server		0.0001
+					SoftwareCategories	[ Computer ]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Integrated screen capture"#11 
+					Description	"Who wants to buy a capture card? Nobody, that's who!"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Console ]
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Interface"#12
+			Spec		2D
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Custom themes"#13
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Windowing system"#14
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Unified search"#15
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Themes"#16
+					DevTime		4
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Widgets"#17
+					DevTime		3
+					Level		1
+					CodeArt		0.75
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Push notifications"#18
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Security alerts"#19 
+					Description	"Now you can know when programs are spying on you!"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Universal dark mode"#20 
+					Description	"Automatically change settings for apps across the system to avoid burning your eyes out"
+					DevTime		4
+					Level		1
+					CodeArt		0.8
+					Submarkets	[ 1; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"3D rendering"#21
+			Spec		3D
+			Optional	True
+			Unlock		1985
+			DevTime		10
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features	[ ]
+			}
+			{
+			Name		"Video"#22 
+			Spec		Video
+			Optional	True
+			Unlock		1985
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"High definition video"#23 
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Audio"#24
+			Spec		Audio
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Surround sound"#25
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Computer; Console; Car ]
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Spatial headphone support"#25
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Phone; Watch ]
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Speech recognition"#26
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Microphone surveillance"#27
+					Description "Listen in on your users' conversations to find and fix bugs before they are reported, at the risk of getting caught"
+					Server		0.0002
+					DevTime		3
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+"if (Product.GetVar(\"MicMining\", true))//Check if player has been caught
+	{
+	Product.Bugs = Max(0, Product.Bugs - Product.Userbase * 0.01);//Remove 1 bug from product for each 100th active user
+	if (Random() * Product.Userbase > 1000000 * Product.Category.Popularity)//Random chance of getting caught
+		{
+		LaunchLawsuit(\"SpyingOnUsers\", Product.Sum, 1);//Create anonymous lawsuit
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);//Remove fans and market recognition from player in category
+		Product.Userbase = Product.Userbase * 0.05;//Remove 95% of active users
+		Product.KillAwareness();//Remove all marketing
+		Product.PutVar(\"MicMining\", false);//Mark player as caught for this product
+		}
+	}"
+					}
+				]
+			}
+			{
+			Name		"Network"#28
+			Optional	True
+			Spec		Network
+			Description	"How will anonymous people troll each other all over the world without this handy feature?"
+			Unlock		1985
+			DevTime		8
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Auto-update"#29
+					Description	"Patch bugs, secure against malware and restart in the middle of an unsaved 60 page essay"
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"App store"#30
+					Server		0.0002
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Cloud backup"#31
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Hotspot creation"#11 
+					Description	"Enable cellular devices to create wi-fi hotspots for the non-cellular plebs"
+					Unlock		2010
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Phone; Watch; Car ]
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+		]
+	}

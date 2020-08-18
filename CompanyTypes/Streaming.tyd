@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Streaming"
+	PerYear				0.2
+	Min					2
+	Max					2
+	Types
+		[
+			{
+			Software	"Streaming Software"
+			Chance		1
+			}
+		]
+	}

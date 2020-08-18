@@ -1,0 +1,21 @@
+-start(base)
+-base(base2,base2,ext)
+Power
+Smart
+Bulb
+Super
+Genius
+i
+Tax
+-base2(stop,stop,stop,ext)
+Math
+Chart
+Charts
+Spread
+Sheet
+Sheets
+XL
+Accounts
+ Spreadsheets
+-ext(stop)
+ Pro

@@ -1,0 +1,36 @@
+-start(pre,base,base,base,base)
+-pre(base,base,ext)
+The 
+-base(base2,ext,stop)
+Note
+Mobi
+Go
+Flex
+Frame
+Pen
+Bot
+Tiny
+Acrobat
+Pocket
+Eye
+-base2(ext,stop)
+Side
+Flash
+View
+Slim
+Stop
+Face
+ Thing
+ Droid
+ Mini
+Wave
+Board
+Candy
+Fruit
+-ext(stop)
+OS
+X
+ X
+ OS
+ OS
+ Mobile

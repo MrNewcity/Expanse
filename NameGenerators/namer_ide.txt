@@ -1,0 +1,41 @@
+-start(base)
+-base(base2,base2,base2,ext)
+Pro
+X
+x
+Expert
+Super
+Hyper
+Excel
+Accelerate
+Blue
+Red
+Zip
+Git
+Chrome
+Rad
+Visual
+Maestro
+-base2(stop,stop,ext)
+Code
+ Code
+Edit
+Editor
+ Editor
+Programmer
+Gram
+ Gram
+IDE
+ IDE
+Developer
+Dev
+ Dev
+Assembly
+ Assembly
+One
+Space
+-ext(stop)
+ Pro
+ Professional
+ Platinum
+ Studio

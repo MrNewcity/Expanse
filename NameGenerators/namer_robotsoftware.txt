@@ -1,0 +1,37 @@
+-start(base)
+-base(base2,base2,ext)
+Robot
+Bot
+Android
+Droid
+Auto
+Beep
+Tin
+Metal
+-base2(stop,stop,ext)
+Boop
+Suite
+Core
+Node
+ Suite
+ Man
+-ext(stop)
+ Pro
+ Fleet
+ Manager
+ Programmer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

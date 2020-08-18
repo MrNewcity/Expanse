@@ -1,0 +1,28 @@
+-start(base)
+-base(base2,base2,ext)
+Map
+Way
+Direction
+Compass
+Place
+Live
+Where
+Coord
+-base2(stop,stop,ext)
+Finder
+Go
+ Cartographer
+Carto
+Grapher
+ Go
+Way
+Find
+Guide
+ Guide
+Flag
+Pin
+-ext(stop)
+ Pro
+ Expert
+ Genius
+ Live

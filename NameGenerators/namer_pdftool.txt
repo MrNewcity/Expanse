@@ -1,0 +1,25 @@
+-start(base)
+-base(base2,base2,base2,ext)
+Gymnast
+Fast
+Epic
+Element
+Lucid
+Okay
+ez
+Easy
+Wild
+Fun
+-base2(stop,stop,ext)
+PDF
+ PDF
+Doc
+Work
+PDF
+ PDF
+File
+Sign
+Look
+Form
+-ext(stop)
+ Pro

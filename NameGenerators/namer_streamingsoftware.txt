@@ -1,0 +1,22 @@
+-start(base)
+-base(base2,base2,ext)
+Hyper
+Super
+Live
+Alive
+Go
+Airwave
+Insta
+Band
+-base2(stop,stop,ext)
+Cast
+ Cast
+ Broadcast
+Live
+ Live
+Stream
+ Stream
+Vise
+-ext(stop)
+ Studio
+ Controller

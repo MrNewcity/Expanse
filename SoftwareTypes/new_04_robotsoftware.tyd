@@ -1,0 +1,193 @@
+SoftwareType
+	{
+	Name			"Robot Software"
+	Category		Robotics
+	Unlock			1980
+	Description		"Without this software, robots are nothing. Without robots, this software is nothing."
+	Random			0.3
+	Popularity		0.1
+	Retention		36
+	IdealPrice		100
+	OptimalDevTime	35
+	SubmarketNames	[ Simplicity; Configurability; Scalability ]
+	Iterative		1
+	NameGenerator	namer_robotsoftware
+	OSSupport		[ Computer ]#extend to server
+	InHouse			False
+	Features
+		[
+			{
+			Name		"System"
+			Spec		System
+			Description "Think of it like the robot's soul. Or maybe don't"
+			DevTime		7
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Timecode support"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"Deployment tools"
+					Description	"If you're trying to take over the world, you can't be slowly upgrading robots one at a time"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 4 ]
+					}
+					{
+					Name		"GPS integration"
+					Description	"\"Now, where did those darn robots go off to?\" is something you probably don't want to hear"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Robot calibration"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Post processors"
+					Description	"Enable the generation of programs for many different proprietary robot languages"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Metrics aggregation"
+					Description "Enable the keeping and viewing of lots of information about robots"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Root cause analysis"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Software development kit"
+					Description "Users might want to create custom applications for their robots"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name			"Interface"
+			Spec			2D
+			DevTime			5
+			CodeArt			0.9
+			Dependencies	"2D Editor"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Customizable interface"
+					Description "Only see what you want to see"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"2D visualization"
+					Description "It's much easier to program robots when you have diagrams"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Multi-camera view"
+					Description "See your whole army of robots at once"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			"3D visualization"
+			Spec			3D
+			Optional		True
+			DevTime			4
+			CodeArt			1
+			Dependencies	"3D Editor"
+			Submarkets		[ 1; 1; 0 ]
+			Features
+				[
+					{
+					Name		"Robotic simulation"
+					Description "Much easier to simulate a program ahead of time than have a robot crash through a wall"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 0 ]
+					}
+					{
+					Name		"VR visualization"
+					Description "Get immersed"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Spec		Network
+			Optional	True
+			Unlock		1985
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Teleoperation"
+					Description "Bored of the automated programs getting to have all the fun? Now you can control the robot from your computer!"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Remote controls"
+					Description "Connect phones, gamepads, etc. to be controllers for your robot"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+				]
+			}
+		]
+	}
+	
+			
+			

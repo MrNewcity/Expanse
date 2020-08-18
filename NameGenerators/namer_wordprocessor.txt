@@ -1,0 +1,25 @@
+-start(base)
+-base(base2,base2,ext)
+Quick
+Fast
+Super
+Power
+Light
+Speedy
+Open
+Sick
+Expansive
+Right
+-base2(stop,stop,stop,ext)
+Note
+Pad
+ Notepad
+Write
+ Writer
+ Author
+Page
+Pen
+Bureau
+Book
+-ext(stop)
+ Pro

@@ -1,0 +1,225 @@
+SoftwareType
+	{
+	Name			"Streaming Software"
+	Category		Livestreaming
+	Description		"Livestreaming is a very technically annoying thing to do. Make it slightly easier with your own streaming software"
+	Unlock			2010
+	Random			0.3
+	Popularity		0.5
+	Retention		24
+	IdealPrice		90
+	OptimalDevTime	35
+	SubmarketNames	[ Simplicity; Control; Personalization ]#personalization is interface/stream overlay related. control is related to settings, quality, advanced stuff
+	Iterative		0.95
+	NameGenerator	namer_streamingsoftware
+	OSSupport		Computer
+	InHouse			False
+	Features
+		[
+			{
+			Name		Audio
+			Spec		Audio
+			DevTime		3
+			CodeArt		1
+			Dependencies	"Audio Tool"
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Audio mixing"
+					Description	"All the best streamers are doing it"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Text to speech"
+					Description	"Have a robot read out the disgusting messages donators send streamers"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Music library"
+					Description	"Streaming websites are getting crazy with the copyright strikes. Give users some copyright-free music to use on their streams"
+					DevTime		4
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			Interface
+			Spec			2D
+			Description 	"You gotta have that sick streaming overlay!"
+			DevTime			4
+			CodeArt			0.75
+			Submarkets		[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Widgets"
+					Description	"Block the view of the game with chat, donations and more!"
+					DevTime		4
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Interface layout editor"
+					Description "Let streamers move their interface around"
+					DevTime		4
+					Level		2
+					CodeArt		0.9
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"In-game overlay"
+					Description "Allow streamers to control the stream while in game! True multitasking at work!"
+					DevTime		4
+					Level		2
+					CodeArt		0.8
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name		System
+			Spec		System
+			DevTime		1
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Codecs"
+					Description	"You should have this unless you want streamers to pay $10,000 a month in network bills"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Randomizer"
+					Description	"Pick a random follower, subscriber or viewer. Do with that what you will"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Donation revenue split"
+					Description	"Take a cut of donations made through your streaming software. This can net some extra money, but may also lead to decreased sales due to frustrated streamers"
+					DevTime		9
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					
+					Script_AfterSales
+	"var rando = (RandomRange(0.7, 0.99));//Range of sales for digital and physical sales is 70%-99% of normal
+	var dsr = (rando * DigitalSales);//Digital sales
+	var psr = (rando * PhysicalSales);//Physical sales
+		DigitalSales = dsr;PhysicalSales = psr;"
+	
+					Script_EndOfDay
+	"var cut = (Product.Userbase * 0.35);//Calculate $0.35 per user, per day
+	Product.DevCompany.MakeTransaction(cut, \"Stream donation revenue\");//Add money
+	Product.AddToCashflow(0, 0, 0, cut, 0, Time);//Product income chart"
+					}
+				]
+			}
+			{
+			Name		Network
+			Spec		Network
+			Description	"Livestreaming pretty much relies on this"
+			Server		0.0001
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Multi-platform streaming"
+					Description	"Really desperate for views? Stream to several platforms at the same time!"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Automatic social media post"
+					Description	"Automatically post when starting a stream"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Auto-update"
+					Description	"Streaming is technical hell. Make it less hellish by automatically updating"
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Chat bot"
+					Description	"If robots can beat you at chess, they can keep some kids in check for you"
+					Server		0.0001
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			"Video"
+			Spec			Video
+			DevTime			4
+			CodeArt			1
+			Dependencies	"Video Editor"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Filters"
+					Description	"Add dramatic colours for dramatic apology streams"
+					DevTime		3
+					Level		1
+					CodeArt		0.8
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Integrated display capture"
+					Description	"Instead of leaving users to download another screen capture software, integrate screen capture tools into your own program!"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Background detection"
+					Description	"Enable streamers to change what's behind them without a green screen"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+		]
+	}
+			

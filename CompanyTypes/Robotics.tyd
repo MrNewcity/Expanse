@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Robotics"
+	PerYear				0.2
+	Min					2
+	Max					2
+	Types
+		[
+			{
+			Software	"Robot Software"
+			Chance		1
+			}
+		]
+	}

@@ -1,0 +1,26 @@
+CompanyType
+	{
+	Specialization		"Creative tools"
+	PerYear				0.2
+	Min					4
+	Max					8
+	Types
+		[
+			{
+			Software	"Audio Tool"
+			Chance		0.8
+			}
+			{
+			Software	"2D Editor"
+			Chance		0.8
+			}
+			{
+			Software	"3D Editor"
+			Chance		1
+			}
+			{
+			Software	"Video Editor"
+			Chance		1
+			}
+		]
+	}

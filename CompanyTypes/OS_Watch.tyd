@@ -1,0 +1,17 @@
+CompanyType
+	{
+	Specialization		"Watch Operating Systems"
+	PerYear				0.2
+	Min					2
+	Max					3
+	Frameworks			False
+	LatestTech			True
+	Types
+		[
+			{
+			Software	"Operating System"
+			Category	Watch
+			Chance		1
+			}
+		]
+	}

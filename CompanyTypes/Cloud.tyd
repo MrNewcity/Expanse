@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Cloud Services"
+	PerYear				0.2
+	Min					2
+	Max					4
+	Types
+		[
+			{
+			Software	"Cloud Storage Tool"
+			Chance		1
+			}
+		]
+	}

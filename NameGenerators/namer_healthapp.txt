@@ -1,0 +1,23 @@
+-start(base)
+-base(base2)
+Health
+Veg
+Cross
+Fit
+Exercise
+Ex
+Bro
+Gym
+Jog
+Shape
+-base2(stop)
+Buddy
+Friend
+Guy
+ Plus
+ Bro
+M8
+Run
+Sprint
+Go
+ Go

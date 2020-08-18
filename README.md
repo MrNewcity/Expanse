@@ -18,3 +18,9 @@ This program is free software: you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 For the full license, see LICENSE or http://www.gnu.org/licenses/gpl-3.0.html
+
+# Contribution
+If you'd like to add a localization, hopefully you can do that (update this).
+
+# Contact
+Discord: mrnewcity#6216

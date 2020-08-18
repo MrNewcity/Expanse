@@ -20,7 +20,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 For the full license, see LICENSE or http://www.gnu.org/licenses/gpl-3.0.html
 
 # Contribution
-If you'd like to add a localization, hopefully you can do that (update this).
+If you'd like to add a localization, add a new folder to the Localization folder with the name of the language you would like to add support for. I appreciate it!
 
 # Contact
 Discord: mrnewcity#6216

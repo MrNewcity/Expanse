@@ -20,7 +20,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 For the full license, see LICENSE or http://www.gnu.org/licenses/gpl-3.0.html
 
 # Contribution
-If you'd like to add a localization, add a new folder to the Localization folder with the name of the language you would like to add support for. Then, make a pull request. Thank you, I will give you credit for your work!
+If you'd like to add a localization, add a new folder to the Localization folder with the name of the language you would like to add support for. In that folder, copy over the UI and Software localization files from English, and translate into whatever language you would like. When you are done, make a pull request. Thank you, I will give you credit for your work!
 
 # Contact
 Discord: mrnewcity#6216

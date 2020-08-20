@@ -1,8 +1,9 @@
+#Created By MrNewcity
 SoftwareType
 	{
 	Name			"Video Editor"
 	Category		Video
-	Unlock			1985
+	Unlock			1990
 	Description		"A video editor is used for post-production of digital video"
 	Random			0.1
 	Popularity		0.7

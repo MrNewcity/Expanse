@@ -20,7 +20,7 @@ SoftwareType
 			Name		"System"
 			Spec		System
 			Description "The base features that are essential for an IDE, like a source code editor"
-			DevTime		5
+			DevTime		6
 			CodeArt		1
 			Submarkets	[ 0; 1; 0 ]
 			Features
@@ -71,6 +71,13 @@ SoftwareType
 					Submarkets	[ 1; 1; 1 ]
 					}
 					{
+					Name		"Code profiler"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
 					Name		"Intelligent code completion"
 					Description	"Let the computer guess what you're going to type. Sometimes it guesses correctly!"
 					DevTime		6
@@ -84,7 +91,7 @@ SoftwareType
 					DevTime		5
 					Level		2
 					CodeArt		1
-					Submarkets	[ 0; 2; 1 ]
+					Submarkets	[ 0; 1; 0 ]
 					}
 					{
 					Name		"AI-enhanced code completion"

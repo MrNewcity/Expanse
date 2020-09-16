@@ -1,0 +1,181 @@
+#Created By MrNewcity
+SoftwareType
+	{
+	Name			"Benchmark Software"
+	Category		Benchmarking
+	Description		"Let users test and score their system's hardware"
+	Unlock			2000
+	Random			0.2
+	Popularity		0.3
+	Retention		18
+	IdealPrice		50
+	OptimalDevTime	25
+	SubmarketNames	[ CPU testing; GPU testing; Drive testing ]
+	Iterative		1
+	NameGenerator	namer_benchmarksoftware
+	OSSupport		[ Computer; Phone ]
+	InHouse			False
+	Features
+		[
+			{
+			Name		"System"
+			Spec		System
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Temperature monitoring"
+					Description	"Can't have your computer getting a fever!"
+					DevTime		4
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Mathematics test"
+					Description	"Make your computer suffer through a math test, just like we've all had to do when we were young"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Read/write throughput test"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Physics simulation test"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"IOPS test"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Simultaneous multithreading support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"4K sector testing"
+					Unlock		2010
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"2D"
+			Spec		2D
+			DevTime		4
+			CodeArt		0.8
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Realtime data overlay"
+					Description	"See how many frames you're getting... while you're playing! How immersive"
+					DevTime		3
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"2D rendering test"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					}
+
+				]
+			}
+			{
+			Name		"3D rendering test"
+			Optional	True
+			Spec		3D
+			DevTime		5
+			CodeArt		1
+			Submarkets	[ 0; 1; 0 ]
+			Dependencies	"3D Editor"
+			Features
+				[
+					{
+					Name		"Fluid simulation test"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Configurable graphics"
+					Description	"Dozens of different settings to deeply over-complicate graphics testing"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Benchmark database"
+			Description	"Host a database that aggregates the results of all your users' testing"
+			Spec		Network
+			Server		0.0009
+			Optional	True
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Comparisons"
+					Description	"Help people make their hardware buying decisions"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Result skewing"
+					Description	"Skew and increase the benchmark scores for a certain manufacturer in return for {Currency:0.5} per active user. Be careful, this could result in a consumer lawsuit if you're caught"
+					DevTime		6
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+"if (Product.GetVar(\"ResultSkewing\", true))//Check if player has been caught
+	{
+	var extra = Product.Userbase * 0.5;//Calculate extra income
+	Product.DevCompany.MakeTransaction(extra, Sales, \"Benchmark result skewing\");//Add money
+	Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart
+	if (RandomRange(0.31, 1) * Product.Userbase > 250000)//Random chance of getting caught
+		{
+		LaunchLawsuit(\"LyingToUsers\", Product.Sum, 0.7);//Create anonymous lawsuit
+		Product.DevCompany.AddFans(-Product.Userbase, Product.Category);//Remove fans and market recognition from player in category
+		Product.Userbase = Product.Userbase * 0.05;//Remove 95% of active users
+		Product.KillAwareness();//Remove all marketing
+		Product.PutVar(\"ResultSkewing\", false);//Mark player as caught for this product
+		}
+	}"
+					}
+				]
+			}
+		]
+	}

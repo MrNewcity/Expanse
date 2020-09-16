@@ -1,0 +1,99 @@
+SoftwareType
+{
+	Name			"Robot Program"
+	Category		Robotics
+	Random			0
+	Popularity		0
+	Retention		1
+	IdealPrice		0
+	OptimalDevTime	1
+	SubmarketNames	[ 0; 0; 0 ]
+	Iterative		1
+	NameGenerator	None
+	OneClient		True
+	Unlock			1985
+	Features
+	[
+		Feature
+		{
+			Name		"Movement program"
+			Spec		System
+			DevTime		2
+			CodeArt		1
+			Submarkets	0
+			Features
+			[
+				Feature
+				{
+					Name		"Autonomous program"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Custom controller scheme"
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Custom calibration"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	0
+				}
+			]
+		}
+		Feature
+		{
+			Name		"2D visualization"
+			Spec		2D
+			Optional	True
+			DevTime		2
+			CodeArt		0.8
+			Submarkets	0
+		}
+		Feature
+		{
+			Name		"3D visualization"
+			Spec		3D
+			Optional	True
+			DevTime		3
+			CodeArt		0.8
+			Submarkets	0
+			Features
+			[
+				Feature
+				{
+					Name		"Custom 3D model"
+					DevTime		3
+					Level		1
+					CodeArt		0.25
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Program simulation"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	0
+				}
+			]
+		}
+		Feature
+		{
+			Name		"Network integration"
+			Spec		Network
+			Optional	True
+			DevTime		2
+			CodeArt		1
+			Submarkets	0
+		}
+	]
+}

@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Aviation"
+	PerYear				0.2
+	Min					2
+	Max					2
+	Types
+		[
+			{
+			Software	"Electronic Flight Bag"
+			Chance		1
+			}
+		]
+	}

@@ -13,6 +13,7 @@ SoftwareType
 	Iterative		1
 	NameGenerator	namer_emailclient
 	OSSupport		[ Computer; Phone ]
+	Unlock			1985
 	InHouse			False
 	Features
 		[
@@ -138,7 +139,6 @@ SoftwareType
 				[
 					{
 					Name		"Auto-update"
-					Unlock		1985
 					Description	"Because email clients really live on the cutting edge of technology"
 					Server		0.0002
 					DevTime		5
@@ -148,7 +148,6 @@ SoftwareType
 					}
 					{
 					Name		"Cloud sync"
-					Unlock		1985
 					Description	"Sync calendars and contacts across all your devices! How fun!"
 					Server		0.001
 					DevTime		5
@@ -168,7 +167,6 @@ SoftwareType
 					}
 					{
 					Name		"IMAP support"
-					Unlock		1985
 					Description "The Internet Message Access Protocol!"
 					DevTime		3
 					Level		1

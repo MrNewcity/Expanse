@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"File Archiving"
+	PerYear				0.2
+	Min					2
+	Max					3
+	Types
+		[
+			{
+			Software	"File Archiver"
+			Chance		1
+			}
+		]
+	}

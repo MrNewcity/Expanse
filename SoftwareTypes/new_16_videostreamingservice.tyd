@@ -5,7 +5,7 @@ SoftwareType
 	Category		Streaming
 	Description		"Video streaming services allow users to stream video over the internet"
 	Unlock			2005
-	Random			0.2
+	Random			0.4
 	Popularity		0.8
 	Retention		36
 	IdealPrice		50

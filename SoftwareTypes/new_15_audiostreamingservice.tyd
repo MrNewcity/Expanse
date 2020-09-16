@@ -5,7 +5,7 @@ SoftwareType
 	Category		Streaming
 	Description		"Audio streaming services allow users to stream audio over the internet"
 	Unlock			2000
-	Random			0.3
+	Random			0.4
 	Popularity		0.8
 	Retention		36
 	IdealPrice		50

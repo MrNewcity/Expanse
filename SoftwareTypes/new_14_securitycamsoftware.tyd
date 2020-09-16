@@ -5,7 +5,7 @@ SoftwareType
 	Category		CCTV
 	Description		"Keep an eye on potential hooligans with security camera software"
 	Random			0.2
-	Popularity		0.2
+	Popularity		0.05
 	Retention		36
 	IdealPrice		90
 	OptimalDevTime	30

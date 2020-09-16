@@ -10,7 +10,7 @@ SoftwareType
 	Retention		36
 	IdealPrice		40
 	OptimalDevTime	25
-	SubmarketNames	[ Compression; Security; Usability ] #?maybe
+	SubmarketNames	[ Compression; Security; Usability ]
 	Iterative		1
 	NameGenerator	namer_filearchiver
 	OSSupport		[ Computer; Phone ]#extend to server os in the future

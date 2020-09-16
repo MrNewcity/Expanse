@@ -8,7 +8,7 @@ SoftwareType
 	Random			0.3
 	Popularity		0.1
 	Retention		36
-	IdealPrice		100
+	IdealPrice		90
 	OptimalDevTime	35
 	SubmarketNames	[ Simplicity; Configurability; Scalability ]
 	Iterative		1

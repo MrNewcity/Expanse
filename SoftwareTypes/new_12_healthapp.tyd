@@ -8,7 +8,7 @@ SoftwareType
 	Random			0.3
 	Popularity		0.65
 	Retention		18
-	IdealPrice		60
+	IdealPrice		50
 	OptimalDevTime	25
 	SubmarketNames	[ Fitness; Health; Gamification ]
 	Iterative		1

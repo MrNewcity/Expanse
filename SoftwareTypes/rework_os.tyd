@@ -14,6 +14,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Retention	72
 			TimeScale	1
 			Iterative	1
+			IdealPrice	180
 			Submarkets	[ 1; 4; 4]
 			}
 			{
@@ -25,7 +26,81 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			TimeScale	0.8
 			Iterative	1
 			Submarkets	[ 4; 1; 0]
+			IdealPrice	160
 			NameGenerator	namer_osconsole
+			Hardware	True
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name 				Gyroscope
+						BuiltInThumbnail	Gyroscope
+						Price				15
+						Time				8
+						DependsOn			"Motion detection"
+						}
+						{
+						Name 				"Rumble unit"
+						BuiltInThumbnail	Vibration
+						Price				10
+						Time				4
+						}
+						{
+						Name 				Plastic
+						BuiltInThumbnail	Plastic
+						Price				5
+						Time				4
+						}
+						{
+						Name 				Board
+						BuiltInThumbnail	PCB
+						Price				5
+						Time				8
+						}
+						{
+						Name 				Joystick
+						BuiltInThumbnail	Joystick
+						Price				5
+						Time				8
+						}
+						{
+						Name 				"Drive bay"
+						BuiltInThumbnail	Harddrive
+						Price				10
+						Time				8
+						DependsOn			"External drive"
+						}
+						{
+						Name 				Controller
+						BuiltInThumbnail	Microchip
+						Price				100
+						Time				16
+						}
+						{
+						Name 				Console
+						BuiltInThumbnail	Console
+						Price				50
+						Time				16
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Gyroscope"; "Rumble unit"; "Plastic" ]
+						Output	Joystick
+						}
+						{
+						Inputs	[ "Board"; "Drive bay"; "Controller" ]
+						Output	Console
+						}
+						{
+						Inputs	[ "Joystick"; "Console" ]
+						Output	Final
+						}
+					]
+				FinalTime	4
+				}
 			}
 			{
 			Name		Phone
@@ -35,9 +110,88 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Retention	36
 			TimeScale	0.7
 			Iterative	1
+			IdealPrice	140
 			Unlock		1995
 			Submarkets	[ 4; 1; 2]
 			NameGenerator	namer_osphone
+			Hardware	True
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name 				"Touch sensor"
+						BuiltInThumbnail	Touch
+						Price				50
+						Time				8
+						DependsOn			"Touch"
+						}
+						{
+						Name 				"Haptic engine"
+						BuiltInThumbnail	Vibration
+						Price				10
+						Time				4
+						DependsOn			"Haptic technology"
+						}
+						{
+						Name 				Screen
+						BuiltInThumbnail	LCD
+						Price				40
+						Time				8
+						}
+						{
+						Name 				Controller
+						BuiltInThumbnail	Microchip
+						Price				100
+						Time				16
+						}
+						{
+						Name 				"Phone assembly"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				"Fingerprint scanner"
+						BuiltInThumbnail	Fingerprint
+						Price				10
+						Time				16
+						DependsOn			"Fingerprint scanner"
+						}
+						{
+						Name 				Plastic
+						BuiltInThumbnail	Plastic
+						Price				5
+						Time				4
+						}
+						{
+						Name 				Case
+						BuiltInThumbnail	Phone
+						Price				5
+						Time				4
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Touch sensor" ]
+						Output	Screen
+						}
+						{
+						Inputs	[ "Haptic engine"; "Screen"; "Controller" ]
+						Output	"Phone assembly"
+						}
+						{
+						Inputs	[ "Plastic"; "Fingerprint scanner" ]
+						Output	Case
+						}
+						{
+						Inputs	[ "Phone assembly"; "Case" ]
+						Output	Final
+						}
+					]
+				FinalTime	16
+				}
 			}
 			{
 			Name		Watch
@@ -47,9 +201,94 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Retention	36
 			TimeScale	0.65
 			Iterative	1
+			IdealPrice	120
 			Unlock		2005
 			Submarkets	[ 4; 1; 1]
 			NameGenerator	namer_oswatch
+			Hardware	True
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name 				"Touch sensor"
+						BuiltInThumbnail	Touch
+						Price				30
+						Time				6
+						DependsOn			"Touch"
+						}
+						{
+						Name 				"Haptic engine"
+						BuiltInThumbnail	Vibration
+						Price				10
+						Time				4
+						DependsOn			"Haptic technology"
+						}
+						{
+						Name 				Screen
+						BuiltInThumbnail	LCD
+						Price				20
+						Time				4
+						}
+						{
+						Name 				Controller
+						BuiltInThumbnail	Microchip
+						Price				80
+						Time				12
+						}
+						{
+						Name 				"Watch assembly"
+						BuiltInThumbnail	PCB
+						Price				5
+						Time				4
+						}
+						{
+						Name 				"Fingerprint scanner"
+						BuiltInThumbnail	Fingerprint
+						Price				10
+						Time				16
+						DependsOn			"Fingerprint scanner"
+						}
+						{
+						Name 				Plastic
+						BuiltInThumbnail	Plastic
+						Price				3
+						Time				2
+						}
+						{
+						Name 				Case
+						BuiltInThumbnail	Phone
+						Price				3
+						Time				2
+						}
+						{
+						Name 				Strap
+						BuiltInThumbnail	Phone
+						Price				6
+						Time				2
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Touch sensor" ]
+						Output	Screen
+						}
+						{
+						Inputs	[ "Haptic engine"; "Screen"; "Controller" ]
+						Output	"Watch assembly"
+						}
+						{
+						Inputs	[ "Plastic"; "Fingerprint scanner" ]
+						Output	Case
+						}
+						{
+						Inputs	[ "Watch assembly"; "Case"; "Strap" ]
+						Output	Final
+						}
+					]
+				FinalTime	8
+				}
 			}
 			{
 			Name		Car
@@ -59,14 +298,14 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Retention	48
 			TimeScale	0.7
 			Iterative	1
+			IdealPrice	140
 			Unlock		2010
 			Submarkets	[ 4; 1; 0]
 			NameGenerator	namer_oscar
 			}
-			#for future: Server "For the rack", similar properties to computer OS, but costs more and has lower popularity
+			#for v3.0: Server "For the rack", similar properties to computer OS, but costs more and has lower popularity
 		]
 	Random			0
-	IdealPrice		160
 	OptimalDevTime	75
 	SubmarketNames	[ Simplicity; Security; Customization ]
 	NameGenerator	OS
@@ -89,29 +328,12 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					Submarkets	[ 1; 0; 2 ]
 					}
 					{
-					Name		"Touch"#3
-					Description "You can never have enough greasy finger prints on a surface"
-					DevTime		6
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
-					}
-					{
 					Name		"User accounts"#4
 					DevTime		5
 					Level		2
 					CodeArt		1
-					SoftwareCategories	[ Computer; Console; Car ]
+					SoftwareCategories	[ Computer; Car ]
 					Submarkets	[ 1; 2; 0 ]
-					}
-					{
-					Name		"Haptic technology support"#4
-					Description	"Vibration is old news. Haptic technology is cool!"
-					DevTime		5
-					Level		2
-					CodeArt		1
-					SoftwareCategories	[ Watch; Phone ]
-					Submarkets	[ 1; 0; 1 ]
 					}
 					{
 					Name		"Plug'n'Play"#5
@@ -149,14 +371,6 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
-					}
-					{
-					Name		"Fingerprint recognition"#10
-					Description	"Integrate fingerprint recognition into the OS to allow users to feel like spies when they unlock their system"
-					DevTime		6
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 1; 0 ]
 					}
 					{
 					Name		"Automatic driver management"#11 
@@ -376,6 +590,79 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					CodeArt		1
 					SoftwareCategories	[ Phone; Watch; Car ]
 					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		Hardware
+			Spec		Hardware
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			SoftwareCategories	[ Console; Phone; Watch ]
+			Features
+				[
+					{
+					Name		"Touch"#3
+					Description "You can never have enough greasy finger prints on a surface"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Haptic technology"#4
+					Description	"Vibration is old news. Haptic technology is cool!"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Watch; Phone ]
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name				"Vibration"#4
+					Description			"Device go brrr"
+					DevTime				1
+					Level				1
+					CodeArt				1
+					SoftwareCategories	[ Console ]
+					Submarkets			[ 1; 0; 3 ]
+					}
+					{
+					Name		"Fingerprint scanner"#10
+					Description	"Integrate fingerprint recognition into the OS to allow users to feel like spies when they unlock their system"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name				"Motion detection"
+					Description			"Who doesn't want joysticks embedded in their TVs?"
+					DevTime				1
+					Level				2
+					CodeArt				1
+					Submarkets			[ 2; 0; 1 ]
+					SoftwareCategories	[ Console ]
+					}
+					{
+					Name				"External drive"
+					Description			"We put save games on memory cards and save games on hard drives"
+					DevTime				2
+					Level				1
+					CodeArt				1
+					Submarkets			[ 0; 2; 4 ]
+					SoftwareCategories	[ Console ]
+					}
+					{
+					Name				"Super optimization"
+					Description			"Spend time when developing software to save money when ordering hardware (Remove extra cost when ordering product prints)"
+					DevTime				16
+					Level				3
+					CodeArt				1
+					Submarkets			0
+					SoftwareCategories	[ Phone; Console; Watch ]
+					Script_OnRelease	"Product.HardwarePrice = Product.HardwarePrice / MarketSimulation.HardwareCopyPriceFactor"
 					}
 				]
 			}

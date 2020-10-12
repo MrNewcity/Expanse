@@ -7,7 +7,7 @@ SoftwareType
 	Random			0.2
 	Popularity		0.05
 	Retention		36
-	IdealPrice		90
+	IdealPrice		80
 	OptimalDevTime	30
 	SubmarketNames	[ "Monitoring"; "Detection"; "Integration" ]
 	Iterative		0.95

@@ -18,7 +18,7 @@ SoftwareType
 		{
 			Name		"Movement program"
 			Spec		System
-			DevTime		2
+			DevTime		1
 			CodeArt		1
 			Submarkets	0
 			Features

@@ -174,7 +174,7 @@ SoftwareType
 					
 					Script_EndOfDay
 	"var cut = (Product.Userbase * 0.50);//Calculate $0.50 per user, per day
-	Product.DevCompany.MakeTransaction(cut, \"Ad revenue\");//Add money
+	Product.DevCompany.MakeTransaction(cut, Sales, \"Ad revenue\");//Add money
 	Product.AddToCashflow(0, 0, 0, cut, 0, Time);//Product income chart"
 					}
 				]

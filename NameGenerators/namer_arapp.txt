@@ -1,0 +1,23 @@
+-start(base)
+-base(base2,base2,base2,ext)
+360
+Real
+Surround
+Immersive
+Mobile
+Lucid
+Dream
+Magic
+Play
+-base2(stop,stop,stop,ext)
+Space
+Area
+AR
+ AR
+Cam
+Reality
+Lens
+Cell
+-ext(stop)
+ Studio
+ Experience

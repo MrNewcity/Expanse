@@ -13,7 +13,7 @@ SoftwareType
 	SubmarketNames	[ CPU testing; GPU testing; Drive testing ]
 	Iterative		1
 	NameGenerator	namer_benchmarksoftware
-	OSSupport		[ Computer; Phone ]
+	OSSupport		[ Computer; Phone; Server ]
 	InHouse			False
 	Features
 		[
@@ -30,7 +30,7 @@ SoftwareType
 					Description	"Can't have your computer getting a fever!"
 					DevTime		4
 					Level		1
-					CodeArt		0.9
+					CodeArt		1
 					Submarkets	[ 1; 1; 0 ]
 					}
 					{
@@ -179,3 +179,4 @@ SoftwareType
 			}
 		]
 	}
+#Expanse Software Suite

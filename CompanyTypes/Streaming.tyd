@@ -1,13 +1,13 @@
 CompanyType
 	{
-	Specialization		"Streaming"
+	Specialization		"Livestreaming"
 	PerYear				0.2
 	Min					2
 	Max					2
 	Types
 		[
 			{
-			Software	"Streaming Software"
+			Software	"Livestreaming Software"
 			Chance		1
 			}
 		]

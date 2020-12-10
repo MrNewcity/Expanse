@@ -1,0 +1,38 @@
+-start(base,base,base,pre)
+-pre(base)
+The 
+-base(baseSimple2,baseLong2)
+Fun
+Circus
+Character
+Sus
+House
+Target
+Collection
+Point
+Pal
+Buddy
+Family
+SuperDuper
+-baseSimple2(stop,baseLong2,baselong3,baseLong3)
+Board
+World
+Party
+Race
+Fun!
+Clash
+Show
+Battles
+-baseLong2(baseLong3,stop)
+ Minigames
+ Game Collection
+-baseLong3(stop)
+ Ultra
+ Maximum
+ Superfun
+ at Home
+ in the Car
+ Lite
+ Deluxe
+ with Friends
+ and Friends

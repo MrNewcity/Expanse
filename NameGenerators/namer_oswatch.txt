@@ -10,7 +10,7 @@ Watch
 Clock
 Fit
 Band
--base2(ext,stop)
+-base2(ext,stop,stop,stop)
 View
 Slim
 Face
@@ -19,10 +19,6 @@ Face
 Scope
 Play
 -ext(stop)
-OS
-OS
 X
  X
- OS
- OS
  Mini

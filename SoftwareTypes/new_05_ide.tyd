@@ -97,7 +97,7 @@ SoftwareType
 					Name		"AI-enhanced code completion"
 					Description	"Look into user's projects with AI to improve code completion. This may decrease sales due to privacy concerns, or it may increase sales due to the better coding experience"
 					Server		0.0001
-					DevTime		7
+					DevTime		6
 					Level		3
 					CodeArt		1
 					Submarkets	0
@@ -193,6 +193,4 @@ SoftwareType
 			}
 		]
 	}
-	
-			
-			
+#Expanse Software Suite	

@@ -1,3 +1,4 @@
+#Reworked by MrNewcity
 SoftwareType
 	{
 	Name			"Office Software"
@@ -342,4 +343,5 @@ if (supportWork != null)
 				]
 			}
 		]
+#Expanse Software Suite
 	}

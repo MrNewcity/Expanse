@@ -1,3 +1,4 @@
+#Reworked by MrNewcity
 SoftwareType
 	{
 	Name			"Operating System"
@@ -45,6 +46,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 						BuiltInThumbnail	Vibration
 						Price				10
 						Time				4
+						DependsOn			"Vibration"
 						}
 						{
 						Name 				Plastic
@@ -228,13 +230,13 @@ Most software needs an Operating System to run on. When people stop buying a lin
 						Name 				Screen
 						BuiltInThumbnail	LCD
 						Price				20
-						Time				4
+						Time				8
 						}
 						{
 						Name 				Controller
 						BuiltInThumbnail	Microchip
 						Price				80
-						Time				12
+						Time				16
 						}
 						{
 						Name 				"Watch assembly"
@@ -257,6 +259,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 						}
 						{
 						Name 				Case
+						Thumbnail			"Icons/smartwatch_128.png"
 						BuiltInThumbnail	Phone
 						Price				3
 						Time				2
@@ -303,7 +306,18 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Submarkets	[ 4; 1; 0]
 			NameGenerator	namer_oscar
 			}
-			#for v3.0: Server "For the rack", similar properties to computer OS, but costs more and has lower popularity
+			{
+			Name		Server
+			Description	"For the rack"
+			Popularity	0.07
+			Retention	72
+			TimeScale	1
+			Iterative	1
+			IdealPrice	200
+			Unlock		1985
+			Submarkets	[ 0; 1; 1]
+			NameGenerator	namer_osserver
+			}
 		]
 	Random			0
 	OptimalDevTime	75
@@ -332,7 +346,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					DevTime		5
 					Level		2
 					CodeArt		1
-					SoftwareCategories	[ Computer; Car ]
+					SoftwareCategories	[ Computer; Car; Server ]
 					Submarkets	[ 1; 2; 0 ]
 					}
 					{
@@ -379,7 +393,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					Level		2
 					CodeArt		1
 					Server		0.0001
-					SoftwareCategories	[ Computer ]
+					SoftwareCategories	[ Computer; Server ]
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
@@ -390,6 +404,15 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					CodeArt		1
 					SoftwareCategories	[ Console ]
 					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Advanced hardware support"#13
+					Description	"Enable users to use multiple processors and huge amounts of RAM, which is quite useful for servers"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					SoftwareCategories [ Server ]
+					Submarkets	[ 0; 0; 1 ]
 					}
 				]
 			}
@@ -406,6 +429,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					DevTime		6
 					Level		2
 					CodeArt		1
+					SoftwareCategories [ Computer; Console; Phone; Watch; Car ]
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{
@@ -427,6 +451,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					DevTime		4
 					Level		1
 					CodeArt		0.5
+					SoftwareCategories	[ Computer; Console; Phone; Watch; Car ]
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{
@@ -482,7 +507,8 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Features
 				[
 					{
-					Name		"High definition video"#23 
+					Name		"HDR video support"#23
+					Description	"Sorta like standard video, but the dynamic range is higher. What does that mean? Who knows. But look, pretty colours!"
 					DevTime		4
 					Level		2
 					CodeArt		1
@@ -503,7 +529,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					DevTime		4
 					Level		2
 					CodeArt		1
-					SoftwareCategories	[ Computer; Console; Car ]
+					SoftwareCategories	[ Computer; Console; Car; Server ]
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{
@@ -571,6 +597,17 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					DevTime		6
 					Level		2
 					CodeArt		1
+					SoftwareCategories	[ Computer; Console; Phone; Watch; Car ]
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Cloud migration tools"#30
+					Description	"Integrate tools that help users migrate their data to a cloud computing service"
+					Server		0.0001
+					DevTime		6
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Server ]
 					Submarkets	[ 1; 1; 1 ]
 					}
 					{
@@ -579,6 +616,16 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					DevTime		5
 					Level		2
 					CodeArt		1
+					SoftwareCategories	[ Computer; Console; Phone; Watch; Car ]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Cloud server backup"#31
+					Server		0.0018
+					DevTime		5
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Server ]
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
@@ -591,15 +638,24 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					SoftwareCategories	[ Phone; Watch; Car ]
 					Submarkets	[ 1; 0; 0 ]
 					}
+					{
+					Name		"Virtual network manager"#16
+					Description	"Virtual networks aren't going to manage themselves!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					SoftwareCategories	[ Server ]
+					Submarkets	[ 0; 0; 1 ]
+					}
 				]
 			}
 			{
-			Name		Hardware
+			Name		"Hardware support"
 			Spec		Hardware
 			DevTime		2
 			CodeArt		1
 			Submarkets	[ 1; 1; 1 ]
-			SoftwareCategories	[ Console; Phone; Watch ]
+			SoftwareCategories	[ Console; Phone; Watch; Computer; Car ]
 			Features
 				[
 					{
@@ -609,6 +665,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
+					SoftwareCategories	[ Phone; Watch ]
 					}
 					{
 					Name		"Haptic technology"#4
@@ -635,6 +692,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 1; 0 ]
+					SoftwareCategories	[ Phone; Watch ]
 					}
 					{
 					Name				"Motion detection"
@@ -668,3 +726,4 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			}
 		]
 	}
+#Expanse Software Suite

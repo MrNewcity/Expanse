@@ -13,7 +13,8 @@ Game
 Game
 Play
 Epic
--base2(ext,stop)
+Max
+-base2(stop,stop,stop,ext)
 Player
 Gamer
  Shade
@@ -25,9 +26,5 @@ Girl
 Zone
  Box
 -ext(stop)
-OS
-OS
 X
  X
- OS
- OS

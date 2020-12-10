@@ -6,14 +6,14 @@ SoftwareType
 	Unlock			1980
 	Description		"Without this software, robots are nothing. Without robots, this software is nothing."
 	Random			0.3
-	Popularity		0.05
+	Popularity		0.02
 	Retention		36
 	IdealPrice		90
 	OptimalDevTime	35
 	SubmarketNames	[ Simplicity; Configurability; Scalability ]
 	Iterative		1
 	NameGenerator	namer_robotsoftware
-	OSSupport		[ Computer ]#extend to server
+	OSSupport		[ Computer; Server ]
 	InHouse			False
 	Features
 		[
@@ -189,6 +189,4 @@ SoftwareType
 			}
 		]
 	}
-	
-			
-			
+#Expanse Software Suite	

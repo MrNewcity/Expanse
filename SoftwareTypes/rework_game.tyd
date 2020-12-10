@@ -65,6 +65,15 @@ SoftwareType
 			NameGenerator	GameFPS
 			Submarkets		[ 3; 4; 1 ]
 			}
+			{
+			Name			Party
+			Popularity		0.7
+			Retention		12
+			TimeScale		0.75
+			Iterative		0.8
+			NameGenerator	namer_partygame
+			Submarkets		[ 4; 1; 0 ]
+			}
 		]
 	Random			0.6
 	IdealPrice		80
@@ -296,3 +305,4 @@ SoftwareType
 			}
 		]
 	}
+#Expanse Software Suite

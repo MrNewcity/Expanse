@@ -13,7 +13,7 @@ Tiny
 Acrobat
 Pocket
 Eye
--base2(ext,stop)
+-base2(ext,stop,stop,stop,stop)
 Side
 Flash
 View
@@ -28,10 +28,5 @@ Board
 Candy
 Fruit
 -ext(stop)
-OS
-OS
-X
+ Pro
  X
- OS
- OS
- Mobile

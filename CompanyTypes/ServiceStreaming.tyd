@@ -1,13 +1,13 @@
 CompanyType
 	{
-	Specialization		"Audio Streaming"
+	Specialization		"Media Streaming"
 	PerYear				0.2
 	Min					2
 	Max					2
 	Types
 		[
 			{
-			Software	"Audio Streaming Service"
+			Software	"Streaming Service"
 			Chance		1
 			}
 		]

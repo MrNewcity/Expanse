@@ -212,7 +212,7 @@ SoftwareType
 					{
 					Name		"Motion capture"
 					Description "Convert real life motion to point motion"
-					DevTime		6
+					DevTime		6 
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 0; 1 ]

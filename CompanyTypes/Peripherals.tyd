@@ -1,0 +1,15 @@
+CompanyType
+	{
+	Specialization		"Peripherals"
+	PerYear				0.2
+	Min					2
+	Max					3
+	Frameworks			False
+	Types
+		[
+			{
+			Software	"Peripheral System"
+			Chance		1
+			}
+		]
+	}

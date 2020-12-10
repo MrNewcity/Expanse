@@ -5,14 +5,14 @@ SoftwareType
 	Category		CCTV
 	Description		"Keep an eye on potential hooligans with security camera software"
 	Random			0.2
-	Popularity		0.05
+	Popularity		0.01
 	Retention		36
 	IdealPrice		80
 	OptimalDevTime	30
 	SubmarketNames	[ "Monitoring"; "Detection"; "Integration" ]
 	Iterative		0.95
 	NameGenerator	namer_securitycamsoftware
-	OSSupport		Computer
+	OSSupport		[ Computer; Server ]
 	InHouse			False
 	Features
 		[
@@ -173,4 +173,4 @@ SoftwareType
 			}
 		]
 	}
-			
+#Expanse Software Suite

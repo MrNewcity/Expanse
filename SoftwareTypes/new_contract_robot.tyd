@@ -1,0 +1,157 @@
+SoftwareType
+{
+	Name			"Custom Robot"
+	Category		Robotics
+	Random			0
+	Popularity		0
+	Retention		1
+	IdealPrice		0
+	OptimalDevTime	1
+	SubmarketNames	[ 0; 0; 0 ]
+	Iterative		1
+	NameGenerator	None
+	OneClient		True
+	Hardware		True
+	Unlock			1985
+	Manufacturing
+		{
+		Components
+			[
+				{
+				Name 				Camera
+				BuiltInThumbnail	Camera
+				Price				10
+				Time				8
+				DependsOn			"Camera"
+				}
+				{
+				Name 				Motor
+				BuiltInThumbnail	Vibration
+				Price				15
+				Time				8				
+				}
+				{
+				Name 				GPS
+				BuiltInThumbnail	Microchip
+				Price				20
+				Time				16
+				DependsOn			"GPS"
+				}
+				{
+				Name 				Board
+				BuiltInThumbnail	PCB
+				Price				10
+				Time				4
+				}
+				{
+				Name				Gyroscope
+				BuiltInThumbnail	Gyroscope
+				Price				15
+				Time				8
+				DependsOn			"Gyroscope"
+				}
+				{
+				Name				Body
+				BuiltInThumbnail	Plastic
+				Price				20
+				Time				4
+				}
+				{
+				Name				Microcontroller
+				BuiltInThumbnail	Microchip
+				Price				25
+				Time				4
+				}
+				{
+				Name				"Robot assembly"
+				Thumbnail			"Icons/robotic-arm_128.png"
+				BuiltInThumbnail	PlasticCase
+				Price				25
+				Time				4
+				}
+				{
+				Name				"Remote control"
+				BuiltInThumbnail	USB
+				Price				15
+				Time				8
+				DependsOn			"Remote control"
+				}
+			]
+		Processes
+			[
+				{
+				Inputs	[ "Microcontroller"; "Motor"; "Camera"; "Board"; "Gyroscope"; "Body" ]
+				Output	"Robot assembly"
+				}
+				{
+				Inputs	[ "Robot assembly"; "Remote control" ]
+				Output	Final
+				}
+			]
+		FinalTime	4
+		}
+	Features
+	[
+		Feature
+		{
+			Name		"System"
+			Spec		System
+			DevTime		2
+			CodeArt		1
+			Submarkets	0
+			Features
+			[
+				Feature
+				{
+					Name		"Camera"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Remote control"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"GPS"
+					DevTime		4
+					Unlock		1990
+					Level		2
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Gyroscope"
+					DevTime		1
+					Level		2
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Integrated movement program"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	0
+				}
+			]
+		}
+		Feature
+		{
+			Name		"Hardware design"
+			Spec		Hardware
+			DevTime		1
+			CodeArt		1
+			Submarkets	0
+		}
+	]
+}
+#Expanse Software Suite

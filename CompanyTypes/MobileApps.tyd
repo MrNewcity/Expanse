@@ -1,11 +1,15 @@
 CompanyType
 	{
-	Specialization		"Health and Fitness"
+	Specialization		"Mobile Apps"
 	PerYear				0.2
 	Min					2
-	Max					2
+	Max					4
 	Types
 		[
+			{
+			Software	"Mapping Application"
+			Chance		1
+			}
 			{
 			Software	"Health Application"
 			Chance		1

@@ -1,0 +1,38 @@
+-start(base)
+-base(base2)
+G
+X
+Gamer
+Hyper
+Fury
+Venom
+Super
+Master
+Blade
+Deadly
+Furious
+Galactic
+Spacial
+Micro
+Optic
+-base2(stop,stop,stop,stop,ext)
+Ware
+Tool
+Power
+One
+RGB
+ Razor
+ Pirahna
+ Dragon
+ Fit
+ Starburst
+Grip
+ Speed
+ Focus
+Eagle
+Face
+Set
+-ext(stop)
+ Pro
+ Extreme
+ Fighter

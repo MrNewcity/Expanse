@@ -3,7 +3,7 @@ CompanyType
 	Specialization		"Watch Operating Systems"
 	PerYear				0.2
 	Min					2
-	Max					3
+	Max					2
 	Frameworks			False
 	LatestTech			True
 	Types

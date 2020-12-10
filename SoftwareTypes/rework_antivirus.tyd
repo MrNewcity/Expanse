@@ -12,7 +12,7 @@ SoftwareType
 	SubmarketNames	[ "Passive protection"; "Active protection"; "Monitoring" ]
 	Iterative		1
 	NameGenerator	Antivirus
-	OSSupport		[ Computer; Phone ]
+	OSSupport		[ Computer; Phone; Server ]
 	InHouse			False
 	Features
 		[
@@ -196,3 +196,4 @@ SoftwareType
 			}
 		]
 	}
+#Expanse Software Suite

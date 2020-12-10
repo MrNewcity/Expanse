@@ -13,7 +13,7 @@ SoftwareType
 	SubmarketNames	[ Security; Speed; Sharing ]
 	Iterative		1
 	NameGenerator	namer_cloudservice
-	OSSupport		[ Computer; Phone ]#extend to server os in the future
+	OSSupport		[ Computer; Phone; Server ]
 	InHouse			False
 	Features
 		[
@@ -177,4 +177,4 @@ SoftwareType
 			}
 		]
 	}
-			
+#Expanse Software Suite	

@@ -1,0 +1,26 @@
+-start(pre,base,base,base,base)
+-pre(base)
+The 
+-base(base2,base2,ext,stop)
+Virtual
+Real
+Lucid
+360
+Immersive
+VR
+Pro
+-base2(ext,stop)
+Reality
+ Life
+ity
+Oasis
+Goggles
+ Set
+Venture
+-ext(stop)
+OS
+OS
+X
+ X
+ OS
+ OS

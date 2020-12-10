@@ -8,7 +8,7 @@ SoftwareType
 	Random			0.3
 	Popularity		0.75
 	Retention		24
-	IdealPrice		70
+	IdealPrice		50
 	OptimalDevTime	30
 	SubmarketNames	[ Consumer; Business; Gaming ]
 	Iterative		1
@@ -192,10 +192,11 @@ SoftwareType
 					Description	"People really like watching other people play games for some reason"
 					DevTime		4
 					Level		2
-					CodeArt		2
+					CodeArt		1
 					Submarkets	[ 0; 0; 1 ]
 					}
 				]
 			}
 		]
 	}
+#Expanse Software Suite

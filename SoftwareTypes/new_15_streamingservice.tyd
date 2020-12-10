@@ -1,0 +1,293 @@
+#Created By MrNewcity
+SoftwareType
+	{
+	Name			"Streaming Service"
+	Category		Streaming
+	Description		"Streaming services allow users to stream content such as music or movies over the internet"
+	Unlock			2005
+	Random			0.4
+	IdealPrice		50
+	OptimalDevTime	30
+	SubmarketNames	[ Simplicity; Personalization; Media Quality ]
+	OSSupport		True
+	InHouse			False
+	Categories
+		[
+			{
+			Name			Audio
+			Description		"Ear-oriented media, like music and podcasts"
+			Popularity		0.8
+			Retention		36
+			TimeScale		1
+			Iterative		1
+			NameGenerator	namer_audiostreamingservice
+			Submarkets		[ 1; 1; 1 ]
+			}
+			{
+			Name			Video
+			Description		"Eye-oriented media, like movies and shows"
+			Popularity		0.8
+			Retention		36
+			TimeScale		1
+			Iterative		1
+			NameGenerator	namer_videostreamingservice
+			Submarkets		[ 1; 1; 1 ]
+			}
+		]
+	Features
+		[
+			{
+			Name		"System"#1
+			Spec		System
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Recommendation algorithm"#2
+					Description	"Recommend content to users based on their interests and favourite genres"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Custom playlists"#3
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Subscriptions"#4
+					Description	"Enable users to subscribe to genres or creators that they like"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Downloading"#5
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Auto-play"#6
+					Description	"Make binge watching shows a lot easier"
+					SoftwareCategories	[ Video ]
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Shuffle playback"#6
+					SoftwareCategories	[ Audio ]
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Queue"#9
+					Description	"Line the songs up, then knock 'em down"
+					SoftwareCategories	[ Audio ]
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Interface"#7
+			Spec		2D
+			DevTime		5
+			CodeArt		0.5
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Cover art"#8
+					Description	"Show cover art and thumbnails for videos, movies and shows"
+					SoftwareCategories	[ Video ]
+					DevTime		3
+					Level		1
+					CodeArt		0.75
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Thumbnails and album art"#8
+					Description	"Show album art for music and thumbnails for podcasts and audiobooks"
+					SoftwareCategories	[ Audio ]
+					DevTime		3
+					Level		1
+					CodeArt		0.75
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Scene selection menu"#9
+					SoftwareCategories	[ Video ]
+					DevTime		3
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"On-screen widgets"#10
+					Description	"Allow creators to add widgets like playlist links, video links and text on top of videos"
+					SoftwareCategories	[ Video ]
+					DevTime		4
+					Level		2
+					CodeArt		0.75
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Charts"#10
+					Description	"Make it easy for users to join bandwagons by charting the most popular content"
+					SoftwareCategories	[ Audio ]
+					Server		0.0001
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Network"#11
+			Spec		Network
+			Server		0.0025
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Continuity"#12
+					Description	"Users keep their place when they close the app or switch devices"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"On-air streaming"#13
+					Description	"Stream shows as TV channels play them"
+					SoftwareCategories	[ Video ]
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Radio channel streaming"#13
+					Description	"Stream radio stations live on the air. Because... you want to listen to ads, I guess?"
+					SoftwareCategories	[ Audio ]
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Video"#14
+			Spec		Video
+			Description	"Video is important for movies, shows, podcasts and, well, videos"
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 0; 0; 1 ]
+			Dependencies	"Video Editor"
+			Features	
+				[
+					{
+					Name		"High definition video"#15
+					SoftwareCategories	[ Video ]
+					DevTime		4
+					Server		0.0005
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"3D film support"#16
+					Description	"Get those 3D glasses on!"
+					SoftwareCategories	[ Video ]
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Advertisements"#17
+					Description	"Integrate ads before videos to earn extra money. This may drive some users away from the platform"
+					SoftwareCategories	[ Video ]
+					Server		0.0001
+					DevTime		8
+					Level		3
+					CodeArt		0.9
+					Submarkets	0
+					Script_AfterSales
+	"var rando = (RandomRange(0.6, 0.9));//Range of sales for digital and physical sales is 60%-90% of normal
+	var dsr = (rando * DigitalSales);//Digital sales
+	var psr = (rando * PhysicalSales);//Physical sales
+		DigitalSales = dsr;PhysicalSales = psr;"
+					
+					Script_EndOfDay
+	"var cut = (Product.Userbase * 0.50);//Calculate $0.50 per user, per day
+	Product.DevCompany.MakeTransaction(cut, Sales, \"Ad revenue\");//Add money
+	Product.AddToCashflow(0, 0, 0, cut, 0, Time);//Product income chart"
+					}
+				]
+			}
+			{
+			Name		"Audio"#18
+			Spec		Audio
+			Dependencies	"Audio Tool"
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Hi-fi audio"#15
+					Description	"Audiophiles love to pretend they can hear the difference between this and regular audio!"
+					SoftwareCategories	[ Audio ]
+					DevTime		4
+					Server		0.0004
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Integrated equalizer"#16
+					SoftwareCategories	[ Audio ]
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Exclusive artists"#17
+					Description	"Pay a group of popular artists 15% of sales to exclusively use your platform, and increase sales"
+					SoftwareCategories	[ Audio ]
+					DevTime		8
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_AfterSales
+"DigitalSales = DigitalSales * 1.25; PhysicalSales = PhysicalSales * 1.05;//increase digital sales by 25%, increase physical sales by 5%
+var loss = (PhysicalSales + DigitalSales) * Product.Price * 0.15;//calculate 15% of sales
+Product.DevCompany.MakeTransaction(-loss, Sales, \"Artist cut\");//take tha cash
+Product.AddToCashflow(0, 0, 0, -loss, 0, Time);//Add to product income chart"
+					}
+				]
+			}
+		]
+	}
+#Expanse Software Suite

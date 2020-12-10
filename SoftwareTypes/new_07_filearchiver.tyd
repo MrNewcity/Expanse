@@ -13,7 +13,7 @@ SoftwareType
 	SubmarketNames	[ Compression; Security; Usability ]
 	Iterative		1
 	NameGenerator	namer_filearchiver
-	OSSupport		[ Computer; Phone ]#extend to server os in the future
+	OSSupport		[ Computer; Phone; Server ]
 	InHouse			False
 	Features
 		[
@@ -151,4 +151,5 @@ SoftwareType
 			}
 		]
 	}
+#Expanse Software Suite
 			

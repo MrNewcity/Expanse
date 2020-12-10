@@ -1,14 +1,14 @@
 #Created By MrNewcity
 SoftwareType
 	{
-	Name			"Streaming Software"
+	Name			"Livestreaming Software"
 	Category		Livestreaming
 	Description		"Livestreaming is a very technically annoying thing to do. Make it slightly easier with your own streaming software"
 	Unlock			2010
 	Random			0.3
 	Popularity		0.5
 	Retention		24
-	IdealPrice		80
+	IdealPrice		60
 	OptimalDevTime	35
 	SubmarketNames	[ Simplicity; Control; Personalization ]#personalization is interface/stream overlay related. control is related to settings, quality, advanced stuff
 	Iterative		0.95
@@ -223,4 +223,4 @@ SoftwareType
 			}
 		]
 	}
-			
+#Expanse Software Suite	

@@ -4,7 +4,7 @@ Expanse Software Suite is a mod for Software Inc. that adds new software types, 
 The idea behind Expanse Software Suite is to enhance the experience playing Software Inc. by adding new content that is faithful to the original style of the game, as well as technically accurate and balanced.
 
 # Installation
-This mod is for Alpha 11 only.
+This mod is for Alpha 11.7+
 
 **Workshop:** https://steamcommunity.com/sharedfiles/filedetails/?id=2186957033
 
@@ -18,9 +18,6 @@ This program is free software: you can redistribute it and/or modify it under th
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 For the full license, see LICENSE or http://www.gnu.org/licenses/gpl-3.0.html
-
-# Contribution
-If you'd like to add a localization, add a new folder to the Localization folder with the name of the language you would like to add support for. In that folder, copy over the UI and Software localization files from English, and translate into whatever language you would like. When you are done, make a pull request. Thank you, I will give you credit for your work!
 
 # Contact
 Discord: mrnewcity#6216

@@ -1,0 +1,286 @@
+#Created By MrNewcity
+SoftwareType
+	{
+	Name			"3D Printing System"
+	Category		"3D Printing"
+	Unlock			2010
+	Description		"A 3D printer is a lot like a normal printer, just with an extra dimension"
+	Random			0.3
+	Popularity		0.35
+	Retention		48
+	IdealPrice		300
+	OptimalDevTime	45
+	SubmarketNames	[ Beginner; Enthusiast; Professional ] #beginner=simplicity, enthusiast=features, professional=complexity,workflow
+	Iterative		1
+	NameGenerator	namer_3dprinter
+	OSSupport		Computer
+	InHouse			False
+	Hardware		True
+	Manufacturing
+		{
+		Components
+			[
+				{
+				Name 				"Printing frame"
+				Thumbnail			"Icons/3d-printing_128.png"
+				BuiltInThumbnail	Plastic
+				Price				4
+				Time				2
+				}
+				{
+				Name 				"Case"
+				BuiltInThumbnail	PlasticCase
+				Price				10
+				Time				2
+				}
+				{
+				Name 				"Levelling sensor"
+				BuiltInThumbnail	Camera
+				Price				15
+				Time				4
+				DependsOn			"Auto levelling"#???namechange?
+				}
+				{
+				Name 				Display
+				BuiltInThumbnail	LCD
+				Price				20
+				Time				8
+				}
+				{
+				Name 				"Control unit"
+				BuiltInThumbnail	PCB
+				Price				5
+				Time				8
+				}
+				{
+				Name 				"Wireless receiver"
+				BuiltInThumbnail	USB
+				Price				15
+				Time				8
+				DependsOn			"Wireless technology"
+				}
+				{
+				Name 				Microprocessor
+				BuiltInThumbnail	Microchip
+				Price				50
+				Time				16
+				}
+				{
+				Name 				"Extruder"#was filament liquefier
+				BuiltInThumbnail	Thermostat
+				Price				15
+				Time				8
+				}
+				{
+				Name 				"Dual extruder"
+				BuiltInThumbnail	Thermostat
+				Price				25
+				Time				8
+				DependsOn			"Dual extruders"
+				}
+				{
+				Name 				Motors
+				BuiltInThumbnail	Vibration
+				Price				15
+				Time				8
+				}
+				{
+				Name 				"Axis carriages"
+				BuiltInThumbnail	Gyroscope
+				Price				10
+				Time				8
+				}
+				{
+				Name 				"Filament spool"#was filament tube
+				BuiltInThumbnail	Plastic
+				Price				2
+				Time				2
+				}
+			]
+		Processes
+			[
+				{
+				Inputs	[ "Dual extruder" ]
+				Output	"Extruder"
+				}
+				{
+				Inputs	[ "Levelling sensor"; "Axis carriages"; "Motors"; "Extruder" ]
+				Output	"Printing frame"
+				}
+				{
+				Inputs	[ "Display"; "Wireless receiver"; "Microprocessor"; "Case" ]
+				Output	"Control unit"
+				}
+				{
+				Inputs	[ "Printing frame"; "Control unit"; "Filament spool" ]
+				Output	Final
+				}
+			]
+		FinalTime	4
+		}
+	Features
+		[
+			{
+			Name		"System"
+			Spec		System
+			DevTime		8
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Manual printer control"
+					Description	"Are you a neurosurgeon? No? Well, good luck with this then"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Batch operations tool"
+					DevTime		5
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Interface"
+			Spec		2D
+			DevTime		5
+			CodeArt		0.8
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Integrated tutorials"
+					DevTime		4
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 3; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name		"3D slicing"
+			Spec		3D
+			DevTime		10
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"3D Editor"
+			Features
+				[
+					{
+					Name		"Presets"
+					Description	"Integrate pre-made settings profiles for different printers and applications"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Print simulation"
+					Description	"See exactly how the 3D printer is going to print an object before it does. It's like a time machine, but far less cool"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Support material generator"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+					}
+					{
+					Name		"Sequencing"
+					Description	"Print one thing, then, print another thing, all in one job!"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"Dynamic layer thickness"
+					Description	"Change from high detail to high speed when ideal"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Spec		Network
+			Optional	True
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Multi-printer connection"
+					Description	"Allow users to connect to multiple printers from one computer!"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Cloud sync"
+					Description	"Some people might need to access their 3D prints from anywhere, I guess?"
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Hardware"
+			Spec		Hardware
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Wireless technology"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 0 ]
+					}
+					{
+					Name		"Auto levelling"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"Dual extruders"
+					Description	"Two times the fun!"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+				]
+			}
+		]
+	}
+	}
+#Expanse Software Suite

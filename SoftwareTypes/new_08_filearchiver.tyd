@@ -1,0 +1,155 @@
+#Created By MrNewcity
+SoftwareType
+	{
+	Name			"File Archiver"
+	Category		File Management
+	Description		"A file archiver is a utility used to combine files together into an archive file"
+	Unlock			1995
+	Random			0.1
+	Popularity		0.6
+	Retention		36
+	IdealPrice		40
+	OptimalDevTime	25
+	SubmarketNames	[ Compression; Security; Usability ]
+	Iterative		1
+	NameGenerator	namer_filearchiver
+	OSSupport		[ Computer; Phone; Server ]
+	InHouse			False
+	Features
+		[
+			{
+			Name			Interface
+			Spec			2D
+			DevTime			4
+			CodeArt			0.9
+			Submarkets		[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Search"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Command-line interface"
+					Description	"Enable automation and scripts via the command line"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Themes"
+					Description	"Make file archiving seem slightly less boring"
+					DevTime		4
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		System
+			Spec		System
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Encryption"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Shell integration"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Disk image support"
+					Description	"Support the opening of disk images"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Password locking"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Adaptive dictionary compression"
+					Description	"Compress things like \"The theives' theatrics earned them the maximum sentence\" to things like \"$ $ives $atrics earned $m $ maximum sentence\". Compression at work!"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Huffman coding"
+					Description	"This method of compression is ridiculously complicated, but it works. That's all you need to know, let the nerds figure out the rest"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Archive repair tool"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Self-extracting archives"
+					Description	"Enable users to create archives that will extract themselves!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Archive scanning"
+					Description	"Enable users to scan archives for viruses"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name		Network
+			Spec		Network
+			Optional	True
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 0; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Cloud backup"
+					Description	"Backup users' archives to the cloud automatically"
+					Server		0.0017
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 2 ]
+					}
+				]
+			}
+		]
+	}
+#Expanse Software Suite
+			

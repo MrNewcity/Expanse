@@ -309,7 +309,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			{
 			Name		Server
 			Description	"For the rack"
-			Popularity	0.07
+			Popularity	0.01
 			Retention	72
 			TimeScale	1
 			Iterative	1

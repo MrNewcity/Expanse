@@ -1,0 +1,176 @@
+#Created By MrNewcity
+SoftwareType
+	{
+	Name			"Security Camera Software"
+	Category		CCTV
+	Description		"Keep an eye on potential hooligans with security camera software"
+	Random			0.2
+	Popularity		0.01
+	Retention		36
+	IdealPrice		80
+	OptimalDevTime	30
+	SubmarketNames	[ "Monitoring"; "Detection"; "Integration" ]
+	Iterative		0.95
+	NameGenerator	namer_securitycamsoftware
+	OSSupport		[ Computer; Server ]
+	InHouse			False
+	Features
+		[
+			{
+			Name			Interface
+			Spec			2D
+			Description 	"If you can't see the thief... what's the point?"
+			DevTime			4
+			CodeArt			0.9
+			Submarkets		[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Multi-camera view"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Customizable interface"
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 4; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		System
+			Spec		System
+			DevTime		1
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Analog wireless support"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Motion detection"
+					Description	"Detect motion from camera input"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Business analytics detectors"
+					Unlock		2000
+					Description	"Use big brain technology to detect data such as business traffic, gender recognition, age recognition, and more. Trust me, it's definitely not invading privacy"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Smart home integration"
+					Unlock		2005
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			"Video"
+			Spec			Video
+			DevTime			4
+			CodeArt			1
+			Dependencies	"Video Editor"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"High definition video support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Panoramic video"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		Audio
+			Spec		Audio
+			DevTime		3
+			CodeArt		1
+			Dependencies	"Audio Tool"
+			Submarkets	[ 1; 1; 0 ]
+			Features
+				[
+					{
+					Name		"Audio output"
+					Description "Yell at would-be vandals if your cameras have microphones, and if they don't stop, yell again!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Audio detection"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Spec		Network
+			Optional	True
+			Unlock		1985
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Alerts"
+					Description "Send email or SMS alerts automatically"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 4 ]
+					}
+					{
+					Name		"IP networking"
+					Unlock		1995
+					Description "Support IP cameras as an alternative to CCTV"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Cloud backup"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+					}
+				]
+			}
+		]
+	}
+#Expanse Software Suite

@@ -1,0 +1,417 @@
+#Created By MrNewcity
+SoftwareType
+	{
+	Name			"Peripheral System"
+	Category		Peripherals
+	Description		"A peripheral system combines hardware peripherals with software to configure and control them"
+	Unlock			1990
+	Random			0.4
+	OptimalDevTime	35
+	SubmarketNames	[ Simplicity; Personalization; Configurability ] #personalization=visual/animation wise, configurability=settings like dpi, bindings, weight etc
+	InHouse			False
+	NameGenerator	namer_peripherals
+	OSSupport		Computer
+	Hardware		True
+	Categories
+		[
+			{
+			Name		Mouse
+			Description	"These are used to interface with modern computers"
+			Popularity	0.65
+			TimeScale	1
+			Iterative	1
+			IdealPrice	110
+			Retention	36
+			Submarkets	[ 1; 1; 1 ]
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name				Plastic
+						BuiltInThumbnail	Plastic
+						Price				3
+						Time				2
+						}
+						{
+						Name				Switches
+						Thumbnail			"Icons/push-button_128.png"
+						BuiltInThumbnail	Touch
+						Price				10
+						Time				4
+						}
+						{
+						Name				"Circuit board"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name				"Wireless receiver"
+						BuiltInThumbnail	USB
+						Price				15
+						Time				8
+						DependsOn			"Wireless technology"
+						}
+						{
+						Name 				"Mouse assembly"
+						Thumbnail			"Icons/computer-mouse_128.png"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				"LED lights"
+						BuiltInThumbnail	LCD
+						Price				10
+						Time				4
+						DependsOn			"RGB lighting"
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Plastic"; "Switches"; "Circuit board"; "LED lights" ]
+						Output	"Mouse assembly"
+						}
+						{
+						Inputs	[ "Mouse assembly"; "Wireless receiver" ]
+						Output	Final
+						}
+					]
+				FinalTime	4
+				}
+			}
+			{
+			Name		Keyboard
+			Description	"These serve as the middleman between your brain and your word documents"
+			Popularity	0.65
+			TimeScale	1
+			Iterative	1
+			Retention	36
+			IdealPrice	230
+			Submarkets	[ 1; 1; 1 ]
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name				Plastic
+						BuiltInThumbnail	Plastic
+						Price				5
+						Time				4
+						}
+						{
+						Name				"Key switches"
+						Thumbnail			"Icons/push-button_128.png"
+						BuiltInThumbnail	Microchip
+						Price				30
+						Time				8
+						}
+						{
+						Name				"Key caps"
+						BuiltInThumbnail	Touch
+						Price				5
+						Time				4
+						}
+						{
+						Name				"Circuit board"
+						BuiltInThumbnail	PCB
+						Price				15
+						Time				8
+						}
+						{
+						Name				"Wireless receiver"
+						BuiltInThumbnail	USB
+						Price				15
+						Time				8
+						DependsOn			"Wireless technology"
+						}
+						{
+						Name 				"Keyboard assembly"
+						Thumbnail			"Icons/keyboard_128.png"
+						BuiltInThumbnail	PCB
+						Price				15
+						Time				8
+						}
+						{
+						Name 				"LED lights"
+						BuiltInThumbnail	LCD
+						Price				30
+						Time				4
+						DependsOn			"RGB lighting"
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Plastic"; "Key switches"; "Circuit board"; "LED lights"; "Key caps" ]
+						Output	"Keyboard assembly"
+						}
+						{
+						Inputs	[ "Keyboard assembly"; "Wireless receiver" ]
+						Output	Final
+						}
+					]
+				FinalTime	8
+				}
+			}
+			{
+			Name		Headset
+			Description	"These emit sound into your ears"
+			Popularity	0.6
+			TimeScale	1
+			Iterative	1
+			Retention	36
+			IdealPrice	140
+			Submarkets	[ 1; 1; 1 ]
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name				Plastic
+						BuiltInThumbnail	Plastic
+						Price				4
+						Time				2
+						}
+						{
+						Name				"Circuit board"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name				"Wireless receiver"
+						BuiltInThumbnail	USB
+						Price				15
+						Time				8
+						DependsOn			"Wireless technology"
+						}
+						{
+						Name				"Microphone"
+						BuiltInThumbnail	PlasticCase
+						Price				10
+						Time				4
+						DependsOn			"Audio input"
+						}
+						{
+						Name				"Speakers"
+						BuiltInThumbnail	Vibration
+						Price				20
+						Time				8
+						}
+						{
+						Name 				"Headset assembly"
+						Thumbnail			"Icons/headset_128.png"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				"LED lights"
+						BuiltInThumbnail	LCD
+						Price				10
+						Time				4
+						DependsOn			"RGB lighting"
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Plastic"; "Circuit board"; "LED lights"; "Speakers"; "Microphone" ]
+						Output	"Headset assembly"
+						}
+						{
+						Inputs	[ "Headset assembly"; "Wireless receiver" ]
+						Output	Final
+						}
+					]
+				FinalTime	8
+				}
+			}
+		]
+	Features
+		[
+			{
+			Name		"System"#1
+			Spec		System
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"DPI configuration"#2
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Mouse ]
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Custom macros"#2
+					Description "Make any combination of keybinds to do virtually anything"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Keyboard ]
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Custom profile saving"#3
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Hardware integration"#5
+					Description	"Integrate external hardware such as PC fans, cases and lighting into the app for complete control"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 5; 0 ]
+					}
+					{
+					Name		"Premade game profiles"#9
+					Description "Integrate premade settings and optimizations for specific games"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					SoftwareCategories	[ Mouse; Keyboard ]
+					Submarkets	[ 2; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Interface"#6
+			Spec		2D
+			DevTime		5
+			CodeArt		0.8
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Hardware visualization"#7
+					Description	"Show users what their hardware looks light right in the app, because looking 6 inches down is a lot of work"
+					DevTime		4
+					Level		1
+					CodeArt		0.75
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Animations"#16
+					DevTime		4
+					Level		2
+					CodeArt		0.5
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Audio"#8
+			Spec		Audio
+			DevTime		2
+			CodeArt		1
+			SoftwareCategories	[ Headset ]
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Audio input"#9
+					Description "Not only can you listen to audio, you can now create it with your mouth!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					SoftwareCategories	[ Headset ]
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Integrated equalizer"#2
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Headset ]
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Network"#10
+			Spec		Network
+			Optional	True
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Usage data sharing"#11
+					Description	"Allow users to opt-in to automatically share their usage data, which will allow you to fix some bugs before they are reported"
+					DevTime		5
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+"Product.Bugs = Max(0, Product.Bugs - Product.Userbase * 0.0001);//Remove 1 bug from product for each 10000th active user"
+					}
+					{
+					Name		"Profile sharing"#12
+					Description "Allow users to easily share their configurations and profiles"
+					Server		0.0001
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 2 ]
+					}
+					{
+					Name		"Automatic driver updates"#4
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Cloud backup"#17
+					Description	"Are computer peripheral settings really important enough to backup to the cloud? Yes!"
+					Server		0.0005
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Hardware"#13
+			Spec		Hardware
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"RGB lighting"#14
+					Unlock		2000
+					Description "It's scientifically proven that RGB lighting improves game skill"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Wireless technology"#15
+					Unlock		2000
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 3; 0; 1 ]
+					}
+				]
+			}
+		]
+	}
+	}
+#Expanse Software Suite

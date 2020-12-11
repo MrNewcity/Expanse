@@ -28,7 +28,8 @@ SoftwareType
 				Name 				Motor
 				BuiltInThumbnail	Vibration
 				Price				15
-				Time				8				
+				Time				8
+				DependsOn			"Motor"
 				}
 				{
 				Name 				GPS
@@ -61,6 +62,7 @@ SoftwareType
 				BuiltInThumbnail	Microchip
 				Price				25
 				Time				4
+				DependsOn			"System"
 				}
 				{
 				Name				"Robot assembly"
@@ -96,7 +98,7 @@ SoftwareType
 		{
 			Name		"System"
 			Spec		System
-			DevTime		2
+			DevTime		1
 			CodeArt		1
 			Submarkets	0
 			Features
@@ -131,6 +133,14 @@ SoftwareType
 					Name		"Gyroscope"
 					DevTime		1
 					Level		2
+					CodeArt		1
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Motor"
+					DevTime		3
+					Level		1
 					CodeArt		1
 					Submarkets	0
 				}

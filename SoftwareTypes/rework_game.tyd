@@ -69,8 +69,9 @@ SoftwareType
 			Name			Party
 			Popularity		0.7
 			Retention		12
-			TimeScale		0.75
+			TimeScale		0.6
 			Iterative		0.8
+			IdealPrice		60
 			NameGenerator	namer_partygame
 			Submarkets		[ 4; 1; 0 ]
 			}
@@ -111,7 +112,17 @@ SoftwareType
 					DevTime		3
 					Level		1
 					CodeArt		1
+					SoftwareCategories	[ RPG; Adventure; RTS; FPS; Simulation; Sports ]
 					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Leaderboard"#4
+					Description	"Keep a record of the best players. 100% just for bragging rights"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					SoftwareCategories	[ Party ]
+					Submarkets	[ 1; 0; 0 ]
 					}
 					{
 					Name		"Branching story"#5
@@ -139,6 +150,15 @@ SoftwareType
 					CodeArt		1
 					SoftwareCategories	[ Sports ]
 					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name		"Custom minigames"#5
+					Description	"Give players tools to create their very own terrible minigames"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					SoftwareCategories	[ Party ]
+					Submarkets	[ 1; 0; 0 ]
 					}
 					{
 					Name		"Mod support"#6
@@ -295,10 +315,20 @@ SoftwareType
 					{
 					Name		"MMO"#23
 					Description "Massively Multiplayer Online"
+					SoftwareCategories	[ RPG; Adventure; RTS; FPS; Simulation; Sports ]
 					DevTime		10
 					Level		2
 					CodeArt		1
 					Server		0.002
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"LAN connection"#23
+					Description "Let players connect their devices to each other via a local network. Sounds like a lot of fun!"
+					SoftwareCategories	[ Party ]
+					DevTime		3
+					Level		1
+					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
 					}
 				]

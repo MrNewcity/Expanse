@@ -22,6 +22,4 @@ For the full license, see LICENSE or http://www.gnu.org/licenses/gpl-3.0.html
 # Contact
 Discord: mrnewcity#6216
 
-Twitter: @mrnewcity15
-
 Steam: MrNewcity

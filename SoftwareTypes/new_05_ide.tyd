@@ -4,8 +4,8 @@ SoftwareType
 	Name			"Integrated Development Environment"
 	Category		Development
 	Description		"An IDE is a software platform that provides a set of tools for software development in a single application."
-	Random			0.2
-	Popularity		0.3
+	Random			0.25
+	Popularity		0.15
 	Retention		36
 	IdealPrice		80
 	OptimalDevTime	40
@@ -147,7 +147,7 @@ SoftwareType
 					Description	"Instead of typing code, why not try programming by moving blocks with your mouse?"
 					DevTime		6
 					Level		2
-					CodeArt		0.9
+					CodeArt		0.8
 					Submarkets	[ 1; 0; 0 ]
 					}
 				]

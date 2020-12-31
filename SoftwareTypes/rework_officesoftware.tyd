@@ -336,7 +336,7 @@ if (supportWork != null)
 			Dependencies	"Video Editor"
 			DevTime			2
 			SoftwareCategories	[ Presentation ]
-			CodeArt			1
+			CodeArt			0.9
 			Submarkets		[ 0; 1; 1 ]
 			Features
 				[

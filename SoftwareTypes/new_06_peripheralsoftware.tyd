@@ -89,7 +89,7 @@ SoftwareType
 			TimeScale	1
 			Iterative	1
 			Retention	36
-			IdealPrice	230
+			IdealPrice	200
 			Submarkets	[ 1; 1; 1 ]
 			Manufacturing
 				{
@@ -198,7 +198,7 @@ SoftwareType
 						{
 						Name				"Speakers"
 						BuiltInThumbnail	Vibration
-						Price				20
+						Price				25
 						Time				8
 						}
 						{
@@ -298,7 +298,7 @@ SoftwareType
 					Description	"Show users what their hardware looks light right in the app, because looking 6 inches down is a lot of work"
 					DevTime		4
 					Level		1
-					CodeArt		0.75
+					CodeArt		0.8
 					Submarkets	[ 1; 2; 0 ]
 					}
 					{

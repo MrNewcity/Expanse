@@ -37,7 +37,7 @@ SoftwareType
 					Name		"Customizable interface"
 					DevTime		3
 					Level		2
-					CodeArt		1
+					CodeArt		0.9
 					Submarkets	[ 4; 0; 1 ]
 					}
 				]

@@ -75,7 +75,7 @@ SoftwareType
 					Description "Let streamers move their interface around"
 					DevTime		4
 					Level		2
-					CodeArt		0.9
+					CodeArt		1
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{

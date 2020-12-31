@@ -8,7 +8,7 @@ SoftwareType
 	Random			0.2
 	Popularity		0.75
 	Retention		24
-	IdealPrice		50
+	IdealPrice		40
 	OptimalDevTime	25
 	SubmarketNames	[ "Navigation"; "Discovery"; "Live data" ]
 	Iterative		1
@@ -171,7 +171,7 @@ SoftwareType
 			Spec		3D
 			Optional	True
 			DevTime		4
-			CodeArt		0.5
+			CodeArt		0.25
 			Submarkets	[ 1; 3; 0 ]
 			Features	[ ]
 			}

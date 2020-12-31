@@ -8,7 +8,7 @@ SoftwareType
 	Random			0.3
 	Popularity		0.65
 	Retention		18
-	IdealPrice		50
+	IdealPrice		40
 	OptimalDevTime	25
 	SubmarketNames	[ Fitness; Health; Gamification ]
 	Iterative		1
@@ -60,7 +60,7 @@ SoftwareType
 			Name		"Interface"
 			Spec		2D
 			DevTime		4
-			CodeArt		0.75
+			CodeArt		0.5
 			Submarkets	[ 1; 1; 1 ]
 			Dependencies	"2D Editor"
 			Features
@@ -70,7 +70,7 @@ SoftwareType
 					Description "Get addicted to filling in that bar will be like it's a drug! A health drug, of course"
 					DevTime		2
 					Level		1
-					CodeArt		1
+					CodeArt		0.9
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{

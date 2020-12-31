@@ -21,7 +21,7 @@ SoftwareType
 			Name			Interface
 			Spec			2D
 			DevTime			4
-			CodeArt			0.9
+			CodeArt			0.8
 			Submarkets		[ 1; 1; 1 ]
 			Dependencies	"2D Editor"
 			Features
@@ -89,7 +89,7 @@ SoftwareType
 			Name		Network
 			Spec		Network
 			Description	"Starting a cloud service? You better have plenty of server capacity!"
-			Server		0.0035
+			Server		0.005
 			DevTime		5
 			CodeArt		1
 			Submarkets	[ 1; 1; 1 ]
@@ -107,7 +107,7 @@ SoftwareType
 					{
 					Name		"Trash retention"
 					Description	"Keep files in the trash for a while just in case someone changes their mind"
-					Server		0.0003
+					Server		0.0004
 					DevTime		3
 					Level		1
 					CodeArt		1
@@ -116,7 +116,7 @@ SoftwareType
 					{
 					Name		"Remote device management"
 					Description	"Stolen device? Nuke it!"
-					Server		0.0003
+					Server		0.0002
 					DevTime		6
 					Level		2
 					CodeArt		1
@@ -124,7 +124,7 @@ SoftwareType
 					}
 					{
 					Name		"Public file sharing"
-					Server		0.0004
+					Server		0.0006
 					DevTime		4
 					Level		1
 					CodeArt		1
@@ -141,7 +141,7 @@ SoftwareType
 					{
 					Name		"Media streaming"
 					Description	"Stream media files straight from the cloud drive"
-					Server		0.0001
+					Server		0.0002
 					DevTime		4
 					Level		1
 					CodeArt		1
@@ -150,7 +150,7 @@ SoftwareType
 					{
 					Name		"Automatic backup"
 					Description	"Backup users' devices to the cloud"
-					Server		0.002
+					Server		0.0021
 					DevTime		4
 					Level		2
 					CodeArt		1

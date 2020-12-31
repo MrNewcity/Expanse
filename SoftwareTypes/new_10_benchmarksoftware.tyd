@@ -93,7 +93,7 @@ SoftwareType
 					Description	"See how many frames you're getting... while you're playing! How immersive"
 					DevTime		3
 					Level		1
-					CodeArt		0.9
+					CodeArt		0.85
 					Submarkets	[ 1; 1; 0 ]
 					}
 					{
@@ -111,7 +111,7 @@ SoftwareType
 			Optional	True
 			Spec		3D
 			DevTime		5
-			CodeArt		1
+			CodeArt		0.9
 			Submarkets	[ 0; 1; 0 ]
 			Dependencies	"3D Editor"
 			Features
@@ -120,7 +120,7 @@ SoftwareType
 					Name		"Fluid simulation test"
 					DevTime		4
 					Level		2
-					CodeArt		1
+					CodeArt		0.9
 					Submarkets	[ 0; 1; 0 ]
 					}
 					{
@@ -137,7 +137,7 @@ SoftwareType
 			Name		"Benchmark database"
 			Description	"Host a database that aggregates the results of all your users' testing"
 			Spec		Network
-			Server		0.0009
+			Server		0.0006
 			Optional	True
 			DevTime		4
 			CodeArt		1

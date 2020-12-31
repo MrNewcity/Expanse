@@ -32,7 +32,7 @@ SoftwareType
 					Description "Freely criticize your coworkers' work. It's like a dream come true!"
 					DevTime		3
 					Level		1
-					CodeArt		1
+					CodeArt		0.9
 					Submarkets	[ 1; 1; 4 ]
 					}
 					{

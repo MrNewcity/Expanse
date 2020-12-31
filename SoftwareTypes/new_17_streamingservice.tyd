@@ -106,7 +106,7 @@ SoftwareType
 			Name		"Interface"#7
 			Spec		2D
 			DevTime		5
-			CodeArt		0.5
+			CodeArt		0.75
 			Submarkets	[ 1; 1; 1 ]
 			Dependencies	"2D Editor"
 			Features
@@ -161,7 +161,7 @@ SoftwareType
 			{
 			Name		"Network"#11
 			Spec		Network
-			Server		0.0025
+			Server		0.0029
 			DevTime		3
 			CodeArt		1
 			Submarkets	[ 1; 1; 1 ]
@@ -170,6 +170,7 @@ SoftwareType
 					{
 					Name		"Continuity"#12
 					Description	"Users keep their place when they close the app or switch devices"
+					Server		0.0001
 					DevTime		4
 					Level		2
 					CodeArt		1
@@ -230,7 +231,7 @@ SoftwareType
 					Server		0.0001
 					DevTime		8
 					Level		3
-					CodeArt		0.9
+					CodeArt		0.8
 					Submarkets	0
 					Script_AfterSales
 	"var rando = (RandomRange(0.6, 0.9));//Range of sales for digital and physical sales is 60%-90% of normal
@@ -278,7 +279,7 @@ SoftwareType
 					SoftwareCategories	[ Audio ]
 					DevTime		8
 					Level		3
-					CodeArt		1
+					CodeArt		0.8
 					Submarkets	0
 					Script_AfterSales
 "DigitalSales = DigitalSales * 1.25; PhysicalSales = PhysicalSales * 1.05;//increase digital sales by 25%, increase physical sales by 5%

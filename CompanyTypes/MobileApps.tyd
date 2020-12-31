@@ -3,7 +3,7 @@ CompanyType
 	Specialization		"Mobile Apps"
 	PerYear				0.2
 	Min					2
-	Max					4
+	Max					3
 	Types
 		[
 			{

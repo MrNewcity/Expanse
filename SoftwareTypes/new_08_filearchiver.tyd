@@ -4,7 +4,7 @@ SoftwareType
 	Name			"File Archiver"
 	Category		File Management
 	Description		"A file archiver is a utility used to combine files together into an archive file"
-	Unlock			1995
+	Unlock			1980
 	Random			0.1
 	Popularity		0.6
 	Retention		36
@@ -132,6 +132,7 @@ SoftwareType
 			{
 			Name		Network
 			Spec		Network
+			Unlock		1985
 			Optional	True
 			DevTime		4
 			CodeArt		1

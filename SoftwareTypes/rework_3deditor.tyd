@@ -171,7 +171,7 @@ SoftwareType
 			Spec			Video
 			Optional		True
 			DevTime			6
-			CodeArt			1
+			CodeArt			0.9
 			Dependencies	"Video Editor"
 			Submarkets		[ 0; 1; 1 ]
 			Features

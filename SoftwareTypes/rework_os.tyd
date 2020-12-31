@@ -27,7 +27,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			TimeScale	0.8
 			Iterative	1
 			Submarkets	[ 4; 1; 0]
-			IdealPrice	300
+			IdealPrice	320
 			NameGenerator	namer_osconsole
 			Hardware	True
 			Manufacturing
@@ -309,7 +309,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			{
 			Name		Server
 			Description	"For the rack"
-			Popularity	0.01
+			Popularity	0.02
 			Retention	72
 			TimeScale	1
 			Iterative	1

@@ -6,7 +6,7 @@ SoftwareType
 	Unlock			1980
 	Description		"Without this software, robots are nothing. Without robots, this software is nothing."
 	Random			0.3
-	Popularity		0.02
+	Popularity		0.01
 	Retention		36
 	IdealPrice		90
 	OptimalDevTime	35

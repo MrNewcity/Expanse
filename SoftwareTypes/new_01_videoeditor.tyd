@@ -3,7 +3,7 @@ SoftwareType
 	{
 	Name			"Video Editor"
 	Category		Video
-	Unlock			1990
+	Unlock			1985
 	Description		"A video editor is used for post-production of digital video"
 	Random			0.1
 	Popularity		0.7
@@ -63,7 +63,7 @@ Features
 					Description	"Explosions! Blur! Rain! Warp! Smoke!"
 					DevTime		4
 					Level		1
-					CodeArt		0.6
+					CodeArt		0
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{

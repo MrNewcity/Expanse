@@ -21,4 +21,5 @@ For the full license, see LICENSE or http://www.gnu.org/licenses/gpl-3.0.html
 
 # Contact
 Discord: mrnewcity#6216 - I'm on the Software Inc. discord
+
 Steam Page: https://steamcommunity.com/sharedfiles/filedetails/?id=2186957033

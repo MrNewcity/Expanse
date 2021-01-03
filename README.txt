@@ -1,6 +1,12 @@
 INSTALL
 ----------
-Move the Expanse Software Suite folder to your Mods folder in your Software Inc directory.
+This mod is for Alpha 11.7+
+Move the Expanse Software Suite folder that is inside the zip to the Mods folder in your Software Inc directory.
+
+CONTRIBUTING TRANSLATIONS
+----------
+Please visit the GitHub page for info on contributing translations:
+https://github.com/MrNewcity/Expanse-Software-Suite
 
 LICENSE
 ----------
@@ -19,6 +25,8 @@ GNU General Public License for more details.
 
 See <http://www.gnu.org/licenses/gpl-3.0.html>
 
-CONTACT:
+
+CONTACT
+----------
 Discord: mrnewcity#6216 - I'm on the Software Inc. discord
 Steam Page: https://steamcommunity.com/sharedfiles/filedetails/?id=2186957033

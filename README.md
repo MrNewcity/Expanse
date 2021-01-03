@@ -13,7 +13,9 @@ This mod is for Alpha 11.7+
 # Contributing Translations
 If you'd like to add a translation for your language, please add a new folder in the "Localization" folder with the name of the language you would like to add. Example, German. Then, simply copy the "Software.tyd" file from the English folder and paste it in your new language folder, and change the English words in quotation marks to your own language.
 
-To use the translation, you have to first download your respective language's translation from localizor via the in-game console command LOAD_FROM_LOCALIZOR, then restart the game to load the language translation. Type HELP in the game console for more details. After that, simply change to your language in the top left of the game screen and the mod's language will change to match the in-game language.
+To use the translation, you have to first download your respective language's translation from localizor via the in-game console command LOAD_FROM_LOCALIZOR, then restart the game to load the language translation. Type HELP in the game console for more details. After that, simply change to your language in the top left of the game screen and the mod's language will change to match the in-game language. To see languages currently on localizor, go here: https://www.localizor.com/software-inc
+
+Finally, to add it to the mod, please make a pull request. I will be sure to give credit to anyone who does a translation!
 
 # License
 Copyright © 2020 Michael Villeneuve

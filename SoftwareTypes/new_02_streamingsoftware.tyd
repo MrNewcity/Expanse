@@ -1,4 +1,3 @@
-#Created By MrNewcity
 SoftwareType
 	{
 	Name			"Livestreaming Software"
@@ -120,21 +119,15 @@ SoftwareType
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{
-					Name		"Donation revenue split"
-					Description	"Take a cut of donations made through your streaming software. This can net some extra money, but may also lead to decreased sales due to frustrated streamers"
-					DevTime		9
+					Name		"Donation service"
+					Description	"Host a donation service for streamers and take a cut of donations made to streamers through this service"
+					Server		0.0008
+					DevTime		10
 					Level		3
 					CodeArt		1
 					Submarkets	0
-					
-					Script_AfterSales
-	"var rando = (RandomRange(0.7, 0.99));//Range of sales for digital and physical sales is 70%-99% of normal
-	var dsr = (rando * DigitalSales);//Digital sales
-	var psr = (rando * PhysicalSales);//Physical sales
-		DigitalSales = dsr;PhysicalSales = psr;"
-	
 					Script_EndOfDay
-	"var cut = (Product.Userbase * 0.35);//Calculate $0.35 per user, per day
+	"var cut = (Product.Userbase * 0.25);//Calculate $0.25 per user, per day
 	Product.DevCompany.MakeTransaction(cut, Sales, \"Stream donation revenue\");//Add money
 	Product.AddToCashflow(0, 0, 0, cut, 0, Time);//Product income chart"
 					}

@@ -1,4 +1,3 @@
-#Created By MrNewcity
 SoftwareType
 	{
 	Name			"Health Application"
@@ -119,7 +118,7 @@ SoftwareType
 					Name		"Medical alert system"
 					Description "Contact emergency services if a fall, crash or a dangerous health condition is detected"
 					DevTime		4
-					Server		0.0001
+					Server		0.0002
 					Level		1
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
@@ -136,7 +135,7 @@ SoftwareType
 					Name		"Social features"
 					Description "Everyone knows that personal wellness is always more fun when it's competitive"
 					DevTime		6
-					Server		0.0015
+					Server		0.002
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 0; 2 ]
@@ -144,7 +143,7 @@ SoftwareType
 					{
 					Name		"Datamining"
 					Description	"Sell users' health data to Big Pharma to net {Currency:0.25} for each active user, but beware of getting caught by Big Watchdog"
-					Server		0.0005
+					Server		0.0006
 					DevTime		4
 					Level		3
 					CodeArt		1

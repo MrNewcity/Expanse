@@ -1,4 +1,3 @@
-#Created By MrNewcity
 SoftwareType
 	{
 	Name			"Mapping Application"
@@ -110,7 +109,7 @@ SoftwareType
 			{
 			Name		"Network"
 			Spec		Network
-			Server		0.0002
+			Server		0.002
 			DevTime		2
 			CodeArt		1
 			Submarkets	[ 1; 1; 1 ]
@@ -119,7 +118,7 @@ SoftwareType
 					{
 					Name		"Real-time data transmission"
 					Unlock		2000
-					Server		0.0004
+					Server		0.0006
 					Description	"Have users' devices automatically transmit data about their speed and length of trip to change traffic information and optimal routing in real time"
 					DevTime		5
 					Level		2
@@ -137,7 +136,7 @@ SoftwareType
 					}
 					{
 					Name		"Information crowdsourcing"
-					Server		0.0002
+					Server		0.0003
 					Description	"Let users submit traffic and business information while they are driving. Surely that won't be a problem"
 					DevTime		3
 					Level		2
@@ -168,6 +167,7 @@ SoftwareType
 			{
 			Name		"3D map view"
 			Description	"It's like a virtual vacation, from the comfort of your own phone!"
+			Server		0.0004
 			Spec		3D
 			Optional	True
 			DevTime		4

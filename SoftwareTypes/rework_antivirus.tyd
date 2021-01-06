@@ -153,7 +153,7 @@ SoftwareType
 					{
 					Name		"Virus database"
 					Description "Automagically keep your users' virus definitions up to date"
-					Server		0.0001
+					Server		0.0003
 					DevTime		5
 					Level		2
 					CodeArt		1
@@ -162,7 +162,7 @@ SoftwareType
 					{
 					Name		"Virtual private network"
 					Description "There's many uses for a VPN, but let's be honest, it's mostly used to watch movies that are not available in your region"
-					Server		0.0005
+					Server		0.0015
 					DevTime		6
 					Level		2
 					CodeArt		1
@@ -171,7 +171,7 @@ SoftwareType
 					{
 					Name		"Datamining"
 					Description	"Sell your users' data to make an extra {Currency:0.25} per active user, at the risk of getting caught"
-					Server		0.0005
+					Server		0.0006
 					DevTime		4
 					Level		3
 					CodeArt		1

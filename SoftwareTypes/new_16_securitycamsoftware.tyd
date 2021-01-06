@@ -1,4 +1,3 @@
-#Created By MrNewcity
 SoftwareType
 	{
 	Name			"Security Camera Software"
@@ -164,6 +163,7 @@ SoftwareType
 					}
 					{
 					Name		"Cloud backup"
+					Server		0.0015
 					DevTime		5
 					Level		2
 					CodeArt		1

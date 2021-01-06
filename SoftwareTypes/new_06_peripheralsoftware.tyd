@@ -1,4 +1,3 @@
-#Created By MrNewcity
 SoftwareType
 	{
 	Name			"Peripheral System"
@@ -350,6 +349,7 @@ SoftwareType
 					{
 					Name		"Usage data sharing"#11
 					Description	"Allow users to opt-in to automatically share their usage data, which will allow you to fix some bugs before they are reported"
+					Server		0.0003
 					DevTime		5
 					Level		3
 					CodeArt		1
@@ -360,7 +360,7 @@ SoftwareType
 					{
 					Name		"Profile sharing"#12
 					Description "Allow users to easily share their configurations and profiles"
-					Server		0.0001
+					Server		0.0002
 					DevTime		4
 					Level		1
 					CodeArt		1
@@ -376,7 +376,7 @@ SoftwareType
 					{
 					Name		"Cloud backup"#17
 					Description	"Are computer peripheral settings really important enough to backup to the cloud? Yes!"
-					Server		0.0005
+					Server		0.0008
 					DevTime		5
 					Level		2
 					CodeArt		1

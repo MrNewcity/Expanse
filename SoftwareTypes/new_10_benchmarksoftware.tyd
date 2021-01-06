@@ -1,4 +1,3 @@
-#Created By MrNewcity
 SoftwareType
 	{
 	Name			"Benchmark Software"
@@ -137,7 +136,7 @@ SoftwareType
 			Name		"Benchmark database"
 			Description	"Host a database that aggregates the results of all your users' testing"
 			Spec		Network
-			Server		0.0006
+			Server		0.0005
 			Optional	True
 			DevTime		4
 			CodeArt		1

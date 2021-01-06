@@ -210,7 +210,7 @@ Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart"
 					{
 					Name		"Cloud sync"
 					Description	"Cloud sync is the new wave, get your sound waves on it too!"
-					Server		0.0002
+					Server		0.001
 					DevTime		5
 					Level		2
 					CodeArt		1

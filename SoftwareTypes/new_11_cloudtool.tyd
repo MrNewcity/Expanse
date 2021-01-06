@@ -1,4 +1,3 @@
-#Created By MrNewcity
 SoftwareType
 	{
 	Name			"Cloud Storage Tool"#balanced by being kinda expensive for the devtime, but it uses a lot of server
@@ -124,7 +123,7 @@ SoftwareType
 					}
 					{
 					Name		"Public file sharing"
-					Server		0.0006
+					Server		0.0007
 					DevTime		4
 					Level		1
 					CodeArt		1
@@ -132,7 +131,7 @@ SoftwareType
 					}
 					{
 					Name		"High-speed transfer"
-					Server		0.0006
+					Server		0.0005
 					DevTime		4
 					Level		2
 					CodeArt		1
@@ -141,7 +140,7 @@ SoftwareType
 					{
 					Name		"Media streaming"
 					Description	"Stream media files straight from the cloud drive"
-					Server		0.0002
+					Server		0.0003
 					DevTime		4
 					Level		1
 					CodeArt		1
@@ -150,7 +149,7 @@ SoftwareType
 					{
 					Name		"Automatic backup"
 					Description	"Backup users' devices to the cloud"
-					Server		0.0021
+					Server		0.001
 					DevTime		4
 					Level		2
 					CodeArt		1
@@ -167,7 +166,7 @@ SoftwareType
 					}
 					{
 					Name		"Bulk transfer"
-					Server		0.0005
+					Server		0.0006
 					DevTime		5
 					Level		2
 					CodeArt		1

@@ -1,4 +1,3 @@
-#Reworked by MrNewcity
 SoftwareType
 	{
 	Name			"Operating System"
@@ -112,7 +111,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Retention	36
 			TimeScale	0.7
 			Iterative	1
-			IdealPrice	400
+			IdealPrice	420
 			Unlock		1995
 			Submarkets	[ 4; 1; 2]
 			NameGenerator	namer_osphone
@@ -203,7 +202,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Retention	36
 			TimeScale	0.65
 			Iterative	1
-			IdealPrice	360
+			IdealPrice	380
 			Unlock		2005
 			Submarkets	[ 4; 1; 1]
 			NameGenerator	namer_oswatch
@@ -215,8 +214,8 @@ Most software needs an Operating System to run on. When people stop buying a lin
 						{
 						Name 				"Touch sensor"
 						BuiltInThumbnail	Touch
-						Price				30
-						Time				6
+						Price				25
+						Time				4
 						DependsOn			"Touch"
 						}
 						{
@@ -254,7 +253,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 						{
 						Name 				Plastic
 						BuiltInThumbnail	Plastic
-						Price				3
+						Price				2
 						Time				2
 						}
 						{
@@ -593,7 +592,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					}
 					{
 					Name		"App store"#30
-					Server		0.0002
+					Server		0.0021
 					DevTime		6
 					Level		2
 					CodeArt		1
@@ -612,7 +611,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					}
 					{
 					Name		"Cloud backup"#31
-					Server		0.001
+					Server		0.002
 					DevTime		5
 					Level		2
 					CodeArt		1
@@ -621,7 +620,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					}
 					{
 					Name		"Cloud server backup"#31
-					Server		0.0018
+					Server		0.0027
 					DevTime		5
 					Level		2
 					CodeArt		1

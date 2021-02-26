@@ -11,6 +11,8 @@ This mod is for Alpha 11.7+
 
 **DRM-Free:** Simply download the latest release from this GitHub page. To install, place the folder that is located inside the zip into the Mods folder of your Software Inc directory.
 
+_I recommend using this mod without any other software mods for the best experience._
+
 # Contributing Translations
 If you'd like to add a translation for your language, please create a branch on GitHub, and add a new folder in the "Localization" folder with the name of the language you would like to add. Example, German. Then, simply copy the "Software.tyd" file from the English folder and paste it in your new language folder, and change the English words in quotation marks to your own language.
 

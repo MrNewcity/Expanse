@@ -1,7 +1,8 @@
-# Expanse Software Suite
-Expanse Software Suite is a mod for Software Inc. that adds new software types, new company types and new personalities.
+![Expanse Software Suite](https://i.imgur.com/7fOEpnI.jpg)
 
-The idea behind Expanse Software Suite is to enhance the experience playing Software Inc. by adding new content that is faithful to the original style of the game, as well as technically accurate and balanced.
+Expanse is a mod for Software Inc. that adds new software types, new company types and new personalities.
+
+The idea behind Expanse is to enhance the experience playing Software Inc. by adding new content that is faithful to the original style of the game, as well as technically accurate and balanced.
 
 # Installation
 This mod is for Alpha 11.7+
@@ -18,7 +19,7 @@ To use the translation, you have to first download your respective language's tr
 Finally, to add it to the mod, please make a pull request on GitHub. I will be sure to give credit to anyone who does a translation! Please contact me for more info, or if you need help with anything.
 
 # License
-Copyright © 2020 Michael Villeneuve
+Copyright © 2021 Michael Villeneuve
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 

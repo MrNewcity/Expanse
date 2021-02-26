@@ -1,13 +1,13 @@
 CompanyType
 	{
-	Specialization		"IDE"
+	Specialization		"Artificial Intelligence"
 	PerYear				0.2
 	Min					2
 	Max					2
 	Types
 		[
 			{
-			Software	"Integrated Development Environment"
+			Software	"Artificial Intelligence Software"
 			Chance		1
 			}
 		]

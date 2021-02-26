@@ -228,7 +228,7 @@ SoftwareType
 					Name		"Advertisements"#17
 					Description	"Integrate ads before videos to earn extra money. This may drive some users away from the platform"
 					SoftwareCategories	[ Video ]
-					Server		0.0001
+					Server		0.0002
 					DevTime		8
 					Level		3
 					CodeArt		0.8

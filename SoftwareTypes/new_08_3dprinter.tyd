@@ -7,7 +7,7 @@ SoftwareType
 	Random			0.3
 	Popularity		0.35
 	Retention		48
-	IdealPrice		300
+	IdealPrice		340
 	OptimalDevTime	45
 	SubmarketNames	[ Beginner; Enthusiast; Professional ] #beginner=simplicity, enthusiast=features, professional=complexity,workflow
 	Iterative		1
@@ -23,8 +23,8 @@ SoftwareType
 				Name 				"Printing frame"
 				Thumbnail			"Icons/3d-printing_128.png"
 				BuiltInThumbnail	Plastic
-				Price				4
-				Time				2
+				Price				10
+				Time				4
 				}
 				{
 				Name 				"Case"
@@ -80,7 +80,7 @@ SoftwareType
 				{
 				Name 				Motors
 				BuiltInThumbnail	Vibration
-				Price				15
+				Price				20
 				Time				8
 				}
 				{

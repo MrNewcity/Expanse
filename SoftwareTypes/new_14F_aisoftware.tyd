@@ -1,0 +1,210 @@
+SoftwareType
+	{				
+	Name			"Artificial Intelligence Software"
+	Category		"Artificial Intelligence"
+	Unlock			2010
+	Description		"Developing Artificial Intelligence allows you to contribute to computers becoming the dominant species on Earth"
+	Random			0.35
+	Popularity		0.05
+	Retention		36
+	IdealPrice		200
+	OptimalDevTime	55
+	SubmarketNames	[ Intelligence; Utility; Security ]
+	Iterative		1
+	NameGenerator	namer_ai
+	OSSupport		[ Computer; Server ]
+	InHouse			False
+	Features
+		[
+			{
+			Name			"System"
+			Spec			System
+			Dependencies	"Development Environment"
+			DevTime			9
+			CodeArt			1
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Chatbot toolkit"
+					Description	"None of your real friends want to talk right now? Make a custom chat bot to talk to!"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Machine learning algorithms"
+					Description	"Enable users to make their computers learn new things on their own"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Natural language processing"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Automatic data management"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Data encryption"
+					Description	"Don't entirely trust AI? Encrypt your data before the AI processes it!"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Logging"
+					Description	"Keep track of what the AI software is doing"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"AI process explainability"
+					Description	"See information on what the AI is actually doing inbetween the input and output"
+					DevTime		8
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Neural networking"
+					Description	"Computers with brains are better than computers without them"
+					DevTime		8
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name			"Interface"
+			Spec			2D
+			DevTime			5
+			CodeArt			0.9
+			Dependencies	"2D Editor"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Data visualization"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Visual model building"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Image identification"
+					Description	"Identify things like text, faces, objects and more in images"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Spec		Network
+			Optional	True
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Cybersecurity threat detection"
+					Description	"Enable AI to learn about cybersecurity threats, and then detect them. Because surely letting an AI system into the heart of your network is a good idea!"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Deployment tools"
+					Description	"Give users tools to deploy their AI systems to their databases and networks"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Cloud platform"
+					Server		0.0022
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Auto-update"
+					Description	"Ensure AI systems are kept up to date"
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			"Video"
+			Spec			Video
+			Optional		True
+			Description		"Will an AI system be the next Martin Scorsese?"
+			DevTime			2
+			CodeArt			1
+			Dependencies	"Video Editor"
+			Submarkets		[ 1; 2; 0 ]
+			Features
+				[
+					{
+					Name		"Video identification"
+					Description	"Identify things like people, text, locations and more in videos"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 0 ]
+					}
+				]
+			}
+			{
+			Name			"Robotics integration"
+			Spec			Hardware
+			Optional		True
+			Description		"Enable users to integrate AI into their robotic systems. Possibly not a good idea now that we think about it..."
+			DevTime			5
+			CodeArt			1
+			Dependencies	"Robot Software"
+			Submarkets		[ 0; 1; 0 ]
+			Features		[ ]
+			}
+		]
+	}
+#Expanse Software Suite	

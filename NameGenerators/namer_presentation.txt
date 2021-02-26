@@ -9,7 +9,7 @@ Vis
 Max
 Impressive
 Sway
--base2(stop,stop,stop,ext)
+-base2(stop,stop,stop,stop,ext)
 Point
 Conference
 Meet

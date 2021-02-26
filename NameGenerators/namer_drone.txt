@@ -1,0 +1,32 @@
+-start(base)
+-base(base2,ext)
+Maverick
+Ninja
+Speedy
+Stealth
+Roto
+Blade
+Cinema
+Studio
+Hexa
+Quad
+Gimbal
+-base2(stop,stop,ext)
+ Mouse
+ Air
+ Parakeet
+ Eagle
+ Falcon
+Image
+bot
+Copter
+Drone
+Sparrow
+UAV
+-ext(stop)
+ Pro
+ Extreme
+ XL
+ Mini
+ Nano
+ Fold

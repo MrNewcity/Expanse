@@ -8,7 +8,11 @@ CompanyType
 	Types
 		[
 			{
-			Software	"Peripheral System"
+			Software	"Computer Peripheral"
+			Chance		0.8
+			}
+			{
+			Software	"Audio Accessory"
 			Chance		1
 			}
 		]

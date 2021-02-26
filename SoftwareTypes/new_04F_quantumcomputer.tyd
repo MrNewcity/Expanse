@@ -1,0 +1,340 @@
+SoftwareType
+	{
+	Name			"Quantum Computer"
+	Category		"Quantum Computing"
+	Description		"Quantum computers are sort of like normal computers, but they use quantum mechanics instead of boring old classical mechanics"
+	Unlock			2025
+	Popularity		0.02
+	Retention		60
+	Iterative		1
+	IdealPrice		1050
+	Random			0
+	OptimalDevTime	75
+	OSSupport		[ Computer; Server ]
+	SubmarketNames	[ Efficiency; Power; Accessibility ]
+	NameGenerator	namer_quantumcomputer
+	InHouse			False
+	Hardware		True
+	Manufacturing
+		{
+		Components
+			[
+				{
+				Name 				"Laser cooler"
+				BuiltInThumbnail	Thermostat
+				Price				50
+				Time				8
+				DependsOn			"Doppler cooling"
+				}
+				{
+				Name 				"Vacuum pump"
+				BuiltInThumbnail	PlasticCase
+				Price				50
+				Time				8
+				DependsOn			"Low pressure operation"
+				}
+				{
+				Name 				Board
+				BuiltInThumbnail	PCB
+				Price				5
+				Time				8
+				}
+				{
+				Name 				Screen
+				BuiltInThumbnail	LCD
+				Price				60
+				Time				8
+				}
+				{
+				Name 				"Qubit register"
+				BuiltInThumbnail	Gyroscope
+				Price				200
+				Time				16
+				}
+				{
+				Name 				"Advanced gates"
+				Thumbnail			"Icons/transistor_128.png"
+				BuiltInThumbnail	Microchip
+				Price				40
+				Time				8
+				DependsOn			"Midcircuit measurement"
+				}
+				{
+				Name 				"Quantum processor"
+				BuiltInThumbnail	Microchip
+				Price				100
+				Time				24
+				}
+				{
+				Name 				"Signal converter"
+				BuiltInThumbnail	Speaker
+				Price				30
+				Time				16
+				}
+				{
+				Name 				Controller
+				BuiltInThumbnail	Microchip
+				Price				100
+				Time				16
+				}
+				{
+				Name 				"Control computer"
+				BuiltInThumbnail	Harddrive
+				Price				0
+				Time				8
+				}
+				{
+				Name 				"Quantum computer"
+				Thumbnail			"Icons/cpu_128.png"
+				BuiltInThumbnail	Gyroscope
+				Price				0
+				Time				16
+				}
+			]
+		Processes
+			[
+				{
+				Inputs	[ "Qubit register"; "Advanced gates" ]
+				Output	"Quantum processor"
+				}
+				{
+				Inputs	[ "Quantum processor"; "Signal converter"; "Vacuum pump"; "Laser cooler" ]
+				Output	"Quantum computer"
+				}
+				{
+				Inputs	[ "Board"; "Screen"; "Controller" ]
+				Output	"Control computer"
+				}
+				{
+				Inputs	[ "Quantum computer"; "Control computer" ]
+				Output	Final
+				}
+			]
+		FinalTime	4
+		}
+	Features
+		[
+			{
+			Name		"System"
+			Spec		System
+			DevTime		10
+			CodeArt		1
+			Submarkets	[ 1; 2; 1 ]
+			Features
+				[
+					{
+					Name		"Physics simulator"
+					Description	"Simulating quantum physics on a quantum computer... quantum-ception?"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Chemistry simulator"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Biology simulator"
+					Description	"Maybe this will help us find the meaning of life?"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Integer factorization"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Quantum machine learning"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Programming kit"
+					Description	"Make it easier for users to program their own quantum functions and algorithms"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Optimization algorithms"
+					Description	"Use high-level models to solve optimization problems in logistics, resource management and beyond. Doesn't that sound like fun?"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 4; 1; 2 ]
+					}
+					{
+					Name		"Financial algorithms"
+					Description	"Risk analysis, credit scoring, portfolio optimization, and more!"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 0 ]
+					}
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Decoherence mitigation"
+					Description	"Quantum decoherence, also known as \"noise\", is a big problem for quantum computers. Help reduce the impact of noise with this feature. This will make users less likely to refund the product"
+					DevTime		10
+					Level		3
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					Script_AfterSales
+"var exchange = Refunds * 0.25;Refunds = Refunds - exchange;DigitalSales = DigitalSales + exchange;"#Add 25% of refunds to digital sales
+					}
+				]
+			}
+			{
+			Name		"Interface"
+			Spec		2D
+			DevTime		4
+			CodeArt		0.9
+			Submarkets	[ 0; 0; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Search tool"
+					Description	"Searching through loads of data is a lot faster with the power of quantum computing"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Quantum image encoding"
+					Description	"Turns out processing images with quantum computation is a lot faster, and a lot more efficient"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Model visualization"
+					Description	"People might get tired of looking at code, algorithms and data. Show them nice charts and diagrams instead"
+					DevTime		4
+					Level		1
+					CodeArt		0.8
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Visual circuit composer"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 2 ]
+					}
+				]
+			}
+			{
+			Name		"3D rendering"
+			Spec		3D
+			Description	"Give your quantum system the ability to render and interact with 3D objects"
+			Optional	True
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features	[ ]
+			}
+			{
+			Name		"Video support"
+			Spec		Video
+			Description	"Give your quantum system the ability to interact with video"
+			Optional	True
+			DevTime		5
+			CodeArt		1
+			Submarkets	[ 2; 1; 3 ]
+			Features
+				[
+					{
+					Name		"Quantum video encoding"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Optional	True
+			Spec		Network
+			DevTime		5
+			CodeArt		1
+			Submarkets	[ 1; 1; 2 ]
+			Features
+				[
+					{
+					Name		"Auto-update"
+					Server		0.0002
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Cloud backup"
+					Server		0.0021
+					Description	"Backup users' quantum data to the quantum cloud. Just kidding, it's just a regular cloud"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 2 ]
+					}
+				]
+			}
+			{
+			Name		"Hardware"
+			Spec		Hardware
+			DevTime		8
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Low pressure operation"
+					Description	"Decreasing the atmospheric pressure in the quantum computer can make it much more reliable"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 2 ]
+					}
+					{
+					Name		"Doppler cooling"
+					Description	"Cooling the qubits makes them better qubits, basically"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Midcircuit measurement"
+					Description	"Measure quantum states midstream and change calculations on the fly"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+		]
+	}
+#Expanse Software Suite

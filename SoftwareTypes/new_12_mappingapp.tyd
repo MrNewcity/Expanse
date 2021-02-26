@@ -12,7 +12,7 @@ SoftwareType
 	SubmarketNames	[ "Navigation"; "Discovery"; "Live data" ]
 	Iterative		1
 	NameGenerator	namer_mapsapp
-	OSSupport		[ Phone; Car ]
+	OSSupport		[ Phone; Car; Watch ]
 	InHouse			False
 	Features
 		[
@@ -63,6 +63,13 @@ SoftwareType
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Distance tracker"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
 					}
 					{
 					Name		"Promote businesses"

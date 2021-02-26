@@ -1,5 +1,5 @@
 -start(pre,base,base,base,base)
--pre(base,base,ext)
+-pre(base)
 The 
 -base(base2,stop)
 Couch

@@ -308,7 +308,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			{
 			Name		Server
 			Description	"For the rack"
-			Popularity	0.02
+			Popularity	0.01
 			Retention	72
 			TimeScale	1
 			Iterative	1
@@ -404,15 +404,6 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					SoftwareCategories	[ Console ]
 					Submarkets	[ 1; 0; 0 ]
 					}
-					{
-					Name		"Advanced hardware support"#13
-					Description	"Enable users to use multiple processors and huge amounts of RAM, which is quite useful for servers"
-					DevTime		6
-					Level		2
-					CodeArt		1
-					SoftwareCategories [ Server ]
-					Submarkets	[ 0; 0; 1 ]
-					}
 				]
 			}
 			{
@@ -499,7 +490,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Name		"Video"#22 
 			Spec		Video
 			Optional	True
-			Unlock		1985
+			Unlock		1980
 			DevTime		6
 			CodeArt		1
 			Submarkets	[ 1; 0; 1 ]
@@ -507,6 +498,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 				[
 					{
 					Name		"HDR video support"#23
+					Unlock		1990
 					Description	"Sorta like standard video, but the dynamic range is higher. What does that mean? Who knows. But look, pretty colours!"
 					DevTime		4
 					Level		2
@@ -654,7 +646,6 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			DevTime		2
 			CodeArt		1
 			Submarkets	[ 1; 1; 1 ]
-			SoftwareCategories	[ Console; Phone; Watch; Computer; Car ]
 			Features
 				[
 					{
@@ -720,6 +711,15 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					Submarkets			0
 					SoftwareCategories	[ Phone; Console; Watch ]
 					Script_OnRelease	"Product.HardwarePrice = Product.HardwarePrice / MarketSimulation.HardwareCopyPriceFactor"
+					}
+					{
+					Name		"Advanced hardware support"#13
+					Description	"Enable users to use multiple processors and huge amounts of RAM, which is quite useful for servers"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					SoftwareCategories [ Server ]
+					Submarkets	[ 0; 0; 1 ]
 					}
 				]
 			}

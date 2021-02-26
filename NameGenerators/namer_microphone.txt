@@ -1,0 +1,26 @@
+-start(base)
+-base(base2)
+Crispy
+Master
+Crystal
+Clear
+Subtle
+Stage
+Talk
+Vocal
+Cracked
+Pop
+-base2(stop,stop,stop,stop,stop,ext)
+ Podcaster
+Cast
+Mic
+ Microphone
+Recorder
+Condenser
+ Reference
+Vox
+Performer
+Singer
+-ext(stop)
+ Pro
+ Studio

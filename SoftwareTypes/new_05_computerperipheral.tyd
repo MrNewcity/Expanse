@@ -1,10 +1,10 @@
 SoftwareType
 	{
-	Name			"Peripheral System"
+	Name			"Computer Peripheral"
 	Category		Peripherals
-	Description		"A peripheral system combines hardware peripherals with software to configure and control them"
+	Description		"A computer peripheral combines hardware with software to configure it"
 	Unlock			1990
-	Random			0.4
+	Random			0.3
 	OptimalDevTime	35
 	SubmarketNames	[ Simplicity; Personalization; Configurability ] #personalization=visual/animation wise, configurability=settings like dpi, bindings, weight etc
 	InHouse			False
@@ -29,8 +29,8 @@ SoftwareType
 						{
 						Name				Plastic
 						BuiltInThumbnail	Plastic
-						Price				3
-						Time				2
+						Price				5
+						Time				4
 						}
 						{
 						Name				Switches
@@ -40,8 +40,8 @@ SoftwareType
 						Time				4
 						}
 						{
-						Name				"Circuit board"
-						BuiltInThumbnail	PCB
+						Name				"Optical sensor"
+						BuiltInThumbnail	Camera
 						Price				10
 						Time				8
 						}
@@ -53,7 +53,19 @@ SoftwareType
 						DependsOn			"Wireless technology"
 						}
 						{
-						Name 				"Mouse assembly"
+						Name				"Microcontroller"
+						BuiltInThumbnail	Microchip
+						Price				15
+						Time				8
+						}
+						{
+						Name 				"Board assembly"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				"Mouse body"
 						Thumbnail			"Icons/computer-mouse_128.png"
 						BuiltInThumbnail	PCB
 						Price				10
@@ -62,7 +74,7 @@ SoftwareType
 						{
 						Name 				"LED lights"
 						BuiltInThumbnail	LCD
-						Price				10
+						Price				5
 						Time				4
 						DependsOn			"RGB lighting"
 						}
@@ -70,11 +82,15 @@ SoftwareType
 				Processes
 					[
 						{
-						Inputs	[ "Plastic"; "Switches"; "Circuit board"; "LED lights" ]
-						Output	"Mouse assembly"
+						Inputs	[ "Switches"; "Optical sensor"; "LED lights"; "Microcontroller" ]
+						Output	"Board assembly"
 						}
 						{
-						Inputs	[ "Mouse assembly"; "Wireless receiver" ]
+						Inputs	[ "Plastic" ]
+						Output	"Mouse body"
+						}
+						{
+						Inputs	[ "Board assembly"; "Mouse body"; "Wireless receiver" ]
 						Output	Final
 						}
 					]
@@ -88,7 +104,7 @@ SoftwareType
 			TimeScale	1
 			Iterative	1
 			Retention	36
-			IdealPrice	200
+			IdealPrice	190
 			Submarkets	[ 1; 1; 1 ]
 			Manufacturing
 				{
@@ -97,7 +113,7 @@ SoftwareType
 						{
 						Name				Plastic
 						BuiltInThumbnail	Plastic
-						Price				5
+						Price				10
 						Time				4
 						}
 						{
@@ -114,9 +130,15 @@ SoftwareType
 						Time				4
 						}
 						{
-						Name				"Circuit board"
-						BuiltInThumbnail	PCB
+						Name				"Microcontroller"
+						BuiltInThumbnail	Microchip
 						Price				15
+						Time				8
+						}
+						{
+						Name 				"Board assembly"
+						BuiltInThumbnail	PCB
+						Price				10
 						Time				8
 						}
 						{
@@ -127,7 +149,7 @@ SoftwareType
 						DependsOn			"Wireless technology"
 						}
 						{
-						Name 				"Keyboard assembly"
+						Name 				"Keyboard body"
 						Thumbnail			"Icons/keyboard_128.png"
 						BuiltInThumbnail	PCB
 						Price				15
@@ -136,81 +158,7 @@ SoftwareType
 						{
 						Name 				"LED lights"
 						BuiltInThumbnail	LCD
-						Price				30
-						Time				4
-						DependsOn			"RGB lighting"
-						}
-					]
-				Processes
-					[
-						{
-						Inputs	[ "Plastic"; "Key switches"; "Circuit board"; "LED lights"; "Key caps" ]
-						Output	"Keyboard assembly"
-						}
-						{
-						Inputs	[ "Keyboard assembly"; "Wireless receiver" ]
-						Output	Final
-						}
-					]
-				FinalTime	8
-				}
-			}
-			{
-			Name		Headset
-			Description	"These emit sound into your ears"
-			Popularity	0.6
-			TimeScale	1
-			Iterative	1
-			Retention	36
-			IdealPrice	140
-			Submarkets	[ 1; 1; 1 ]
-			Manufacturing
-				{
-				Components
-					[
-						{
-						Name				Plastic
-						BuiltInThumbnail	Plastic
-						Price				4
-						Time				2
-						}
-						{
-						Name				"Circuit board"
-						BuiltInThumbnail	PCB
-						Price				10
-						Time				8
-						}
-						{
-						Name				"Wireless receiver"
-						BuiltInThumbnail	USB
-						Price				15
-						Time				8
-						DependsOn			"Wireless technology"
-						}
-						{
-						Name				"Microphone"
-						BuiltInThumbnail	PlasticCase
-						Price				10
-						Time				4
-						DependsOn			"Audio input"
-						}
-						{
-						Name				"Speakers"
-						BuiltInThumbnail	Vibration
 						Price				25
-						Time				8
-						}
-						{
-						Name 				"Headset assembly"
-						Thumbnail			"Icons/headset_128.png"
-						BuiltInThumbnail	PCB
-						Price				10
-						Time				8
-						}
-						{
-						Name 				"LED lights"
-						BuiltInThumbnail	LCD
-						Price				10
 						Time				4
 						DependsOn			"RGB lighting"
 						}
@@ -218,11 +166,15 @@ SoftwareType
 				Processes
 					[
 						{
-						Inputs	[ "Plastic"; "Circuit board"; "LED lights"; "Speakers"; "Microphone" ]
-						Output	"Headset assembly"
+						Inputs	[ "Key switches"; "Microcontroller"; "LED lights" ]
+						Output	"Board assembly"
 						}
 						{
-						Inputs	[ "Headset assembly"; "Wireless receiver" ]
+						Inputs	[ "Plastic"; "Key caps" ]
+						Output	"Keyboard body"
+						}
+						{
+						Inputs	[ "Keyboard body"; "Board assembly"; "Wireless receiver" ]
 						Output	Final
 						}
 					]
@@ -306,34 +258,6 @@ SoftwareType
 					Level		2
 					CodeArt		0.5
 					Submarkets	[ 0; 1; 0 ]
-					}
-				]
-			}
-			{
-			Name		"Audio"#8
-			Spec		Audio
-			DevTime		2
-			CodeArt		1
-			SoftwareCategories	[ Headset ]
-			Submarkets	[ 1; 1; 1 ]
-			Features
-				[
-					{
-					Name		"Audio input"#9
-					Description "Not only can you listen to audio, you can now create it with your mouth!"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					SoftwareCategories	[ Headset ]
-					Submarkets	[ 2; 0; 1 ]
-					}
-					{
-					Name		"Integrated equalizer"#2
-					DevTime		4
-					Level		2
-					CodeArt		1
-					SoftwareCategories	[ Headset ]
-					Submarkets	[ 0; 0; 1 ]
 					}
 				]
 			}

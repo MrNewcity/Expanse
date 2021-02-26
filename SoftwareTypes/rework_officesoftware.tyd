@@ -261,11 +261,24 @@ if (supportWork != null)
 					CodeArt		1
 					Submarkets	[ 1; 1; 1 ]
 					}
+					{
+					Name		"Proprietary format"
+					Description	"Creating a proprietary format will increase sales, but it will also increase the amount of bugs that you'll have to deal with once the software is released"
+					DevTime		10
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+"Product.Bugs = Max(0, Product.Bugs + Product.Userbase * 0.01);//Add 1 bug to product for each 100th active user"
+					Script_AfterSales 
+"DigitalSales = DigitalSales * 1.10; PhysicalSales = PhysicalSales * 1.10;//increase digital sales by 10%, increase physical sales by 10%"
+					}
 				]
 			}
 			{
 			Name		Network
 			Spec		Network
+			Unlock		1985
 			Optional	True
 			Description ""
 			DevTime		2
@@ -333,6 +346,7 @@ if (supportWork != null)
 			Spec			Video
 			Optional		True
 			Dependencies	"Video Editor"
+			Unlock			1980
 			DevTime			2
 			SoftwareCategories	[ Presentation ]
 			CodeArt			0.9

@@ -1,0 +1,402 @@
+SoftwareType
+	{
+	Name			"Audio Accessory"
+	Category		Audio Products
+	Description		"Audio accessories enable users to listen to music, communicate, and more!"
+	Unlock			1985
+	Random			0.3
+	OptimalDevTime	35
+	SubmarketNames	[ Consumer; Audiophile; Professional ]
+	InHouse			False
+	OSSupport		[ Computer; Phone; Watch; Console ]
+	Hardware		True
+	Categories
+		[
+			{
+			Name		Headphones
+			Description	"These blast soundwaves into your ears"
+			NameGenerator	namer_headphones
+			Popularity	0.7
+			TimeScale	1
+			Iterative	1
+			IdealPrice	150
+			Retention	36
+			Submarkets	[ 1; 1; 1 ]
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name				Plastic
+						BuiltInThumbnail	Plastic
+						Price				6
+						Time				4
+						}
+						{
+						Name				"Microcontroller"
+						BuiltInThumbnail	Microchip
+						Price				15
+						Time				8
+						}
+						{
+						Name				"ANC processor"
+						BuiltInThumbnail	"Icons/transistor_128.png"
+						Price				30
+						Time				8
+						DependsOn			"Active noise cancellation"
+						}
+						{
+						Name				"Wireless receiver"
+						BuiltInThumbnail	USB
+						Price				15
+						Time				8
+						DependsOn			"Wireless technology"
+						}
+						{
+						Name				"Microphone"
+						BuiltInThumbnail	PlasticCase
+						Price				10
+						Time				4
+						DependsOn			"Audio input"
+						}
+						{
+						Name				"Drivers"
+						BuiltInThumbnail	Speaker
+						Price				30
+						Time				8
+						}
+						{
+						Name 				"Inner assembly"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				"Headphone body"
+						Thumbnail			"Icons/headset_128.png"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				"LED lights"
+						BuiltInThumbnail	LCD
+						Price				10
+						Time				4
+						DependsOn			"RGB lighting"
+						}
+						{
+						Name 				"Ventilation"
+						BuiltInThumbnail	Fingerprint
+						Price				35
+						Time				2
+						DependsOn			"Open-back earcups"
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Ventilation" ]
+						Output	"Drivers"
+						}
+						{
+						Inputs	[ "Microcontroller"; "ANC processor"; "Drivers" ]
+						Output	"Inner assembly"
+						}
+						{
+						Inputs	[ "Plastic"; "Microphone"; "LED lights" ]
+						Output	"Headphone body"
+						}
+						{
+						Inputs	[ "Headphone body"; "Inner assembly"; "Wireless receiver" ]
+						Output	Final
+						}
+					]
+				FinalTime	8
+				}
+			}
+			{
+			Name		Microphone
+			Description	"These blast soundwaves into a device"
+			NameGenerator	namer_microphone
+			Popularity	0.5
+			TimeScale	1
+			Iterative	1
+			IdealPrice	130
+			Retention	36
+			Submarkets	[ 2; 1; 3 ]
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name				Plastic
+						BuiltInThumbnail	Plastic
+						Price				5
+						Time				4
+						}
+						{
+						Name				"Audio chip"
+						BuiltInThumbnail	Microchip
+						Price				15
+						Time				8
+						}
+						{
+						Name				"Wireless receiver"
+						BuiltInThumbnail	USB
+						Price				15
+						Time				8
+						DependsOn			"Wireless technology"
+						}
+						{
+						Name				"Condenser"
+						BuiltInThumbnail	Speaker
+						Price				20
+						Time				8
+						}
+						{
+						Name 				"Inner assembly"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				"Microphone body"
+						Thumbnail			"Icons/microphone_128.png"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				"LED lights"
+						BuiltInThumbnail	LCD
+						Price				10
+						Time				4
+						DependsOn			"RGB lighting"
+						}
+						{
+						Name 				"Grille"
+						Thumbnail			"Icons/grille_128.png"
+						BuiltInThumbnail	Fingerprint
+						Price				5
+						Time				4
+						}
+						{
+						Name 				"Mute switch"
+						Thumbnail 			"Icons/push-button_128.png"
+						BuiltInThumbnail	LCD
+						Price				1
+						Time				4
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Audio chip"; "Condenser"; "Mute switch" ]
+						Output	"Inner assembly"
+						}
+						{
+						Inputs	[ "Plastic"; "Grille"; "LED lights" ]
+						Output	"Microphone body"
+						}
+						{
+						Inputs	[ "Microphone body"; "Inner assembly"; "Wireless receiver" ]
+						Output	Final
+						}
+					]
+				FinalTime	8
+				}
+			}
+		]
+	Features
+		[
+			{
+			Name		"System"#1
+			Spec		System
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Configuration saving"#2
+					Description	"Once you find those perfect sound settings, you don't want to lose them!"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Interface"#3
+			Spec		2D
+			DevTime		4
+			CodeArt		0.8
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Audio visualization"#4
+					Description	"Listening to sound waves is boring, you should be able to look at them too!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Audio"#5
+			Spec		Audio
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Audio input"#6
+					Description "Not only can you listen to audio, you can now create it with your mouth!"
+					DevTime				4
+					Level				1
+					CodeArt				1
+					Submarkets			[ 1; 0; 2 ]
+					SoftwareCategories	[ Headphones ]
+					}
+					{
+					Name		"Compressor"#7
+					Description	"Make quiet sounds louder and make loud sounds quieter"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 2 ]
+					}
+					{
+					Name		"Integrated equalizer"#8
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name				"Dialog enhancement"#9
+					Description			"Apply audio processing magic so that dialog is easier to hear"
+					DevTime				4
+					Level				2
+					CodeArt				1
+					Submarkets			[ 3; 0; 1 ]
+					SoftwareCategories	[ Headphones ]
+					}
+					{
+					Name				"Voice changer"#9
+					Description			"You don't have to swallow helium to pitch your voice up anymore!"
+					DevTime				4
+					Level				2
+					CodeArt				1
+					Submarkets			[ 3; 0; 1 ]
+					SoftwareCategories	[ Microphone ]
+					}
+					{
+					Name				"Virtual surround sound"#10
+					DevTime				6
+					Level				2
+					CodeArt				1
+					Submarkets			[ 1; 1; 0 ]
+					SoftwareCategories	[ Headphones ]
+					}
+					{
+					Name				"Sound pickup modes"#10
+					Description			"Choose whether the mic hears everything, or only hears some things"
+					DevTime				6
+					Level				2
+					CodeArt				1
+					Submarkets			[ 1; 1; 0 ]
+					SoftwareCategories	[ Microphone ]
+					}
+					{
+					Name				"Active noise cancellation"#11
+					Unlock				2005
+					DevTime				6
+					Level				2
+					CodeArt				1
+					Submarkets			[ 1; 0; 1 ]
+					SoftwareCategories	[ Headphones ]
+					}
+					{
+					Name				"Background noise cancellation"#11
+					Unlock				2005
+					DevTime				6
+					Level				2
+					CodeArt				1
+					Submarkets			[ 1; 0; 1 ]
+					SoftwareCategories	[ Microphone ]
+					}
+					{
+					Name				"Gain adjustment"#17
+					DevTime				3
+					Level				1
+					CodeArt				1
+					Submarkets			[ 0; 1; 0 ]
+					SoftwareCategories	[ Microphone ]
+					}
+				]
+			}
+			{
+			Name		"Network"#12
+			Spec		Network
+			Optional	True
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Automatic driver updates"#13
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Hardware"#14
+			Spec		Hardware
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"RGB lighting"#15
+					Unlock		2000
+					Description "It's like a firework show, on your ears!"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Wireless technology"#16
+					Unlock		2000
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+					}
+					{
+					Name				"Open-back earcups"#17
+					Description			"Are you tired of the isolation of closed-back headphones? Try open-back headphones!"
+					DevTime				5
+					Level				2
+					CodeArt				1
+					Submarkets			[ 0; 1; 0 ]
+					SoftwareCategories	[ Headphones ]
+					}
+				]
+			}
+		]
+	}
+	}
+#Expanse Software Suite

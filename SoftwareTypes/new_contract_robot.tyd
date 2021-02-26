@@ -62,7 +62,6 @@ SoftwareType
 				BuiltInThumbnail	Microchip
 				Price				25
 				Time				4
-				DependsOn			"System"
 				}
 				{
 				Name				"Robot assembly"
@@ -96,8 +95,27 @@ SoftwareType
 	[
 		Feature
 		{
-			Name		"System"
+			Name		"Movement program"
 			Spec		System
+			DevTime		1
+			CodeArt		1
+			Submarkets	0
+			Features
+			[
+				Feature
+				{
+					Name		"Autonomous program"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	0
+				}
+			]
+		}
+		Feature
+		{
+			Name		"Hardware design"
+			Spec		Hardware
 			DevTime		1
 			CodeArt		1
 			Submarkets	0
@@ -144,11 +162,40 @@ SoftwareType
 					CodeArt		1
 					Submarkets	0
 				}
+			]
+		}
+		Feature
+		{
+			Name		"2D visualization"
+			Spec		2D
+			Optional	True
+			DevTime		2
+			CodeArt		0.8
+			Submarkets	0
+		}
+		Feature
+		{
+			Name		"3D visualization"
+			Spec		3D
+			Optional	True
+			DevTime		3
+			CodeArt		0.8
+			Submarkets	0
+			Features
+			[
 				Feature
 				{
-					Name		"Integrated movement program"
-					DevTime		4
-					Level		2
+					Name		"Custom 3D model"
+					DevTime		3
+					Level		1
+					CodeArt		0.25
+					Submarkets	0
+				}
+				Feature
+				{
+					Name		"Program simulation"
+					DevTime		3
+					Level		1
 					CodeArt		1
 					Submarkets	0
 				}
@@ -156,9 +203,10 @@ SoftwareType
 		}
 		Feature
 		{
-			Name		"Hardware design"
-			Spec		Hardware
-			DevTime		1
+			Name		"Network integration"
+			Spec		Network
+			Optional	True
+			DevTime		2
 			CodeArt		1
 			Submarkets	0
 		}

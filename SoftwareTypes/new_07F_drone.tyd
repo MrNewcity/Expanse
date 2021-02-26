@@ -1,0 +1,300 @@
+SoftwareType
+	{
+	Name			"Drone"
+	Category		UAV
+	Unlock			2005
+	Description		"A drone is like a mini-helicopter, which requires no license or training to fly. This might be a problem..."
+	Random			0.2
+	Popularity		0.35
+	Retention		48
+	IdealPrice		370
+	OptimalDevTime	45
+	SubmarketNames	[ Recreation; Videography; Utility ]
+	Iterative		1
+	NameGenerator	namer_drone
+	OSSupport		[ Computer; Phone ]
+	InHouse			False
+	Hardware		True
+	Manufacturing
+		{
+		Components
+			[
+				{
+				Name 				Camera
+				BuiltInThumbnail	Camera
+				Price				20
+				Time				8
+				DependsOn			"Videography"
+				}
+				{
+				Name 				GPS
+				BuiltInThumbnail	Microchip
+				Price				20
+				Time				16
+				DependsOn			"GPS"
+				}
+				{
+				Name 				Screen
+				BuiltInThumbnail	LCD
+				Price				40
+				Time				8
+				}
+				{
+				Name 				Board
+				BuiltInThumbnail	PCB
+				Price				10
+				Time				8
+				}
+				{
+				Name 				Battery
+				BuiltInThumbnail	PlasticCase
+				Price				25
+				Time				8
+				}
+				{
+				Name 				Gyroscope
+				BuiltInThumbnail	Gyroscope
+				Price				20
+				Time				8
+				DependsOn			"Auto-stabilization"
+				}
+				{
+				Name 				Motors
+				BuiltInThumbnail	Vibration
+				Price				35
+				Time				8
+				}
+				{
+				Name 				Plastic
+				BuiltInThumbnail	Plastic
+				Price				5
+				Time				4
+				}
+				{
+				Name 				"Remote control"
+				BuiltInThumbnail	Joystick
+				Price				10
+				Time				8
+				}
+				{
+				Name 				Drone
+				Thumbnail			"Icons/drone_128.png"
+				BuiltInThumbnail	Console
+				Price				40
+				Time				8
+				}
+			]
+		Processes
+			[
+				{
+				Inputs	[ "Motors"; "Board"; "GPS"; "Camera"; "Battery"; "Gyroscope" ]
+				Output	"Drone"
+				}
+				{
+				Inputs	[ "Plastic"; "Screen" ]
+				Output	"Remote control"
+				}
+				{
+				Inputs	[ "Drone"; "Remote control" ]
+				Output	Final
+				}
+			]
+		FinalTime	16
+		}
+	Features
+		[
+			{
+			Name			"System"
+			Spec			System
+			DevTime			8
+			CodeArt			1
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Drone programming"
+					Description	"Advanced users may want to write programs for their drones instead of flying them. Nerds!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Follow mode"
+					Description	"Want to get stalked by a drone? Now you can"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 3 ]
+					}
+				]
+			}
+			{
+			Name		"Interface"
+			Spec		2D
+			DevTime		6
+			CodeArt		0.8
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Integrated tutorials"
+					DevTime		4
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Logbook"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 2; 2 ]
+					}
+					{
+					Name		"On-screen controller"
+					Description	"Forget the drone's controller at home? Use onscreen controls instead! It's only slightly worse"
+					DevTime		3
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Mission planner"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Terrain mapping"
+					DevTime		6
+					Level		2
+					CodeArt		0.9
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		Videography
+			Spec		Video
+			Optional	True
+			DevTime		5
+			CodeArt		1
+			Submarkets	[ 0; 1; 0 ]
+			Dependencies	"Video Editor"
+			Features
+				[
+					{
+					Name		"FPV system"
+					Description	"Enable users to connect a VR headset and fly their drone in first person!"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Digital zoom"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Tracking"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 2; 1 ]
+					}
+					{
+					Name		"Auto camera adjustment"
+					Description	"ISO? F-stop? Exposure? Nobody wants to deal with all of that"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"Obstacle avoidance"
+					Description	"The drone can see and avoid obstacles. Pretty normal for us humans, but harder for drones to do"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 3; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Network"
+			Spec		Network
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Cloud sync"
+					Description	"Sync drone data such as video recordings, GPS data and more to the cloud, just in case you crash it"
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 2; 3 ]
+					}
+					{
+					Name		"Multi-drone connection"
+					Description	"Connect drones together to synchronize cinematic shots, perform multi-drone missions, or do whatever else you wanna do with a bunch of drones"
+					Server		0.0001
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Hardware"
+			Spec		Hardware
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Auto-stabilization"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"GPS"
+					Description	"Improve drone autopilot with a Global Positioning System!"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 2; 3 ]
+					}
+					{
+					Name		"Sport mode"
+					Description	"Supply MORE POWER to the motors for MORE SPEED"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+		]
+	}
+	}
+#Expanse Software Suite

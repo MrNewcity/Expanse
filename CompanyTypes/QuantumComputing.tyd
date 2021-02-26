@@ -1,14 +1,15 @@
 CompanyType
 	{
-	Specialization		"Surveillance"
+	Specialization		"Quantum Computing"
 	PerYear				0.2
 	Min					2
 	Max					2
 	Types
 		[
 			{
-			Software	"Security Camera Software"
+			Software	"Quantum Computer"
 			Chance		1
+			Force		True
 			}
 		]
 	}

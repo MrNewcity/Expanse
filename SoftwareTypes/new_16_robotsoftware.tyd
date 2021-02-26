@@ -5,7 +5,7 @@ SoftwareType
 	Unlock			1980
 	Description		"Without this software, robots are nothing. Without robots, this software is nothing."
 	Random			0.3
-	Popularity		0.01
+	Popularity		0.005
 	Retention		36
 	IdealPrice		90
 	OptimalDevTime	35
@@ -17,12 +17,13 @@ SoftwareType
 	Features
 		[
 			{
-			Name		"System"
-			Spec		System
-			Description "Think of it like the robot's soul. Or maybe don't"
-			DevTime		7
-			CodeArt		1
-			Submarkets	[ 1; 1; 1 ]
+			Name			"System"
+			Spec			System
+			Dependencies	"Development Environment"
+			Description 	"Think of it like the robot's soul. Or maybe don't"
+			DevTime			7
+			CodeArt			1
+			Submarkets		[ 1; 1; 1 ]
 			Features
 				[
 					{
@@ -134,6 +135,7 @@ SoftwareType
 			Name			"3D visualization"
 			Spec			3D
 			Optional		True
+			Unlock			1985
 			DevTime			4
 			CodeArt			1
 			Dependencies	"3D Editor"

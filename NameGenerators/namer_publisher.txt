@@ -10,7 +10,7 @@ End
 Executive
 Frame
 Lay
--base2(stop,stop,stop,ext)
+-base2(stop,stop,stop,stop,ext)
 Designer
 Design
 Print

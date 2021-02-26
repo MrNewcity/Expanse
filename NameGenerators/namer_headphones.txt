@@ -1,0 +1,35 @@
+-start(base)
+-base(base2)
+Lucid
+Max
+Surreal
+Insane
+DJ
+Deejay
+Record
+Mini
+Club
+Studio
+Reference
+Trap
+Momentum
+True
+Power
+Fidelity
+Quiet
+-base2(stop,stop,stop,stop,ext)
+Blaster
+Beats
+ Set
+ Listeners
+Ears
+Smackers
+Buds
+Phones
+Headset
+ Headphones
+Pods
+-ext(stop)
+ Pro
+ Studio
+ Session

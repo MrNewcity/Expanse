@@ -86,6 +86,6 @@ soft
  LLC
  Studios
  Studio
- Industries
+ Technology
  Productions
  Software

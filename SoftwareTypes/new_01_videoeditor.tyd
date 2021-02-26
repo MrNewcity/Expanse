@@ -2,7 +2,7 @@ SoftwareType
 	{
 	Name			"Video Editor"
 	Category		Video
-	Unlock			1985
+	Unlock			1980
 	Description		"A video editor is used for post-production of digital video"
 	Random			0.1
 	Popularity		0.7
@@ -13,7 +13,7 @@ SoftwareType
 	Iterative		1
 	NameGenerator	namer_videoeditor
 	OSSupport		Computer
-	InHouse			False
+	InHouse			True
 Features
 		[
 			{

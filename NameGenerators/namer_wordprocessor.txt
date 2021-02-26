@@ -10,7 +10,7 @@ Open
 Sick
 Expansive
 Right
--base2(stop,stop,stop,ext)
+-base2(stop,stop,stop,stop,ext)
 Note
 Pad
  Notepad

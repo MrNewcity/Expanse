@@ -1,7 +1,7 @@
 INSTALL
 ----------
 This mod is for Alpha 11.7+
-Move the Expanse Software Suite folder that is inside the zip to the Mods folder in your Software Inc directory.
+Move the Expanse folder that is inside the zip to the Mods folder in your Software Inc directory.
 
 CONTRIBUTING TRANSLATIONS
 ----------
@@ -10,8 +10,8 @@ https://github.com/MrNewcity/Expanse-Software-Suite
 
 LICENSE
 ----------
-Expanse Software Suite is a data mod for Software Inc which adds various additional content and reworks to the game.
-Copyright (C) 2020 Michael Villeneuve
+Expanse is a data mod for Software Inc which adds various additional content and reworks to the game.
+Copyright (C) 2021 Michael Villeneuve
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

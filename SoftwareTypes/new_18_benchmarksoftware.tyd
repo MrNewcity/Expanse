@@ -79,7 +79,7 @@ SoftwareType
 				]
 			}
 			{
-			Name		"2D"
+			Name		"2D rendering test"
 			Spec		2D
 			DevTime		4
 			CodeArt		0.8
@@ -95,14 +95,6 @@ SoftwareType
 					CodeArt		0.85
 					Submarkets	[ 1; 1; 0 ]
 					}
-					{
-					Name		"2D rendering test"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 2; 0 ]
-					}
-
 				]
 			}
 			{

@@ -1,0 +1,252 @@
+SoftwareType
+{
+	Name			"Game Engine"
+	Category		"Game Development"
+	Description		"A game engine is a software development environment specifically tailored for creating videogames"
+	Random			0.2
+	Popularity		0.1
+	Retention		36
+	IdealPrice		80
+	OptimalDevTime	40
+	SubmarketNames	[ Simplicity; Versatility; Optimization ] #accessibility; optimization; technology? Graphics; Programming; Stability 
+	Iterative		1
+	NameGenerator	namer_gameengine
+	OSSupport		Computer
+	InHouse			True
+	Features
+		[
+			{
+			Name			System
+			Spec			System
+			DevTime			5
+			CodeArt			1
+			Dependencies	"Development Environment"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Debugger"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"Scripting"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}						
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Device simulator"
+					Description "A lot easier than sending the game to a console every time you want to test it"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Performance profiling"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Thread management"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			"2D rendering"
+			Spec			2D
+			DevTime			5
+			CodeArt			0.9
+			Dependencies	"2D Editor"
+			Submarkets		[ 2; 0; 1 ]
+			Features
+				[
+					{
+					Name		"File browser"
+					Description	"Well, you're not only going to make one file, are you?"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"2D assets"
+					Description	"Help the developer along with some prepackaged assets"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Visual programming"
+					Description	"It's like regular programming, but you use the mouse more"
+					DevTime		6
+					Level		2
+					CodeArt		0.8
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"UI creation tool"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Multi-display rendering"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		"3D rendering"
+			Spec		3D
+			Unlock		1985
+			Optional	True
+			DevTime		5
+			Dependencies	"3D Editor"
+			CodeArt		0.9
+			Submarkets	[ 0; 2; 1 ]
+			Features
+				[
+					{
+					Name		"3D assets"
+					Description	"Like 2D assets, but with an extra dimension"
+					DevTime		4
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Physics engine"
+					DevTime		6
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 3; 1 ]
+					}
+					{
+					Name		"Integrated shaders"
+					Description	"Make games look good with almost no work!"
+					DevTime		4
+					Level		1
+					CodeArt		0.9
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Asset optimization"
+					Description	"Tools to help optimize complex 3D models"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Point cloud integration"
+					Description	"Allow developers to import point cloud models obtained by laser scanning real world objects"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name			Audio
+			Spec			Audio
+			DevTime			3
+			Dependencies	"Audio Tool"
+			CodeArt			0.9
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Sound effects"
+					Description	"Help game developers by giving them some free sound effects to use"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name			Video
+			Spec			Video
+			Unlock			1980
+			Optional		True
+			DevTime			4
+			Dependencies	"Video Editor"
+			CodeArt			0.9
+			Submarkets		[ 2; 1; 1 ]
+			Features		[ ]
+			}
+			{
+			Name		Network
+			Spec		Network
+			Optional	True
+			Unlock		1985
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Cloud sync"
+					Server		0.001
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Simultaneous collaboration"
+					Server		0.0005
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Multiplayer deployment tools"
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+					}
+					{
+					Name		"Asset marketplace"
+					Description	"Allow users to sell and purchase custom assets online. You take a small royalty from every purchase on this platform"
+					Server		0.0024
+					DevTime		8
+					Level		3
+					CodeArt		1
+					Submarkets	0
+					Script_EndOfDay
+	"var cut = (Product.Userbase * 0.15);//Calculate $0.15 per user, per day
+	Product.DevCompany.MakeTransaction(cut, Sales, \"Asset marketplace royalties\");//Add money
+	Product.AddToCashflow(0, 0, 0, cut, 0, Time);//Product income chart"
+					}
+				]
+			}
+		]
+}

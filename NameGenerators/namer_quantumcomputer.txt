@@ -1,0 +1,29 @@
+-start(base,base,base,base,base,base2)
+-base(base2)
+Quantum
+Nano
+Qubit
+Q-
+SuPos
+Phys
+Gate
+Realm
+Paul
+Crypt
+Supreme
+Theo
+-base2(ext,stop)
+Calc
+Sim
+Box
+Chip
+Com
+Mech
+Tech
+Plex
+Circuit
+Science
+-ext(stop)
+ Computer
+ PC
+ System

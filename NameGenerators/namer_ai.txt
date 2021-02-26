@@ -1,0 +1,28 @@
+-start(pre,base,base,base)
+-pre(base) 
+Smart
+Super 
+Project 
+-base(stop,ext)
+Ultron
+Wilson
+Genius
+Flow
+Genesis
+Intella
+Sara
+Scholar
+Bionic
+Dexter
+Jenn
+Lyfe
+Neurologic
+Sensei
+-ext(stop)
+ Advanced
+ Alpha
+ Plus
+ Platform
+ AI
+ Brain
+ System

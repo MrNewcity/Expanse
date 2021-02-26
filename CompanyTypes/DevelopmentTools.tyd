@@ -1,17 +1,17 @@
 CompanyType
 	{
-	Specialization		"Mobile Apps"
+	Specialization		"Development Tools"
 	PerYear				0.2
 	Min					2
 	Max					3
 	Types
 		[
 			{
-			Software	"Mapping Application"
+			Software	"Development Environment"
 			Chance		1
 			}
 			{
-			Software	"Health Application"
+			Software	"Game Engine"
 			Chance		1
 			}
 		]

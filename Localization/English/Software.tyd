@@ -1,19 +1,22 @@
-﻿Video          "Video"
-Livestreaming  "Livestreaming"
-Communication  "Communication"
-Robotics       "Robotics"
-Development    "Development"
-Peripherals    "Peripherals"
-Productivity   "Productivity"
-FileManagement "File Management"
-Benchmarking   "Benchmarking"
-CloudStorage   "Cloud Storage"
-3DPrinting     "3D Printing"
-Mapping        "Mapping"
-Health         "Health"
-Aviation       "Aviation"
-CCTV           "CCTV"
-Streaming      "Streaming"
+﻿Video                  "Video"
+Livestreaming          "Livestreaming"
+Communication          "Communication"
+Robotics               "Robotics"
+Development            "Development"
+Peripherals            "Peripherals"
+ArtificialIntelligence "Artificial Intelligence"
+AudioProducts          "Audio Products"
+UAV                    "UAV"
+GameDevelopment        "Game Development"
+QuantumComputing       "Quantum Computing"
+Trading                "Trading"
+Benchmarking           "Benchmarking"
+CloudStorage           "Cloud Storage"
+3DPrinting             "3D Printing"
+Mapping                "Mapping"
+Aviation               "Aviation"
+Streaming              "Streaming"
+FileManagement         "File Management"
 Software
     {
     VideoEditor
@@ -199,14 +202,6 @@ Software
             }
         Feature
             {
-            Donationrevenuesplit
-                [
-                "Donation revenue split"
-                "Take a cut of donations made through your streaming software. This can net some extra money, but may also lead to decreased sales due to frustrated streamers"
-                ]
-            }
-        Feature
-            {
             Network [ "Network"; "Livestreaming pretty much relies on this" ]
             }
         Feature
@@ -239,6 +234,14 @@ Software
                 [
                 "Chat bot"
                 "If robots can beat you at chess, they can keep some kids in check for you"
+                ]
+            }
+        Feature
+            {
+            Donationservice
+                [
+                "Donation service"
+                "Host a donation service for streamers and take a cut of donations made to streamers through this service"
                 ]
             }
         Feature { Video "Video" }
@@ -475,21 +478,14 @@ Software
 
 Software
     {
-    IntegratedDevelopmentEnvironment
+    DevelopmentEnvironment
         [
-        "Integrated Development Environment"
+        "Development Environment"
         "An IDE is a software platform that provides a set of tools for software development in a single application."
         ]
     Features
         [
-        Feature
-            {
-            System
-                [
-                "System"
-                "The base features that are essential for an IDE, like a source code editor"
-                ]
-            }
+        Feature { System "System" }
         Feature
             {
             Compiler
@@ -604,10 +600,10 @@ Software
 
 Software
     {
-    PeripheralSystem
+    ComputerPeripheral
         [
-        "Peripheral System"
-        "A peripheral system combines hardware peripherals with software to configure and control them"
+        "Computer Peripheral"
+        "A computer peripheral combines hardware with software to configure it"
         ]
     Features
         [
@@ -648,16 +644,6 @@ Software
                 ]
             }
         Feature { Animations "Animations" }
-        Feature { Audio "Audio" }
-        Feature
-            {
-            Audioinput
-                [
-                "Audio input"
-                "Not only can you listen to audio, you can now create it with your mouth!"
-                ]
-            }
-        Feature { Integratedequalizer "Integrated equalizer" }
         Feature { Network "Network" }
         Feature
             {
@@ -709,269 +695,676 @@ Software
                 "These serve as the middleman between your brain and your word documents"
                 ]
             }
-        Category
-            {
-            Headset [ "Headset"; "These emit sound into your ears" ]
-            }
         ]
     Components
         [
         Component { Plastic "Plastic" }
         Component { Switches "Switches" }
-        Component { Circuitboard "Circuit board" }
+        Component { Opticalsensor "Optical sensor" }
         Component { Wirelessreceiver "Wireless receiver" }
-        Component { Mouseassembly "Mouse assembly" }
+        Component { Boardassembly "Board assembly" }
+        Component { Mousebody "Mouse body" }
         Component { LEDlights "LED lights" }
         Component { Keyswitches "Key switches" }
         Component { Keycaps "Key caps" }
-        Component { Keyboardassembly "Keyboard assembly" }
-        Component { Microphone "Microphone" }
-        Component { Speakers "Speakers" }
-        Component { Headsetassembly "Headset assembly" }
+        Component { Microcontroller "Microcontroller" }
+        Component { Keyboardbody "Keyboard body" }
         ]
     }
 
 Software
     {
-    EmailClient
+    ArtificialIntelligenceSoftware
         [
-        "Email Client"
-        "Email is one of the better ways of connecting with people. Solid top fiver. Maybe top ten."
+        "Artificial Intelligence Software"
+        "Developing Artificial Intelligence allows you to contribute to computers becoming the dominant species on Earth"
         ]
     Features
         [
-        Feature
-            {
-            Interface [ "Interface"; "Seeing the emails is pretty essential, really" ]
-            }
-        Feature
-            {
-            HTMLrendering
-                [
-                "HTML rendering"
-                "Enough of those boring, plain text emails. Use HTML!"
-                ]
-            }
-        Feature
-            {
-            Emailtemplates
-                [
-                "Email templates"
-                "Because most people really can't be bothered to learn HTML"
-                ]
-            }
-        Feature
-            {
-            Unifiedsearch
-                [
-                "Unified search"
-                "With one search box, look through emails, calendars, and contacts!"
-                ]
-            }
-        Feature
-            {
-            Calendars [ "Calendars"; "Nobody uses paper calendars anymore" ]
-            }
-        Feature { Contactslist "Contacts list" }
         Feature { System "System" }
         Feature
             {
-            Spamfiltering
+            Chatbottoolkit
                 [
-                "Spam filtering"
-                "The Prince of Nigeria won't be fooling anyone again"
+                "Chatbot toolkit"
+                "None of your real friends want to talk right now? Make a custom chat bot to talk to!"
                 ]
             }
         Feature
             {
-            Remoteimageblocking
+            Machinelearningalgorithms
                 [
-                "Remote image blocking"
-                "Automatically block those pesky images from being viewed"
+                "Machine learning algorithms"
+                "Enable users to make their computers learn new things on their own"
+                ]
+            }
+        Feature { Naturallanguageprocessing "Natural language processing" }
+        Feature { Automaticdatamanagement "Automatic data management" }
+        Feature
+            {
+            Dataencryption
+                [
+                "Data encryption"
+                "Don't entirely trust AI? Encrypt your data before the AI processes it!"
                 ]
             }
         Feature
             {
-            Spellcheck [ "Spellcheck"; "You know you'll need those red underlines" ]
+            Logging [ "Logging"; "Keep track of what the AI software is doing" ]
             }
-        Feature { Emailencryption "Email encryption" }
-        Feature { Multipleaccounts "Multiple accounts" }
         Feature
             {
-            Opticalcharacterrecognition
+            AIprocessexplainability
                 [
-                "Optical character recognition"
-                "OCR technology can massively improve spam filtering, which makes users less likely to be scammed and refund your software"
+                "AI process explainability"
+                "See information on what the AI is actually doing inbetween the input and output"
+                ]
+            }
+        Feature
+            {
+            Neuralnetworking
+                [
+                "Neural networking"
+                "Computers with brains are better than computers without them"
+                ]
+            }
+        Feature { Plug-insupport "Plug-in support" }
+        Feature { Interface "Interface" }
+        Feature { Datavisualization "Data visualization" }
+        Feature { Visualmodelbuilding "Visual model building" }
+        Feature
+            {
+            Imageidentification
+                [
+                "Image identification"
+                "Identify things like text, faces, objects and more in images"
                 ]
             }
         Feature { Network "Network" }
         Feature
             {
-            Auto-update
+            Cybersecuritythreatdetection
                 [
-                "Auto-update"
-                "Because email clients really live on the cutting edge of technology"
+                "Cybersecurity threat detection"
+                "Enable AI to learn about cybersecurity threats, and then detect them. Because surely letting an AI system into the heart of your network is a good idea!"
                 ]
             }
+        Feature
+            {
+            Deploymenttools
+                [
+                "Deployment tools"
+                "Give users tools to deploy their AI systems to their databases and networks"
+                ]
+            }
+        Feature { Cloudplatform "Cloud platform" }
+        Feature
+            {
+            Auto-update [ "Auto-update"; "Ensure AI systems are kept up to date" ]
+            }
+        Feature
+            {
+            Video [ "Video"; "Will an AI system be the next Martin Scorsese?" ]
+            }
+        Feature
+            {
+            Videoidentification
+                [
+                "Video identification"
+                "Identify things like people, text, locations and more in videos"
+                ]
+            }
+        Feature
+            {
+            Roboticsintegration
+                [
+                "Robotics integration"
+                "Enable users to integrate AI into their robotic systems. Possibly not a good idea now that we think about it..."
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    AudioAccessory
+        [
+        "Audio Accessory"
+        "Audio accessories enable users to listen to music, communicate, and more!"
+        ]
+    Features
+        [
+        Feature { System "System" }
+        Feature
+            {
+            Configurationsaving
+                [
+                "Configuration saving"
+                "Once you find those perfect sound settings, you don't want to lose them!"
+                ]
+            }
+        Feature { Interface "Interface" }
+        Feature
+            {
+            Audiovisualization
+                [
+                "Audio visualization"
+                "Listening to sound waves is boring, you should be able to look at them too!"
+                ]
+            }
+        Feature { Audio "Audio" }
+        Feature
+            {
+            Audioinput
+                [
+                "Audio input"
+                "Not only can you listen to audio, you can now create it with your mouth!"
+                ]
+            }
+        Feature
+            {
+            Compressor [ "Compressor"; "Make quiet sounds louder and make loud sounds quieter" ]
+            }
+        Feature { Integratedequalizer "Integrated equalizer" }
+        Feature
+            {
+            Dialogenhancement
+                [
+                "Dialog enhancement"
+                "Apply audio processing magic so that dialog is easier to hear"
+                ]
+            }
+        Feature { Virtualsurroundsound "Virtual surround sound" }
+        Feature { Activenoisecancellation "Active noise cancellation" }
+        Feature { Network "Network" }
+        Feature { Automaticdriverupdates "Automatic driver updates" }
+        Feature { Hardware "Hardware" }
+        Feature
+            {
+            RGBlighting [ "RGB lighting"; "It's like a firework show, on your ears!" ]
+            }
+        Feature { Wirelesstechnology "Wireless technology" }
+        Feature
+            {
+            Open-backearcups
+                [
+                "Open-back earcups"
+                "Are you tired of the isolation of closed-back headphones? Try open-back headphones!"
+                ]
+            }
+        ]
+    Categories
+        [
+        Category
+            {
+            Headphones [ "Headphones"; "These blast soundwaves into your ears" ]
+            }
+        ]
+    Components
+        [
+        Component { Plastic "Plastic" }
+        Component { Microcontroller "Microcontroller" }
+        Component { ANCprocessor "ANC processor" }
+        Component { Wirelessreceiver "Wireless receiver" }
+        Component { Microphone "Microphone" }
+        Component { Drivers "Drivers" }
+        Component { Innerassembly "Inner assembly" }
+        Component { Headphonebody "Headphone body" }
+        Component { LEDlights "LED lights" }
+        Component { Ventilation "Ventilation" }
+        ]
+    }
+
+Software
+    {
+    Drone
+        [
+        "Drone"
+        "A drone is like a mini-helicopter, which requires no license or training to fly. This might be a problem..."
+        ]
+    Features
+        [
+        Feature { System "System" }
+        Feature { Plug-insupport "Plug-in support" }
+        Feature
+            {
+            Droneprogramming
+                [
+                "Drone programming"
+                "Advanced users may want to write programs for their drones instead of flying them. Nerds!"
+                ]
+            }
+        Feature
+            {
+            Followmode [ "Follow mode"; "Want to get stalked by a drone? Now you can" ]
+            }
+        Feature { Interface "Interface" }
+        Feature { Integratedtutorials "Integrated tutorials" }
+        Feature { Logbook "Logbook" }
+        Feature
+            {
+            On-screencontroller
+                [
+                "On-screen controller"
+                "Forget the drone's controller at home? Use onscreen controls instead! It's only slightly worse"
+                ]
+            }
+        Feature { Missionplanner "Mission planner" }
+        Feature { Terrainmapping "Terrain mapping" }
+        Feature { Videography "Videography" }
+        Feature
+            {
+            FPVsystem
+                [
+                "FPV system"
+                "Enable users to connect a VR headset and fly their drone in first person!"
+                ]
+            }
+        Feature { Digitalzoom "Digital zoom" }
+        Feature { Tracking "Tracking" }
+        Feature
+            {
+            Autocameraadjustment
+                [
+                "Auto camera adjustment"
+                "ISO? F-stop? Exposure? Nobody wants to deal with all of that"
+                ]
+            }
+        Feature
+            {
+            Obstacleavoidance
+                [
+                "Obstacle avoidance"
+                "The drone can see and avoid obstacles. Pretty normal for us humans, but harder for drones to do"
+                ]
+            }
+        Feature { Network "Network" }
         Feature
             {
             Cloudsync
                 [
                 "Cloud sync"
-                "Sync calendars and contacts across all your devices! How fun!"
+                "Sync drone data such as video recordings, GPS data and more to the cloud, just in case you crash it"
                 ]
             }
         Feature
             {
-            Webmail [ "Webmail"; "Give users the ability to access their account online" ]
+            Multi-droneconnection
+                [
+                "Multi-drone connection"
+                "Connect drones together to synchronize cinematic shots, perform multi-drone missions, or do whatever else you wanna do with a bunch of drones"
+                ]
+            }
+        Feature { Hardware "Hardware" }
+        Feature { Auto-stabilization "Auto-stabilization" }
+        Feature
+            {
+            GPS [ "GPS"; "Improve drone autopilot with a Global Positioning System!" ]
             }
         Feature
             {
-            IMAPsupport [ "IMAP support"; "The Internet Message Access Protocol!" ]
+            Sportmode [ "Sport mode"; "Supply MORE POWER to the motors for MORE SPEED" ]
             }
+        ]
+    Components
+        [
+        Component { Camera "Camera" }
+        Component { GPS "GPS" }
+        Component { Screen "Screen" }
+        Component { Board "Board" }
+        Component { Battery "Battery" }
+        Component { Gyroscope "Gyroscope" }
+        Component { Motors "Motors" }
+        Component { Plastic "Plastic" }
+        Component { Remotecontrol "Remote control" }
+        Component { Drone "Drone" }
         ]
     }
 
 Software
     {
-    FileArchiver
+    GameEngine
         [
-        "File Archiver"
-        "A file archiver is a utility used to combine files together into an archive file"
+        "Game Engine"
+        "A game engine is a software development environment specifically tailored for creating videogames"
         ]
     Features
         [
-        Feature { Interface "Interface" }
-        Feature { Search "Search" }
-        Feature
-            {
-            Command-lineinterface
-                [
-                "Command-line interface"
-                "Enable automation and scripts via the command line"
-                ]
-            }
-        Feature
-            {
-            Themes [ "Themes"; "Make file archiving seem slightly less boring" ]
-            }
         Feature { System "System" }
-        Feature { Encryption "Encryption" }
-        Feature { Shellintegration "Shell integration" }
-        Feature
-            {
-            Diskimagesupport [ "Disk image support"; "Support the opening of disk images" ]
-            }
-        Feature { Passwordlocking "Password locking" }
-        Feature
-            {
-            Adaptivedictionarycompression
-                [
-                "Adaptive dictionary compression"
-                "Compress things like \"The theives' theatrics earned them the maximum sentence\" to things like \"$ $ives $atrics earned $m $ maximum sentence\". Compression at work!"
-                ]
-            }
-        Feature
-            {
-            Huffmancoding
-                [
-                "Huffman coding"
-                "This method of compression is ridiculously complicated, but it works. That's all you need to know, let the nerds figure out the rest"
-                ]
-            }
-        Feature { Archiverepairtool "Archive repair tool" }
-        Feature
-            {
-            Self-extractingarchives
-                [
-                "Self-extracting archives"
-                "Enable users to create archives that will extract themselves!"
-                ]
-            }
-        Feature
-            {
-            Archivescanning [ "Archive scanning"; "Enable users to scan archives for viruses" ]
-            }
-        Feature { Network "Network" }
-        Feature
-            {
-            Cloudbackup [ "Cloud backup"; "Backup users' archives to the cloud automatically" ]
-            }
-        ]
-    }
-
-Software
-    {
-    PDFTool
-        [
-        "PDF Tool"
-        "PDFs, one of the few document file formats that get their own dedicated software for some reason"
-        ]
-    Features
-        [
-        Feature
-            {
-            Interface [ "Interface"; "PDFs are pretty much meant to be seen" ]
-            }
-        Feature
-            {
-            Commenting
-                [
-                "Commenting"
-                "Freely criticize your coworkers' work. It's like a dream come true!"
-                ]
-            }
-        Feature { Pagereordering "Page reordering" }
-        Feature { Electronicsignatures "Electronic signatures" }
-        Feature
-            {
-            Side-by-sidecomparison
-                [
-                "Side-by-side comparison"
-                "It's like those 'spot the difference' games, but for adults"
-                ]
-            }
-        Feature
-            {
-            Forms [ "Forms"; "Create forms. Collect data. So exciting." ]
-            }
-        Feature { Templates "Templates" }
-        Feature { Autolayout "Auto layout" }
-        Feature { System "System" }
-        Feature { Passwordprotection "Password protection" }
-        Feature
-            {
-            Merging [ "Merging"; "Smash some documents together into one PDF" ]
-            }
-        Feature
-            {
-            Opticalcharacterrecognition
-                [
-                "Optical character recognition"
-                "Make scanned text editable... like magic!"
-                ]
-            }
-        Feature { Conversions "Conversions" }
+        Feature { Debugger "Debugger" }
+        Feature { Scripting "Scripting" }
         Feature { Plug-insupport "Plug-in support" }
         Feature
             {
-            Signaturevalidation
+            Devicesimulator
                 [
-                "Signature validation"
-                "Use certificates to verify the legit-ness of digital signatures"
+                "Device simulator"
+                "A lot easier than sending the game to a console every time you want to test it"
+                ]
+            }
+        Feature { Performanceprofiling "Performance profiling" }
+        Feature { Threadmanagement "Thread management" }
+        Feature { 2Drendering "2D rendering" }
+        Feature
+            {
+            Filebrowser
+                [
+                "File browser"
+                "Well, you're not only going to make one file, are you?"
+                ]
+            }
+        Feature
+            {
+            2Dassets [ "2D assets"; "Help the developer along with some prepackaged assets" ]
+            }
+        Feature
+            {
+            Visualprogramming
+                [
+                "Visual programming"
+                "It's like regular programming, but you use the mouse more"
+                ]
+            }
+        Feature { UIcreationtool "UI creation tool" }
+        Feature { Multi-displayrendering "Multi-display rendering" }
+        Feature { 3Drendering "3D rendering" }
+        Feature
+            {
+            3Dassets [ "3D assets"; "Like 2D assets, but with an extra dimension" ]
+            }
+        Feature { Physicsengine "Physics engine" }
+        Feature
+            {
+            Integratedshaders [ "Integrated shaders"; "Make games look good with almost no work!" ]
+            }
+        Feature
+            {
+            Assetoptimization [ "Asset optimization"; "Tools to help optimize complex 3D models" ]
+            }
+        Feature
+            {
+            Pointcloudintegration
+                [
+                "Point cloud integration"
+                "Allow developers to import point cloud models obtained by laser scanning real world objects"
+                ]
+            }
+        Feature { Audio "Audio" }
+        Feature
+            {
+            Soundeffects
+                [
+                "Sound effects"
+                "Help game developers by giving them some free sound effects to use"
+                ]
+            }
+        Feature { Video "Video" }
+        Feature { Network "Network" }
+        Feature { Cloudsync "Cloud sync" }
+        Feature { Simultaneouscollaboration "Simultaneous collaboration" }
+        Feature { Multiplayerdeploymenttools "Multiplayer deployment tools" }
+        Feature
+            {
+            Assetmarketplace
+                [
+                "Asset marketplace"
+                "Allow users to sell and purchase custom assets online. You take a small royalty from every purchase on this platform"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    QuantumComputer
+        [
+        "Quantum Computer"
+        "Quantum computers are sort of like normal computers, but they use quantum mechanics instead of boring old classical mechanics"
+        ]
+    Features
+        [
+        Feature { System "System" }
+        Feature
+            {
+            Physicssimulator
+                [
+                "Physics simulator"
+                "Simulating quantum physics on a quantum computer... quantum-ception?"
+                ]
+            }
+        Feature { Chemistrysimulator "Chemistry simulator" }
+        Feature
+            {
+            Biologysimulator
+                [
+                "Biology simulator"
+                "Maybe this will help us find the meaning of life?"
+                ]
+            }
+        Feature { Integerfactorization "Integer factorization" }
+        Feature { Quantummachinelearning "Quantum machine learning" }
+        Feature
+            {
+            Programmingkit
+                [
+                "Programming kit"
+                "Make it easier for users to program their own quantum functions and algorithms"
+                ]
+            }
+        Feature
+            {
+            Optimizationalgorithms
+                [
+                "Optimization algorithms"
+                "Use high-level models to solve optimization problems in logistics, resource management and beyond. Doesn't that sound like fun?"
+                ]
+            }
+        Feature
+            {
+            Financialalgorithms
+                [
+                "Financial algorithms"
+                "Risk analysis, credit scoring, portfolio optimization, and more!"
+                ]
+            }
+        Feature { Plug-insupport "Plug-in support" }
+        Feature
+            {
+            Decoherencemitigation
+                [
+                "Decoherence mitigation"
+                "Quantum decoherence, also known as \"noise\", is a big problem for quantum computers. Help reduce the impact of noise with this feature. This will make users less likely to refund the product"
+                ]
+            }
+        Feature { Interface "Interface" }
+        Feature
+            {
+            Searchtool
+                [
+                "Search tool"
+                "Searching through loads of data is a lot faster with the power of quantum computing"
+                ]
+            }
+        Feature
+            {
+            Quantumimageencoding
+                [
+                "Quantum image encoding"
+                "Turns out processing images with quantum computation is a lot faster, and a lot more efficient"
+                ]
+            }
+        Feature
+            {
+            Modelvisualization
+                [
+                "Model visualization"
+                "People might get tired of looking at code, algorithms and data. Show them nice charts and diagrams instead"
+                ]
+            }
+        Feature { Visualcircuitcomposer "Visual circuit composer" }
+        Feature
+            {
+            3Drendering
+                [
+                "3D rendering"
+                "Give your quantum system the ability to render and interact with 3D objects"
+                ]
+            }
+        Feature
+            {
+            Videosupport
+                [
+                "Video support"
+                "Give your quantum system the ability to interact with video"
+                ]
+            }
+        Feature { Quantumvideoencoding "Quantum video encoding" }
+        Feature { Network "Network" }
+        Feature { Auto-update "Auto-update" }
+        Feature
+            {
+            Cloudbackup
+                [
+                "Cloud backup"
+                "Backup users' quantum data to the quantum cloud. Just kidding, it's just a regular cloud"
+                ]
+            }
+        Feature { Hardware "Hardware" }
+        Feature
+            {
+            Lowpressureoperation
+                [
+                "Low pressure operation"
+                "Decreasing the atmospheric pressure in the quantum computer can make it much more reliable"
+                ]
+            }
+        Feature
+            {
+            Dopplercooling
+                [
+                "Doppler cooling"
+                "Cooling the qubits makes them better qubits, basically"
+                ]
+            }
+        Feature
+            {
+            Midcircuitmeasurement
+                [
+                "Midcircuit measurement"
+                "Measure quantum states midstream and change calculations on the fly"
+                ]
+            }
+        ]
+    Components
+        [
+        Component { Lasercooler "Laser cooler" }
+        Component { Vacuumpump "Vacuum pump" }
+        Component { Board "Board" }
+        Component { Screen "Screen" }
+        Component { Qubitregister "Qubit register" }
+        Component { Advancedgates "Advanced gates" }
+        Component { Quantumprocessor "Quantum processor" }
+        Component { Signalconverter "Signal converter" }
+        Component { Controller "Controller" }
+        Component { Controlcomputer "Control computer" }
+        Component { Quantumcomputer "Quantum computer" }
+        ]
+    }
+
+Software
+    {
+    TradingTool
+        [
+        "Trading Tool"
+        "Trading tools give anyone an easy way to invest in the stock market"
+        ]
+    Features
+        [
+        Feature { System "System" }
+        Feature { Dataencryption "Data encryption" }
+        Feature
+            {
+            Screeners [ "Screeners"; "Scan, organize and track stocks based on filters" ]
+            }
+        Feature { Commoditiestrading "Commodities trading" }
+        Feature
+            {
+            Passcodelock
+                [
+                "Passcode lock"
+                "Enter a passcode every time you want to open the app. Sounds like fun"
+                ]
+            }
+        Feature
+            {
+            Currencyexchanger
+                [
+                "Currency exchanger"
+                "Allow users to change currency so they can invest in different exchanges"
+                ]
+            }
+        Feature
+            {
+            Conditionalorders
+                [
+                "Conditional orders"
+                "Attach criteria to orders based on specified factors"
+                ]
+            }
+        Feature
+            {
+            Tradingfees
+                [
+                "Trading fees"
+                "Charge users a fee when they make a trade. This will net you more cash, but may also drive users away"
+                ]
+            }
+        Feature { Interface "Interface" }
+        Feature
+            {
+            Graphs
+                [
+                "Graphs"
+                "Bar graphs, line graphs, candle graphs, there's so many graphs to choose from!"
+                ]
+            }
+        Feature { Watchlists "Watchlists" }
+        Feature
+            {
+            Alerts [ "Alerts"; "BUY, BUY, BUY!!!" ]
+            }
+        Feature { Marketnewsaggregator "Market news aggregator" }
+        Feature
+            {
+            Integratedtutorials
+                [
+                "Integrated tutorials"
+                "Before people invest their life savings into stocks, you might want to teach them a thing or two"
                 ]
             }
         Feature { Network "Network" }
-        Feature { Sharing "Sharing" }
         Feature
             {
-            Auto-update
+            Instantmarketdataupdates [ "Instant market data updates"; "Update market data with zero delay" ]
+            }
+        Feature { Two-factorauthentication "Two-factor authentication" }
+        Feature { Cryptocurrencytrading "Cryptocurrency trading" }
+        Feature
+            {
+            Activitymonitoring
                 [
-                "Auto-update"
-                "Is this really necessary in a PDF editor? I guess that's up to you"
+                "Activity monitoring"
+                "Make sure nobody but you has access to your account"
                 ]
             }
-        Feature { Cloudsync "Cloud sync" }
+        Feature
+            {
+            Bankaccountconnection
+                [
+                "Bank account connection"
+                "Allow users to withdraw and deposit directly to their bank account"
+                ]
+            }
         ]
     }
 
@@ -1272,6 +1665,7 @@ Software
             {
             Ratings [ "Ratings"; "Let users rate businesses and services right in the app" ]
             }
+        Feature { Distancetracker "Distance tracker" }
         Feature
             {
             Promotebusinesses
@@ -1324,84 +1718,6 @@ Software
                 "It's like a virtual vacation, from the comfort of your own phone!"
                 ]
             }
-        ]
-    }
-
-Software
-    {
-    HealthApplication
-        [
-        "Health Application"
-        "Health apps assist users in setting and meeting health and fitness goals"
-        ]
-    Features
-        [
-        Feature { System "System" }
-        Feature { Healthrecords "Health records" }
-        Feature { Hearingtest "Hearing test" }
-        Feature { Heartratemonitor "Heart rate monitor" }
-        Feature
-            {
-            Distancetracker
-                [
-                "Distance tracker"
-                "Half the fun of going for a run is annoying your friends with how far you went, right?"
-                ]
-            }
-        Feature { Interface "Interface" }
-        Feature
-            {
-            Progressbar
-                [
-                "Progress bar"
-                "Get addicted to filling in that bar will be like it's a drug! A health drug, of course"
-                ]
-            }
-        Feature { Calendar "Calendar" }
-        Feature
-            {
-            Workoutplanner
-                [
-                "Workout planner"
-                "Planning workouts ahead of time can be a great time-waster while at work"
-                ]
-            }
-        Feature { Dietplanner "Diet planner" }
-        Feature
-            {
-            Awardsystem
-                [
-                "Award system"
-                "Adults are really just kids. All they want is little stickers on their phone as rewards"
-                ]
-            }
-        Feature { Network "Network" }
-        Feature
-            {
-            Medicalalertsystem
-                [
-                "Medical alert system"
-                "Contact emergency services if a fall, crash or a dangerous health condition is detected"
-                ]
-            }
-        Feature { Cloudsync "Cloud sync" }
-        Feature
-            {
-            Socialfeatures
-                [
-                "Social features"
-                "Everyone knows that personal wellness is always more fun when it's competitive"
-                ]
-            }
-        Feature
-            {
-            Datamining
-                [
-                "Datamining"
-                "Sell users' health data to Big Pharma to net {Currency:0.25} for each active user, but beware of getting caught by Big Watchdog"
-                ]
-            }
-        Feature { Instructionalvideos "Instructional videos" }
         ]
     }
 
@@ -1478,7 +1794,7 @@ Software
             }
         Feature { Terrainvisualization "Terrain visualization" }
         Feature { Network "Network" }
-        Feature { Multi-userplanning "Multi-user planning" }
+        Feature { Planningcollaboration "Planning collaboration" }
         Feature
             {
             Webapp
@@ -1503,62 +1819,6 @@ Software
                 "Avoid the \"Are we there yet?\"s with an app for passengers so they can answer that themselves"
                 ]
             }
-        ]
-    }
-
-Software
-    {
-    SecurityCameraSoftware
-        [
-        "Security Camera Software"
-        "Keep an eye on potential hooligans with security camera software"
-        ]
-    Features
-        [
-        Feature
-            {
-            Interface [ "Interface"; "If you can't see the thief... what's the point?" ]
-            }
-        Feature { Multi-cameraview "Multi-camera view" }
-        Feature { Customizableinterface "Customizable interface" }
-        Feature { System "System" }
-        Feature { Analogwirelesssupport "Analog wireless support" }
-        Feature
-            {
-            Motiondetection [ "Motion detection"; "Detect motion from camera input" ]
-            }
-        Feature
-            {
-            Businessanalyticsdetectors
-                [
-                "Business analytics detectors"
-                "Use big brain technology to detect data such as business traffic, gender recognition, age recognition, and more. Trust me, it's definitely not invading privacy"
-                ]
-            }
-        Feature { Smarthomeintegration "Smart home integration" }
-        Feature { Video "Video" }
-        Feature { Highdefinitionvideosupport "High definition video support" }
-        Feature { Panoramicvideo "Panoramic video" }
-        Feature { Audio "Audio" }
-        Feature
-            {
-            Audiooutput
-                [
-                "Audio output"
-                "Yell at would-be vandals if your cameras have microphones, and if they don't stop, yell again!"
-                ]
-            }
-        Feature { Audiodetection "Audio detection" }
-        Feature { Network "Network" }
-        Feature
-            {
-            Alerts [ "Alerts"; "Send email or SMS alerts automatically" ]
-            }
-        Feature
-            {
-            IPnetworking [ "IP networking"; "Support IP cameras as an alternative to CCTV" ]
-            }
-        Feature { Cloudbackup "Cloud backup" }
         ]
     }
 
@@ -1712,14 +1972,19 @@ Software
     CustomRobot "Custom Robot"
     Features
         [
-        Feature { System "System" }
+        Feature { Movementprogram "Movement program" }
+        Feature { Autonomousprogram "Autonomous program" }
+        Feature { Hardwaredesign "Hardware design" }
         Feature { Camera "Camera" }
         Feature { Remotecontrol "Remote control" }
         Feature { GPS "GPS" }
         Feature { Gyroscope "Gyroscope" }
         Feature { Motor "Motor" }
-        Feature { Integratedmovementprogram "Integrated movement program" }
-        Feature { Hardwaredesign "Hardware design" }
+        Feature { 2Dvisualization "2D visualization" }
+        Feature { 3Dvisualization "3D visualization" }
+        Feature { Custom3Dmodel "Custom 3D model" }
+        Feature { Programsimulation "Program simulation" }
+        Feature { Networkintegration "Network integration" }
         ]
     Components
         [
@@ -1737,18 +2002,69 @@ Software
 
 Software
     {
-    RobotProgram "Robot Program"
+    FileArchiver
+        [
+        "File Archiver"
+        "A file archiver is a utility used to combine files together into an archive file"
+        ]
     Features
         [
-        Feature { Movementprogram "Movement program" }
-        Feature { Autonomousprogram "Autonomous program" }
-        Feature { Customcontrollerscheme "Custom controller scheme" }
-        Feature { Customcalibration "Custom calibration" }
-        Feature { 2Dvisualization "2D visualization" }
-        Feature { 3Dvisualization "3D visualization" }
-        Feature { Custom3Dmodel "Custom 3D model" }
-        Feature { Programsimulation "Program simulation" }
-        Feature { Networkintegration "Network integration" }
+        Feature { Interface "Interface" }
+        Feature { Search "Search" }
+        Feature
+            {
+            Command-lineinterface
+                [
+                "Command-line interface"
+                "Enable automation and scripts via the command line"
+                ]
+            }
+        Feature
+            {
+            Themes [ "Themes"; "Make file archiving seem slightly less boring" ]
+            }
+        Feature { System "System" }
+        Feature { Encryption "Encryption" }
+        Feature { Shellintegration "Shell integration" }
+        Feature
+            {
+            Diskimagesupport [ "Disk image support"; "Support the opening of disk images" ]
+            }
+        Feature { Passwordlocking "Password locking" }
+        Feature
+            {
+            Adaptivedictionarycompression
+                [
+                "Adaptive dictionary compression"
+                "Compress things like \"The theives' theatrics earned them the maximum sentence\" to things like \"$ $ives $atrics earned $m $ maximum sentence\". Compression at work!"
+                ]
+            }
+        Feature
+            {
+            Huffmancoding
+                [
+                "Huffman coding"
+                "This method of compression is ridiculously complicated, but it works. That's all you need to know, let the nerds figure out the rest"
+                ]
+            }
+        Feature { Archiverepairtool "Archive repair tool" }
+        Feature
+            {
+            Self-extractingarchives
+                [
+                "Self-extracting archives"
+                "Enable users to create archives that will extract themselves!"
+                ]
+            }
+        Feature
+            {
+            Archivescanning [ "Archive scanning"; "Enable users to scan archives for viruses" ]
+            }
+        Feature { Network "Network" }
+        Feature
+            {
+            Cloudbackup [ "Cloud backup"; "Backup users' archives to the cloud automatically" ]
+            }
         ]
     }
 

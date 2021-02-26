@@ -39,7 +39,7 @@ SoftwareType
 			Name			Sports
 			Popularity		0.7
 			Retention		12
-			TimeScale		0.75
+			TimeScale		0.8
 			Iterative		0.95
 			NameGenerator	GameSport
 			Submarkets		[ 1; 0; 0 ]
@@ -69,7 +69,7 @@ SoftwareType
 			Name			Party
 			Popularity		0.7
 			Retention		12
-			TimeScale		0.6
+			TimeScale		0.7
 			Iterative		0.8
 			IdealPrice		60
 			NameGenerator	namer_partygame
@@ -78,17 +78,18 @@ SoftwareType
 		]
 	Random			0.6
 	IdealPrice		80
-	OptimalDevTime	40
+	OptimalDevTime	35
 	OSSupport		[ Computer; Console; Phone ]
 	SubmarketNames	[ Gameplay; Graphics; Story ]
 	Features
 		[
 			{
-			Name		"Game design"#1
-			Spec		System
-			DevTime		4
-			CodeArt		1
-			Submarkets	[ 1; 0; 1 ]
+			Name			"Game design"#1
+			Spec			System
+			Dependencies	"Game Engine"
+			DevTime			3
+			CodeArt			1
+			Submarkets		[ 1; 0; 1 ]
 			Features
 				[
 					{
@@ -178,11 +179,11 @@ SoftwareType
 				]
 			}
 			{
-			Name			"2D Graphics"#8
+			Name			"2D graphics"#8
 			Spec			2D
-			DevTime			5
+			DevTime			4
 			CodeArt			0.5
-			Dependencies	"2D Editor"
+			Dependencies	"Game Engine"
 			Submarkets		[ 1; 1; 1 ]
 			Features
 				[
@@ -205,12 +206,13 @@ SoftwareType
 				]
 			}
 			{
-			Name			"3D Graphics"#11
+			Name			"3D graphics"#11
 			Spec			3D
 			Optional		True
-			DevTime			6
+			Unlock			1985
+			DevTime			5
 			CodeArt			0.5
-			Dependencies	"3D Editor"
+			Dependencies	"Game Engine"
 			Submarkets		[ 1; 1; 1 ]
 			Features
 				[
@@ -258,9 +260,9 @@ SoftwareType
 			{
 			Name			"Audio"#18
 			Spec			Audio
-			DevTime			3
+			DevTime			2
 			CodeArt			0.5
-			Dependencies	"Audio Tool"
+			Dependencies	"Game Engine"
 			Submarkets		[ 1; 0; 2 ]
 			Features
 				[
@@ -293,10 +295,11 @@ SoftwareType
 			Name			"Cutscenes"#17
 			Description		"Make your game C I N E M A T I C"
 			Spec			Video
+			Unlock			1980
 			Optional		True
-			DevTime			4
-			CodeArt			0.5
-			Dependencies	"Video Editor"
+			DevTime			5
+			CodeArt			0.25
+			Dependencies	"Game Engine"
 			Submarkets		[ 0; 0; 1 ]
 			Features	[ ]
 			}
@@ -306,9 +309,10 @@ SoftwareType
 			Description		"Facilitate the screaming of obscenities by teenagers from all over the world"
 			Optional		True
 			Unlock			1990
-			DevTime			6
+			DevTime			5
 			CodeArt			1
 			Server			0.0006
+			Dependencies	"Game Engine"
 			Submarkets		[ 1; 0; 0 ]
 			Features
 				[

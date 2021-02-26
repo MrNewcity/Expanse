@@ -1,9 +1,9 @@
 SoftwareType
 	{
-	Name			"Integrated Development Environment"
+	Name			"Development Environment"
 	Category		Development
 	Description		"An IDE is a software platform that provides a set of tools for software development in a single application."
-	Random			0.25
+	Random			0.2
 	Popularity		0.15
 	Retention		36
 	IdealPrice		80
@@ -11,14 +11,13 @@ SoftwareType
 	SubmarketNames	[ Simplicity; Professionalism; Collaboration ]
 	Iterative		1
 	NameGenerator	namer_ide
-	OSSupport		[ Computer ]
-	InHouse			False
+	OSSupport		Computer
+	InHouse			True
 	Features
 		[
 			{
 			Name		"System"
 			Spec		System
-			Description "The base features that are essential for an IDE, like a source code editor"
 			DevTime		6
 			CodeArt		1
 			Submarkets	[ 0; 1; 0 ]
@@ -110,10 +109,10 @@ SoftwareType
 			{
 			Name			"Interface"
 			Spec			2D
+			Dependencies	"2D Editor"
 			Description		"A user interface will make development a lot easier"
 			DevTime			4
 			CodeArt			0.9
-			Dependencies	"2D Editor"
 			Submarkets		[ 5; 1; 0 ]
 			Features
 				[

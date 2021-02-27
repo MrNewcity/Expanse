@@ -8,7 +8,7 @@ CompanyType
 		[
 			{
 			Software	"Streaming Service"
-			Chance		1
+			Chance		0.8
 			}
 			{
 			Software	"Livestreaming Software"

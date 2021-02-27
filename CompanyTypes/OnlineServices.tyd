@@ -2,17 +2,17 @@ CompanyType
 	{
 	Specialization		"Online Services"
 	PerYear				0.2
-	Min					3
+	Min					4
 	Max					6
 	Types
 		[
 			{
 			Software	"Cloud Storage Tool"
-			Chance		0.8
+			Chance		1
 			}
 			{
 			Software	"Mapping Application"
-			Chance		0.8
+			Chance		1
 			}
 			{
 			Software	"Communication Application"

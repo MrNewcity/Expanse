@@ -1,3 +1,4 @@
+[REPLACE]
 -start(base)
 -base(smallsecond,largesecond,ext)
 Macro

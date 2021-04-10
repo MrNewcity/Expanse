@@ -1,3 +1,4 @@
+[REPLACE]
 -start(pre,base)
 -pre(base)
 Mc
@@ -16,18 +17,47 @@ Eco
 Green
 Pro
 Sky
+Flute
+King
+Chip
+Back
+Sheep
+Owl
+Queen
 -smallsecond(ext,largesecond,stop)
 Fang
 Fat
 Dump
 Tweak
 Way
+Gas
+Patch
+Fudge
+Deli
+Kids
+Beat
+Town
+Tune
+Stamp
+Meat
+Pack
+Switch
+Shop
+Plus
+Night
 -largesecond(ext,stop)
  Sausage
  Carrot
  Fan
  Stop
  and Eat
+ Dinner
+ Farms
+ Deluxe
+ To Go
+ Electric
+ Beds
+ Delights
 -ext(stop)
  Inc.
  Corp.

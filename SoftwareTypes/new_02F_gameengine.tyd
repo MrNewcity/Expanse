@@ -10,7 +10,7 @@ SoftwareType
 	OptimalDevTime	40
 	SubmarketNames	[ Simplicity; Versatility; Optimization ] #accessibility; optimization; technology? Graphics; Programming; Stability 
 	Iterative		1
-	NameGenerator	namer_gameengine
+	NameGenerator	s_gameengine
 	OSSupport		Computer
 	InHouse			True
 	Features
@@ -18,7 +18,7 @@ SoftwareType
 			{
 			Name			System
 			Spec			System
-			DevTime			5
+			DevTime			4
 			CodeArt			1
 			Dependencies	"Development Environment"
 			Submarkets		[ 1; 1; 1 ]
@@ -51,7 +51,7 @@ SoftwareType
 					DevTime		5
 					Level		2
 					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Submarkets	[ 2; 1; 0 ]
 					}
 					{
 					Name		"Performance profiling"
@@ -72,7 +72,7 @@ SoftwareType
 			{
 			Name			"2D rendering"
 			Spec			2D
-			DevTime			5
+			DevTime			4
 			CodeArt			0.9
 			Dependencies	"2D Editor"
 			Submarkets		[ 2; 0; 1 ]
@@ -104,15 +104,15 @@ SoftwareType
 					}
 					{
 					Name		"UI creation tool"
-					DevTime		4
-					Level		2
-					CodeArt		1
+					DevTime		3
+					Level		1
+					CodeArt		0.9
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
 					Name		"Multi-display rendering"
-					DevTime		4
-					Level		2
+					DevTime		3
+					Level		1
 					CodeArt		1
 					Submarkets	[ 0; 0; 1 ]
 					}
@@ -164,7 +164,7 @@ SoftwareType
 					Name		"Point cloud integration"
 					Description	"Allow developers to import point cloud models obtained by laser scanning real world objects"
 					DevTime		4
-					Level		2
+					Level		1
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
 					}
@@ -216,7 +216,7 @@ SoftwareType
 					DevTime		5
 					Level		2
 					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Submarkets	[ 2; 1; 1 ]
 					}
 					{
 					Name		"Simultaneous collaboration"

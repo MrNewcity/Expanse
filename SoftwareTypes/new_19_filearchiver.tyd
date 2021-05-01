@@ -11,45 +11,11 @@ SoftwareType
 	OptimalDevTime	25
 	SubmarketNames	[ Compression; Security; Usability ]
 	Iterative		1
-	NameGenerator	namer_filearchiver
+	NameGenerator	s_filearchiver
 	OSSupport		[ Computer; Phone; Server ]
 	InHouse			False
 	Features
 		[
-			{
-			Name			Interface
-			Spec			2D
-			DevTime			4
-			CodeArt			0.9
-			Submarkets		[ 1; 1; 1 ]
-			Dependencies	"2D Editor"
-			Features
-				[
-					{
-					Name		"Search"
-					DevTime		2
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
-					}
-					{
-					Name		"Command-line interface"
-					Description	"Enable automation and scripts via the command line"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 1; 1 ]
-					}
-					{
-					Name		"Themes"
-					Description	"Make file archiving seem slightly less boring"
-					DevTime		4
-					Level		1
-					CodeArt		0.5
-					Submarkets	[ 1; 1; 1 ]
-					}
-				]
-			}
 			{
 			Name		System
 			Spec		System
@@ -89,8 +55,8 @@ SoftwareType
 					}
 					{
 					Name		"Adaptive dictionary compression"
-					Description	"Compress things like \"The theives' theatrics earned them the maximum sentence\" to things like \"$ $ives $atrics earned $m $ maximum sentence\". Compression at work!"
-					DevTime		4
+					Description	"Compress things like \"The theatrical theives loathe the thespian\" to things like \"% %atrical %ives loa% % %spian\". Compression at work!"
+					DevTime		3
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
@@ -98,7 +64,7 @@ SoftwareType
 					{
 					Name		"Huffman coding"
 					Description	"This method of compression is ridiculously complicated, but it works. That's all you need to know, let the nerds figure out the rest"
-					DevTime		5
+					DevTime		4
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
@@ -125,6 +91,40 @@ SoftwareType
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
+			{
+			Name			Interface
+			Spec			2D
+			DevTime			4
+			CodeArt			0.9
+			Submarkets		[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Search"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Command-line interface"
+					Description	"Enable automation and scripts via the command line"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Themes"
+					Description	"Make file archiving seem slightly less boring"
+					DevTime		4
+					Level		1
+					CodeArt		0.5
+					Submarkets	[ 1; 1; 1 ]
 					}
 				]
 			}

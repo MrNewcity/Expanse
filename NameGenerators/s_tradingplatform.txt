@@ -1,5 +1,5 @@
 -start(base)
--base(base2,base2,base2,base2,base)
+-base(base2)
 Robin
 Wealth
 Rich

@@ -11,43 +11,41 @@ SoftwareType
 	OptimalDevTime	35
 	SubmarketNames	[ Simplicity; Control; Personalization ]#personalization is interface/stream overlay related. control is related to settings, quality, advanced stuff
 	Iterative		0.95
-	NameGenerator	namer_streamingsoftware
+	NameGenerator	s_streamingsoftware
 	OSSupport		Computer
 	InHouse			False
 	Features
 		[
 			{
-			Name		Audio
-			Spec		Audio
-			DevTime		3
+			Name		System
+			Spec		System
+			DevTime		1
 			CodeArt		1
-			Dependencies	"Audio Tool"
 			Submarkets	[ 1; 1; 1 ]
 			Features
 				[
 					{
-					Name		"Audio mixing"
-					Description	"All the best streamers are doing it"
+					Name		"Codecs"
+					Description	"You should have this unless you want streamers to pay $10,000 a month in network bills"
 					DevTime		4
 					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
 					}
 					{
-					Name		"Text to speech"
-					Description	"Have a robot read out the disgusting messages donators send streamers"
+					Name		"Randomizer"
+					Description	"Pick a random follower, subscriber or viewer. Do with that what you will"
 					DevTime		2
-					Level		2
-					CodeArt		1
-					Submarkets	[ 2; 0; 1 ]
-					}
-					{
-					Name		"Music library"
-					Description	"Streaming websites are getting crazy with the copyright strikes. Give users some copyright-free music to use on their streams"
-					DevTime		4
 					Level		1
-					CodeArt		0
-					Submarkets	[ 1; 0; 1 ]
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
 					}
 				]
 			}
@@ -84,39 +82,6 @@ SoftwareType
 					Level		2
 					CodeArt		0.8
 					Submarkets	[ 0; 1; 0 ]
-					}
-				]
-			}
-			{
-			Name		System
-			Spec		System
-			DevTime		1
-			CodeArt		1
-			Submarkets	[ 1; 1; 1 ]
-			Features
-				[
-					{
-					Name		"Codecs"
-					Description	"You should have this unless you want streamers to pay $10,000 a month in network bills"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
-					}
-					{
-					Name		"Plug-in support"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
-					}
-					{
-					Name		"Randomizer"
-					Description	"Pick a random follower, subscriber or viewer. Do with that what you will"
-					DevTime		2
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
 					}
 				]
 			}
@@ -211,6 +176,41 @@ SoftwareType
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name		Audio
+			Spec		Audio
+			DevTime		3
+			CodeArt		1
+			Dependencies	"Audio Tool"
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Audio mixing"
+					Description	"All the best streamers are doing it"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Text to speech"
+					Description	"Have a robot read out the disgusting messages donators send streamers"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 0; 1 ]
+					}
+					{
+					Name		"Music library"
+					Description	"Streaming websites are getting crazy with the copyright strikes. Give users some copyright-free music to use on their streams"
+					DevTime		4
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 1 ]
 					}
 				]
 			}

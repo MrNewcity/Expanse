@@ -86,7 +86,5 @@ soft
  Ltd.
  LLC
  Studios
- Studio
  Technology
- Productions
  Software

@@ -8,7 +8,7 @@ SoftwareType
 	OptimalDevTime	35
 	SubmarketNames	[ Simplicity; Personalization; Configurability ] #personalization=visual/animation wise, configurability=settings like dpi, bindings, weight etc
 	InHouse			False
-	NameGenerator	namer_peripherals
+	NameGenerator	h_computerperipheral
 	OSSupport		Computer
 	Hardware		True
 	Categories
@@ -222,7 +222,7 @@ SoftwareType
 					DevTime		6
 					Level		2
 					CodeArt		1
-					Submarkets	[ 1; 5; 0 ]
+					Submarkets	[ 1; 4; 0 ]
 					}
 					{
 					Name		"Premade game profiles"#9
@@ -304,7 +304,7 @@ SoftwareType
 					DevTime		5
 					Level		2
 					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
+					Submarkets	[ 3; 0; 1 ]
 					}
 				]
 			}
@@ -320,22 +320,21 @@ SoftwareType
 					Name		"RGB lighting"#14
 					Unlock		2000
 					Description "It's scientifically proven that RGB lighting improves game skill"
-					DevTime		4
-					Level		2
+					DevTime		2
+					Level		1
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
 					}
 					{
 					Name		"Wireless technology"#15
 					Unlock		2000
-					DevTime		6
+					DevTime		2
 					Level		2
 					CodeArt		1
-					Submarkets	[ 3; 0; 1 ]
+					Submarkets	[ 2; 0; 1 ]
 					}
 				]
 			}
 		]
-	}
 	}
 #Expanse Software Suite

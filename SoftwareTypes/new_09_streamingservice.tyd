@@ -19,7 +19,7 @@ SoftwareType
 			Retention		36
 			TimeScale		1
 			Iterative		1
-			NameGenerator	namer_audiostreamingservice
+			NameGenerator	s_streamingservice_audio
 			Submarkets		[ 1; 1; 1 ]
 			}
 			{
@@ -29,7 +29,7 @@ SoftwareType
 			Retention		36
 			TimeScale		1
 			Iterative		1
-			NameGenerator	namer_videostreamingservice
+			NameGenerator	s_streamingservice_video
 			Submarkets		[ 1; 1; 1 ]
 			}
 		]

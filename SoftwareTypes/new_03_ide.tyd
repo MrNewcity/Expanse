@@ -10,8 +10,8 @@ SoftwareType
 	OptimalDevTime	40
 	SubmarketNames	[ Simplicity; Professionalism; Collaboration ]
 	Iterative		1
-	NameGenerator	namer_ide
-	OSSupport		Computer
+	NameGenerator	s_ide
+	OSSupport		[ Computer; Server ]
 	InHouse			True
 	Features
 		[
@@ -93,16 +93,19 @@ SoftwareType
 					}
 					{
 					Name		"AI-enhanced code completion"
-					Description	"Look into user's projects with AI to improve code completion. This may decrease sales due to privacy concerns, or it may increase sales due to the better coding experience"
+					Description	"Look into user's projects with AI to improve code completion. This can increase sales due to the better coding experience, but will also create more bugs"
+					Unlock		2010
 					Server		0.0001
 					DevTime		6
 					Level		3
 					CodeArt		1
 					Submarkets	0
 					Script_AfterSales 
-   "var dsr = (RandomRange(0.79, 1.21) * DigitalSales);  //Range of digital sales is 80% to 120% of normal sales
-	var psr = (RandomRange(0.89, 1.11) * PhysicalSales);//Range of physical sales is 90% to 110% of normal sales
+   "var dsr = (RandomRange(1.01, 1.15) * DigitalSales);   //Range of digital sales is 101% to 115% of normal sales
+	var psr = (RandomRange(1.01, 1.15) * PhysicalSales); //Range of physical sales is 101% to 115% of normal sales
 		DigitalSales = dsr;PhysicalSales = psr;"
+					Script_EndOfDay
+	"Product.Bugs = Max(0, Product.Bugs + Product.Userbase * 0.01);//Add 1 bug to product for each 100th active user"
 					}
 				]
 			}

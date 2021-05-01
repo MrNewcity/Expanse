@@ -11,7 +11,7 @@ SoftwareType
 	OptimalDevTime	35
 	SubmarketNames	[ General Aviation; Business; Military ]
 	Iterative		1
-	NameGenerator	namer_electronicflightbag
+	NameGenerator	s_electronicflightbag
 	OSSupport		[ Computer; Phone ]
 	InHouse			False
 	Features

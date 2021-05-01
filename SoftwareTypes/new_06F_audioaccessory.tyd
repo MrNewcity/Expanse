@@ -15,7 +15,7 @@ SoftwareType
 			{
 			Name		Headphones
 			Description	"These blast soundwaves into your ears"
-			NameGenerator	namer_headphones
+			NameGenerator	h_audioaccessory_headphones
 			Popularity	0.7
 			TimeScale	1
 			Iterative	1
@@ -118,7 +118,7 @@ SoftwareType
 			{
 			Name		Microphone
 			Description	"These blast soundwaves into a device"
-			NameGenerator	namer_microphone
+			NameGenerator	h_audioaccessory_microphone
 			Popularity	0.5
 			TimeScale	1
 			Iterative	1
@@ -211,43 +211,6 @@ SoftwareType
 	Features
 		[
 			{
-			Name		"System"#1
-			Spec		System
-			DevTime		6
-			CodeArt		1
-			Submarkets	[ 1; 1; 1 ]
-			Features
-				[
-					{
-					Name		"Configuration saving"#2
-					Description	"Once you find those perfect sound settings, you don't want to lose them!"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 1; 1 ]
-					}
-				]
-			}
-			{
-			Name		"Interface"#3
-			Spec		2D
-			DevTime		4
-			CodeArt		0.8
-			Submarkets	[ 1; 1; 1 ]
-			Dependencies	"2D Editor"
-			Features
-				[
-					{
-					Name		"Audio visualization"#4
-					Description	"Listening to sound waves is boring, you should be able to look at them too!"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 1 ]
-					}
-				]
-			}
-			{
 			Name		"Audio"#5
 			Spec		Audio
 			DevTime		6
@@ -311,25 +274,25 @@ SoftwareType
 					DevTime				6
 					Level				2
 					CodeArt				1
-					Submarkets			[ 1; 1; 0 ]
+					Submarkets			[ 1; 0; 1 ]
 					SoftwareCategories	[ Microphone ]
 					}
 					{
 					Name				"Active noise cancellation"#11
 					Unlock				2005
-					DevTime				6
+					DevTime				2
 					Level				2
 					CodeArt				1
-					Submarkets			[ 1; 0; 1 ]
+					Submarkets			[ 3; 1; 2 ]
 					SoftwareCategories	[ Headphones ]
 					}
 					{
 					Name				"Background noise cancellation"#11
 					Unlock				2005
-					DevTime				6
+					DevTime				4
 					Level				2
 					CodeArt				1
-					Submarkets			[ 1; 0; 1 ]
+					Submarkets			[ 3; 1; 2 ]
 					SoftwareCategories	[ Microphone ]
 					}
 					{
@@ -343,20 +306,39 @@ SoftwareType
 				]
 			}
 			{
-			Name		"Network"#12
-			Spec		Network
-			Optional	True
-			DevTime		2
+			Name		"System"#1
+			Spec		System
+			DevTime		6
 			CodeArt		1
 			Submarkets	[ 1; 1; 1 ]
 			Features
 				[
 					{
-					Name		"Automatic driver updates"#13
-					DevTime		4
-					Level		2
+					Name		"Configuration saving"#2
+					Description	"Once you find those perfect sound settings, you don't want to lose them!"
+					DevTime		3
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Interface"#3
+			Spec		2D
+			DevTime		4
+			CodeArt		0.8
+			Submarkets	[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Audio visualization"#4
+					Description	"Listening to sound waves is boring, you should be able to look at them too!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
 					}
 				]
 			}
@@ -372,15 +354,15 @@ SoftwareType
 					Name		"RGB lighting"#15
 					Unlock		2000
 					Description "It's like a firework show, on your ears!"
-					DevTime		4
-					Level		2
+					DevTime		2
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
 					Name		"Wireless technology"#16
 					Unlock		2000
-					DevTime		6
+					DevTime		2
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 0; 1 ]
@@ -388,15 +370,32 @@ SoftwareType
 					{
 					Name				"Open-back earcups"#17
 					Description			"Are you tired of the isolation of closed-back headphones? Try open-back headphones!"
-					DevTime				5
-					Level				2
+					DevTime				1
+					Level				1
 					CodeArt				1
 					Submarkets			[ 0; 1; 0 ]
 					SoftwareCategories	[ Headphones ]
 					}
 				]
 			}
+			{
+			Name		"Network"#12
+			Spec		Network
+			Optional	True
+			DevTime		3
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Automatic driver updates"#13
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
 		]
-	}
 	}
 #Expanse Software Suite

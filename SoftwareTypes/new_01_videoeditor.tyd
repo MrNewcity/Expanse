@@ -11,7 +11,7 @@ SoftwareType
 	OptimalDevTime	40
 	SubmarketNames	[ Editing; Retouching; Effects ]
 	Iterative		1
-	NameGenerator	namer_videoeditor
+	NameGenerator	s_videoeditor
 	OSSupport		Computer
 	InHouse			True
 Features

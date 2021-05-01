@@ -11,7 +11,7 @@ SoftwareType
 	OptimalDevTime	45
 	SubmarketNames	[ Beginner; Enthusiast; Professional ] #beginner=simplicity, enthusiast=features, professional=complexity,workflow
 	Iterative		1
-	NameGenerator	namer_3dprinter
+	NameGenerator	h_3dprinter
 	OSSupport		Computer
 	InHouse			False
 	Hardware		True
@@ -165,7 +165,7 @@ SoftwareType
 					DevTime		4
 					Level		1
 					CodeArt		0.9
-					Submarkets	[ 3; 1; 0 ]
+					Submarkets	[ 1; 0; 0 ]
 					}
 				]
 			}
@@ -184,7 +184,7 @@ SoftwareType
 					DevTime		4
 					Level		1
 					CodeArt		1
-					Submarkets	[ 1; 1; 0 ]
+					Submarkets	[ 4; 1; 0 ]
 					}
 					{
 					Name		"Print simulation"
@@ -220,6 +220,38 @@ SoftwareType
 				]
 			}
 			{
+			Name		"Hardware"
+			Spec		Hardware
+			DevTime		4
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Wireless technology"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 0 ]
+					}
+					{
+					Name		"Auto levelling"
+					DevTime		1
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Dual extruders"
+					Description	"Two times the fun!"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 2 ]
+					}
+				]
+			}
+			{
 			Name		"Network"
 			Spec		Network
 			Optional	True
@@ -244,38 +276,6 @@ SoftwareType
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 1; 1 ]
-					}
-				]
-			}
-			{
-			Name		"Hardware"
-			Spec		Hardware
-			DevTime		6
-			CodeArt		1
-			Submarkets	[ 1; 1; 1 ]
-			Features
-				[
-					{
-					Name		"Wireless technology"
-					DevTime		6
-					Level		2
-					CodeArt		1
-					Submarkets	[ 2; 1; 0 ]
-					}
-					{
-					Name		"Auto levelling"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 1 ]
-					}
-					{
-					Name		"Dual extruders"
-					Description	"Two times the fun!"
-					DevTime		3
-					Level		1
-					CodeArt		1
-					Submarkets	[ 0; 1; 1 ]
 					}
 				]
 			}

@@ -1,0 +1,24 @@
+if (Product.Userbase < 250000)
+	{
+	DigitalSales = DigitalSales * 0.75; PhysicalSales = PhysicalSales * 0.75;//decrease digital sales by 25%, decrease physical sales by 25%
+	}
+if (250000 < Product.Userbase < 500000)
+	{
+	DigitalSales = DigitalSales * 0.85; PhysicalSales = PhysicalSales * 0.85;//decrease digital sales by 15%, decrease physical sales by 15%
+	}
+if (500000 < Product.Userbase < 1000000)
+	{
+	DigitalSales = DigitalSales * 0.95; PhysicalSales = PhysicalSales * 0.95;//decrease digital sales by 5%, decrease physical sales by 5%
+	}
+if (1000000 < Product.Userbase < 1500000)
+	{
+	DigitalSales = DigitalSales * 1.05; PhysicalSales = PhysicalSales * 1.05;//increase digital sales by 5%, increase physical sales by 5%
+	}
+if (1500000 < Product.Userbase < 2000000)
+	{
+	DigitalSales = DigitalSales * 1.15; PhysicalSales = PhysicalSales * 1.15;//increase digital sales by 15%, increase physical sales by 15%
+	}
+if (Product.Userbase > 2000000)
+	{
+	DigitalSales = DigitalSales * 1.25; PhysicalSales = PhysicalSales * 1.25;//increase digital sales by 25%, increase physical sales by 25%
+	}

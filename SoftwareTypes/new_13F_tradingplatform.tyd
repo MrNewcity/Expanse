@@ -11,7 +11,7 @@ SoftwareType
 	OptimalDevTime	30
 	SubmarketNames	[ "Simplicity"; "Choice"; "Security" ]
 	Iterative		1
-	NameGenerator	namer_tradingplatform
+	NameGenerator	s_tradingplatform
 	OSSupport		[ Computer; Phone ]
 	InHouse			False
 	Features

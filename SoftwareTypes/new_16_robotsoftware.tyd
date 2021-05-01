@@ -11,7 +11,7 @@ SoftwareType
 	OptimalDevTime	35
 	SubmarketNames	[ Simplicity; Configurability; Scalability ]
 	Iterative		1
-	NameGenerator	namer_robotsoftware
+	NameGenerator	s_robotsoftware
 	OSSupport		[ Computer; Server ]
 	InHouse			False
 	Features

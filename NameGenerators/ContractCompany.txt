@@ -1,11 +1,11 @@
 [REPLACE]
--start(pre,base)
+-start(pre,base,pre,base,citystart)
 -pre(base)
 Mc
 The 
 Cool 
 The 
--base(smallsecond,largesecond,ext)
+-base(smallsecond,largesecond,ext,smallsecond,largesecond,ext,companytype)
 Chicken
 Pit
 Cow
@@ -17,50 +17,105 @@ Eco
 Green
 Pro
 Sky
+Crank
+Goat
 Flute
 King
-Chip
-Back
+Queen
 Sheep
 Owl
-Queen
--smallsecond(ext,largesecond,stop)
+Back
+Chip
+-smallsecond(ext,largesecond,stop,companytype)
 Fang
 Fat
 Dump
 Tweak
 Way
-Gas
-Patch
-Fudge
-Deli
-Kids
-Beat
-Town
+Brothers
 Tune
-Stamp
-Meat
-Pack
+Town
+Beat
+Kids
+Patch
 Switch
 Shop
 Plus
 Night
--largesecond(ext,stop)
+-largesecond(ext,stop,companytype)
  Sausage
  Carrot
  Fan
  Stop
  and Eat
- Dinner
- Farms
+ Delights
  Deluxe
  To Go
+ Dinner
+-companytype(ext,stop)
+ Industries
+ Contracting
+ Construction
+ Management
  Electric
+ Plumbing
+ Logistics
+ Manufacturing
+ Fabrication
+ Food Service
+ Foods
+ Cinemas
+ Entertainment
+ Studios
+ Oil
+ Electronics
+ Farms
  Beds
- Delights
+ Accounting
+-citystart(citymid,citymid,citymid,companytype)
+Pawnee
+Liberty
+Queens 
+Silicon
+Scholars
+Eagle
+Kings
+River
+Grapevine
+Evergreen
+Pine
+Oak
+Angelic
+Royal
+Green
+Sugar
+Palm
+Apple
+Sandy
+Chalet
+-citymid(cityext,cityext,companytype)
+ville
+ Grove
+ Hills
+town
+ Bay
+ Lake
+view
+ton
+ Acres
+mont
+ Oaks
+-cityext(stop)
+ Police Department
+ City Government
+ Fire Department
+ Public Works
+ Sanitation Services
+ Parks Department
+ Business Association
 -ext(stop)
  Inc.
  Corp.
  Ltd.
  LLC
- Industries
+ Co.

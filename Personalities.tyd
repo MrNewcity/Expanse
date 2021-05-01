@@ -221,14 +221,14 @@ PersonalityGraph
             }
 			{		#--------- down from here is new personalities from mod -----------
             Name       Energetic
-            WorkLearn  -0.6
-            Social     0.9
+            WorkLearn  -0.5
+            Social     1
             LazyStress 0.75
 			Relationships
 				{
 				Optimistic	1
 				Extrovert	0.75
-				Pessimistic	-0.2
+				Pessimistic	-0.1
 				}
             }
 			{
@@ -238,7 +238,6 @@ PersonalityGraph
             LazyStress -1
 			Relationships
 				{
-				Energetic	-0.1
 				Short-tempered	-0.2
 				}
             }
@@ -256,9 +255,7 @@ PersonalityGraph
 			Relationships
 				{
 				Ambitious	0.5
-				Introvert	0.5
 				Goofy		0.75
-				Optimistic	0.6
 				}
             }
 			{
@@ -269,7 +266,7 @@ PersonalityGraph
 			Relationships
 				{
 				Goofy		0.5
-				Creative	0.5
+				Creative	1
 				}
             }
 			{
@@ -279,10 +276,8 @@ PersonalityGraph
             LazyStress 1
 			Relationships
 				{
-				Goofy			-0.1
-				Stubborn		-0.2
-				Short-tempered	-0.1
-				Creative		0.1
+				Goofy			-0.25
+				Stubborn		-0.1
 				}
             }
 			{
@@ -305,11 +300,10 @@ PersonalityGraph
             LazyStress -1
 			Relationships
 				{
-				Goofy			0.1
-				Clumsy			0.3
+				Clumsy			0.2
 				Perfectionist	-0.5
 				Short-tempered	-0.1
-				Laidback		0.1
+				Laidback		0.5
 				}
             }
 			{
@@ -326,9 +320,9 @@ PersonalityGraph
 			Relationships
 				{
 				Goofy		0.75
-				Ambitious	0.4
-				Stubborn	-0.1
-				Optimistic	0.6
+				Ambitious	0.5
+				Stubborn	-0.25
+				Optimistic	0.75
 				Generous	0.5
 				}
 			}

@@ -11,7 +11,7 @@ SoftwareType
 	OptimalDevTime	25
 	SubmarketNames	[ "Navigation"; "Discovery"; "Live data" ]
 	Iterative		1
-	NameGenerator	namer_mapsapp
+	NameGenerator	s_mapsapp
 	OSSupport		[ Phone; Car; Watch ]
 	InHouse			False
 	Features
@@ -153,7 +153,7 @@ SoftwareType
 				]
 			}
 			{
-			Name		"Audio"
+			Name		"Spoken directions"
 			Spec		Audio
 			Optional	True
 			DevTime		4

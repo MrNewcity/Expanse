@@ -11,7 +11,7 @@ SoftwareType
 	OptimalDevTime	45
 	SubmarketNames	[ Recreation; Videography; Utility ]
 	Iterative		1
-	NameGenerator	namer_drone
+	NameGenerator	h_drone
 	OSSupport		[ Computer; Phone ]
 	InHouse			False
 	Hardware		True
@@ -187,7 +187,7 @@ SoftwareType
 			Name		Videography
 			Spec		Video
 			Optional	True
-			DevTime		5
+			DevTime		2
 			CodeArt		1
 			Submarkets	[ 0; 1; 0 ]
 			Dependencies	"Video Editor"
@@ -210,7 +210,7 @@ SoftwareType
 					}
 					{
 					Name		"Tracking"
-					DevTime		6
+					DevTime		5
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 2; 1 ]
@@ -230,6 +230,39 @@ SoftwareType
 					Level		2
 					CodeArt		1
 					Submarkets	[ 3; 1; 1 ]
+					}
+				]
+			}
+			{
+			Name		"Hardware"
+			Spec		Hardware
+			DevTime		6
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Auto-stabilization"
+					DevTime		2
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+					{
+					Name		"GPS"
+					Description	"Improve drone autopilot with a Global Positioning System!"
+					DevTime		1
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 2; 3 ]
+					}
+					{
+					Name		"Sport mode"
+					Description	"Supply MORE POWER to the motors for MORE SPEED"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
 					}
 				]
 			}
@@ -258,39 +291,6 @@ SoftwareType
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 1 ]
-					}
-				]
-			}
-			{
-			Name		"Hardware"
-			Spec		Hardware
-			DevTime		6
-			CodeArt		1
-			Submarkets	[ 1; 1; 1 ]
-			Features
-				[
-					{
-					Name		"Auto-stabilization"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 1; 0 ]
-					}
-					{
-					Name		"GPS"
-					Description	"Improve drone autopilot with a Global Positioning System!"
-					DevTime		5
-					Level		2
-					CodeArt		1
-					Submarkets	[ 2; 2; 3 ]
-					}
-					{
-					Name		"Sport mode"
-					Description	"Supply MORE POWER to the motors for MORE SPEED"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 0; 0 ]
 					}
 				]
 			}

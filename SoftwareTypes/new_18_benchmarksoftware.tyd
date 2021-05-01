@@ -11,7 +11,7 @@ SoftwareType
 	OptimalDevTime	25
 	SubmarketNames	[ CPU testing; GPU testing; Drive testing ]
 	Iterative		1
-	NameGenerator	namer_benchmarksoftware
+	NameGenerator	s_benchmarksoftware
 	OSSupport		[ Computer; Phone; Server ]
 	InHouse			False
 	Features
@@ -19,7 +19,7 @@ SoftwareType
 			{
 			Name		"System"
 			Spec		System
-			DevTime		2
+			DevTime		1
 			CodeArt		1
 			Submarkets	[ 1; 1; 1 ]
 			Features
@@ -27,7 +27,7 @@ SoftwareType
 					{
 					Name		"Temperature monitoring"
 					Description	"Can't have your computer getting a fever!"
-					DevTime		4
+					DevTime		2
 					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 1; 0 ]
@@ -35,21 +35,21 @@ SoftwareType
 					{
 					Name		"Mathematics test"
 					Description	"Make your computer suffer through a math test, just like we've all had to do when we were young"
-					DevTime		4
-					Level		1
+					DevTime		3
+					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
 					Name		"Read/write throughput test"
-					DevTime		4
-					Level		1
+					DevTime		3
+					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{
 					Name		"Physics simulation test"
-					DevTime		5
+					DevTime		4
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
@@ -64,24 +64,32 @@ SoftwareType
 					{
 					Name		"Simultaneous multithreading support"
 					DevTime		4
-					Level		2
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
 					Name		"4K sector testing"
 					Unlock		2010
-					DevTime		5
+					DevTime		3
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name		"Multi-GPU support"
+					Description	"Why stop at just one graphics card in a PC?"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
 					}
 				]
 			}
 			{
 			Name		"2D rendering test"
 			Spec		2D
-			DevTime		4
+			DevTime		3
 			CodeArt		0.8
 			Submarkets	[ 1; 1; 1 ]
 			Dependencies	"2D Editor"
@@ -95,21 +103,28 @@ SoftwareType
 					CodeArt		0.85
 					Submarkets	[ 1; 1; 0 ]
 					}
+					{
+					Name		"Multi-display rendering"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
 				]
 			}
 			{
 			Name		"3D rendering test"
 			Optional	True
 			Spec		3D
-			DevTime		5
-			CodeArt		0.9
+			DevTime		4
+			CodeArt		0.8
 			Submarkets	[ 0; 1; 0 ]
 			Dependencies	"3D Editor"
 			Features
 				[
 					{
 					Name		"Fluid simulation test"
-					DevTime		4
+					DevTime		5
 					Level		2
 					CodeArt		0.9
 					Submarkets	[ 0; 1; 0 ]
@@ -117,8 +132,8 @@ SoftwareType
 					{
 					Name		"Configurable graphics"
 					Description	"Dozens of different settings to deeply over-complicate graphics testing"
-					DevTime		4
-					Level		2
+					DevTime		3
+					Level		1
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
 					}
@@ -139,6 +154,7 @@ SoftwareType
 					Name		"Comparisons"
 					Description	"Help people make their hardware buying decisions"
 					DevTime		3
+					Server		0.0001
 					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 1; 1 ]

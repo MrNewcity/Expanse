@@ -12,7 +12,7 @@ SoftwareType
 	OptimalDevTime	75
 	OSSupport		[ Computer; Server ]
 	SubmarketNames	[ Efficiency; Power; Accessibility ]
-	NameGenerator	namer_quantumcomputer
+	NameGenerator	h_quantumcomputer
 	InHouse			False
 	Hardware		True
 	Manufacturing
@@ -117,38 +117,38 @@ SoftwareType
 			{
 			Name		"System"
 			Spec		System
-			DevTime		10
+			DevTime		16
 			CodeArt		1
-			Submarkets	[ 1; 2; 1 ]
+			Submarkets	[ 1; 1; 1 ]
 			Features
 				[
 					{
 					Name		"Physics simulator"
 					Description	"Simulating quantum physics on a quantum computer... quantum-ception?"
-					DevTime		6
-					Level		2
+					DevTime		4
+					Level		1
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 2; 3; 1 ]
 					}
 					{
 					Name		"Chemistry simulator"
-					DevTime		6
-					Level		2
+					DevTime		4
+					Level		1
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 2; 3; 1 ]
 					}
 					{
 					Name		"Biology simulator"
 					Description	"Maybe this will help us find the meaning of life?"
-					DevTime		6
-					Level		2
+					DevTime		4
+					Level		1
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 2; 3; 1 ]
 					}
 					{
 					Name		"Integer factorization"
-					DevTime		5
-					Level		2
+					DevTime		4
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
 					}
@@ -157,13 +157,13 @@ SoftwareType
 					DevTime		5
 					Level		2
 					CodeArt		1
-					Submarkets	[ 1; 1; 0 ]
+					Submarkets	[ 1; 2; 0 ]
 					}
 					{
 					Name		"Programming kit"
 					Description	"Make it easier for users to program their own quantum functions and algorithms"
-					DevTime		6
-					Level		2
+					DevTime		4
+					Level		1
 					CodeArt		1
 					Submarkets	[ 0; 0; 1 ]
 					}
@@ -178,7 +178,7 @@ SoftwareType
 					{
 					Name		"Financial algorithms"
 					Description	"Risk analysis, credit scoring, portfolio optimization, and more!"
-					DevTime		6
+					DevTime		4
 					Level		2
 					CodeArt		1
 					Submarkets	[ 2; 1; 0 ]
@@ -196,7 +196,7 @@ SoftwareType
 					DevTime		10
 					Level		3
 					CodeArt		1
-					Submarkets	[ 0; 0; 1 ]
+					Submarkets	0
 					Script_AfterSales
 "var exchange = Refunds * 0.25;Refunds = Refunds - exchange;DigitalSales = DigitalSales + exchange;"#Add 25% of refunds to digital sales
 					}
@@ -215,15 +215,15 @@ SoftwareType
 					Name		"Search tool"
 					Description	"Searching through loads of data is a lot faster with the power of quantum computing"
 					DevTime		4
-					Level		2
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
 					Name		"Quantum image encoding"
 					Description	"Turns out processing images with quantum computation is a lot faster, and a lot more efficient"
-					DevTime		6
-					Level		2
+					DevTime		5
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
 					}
@@ -231,13 +231,13 @@ SoftwareType
 					Name		"Model visualization"
 					Description	"People might get tired of looking at code, algorithms and data. Show them nice charts and diagrams instead"
 					DevTime		4
-					Level		1
+					Level		2
 					CodeArt		0.8
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{
 					Name		"Visual circuit composer"
-					DevTime		6
+					DevTime		5
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 0; 2 ]
@@ -266,8 +266,8 @@ SoftwareType
 				[
 					{
 					Name		"Quantum video encoding"
-					DevTime		6
-					Level		2
+					DevTime		5
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
 					}
@@ -312,7 +312,7 @@ SoftwareType
 					{
 					Name		"Low pressure operation"
 					Description	"Decreasing the atmospheric pressure in the quantum computer can make it much more reliable"
-					DevTime		5
+					DevTime		2
 					Level		2
 					CodeArt		1
 					Submarkets	[ 2; 1; 2 ]
@@ -320,7 +320,7 @@ SoftwareType
 					{
 					Name		"Doppler cooling"
 					Description	"Cooling the qubits makes them better qubits, basically"
-					DevTime		5
+					DevTime		2
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 1; 0 ]
@@ -328,10 +328,10 @@ SoftwareType
 					{
 					Name		"Midcircuit measurement"
 					Description	"Measure quantum states midstream and change calculations on the fly"
-					DevTime		6
+					DevTime		3
 					Level		2
 					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
+					Submarkets	[ 2; 2; 1 ]
 					}
 				]
 			}

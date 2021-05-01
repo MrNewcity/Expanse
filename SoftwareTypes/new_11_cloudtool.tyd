@@ -11,37 +11,11 @@ SoftwareType
 	OptimalDevTime	30
 	SubmarketNames	[ Security; Speed; Sharing ]
 	Iterative		1
-	NameGenerator	namer_cloudservice
+	NameGenerator	s_cloudservice
 	OSSupport		[ Computer; Phone; Server ]
 	InHouse			False
 	Features
 		[
-			{
-			Name			Interface
-			Spec			2D
-			DevTime			4
-			CodeArt			0.8
-			Submarkets		[ 1; 1; 1 ]
-			Dependencies	"2D Editor"
-			Features
-				[
-					{
-					Name		"Search"
-					DevTime		2
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 1; 1 ]
-					}
-					{
-					Name		"Storage reports"
-					Description	"Show users a nice chart of how their cloud space is being used"
-					DevTime		4
-					Level		2
-					CodeArt		0.8
-					Submarkets	[ 1; 1; 1 ]
-					}
-				]
-			}
 			{
 			Name		System
 			Spec		System
@@ -81,6 +55,32 @@ SoftwareType
 					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name			Interface
+			Spec			2D
+			DevTime			4
+			CodeArt			0.8
+			Submarkets		[ 1; 1; 1 ]
+			Dependencies	"2D Editor"
+			Features
+				[
+					{
+					Name		"Search"
+					DevTime		2
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Storage reports"
+					Description	"Show users a nice chart of how their cloud space is being used"
+					DevTime		4
+					Level		2
+					CodeArt		0.8
+					Submarkets	[ 1; 1; 1 ]
 					}
 				]
 			}

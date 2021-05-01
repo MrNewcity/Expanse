@@ -72,7 +72,7 @@ SoftwareType
 			TimeScale		0.7
 			Iterative		0.8
 			IdealPrice		60
-			NameGenerator	namer_partygame
+			NameGenerator	s_game_party
 			Submarkets		[ 4; 1; 0 ]
 			}
 		]

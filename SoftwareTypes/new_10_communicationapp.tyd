@@ -11,11 +11,53 @@ SoftwareType
 	OptimalDevTime	30
 	SubmarketNames	[ Consumer; Business; Gaming ]
 	Iterative		1
-	NameGenerator	namer_communicationapp
+	NameGenerator	s_communicationapp
 	OSSupport		[ Computer; Phone; Car ]
 	InHouse			False
 	Features
 		[
+			{
+			Name		"System"#10
+			Spec		System
+			DevTime		1
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Codecs"#11
+					Description	"You gotta compress. Bandwidth does not grow on trees!"
+					DevTime		4
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Encryption"#12
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 4; 0 ]
+					}
+					{
+					Name		"Custom channels"#13
+					Description	"Allow users to create and manage their own channels or 'servers' for a group of people"
+					Server		0.0001
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"File sharing"#14
+					Description	"Let users share pictures, videos and files"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 1; 0 ]
+					}
+				]
+			}
 			{
 			Name		"Interface"#5
 			Spec		2D
@@ -56,48 +98,6 @@ SoftwareType
 					Level		1
 					CodeArt		0.9
 					Submarkets	[ 1; 1; 1 ]
-					}
-				]
-			}
-			{
-			Name		"System"#10
-			Spec		System
-			DevTime		1
-			CodeArt		1
-			Submarkets	[ 1; 1; 1 ]
-			Features
-				[
-					{
-					Name		"Codecs"#11
-					Description	"You gotta compress. Bandwidth does not grow on trees!"
-					DevTime		4
-					Level		1
-					CodeArt		1
-					Submarkets	[ 1; 1; 1 ]
-					}
-					{
-					Name		"Encryption"#12
-					DevTime		5
-					Level		2
-					CodeArt		1
-					Submarkets	[ 1; 4; 0 ]
-					}
-					{
-					Name		"Custom channels"#13
-					Description	"Allow users to create and manage their own channels or 'servers' for a group of people"
-					Server		0.0001
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 1 ]
-					}
-					{
-					Name		"File sharing"#14
-					Description	"Let users share pictures, videos and files"
-					DevTime		4
-					Level		2
-					CodeArt		1
-					Submarkets	[ 0; 1; 0 ]
 					}
 				]
 			}

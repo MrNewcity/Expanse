@@ -5,13 +5,13 @@ SoftwareType
 	Unlock			2010
 	Description		"Developing Artificial Intelligence allows you to contribute to computers becoming the dominant species on Earth"
 	Random			0.35
-	Popularity		0.05
+	Popularity		0.006
 	Retention		36
 	IdealPrice		200
 	OptimalDevTime	55
 	SubmarketNames	[ Intelligence; Utility; Security ]
 	Iterative		1
-	NameGenerator	namer_ai
+	NameGenerator	s_aisoftware
 	OSSupport		[ Computer; Server ]
 	InHouse			False
 	Features

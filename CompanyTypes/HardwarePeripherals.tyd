@@ -3,17 +3,13 @@ CompanyType
 	Specialization		"Peripherals"
 	PerYear				0.2
 	Min					2
-	Max					3
+	Max					4
 	Frameworks			False
 	Types
 		[
 			{
-			Software	"Computer Peripheral"
-			Chance		0.8
-			}
-			{
-			Software	"Audio Accessory"
-			Chance		1
+			Software	"Hardware Peripheral"
+			Chance		0.5
 			}
 		]
 	}

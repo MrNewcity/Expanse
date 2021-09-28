@@ -1,11 +1,11 @@
 [REPLACE]
--start(pre,base,pre,base,citystart)
+-start(pre,base,base)
 -pre(base)
 Mc
 The 
 Cool 
 The 
--base(smallsecond,largesecond,ext,smallsecond,largesecond,ext,companytype)
+-base(smallsecond,largesecond,companytype,ext)
 Chicken
 Pit
 Cow
@@ -26,7 +26,21 @@ Sheep
 Owl
 Back
 Chip
--smallsecond(ext,largesecond,stop,companytype)
+Liberty
+Silicon
+Scholar
+Eagle
+River
+Grape
+Ever
+Pine
+Angel
+Royal
+Sugar
+Palm
+Apple
+Sand
+-smallsecond(largesecond,companytype,ext,stop)
 Fang
 Fat
 Dump
@@ -42,7 +56,9 @@ Switch
 Shop
 Plus
 Night
--largesecond(ext,stop,companytype)
+town
+view
+-largesecond(companytype,ext,stop)
  Sausage
  Carrot
  Fan
@@ -52,67 +68,19 @@ Night
  Deluxe
  To Go
  Dinner
+ City
+ Grove
+ Hills
+ Bay
+ Oaks
 -companytype(ext,stop)
  Industries
  Contracting
- Construction
  Management
- Electric
- Plumbing
- Logistics
- Manufacturing
- Fabrication
- Food Service
- Foods
- Cinemas
  Entertainment
  Studios
- Oil
- Electronics
- Farms
- Beds
- Accounting
--citystart(citymid,citymid,citymid,companytype)
-Pawnee
-Liberty
-Queens 
-Silicon
-Scholars
-Eagle
-Kings
-River
-Grapevine
-Evergreen
-Pine
-Oak
-Angelic
-Royal
-Green
-Sugar
-Palm
-Apple
-Sandy
-Chalet
--citymid(cityext,cityext,companytype)
-ville
- Grove
- Hills
-town
- Bay
- Lake
-view
-ton
- Acres
-mont
- Oaks
--cityext(stop)
- Police Department
- City Government
- Fire Department
- Public Works
- Sanitation Services
- Parks Department
- Business Association
+ Middlemen
+ Group
 -ext(stop)
  Inc.
  Corp.

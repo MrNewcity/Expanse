@@ -5,7 +5,7 @@ SoftwareType
 	Description		"An Electronic Flight Bag application helps flight crews and pilots perform flight management tasks"
 	Unlock			2000
 	Random			0.1
-	Popularity		0.01
+	Popularity		0.001
 	Retention		36
 	IdealPrice		90
 	OptimalDevTime	35

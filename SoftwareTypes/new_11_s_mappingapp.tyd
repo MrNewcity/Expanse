@@ -7,7 +7,7 @@ SoftwareType
 	Random			0.2
 	Popularity		0.75
 	Retention		24
-	IdealPrice		40
+	IdealPrice		35
 	OptimalDevTime	25
 	SubmarketNames	[ "Navigation"; "Discovery"; "Live data" ]
 	Iterative		1

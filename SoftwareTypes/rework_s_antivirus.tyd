@@ -7,7 +7,7 @@ SoftwareType
 	Random			0.3
 	Popularity		0.5
 	Retention		16
-	IdealPrice		70
+	IdealPrice		60
 	OptimalDevTime	25
 	SubmarketNames	[ "Passive protection"; "Active protection"; "Monitoring" ]
 	Iterative		1

@@ -327,7 +327,7 @@ PersonalityGraph
 				}
 			}
 			{
-            Name       Boring
+            Name       Square
             WorkLearn  0
             Social     -0.8
             LazyStress 0.6
@@ -369,9 +369,9 @@ PersonalityGraph
 		[ Spontaneous; Stubborn ]
 		[ Spontaneous; Pessimistic ]
 		[ Spontaneous; Misanthropist ]
-		[ Boring; Spontaneous ]
-		[ Boring; Dramatic ]
-		[ Boring; Goofy ]
+		[ Square; Spontaneous ]
+		[ Square; Dramatic ]
+		[ Square; Goofy ]
         ]
     }
 

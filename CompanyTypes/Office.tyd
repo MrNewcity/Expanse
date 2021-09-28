@@ -8,7 +8,7 @@ CompanyType
 		[
 			{
 			Software	"Office Software"
-			Chance		1
+			Chance		0.5
 			}
 			{
 			Software	"File Archiver"

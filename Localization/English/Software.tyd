@@ -3,7 +3,6 @@ GameDevelopment        "Game Development"
 Development            "Development"
 QuantumComputing       "Quantum Computing"
 Peripherals            "Peripherals"
-AudioProducts          "Audio Products"
 UAV                    "UAV"
 3DPrinting             "3D Printing"
 Streaming              "Streaming"
@@ -498,10 +497,10 @@ Software
 
 Software
     {
-    ComputerPeripheral
+    HardwarePeripheral
         [
-        "Computer Peripheral"
-        "A computer peripheral combines hardware with software to configure it"
+        "Hardware Peripheral"
+        "Hardware peripherals combine hardware with software to configure it"
         ]
     Features
         [
@@ -516,6 +515,14 @@ Software
                 ]
             }
         Feature { Customprofilesaving "Custom profile saving" }
+        Feature
+            {
+            Configurationsaving
+                [
+                "Configuration saving"
+                "Once you find those perfect sound settings, you don't want to lose them!"
+                ]
+            }
         Feature
             {
             Hardwareintegration
@@ -538,7 +545,15 @@ Software
             Hardwarevisualization
                 [
                 "Hardware visualization"
-                "Show users what their hardware looks light right in the app, because looking 6 inches down is a lot of work"
+                "Show users what their hardware looks light right in the app, because looking down at your desk is a lot of work"
+                ]
+            }
+        Feature
+            {
+            Audiovisualization
+                [
+                "Audio visualization"
+                "Listening to sound waves is boring, you should be able to look at them too!"
                 ]
             }
         Feature { Animations "Animations" }
@@ -574,52 +589,27 @@ Software
             RGBlighting
                 [
                 "RGB lighting"
-                "It's scientifically proven that RGB lighting improves game skill"
+                "It's scientifically proven that RGB lighting improves skill"
                 ]
             }
         Feature { Wirelesstechnology "Wireless technology" }
-        ]
-    Categories
-        [
-        Category
+        Feature
             {
-            Mouse [ "Mouse"; "These are used to interface with modern computers" ]
-            }
-        Category
-            {
-            Keyboard
+            Open-backearcups
                 [
-                "Keyboard"
-                "These serve as the middleman between your brain and your word documents"
+                "Open-back earcups"
+                "Are you tired of the isolation of closed-back headphones? Try open-back headphones!"
                 ]
             }
-        ]
-    Components
-        [
-        Component { Plastic "Plastic" }
-        Component { Switches "Switches" }
-        Component { Opticalsensor "Optical sensor" }
-        Component { Wirelessreceiver "Wireless receiver" }
-        Component { Microcontroller "Microcontroller" }
-        Component { Boardassembly "Board assembly" }
-        Component { Mousebody "Mouse body" }
-        Component { LEDlights "LED lights" }
-        Component { Keyswitches "Key switches" }
-        Component { Keycaps "Key caps" }
-        Component { Keyboardbody "Keyboard body" }
-        ]
-    }
-
-Software
-    {
-    AudioAccessory
-        [
-        "Audio Accessory"
-        "Audio accessories enable users to listen to music, communicate, and more!"
-        ]
-    Features
-        [
         Feature { Audio "Audio" }
+        Feature
+            {
+            Soundeffects
+                [
+                "Sound effects"
+                "Enable users to add virtual sound effects when they click or press a key. Sure to become annoying after five minutes!"
+                ]
+            }
         Feature
             {
             Audioinput
@@ -661,43 +651,21 @@ Software
         Feature { Activenoisecancellation "Active noise cancellation" }
         Feature { Backgroundnoisecancellation "Background noise cancellation" }
         Feature { Gainadjustment "Gain adjustment" }
-        Feature { System "System" }
-        Feature
-            {
-            Configurationsaving
-                [
-                "Configuration saving"
-                "Once you find those perfect sound settings, you don't want to lose them!"
-                ]
-            }
-        Feature { Interface "Interface" }
-        Feature
-            {
-            Audiovisualization
-                [
-                "Audio visualization"
-                "Listening to sound waves is boring, you should be able to look at them too!"
-                ]
-            }
-        Feature { Hardware "Hardware" }
-        Feature
-            {
-            RGBlighting [ "RGB lighting"; "It's like a firework show, on your ears!" ]
-            }
-        Feature { Wirelesstechnology "Wireless technology" }
-        Feature
-            {
-            Open-backearcups
-                [
-                "Open-back earcups"
-                "Are you tired of the isolation of closed-back headphones? Try open-back headphones!"
-                ]
-            }
-        Feature { Network "Network" }
-        Feature { Automaticdriverupdates "Automatic driver updates" }
         ]
     Categories
         [
+        Category
+            {
+            Mouse [ "Mouse"; "These are used to interface with modern computers" ]
+            }
+        Category
+            {
+            Keyboard
+                [
+                "Keyboard"
+                "These serve as the middleman between your brain and your word documents"
+                ]
+            }
         Category
             {
             Headphones [ "Headphones"; "These blast soundwaves into your ears" ]
@@ -710,14 +678,21 @@ Software
     Components
         [
         Component { Plastic "Plastic" }
-        Component { Microcontroller "Microcontroller" }
-        Component { ANCprocessor "ANC processor" }
+        Component { Switches "Switches" }
+        Component { Opticalsensor "Optical sensor" }
         Component { Wirelessreceiver "Wireless receiver" }
+        Component { Microcontroller "Microcontroller" }
+        Component { Boardassembly "Board assembly" }
+        Component { Mousebody "Mouse body" }
+        Component { LEDlights "LED lights" }
+        Component { Keyswitches "Key switches" }
+        Component { Keycaps "Key caps" }
+        Component { Keyboardbody "Keyboard body" }
+        Component { ANCprocessor "ANC processor" }
         Component { Microphone "Microphone" }
         Component { Drivers "Drivers" }
         Component { Innerassembly "Inner assembly" }
         Component { Headphonebody "Headphone body" }
-        Component { LEDlights "LED lights" }
         Component { Ventilation "Ventilation" }
         Component { Audiochip "Audio chip" }
         Component { Condenser "Condenser" }

@@ -228,8 +228,8 @@ SoftwareType
 					}
 					{
 					Name		"Multiplayer deployment tools"
-					DevTime		5
-					Level		2
+					DevTime		4
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 4; 0 ]
 					}

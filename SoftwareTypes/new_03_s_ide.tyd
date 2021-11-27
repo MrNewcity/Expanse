@@ -93,7 +93,7 @@ SoftwareType
 					}
 					{
 					Name		"AI-enhanced code completion"
-					Description	"Look into user's projects with AI to improve code completion. This can increase sales due to the better coding experience, but will also create more bugs"
+					Description	"Look into user's projects with AI to improve code completion. This can increase sales due to the better coding experience, but can also lead to more bugs"
 					Unlock		2010
 					Server		0.0001
 					DevTime		6
@@ -104,8 +104,8 @@ SoftwareType
    "var dsr = (RandomRange(1.01, 1.15) * DigitalSales);   //Range of digital sales is 101% to 115% of normal sales
 	var psr = (RandomRange(1.01, 1.15) * PhysicalSales); //Range of physical sales is 101% to 115% of normal sales
 		DigitalSales = dsr;PhysicalSales = psr;"
-					Script_EndOfDay
-	"Product.Bugs = Max(0, Product.Bugs + Product.Userbase * 0.01);//Add 1 bug to product for each 100th active user"
+					Script_WorkItemChange 
+	"if (!Ended && WorkItem is SoftwareAlpha) WorkItem.MaxBugs = WorkItem.MaxBugs * 1.5;"#Add 50% potential extra bugs to alpha phase
 					}
 				]
 			}

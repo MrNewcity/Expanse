@@ -7,7 +7,7 @@ SoftwareType
 	Random			0.3
 	Popularity		0.5
 	Retention		24
-	IdealPrice		60
+	IdealPrice		55
 	OptimalDevTime	35
 	SubmarketNames	[ Simplicity; Control; Personalization ]#personalization is interface/stream overlay related. control is related to settings, quality, advanced stuff
 	Iterative		0.95

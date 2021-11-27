@@ -77,7 +77,7 @@ SoftwareType
 			}
 		]
 	Random			0.6
-	IdealPrice		80
+	IdealPrice		70
 	OptimalDevTime	35
 	OSSupport		[ Computer; Console; Phone ]
 	SubmarketNames	[ Gameplay; Graphics; Story ]

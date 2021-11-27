@@ -7,7 +7,7 @@ SoftwareType
 	Random			0.35
 	Popularity		0.006
 	Retention		36
-	IdealPrice		200
+	IdealPrice		190
 	OptimalDevTime	55
 	SubmarketNames	[ Intelligence; Utility; Security ]
 	Iterative		1

@@ -1,0 +1,5 @@
+#NewLawsuit	
+	LyingToUsers "Misleading consumers"
+#NewAddons
+	Item { Name "Biome"; Plural "Biomes"; Value "{0} [Biome|Biomes]" }
+	Item { Name "Instrument"; Plural "Instruments"; Value "{0} [Instrument|Instruments]" }

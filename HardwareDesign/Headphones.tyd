@@ -1,0 +1,79 @@
+Design
+    {
+    ID                    Headphones
+    Name                  Headphones
+    BaseMesh              HeadphoneCustomized
+    Objects
+        [
+            {
+            ID           HeadphoneCustomized
+            Name         HeadphoneCustomized
+            Mesh         HeadphoneCustomized.glb
+            MorphTargets
+                [
+                { Label "Earcup Width"; VertexIndex 883 }
+                { Label "Headband Curve"; VertexIndex 497 }
+                { Label Offset; VertexIndex 207 }
+                { Label "Headband Top Width"; VertexIndex 600 }
+                { Label "Earcup Height"; VertexIndex 749 }
+                { Label "Headband Sides Width"; VertexIndex 613 }
+                ]
+            }
+        { ID Button1c; Name Button1c; Mesh Button1c.obj }
+        { ID Button2c; Name Button2c; Mesh Button2c.obj }
+        ]
+    Attachments
+        [
+            {
+            Name        Point
+            Index       4503
+            Type        Triangle
+            CanBeEmpty  True
+            Attachments
+                [
+                    {
+                    Object   Button2c
+                    Offset   [ 0.01986495; 0.06487256; -0.002418455 ]
+                    Rotation [ 358.2605; 0.3693119; 348.0114 ]
+                    Roll     True
+                    }
+                ]
+            }
+            {
+            Name        Point
+            Index       315
+            Type        Vertex
+            CanBeEmpty  True
+            Attachments
+                [
+                    {
+                    Object   Button1c
+                    Offset   [ -0.01464873; -0.02066821; -0.02635646 ]
+                    Rotation [ 358.2277; 357.6393; 52.47218 ]
+                    Roll     True
+                    }
+                ]
+            }
+        ]
+    BaseTexture           Headphonetexture.png
+    SecondaryColorEnabled True
+    TertiaryColorEnabled  True
+    ColorSets
+        [
+        
+            {
+            PrimaryColors   [ DEA477; F4F4F4; 111111; E4340E; 2DDA2E; 4CA3F4; F3DAF5; F8F090; 53F8B8 ]
+            SecondaryColors [ EAEAEA; 7D7D7D; 323232; FFF3E5 ]
+            TertiaryColors  [ DEA477; F4F4F4; 111111; E4340E; 2DDA2E; 4CA3F4; F3DAF5; F8F090; 53F8B8 ]
+            }
+        
+            {
+            PrimaryColors   [ EAEAEA; 111111; 575757; CDCDCD ]
+            SecondaryColors [ FC2708; 17FD1D; 2AFCF0; 8B17FB; FD87FF; FFEA27; FD931D; F0F0F0; DBFC30 ]
+            TertiaryColors  [ EAEAEA; 111111; 575757; CDCDCD ]
+            }
+        ]
+    RotYOffset            -15
+    RotXOffset            180
+    }
+

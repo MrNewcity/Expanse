@@ -1,0 +1,46 @@
+-start(pre,type,pre,type,base)
+-pre(type,base)
+HQ 
+Low-Poly 
+HD 
+Modular 
+Realistic 
+Dynamic 
+Mega 
+Easy 
+-type(base)
+Fantasy 
+Horror 
+Park 
+Space 
+Modern 
+City 
+Car 
+Nature 
+Fun 
+Superhero 
+Shooter 
+Sky 
+-base(base2,base2,ext,stop)
+Model
+Object
+Environment
+Sound
+Asset
+Creator
+Set
+Effect
+Decoration
+-base2(ext,stop,stop,stop)
+ Pack
+ Pack
+ Bundle
+ Assortment
+ Collection
+s
+s
+-ext(stop)
+ Pro
+ for Game Developers
+ Extreme
+ Deluxe

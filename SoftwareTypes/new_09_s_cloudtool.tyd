@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Cloud Storage Tool"#balanced by being kinda expensive for the devtime, but it uses a lot of server
-	Category		Cloud Storage
 	Description		"Store files and data in the C L O U D"
 	Unlock			2000
 	Random			0.3

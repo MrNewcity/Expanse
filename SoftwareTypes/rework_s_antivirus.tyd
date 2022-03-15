@@ -2,7 +2,6 @@ SoftwareType
 	{
 	Name			"Antivirus"
 	Override		True
-	Category		Security
 	Description		"Protecting computers from digital troublemakers since it became profitable to do so."
 	Random			0.3
 	Popularity		0.5

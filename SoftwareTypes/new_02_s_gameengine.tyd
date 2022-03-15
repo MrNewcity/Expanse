@@ -1,7 +1,6 @@
 SoftwareType
 {
 	Name			"Game Engine"
-	Category		"Game Development"
 	Description		"A game engine is a software development environment specifically tailored for creating videogames"
 	Random			0.2
 	Popularity		0.1
@@ -249,4 +248,103 @@ SoftwareType
 				]
 			}
 		]
-}
+	AddOns
+		[
+			{
+			Name		   "Asset pack"
+			Description    "Noice"
+			NameGenerator  s_gameengine_assetpack
+			IdealPrice 	   20
+			OptimalDevTime 8
+			Retention      8
+			Features
+				[
+					{
+					Name       "New sound effects"
+					Spec       "Audio"
+					DevTime    0.25
+					Level      1
+					CodeArt    0
+					MaxFactor  4
+					Submarkets [ 2; 1; 0 ]
+					DependsOn  "Sound effects"
+					}
+					{
+					Name       "New 3D assets"
+					Spec       "3D"
+					DevTime    0.5
+					Level      1
+					CodeArt    0
+					MaxFactor  3
+					Submarkets [ 2; 1; 0 ]
+					DependsOn  "3D assets"
+					}
+					{
+					Name       "New 2D assets"
+					Spec       "2D"
+					DevTime    0.25
+					Level      1
+					CodeArt    0
+					MaxFactor  4
+					Submarkets [ 2; 1; 0 ]
+					DependsOn  "2D assets"
+					}
+					{
+					Name       "HUD elements"
+					Spec       "2D"
+					DevTime    1
+					Level      1
+					CodeArt    0.1
+					Submarkets [ 1; 1; 1 ]
+					}
+					{
+					Name       "Music"
+					Spec       "Audio"
+					DevTime    0.5
+					Level      2
+					CodeArt    0
+					MaxFactor  4
+					AmountScript "LocalizePlural(\"SoundTrack\", x)"
+					Submarkets [ 2; 1; 0 ]
+					}
+					{
+					Name       "Game world environments"
+					Spec       "3D"
+					DevTime    0.5
+					Level      2
+					CodeArt    0.1
+					MaxFactor  3
+					AmountScript "LocalizePlural(\"Biome\", x)"
+					Submarkets [ 1; 0; 0 ]
+					}
+					{
+					Name       "NPC AI templates"
+					Spec       "System"
+					DevTime    2
+					Level      2
+					CodeArt    1
+					Submarkets [ 2; 2; 1 ]
+					}
+					{
+					Name       	"Optimized assets"
+					Description	"Less polygons = More FPS!"
+					Spec		"System"
+					DevTime		1
+					Level		2
+					CodeArt		1
+					Submarkets	[ 0; 0; 1 ]
+					}
+					{
+					Name       	"Modular models"
+					Description	"Swap parts of 3D objects out on the fly, such as clothing, props, and faces!"
+					Spec		"3D"
+					DevTime		1
+					Level		2
+					CodeArt		0.8
+					Submarkets	[ 0; 1; 0 ]
+					DependsOn	"3D assets"
+					}
+				]
+			}
+		]
+	}

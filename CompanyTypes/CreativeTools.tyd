@@ -23,4 +23,17 @@ CompanyType
 			Chance		1
 			}
 		]
+	Addons
+		[
+			{
+			Software   "Operating System"
+			Addon      "Joystick"
+			Chance     0.05
+			}
+			{
+			Software   "Operating System"
+			Addon      "Headphones"
+			Chance     0.05
+			}
+		]
 	}

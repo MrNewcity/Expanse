@@ -5,6 +5,7 @@ PersonalityGraph
         [
             {
             Name          Generous
+			Traits		  [ Humble ; Stressed ]
             WorkLearn     -0.5
             Social        0.5
             LazyStress    1
@@ -20,6 +21,7 @@ PersonalityGraph
             }
             {
             Name          Optimistic
+			Traits		  [ WalkItOff ; SlowEater ]
             WorkLearn     1
             Social        1
             LazyStress    0
@@ -36,6 +38,7 @@ PersonalityGraph
             }
             {
             Name          Misanthropist
+			Traits		  [ Detached ]
             WorkLearn     0.5
             Social        -1
             LazyStress    0
@@ -56,20 +59,18 @@ PersonalityGraph
                 Introvert      0
                 Extrovert      0
 				Energetic		0
-				Laidback		0
+				Zen				0
 				Ambitious		0
 				Creative		0
 				Geek			0
-				Perfectionist	0
-				Clumsy			0
 				Slob			0
 				Pushover		0
-				Spontaneous		0
-				Boring			0
+				Square			0
                 }
             }
             {
             Name          Cocky
+			Traits		  [ RGBThumb ; Forgetful ]
             WorkLearn     0.5
             Social        -0.5
             LazyStress    -1
@@ -87,6 +88,7 @@ PersonalityGraph
             }
             {
             Name          Snob
+			Traits		  [ Skyscraper ; NeatFreak ]
             WorkLearn     0.5
             Social        -0.5
             LazyStress    0.5
@@ -100,6 +102,7 @@ PersonalityGraph
             }
             {
             Name          Mean
+			Traits		  [ FastLearner ; SlowEater ]
             WorkLearn     0
             Social        -1
             LazyStress    -0.5
@@ -114,18 +117,17 @@ PersonalityGraph
                 Short-tempered 0.1
                 Introvert      0.25
 				Energetic	 	0.1
-				Laidback	  	0.25
+				Zen	  			0.25
 				Ambitious	  	0.1
 				Creative	 	0.1
 				Geek		 	0.1
-				Perfectionist 	0.1
-				Clumsy			-0.25
 				Slob			-0.1
 				Pushover		0.1
                 }
             }
             {
             Name          Pessimistic
+			Traits		  [ BigBrain; UnderTheWeather ]
             WorkLearn     0
             Social        -0.5
             LazyStress    0.5
@@ -138,6 +140,7 @@ PersonalityGraph
             }
             {
             Name          Goofy
+			Traits		  [ Unphased ]
             WorkLearn     0
             Social        0.5
             LazyStress    -0.5
@@ -151,6 +154,7 @@ PersonalityGraph
             }
             {
             Name          Flirt
+			Traits		  [ ThisIsFine; Cupholder ]
             WorkLearn     0
             Social        1
             LazyStress    -1
@@ -163,6 +167,7 @@ PersonalityGraph
             }
             {
             Name          Naive
+			Traits		  [ Sunshine; UnderTheWeather ]
             WorkLearn     -1
             Social        0
             LazyStress    -0.5
@@ -176,6 +181,7 @@ PersonalityGraph
             }
             {
             Name          Dramatic
+			Traits		  [ Capacitor; Hypochondriac ]
             WorkLearn     0
             Social        0.5
             LazyStress    1
@@ -188,6 +194,7 @@ PersonalityGraph
             }
             {
             Name          Short-tempered
+			Traits		  [ Capacitor; Stressed ]
             WorkLearn     -0.5
             Social        -0.5
             LazyStress    0.5
@@ -199,12 +206,14 @@ PersonalityGraph
             }
             {
             Name       Stubborn
+			Traits		  [ SuperFocus ]
             WorkLearn  -1
             Social     -0.5
             LazyStress 0.5
             }
             {
             Name          Introvert
+			Traits		  [ Independant; NervousBladder ]
             WorkLearn     1
             Social        -1
             LazyStress    0.5
@@ -215,12 +224,14 @@ PersonalityGraph
             }
             {
             Name       Extrovert
+			Traits		  [ BornLeader ]
             WorkLearn  0
             Social     1
             LazyStress 0
             }
 			{		#--------- down from here is new personalities from mod -----------
             Name       Energetic
+			Traits		[ Capacitor; WalkInstead ]
             WorkLearn  -0.5
             Social     1
             LazyStress 0.75
@@ -232,25 +243,28 @@ PersonalityGraph
 				}
             }
 			{
-            Name       Laidback
+            Name       Zen
+			Traits		  [ ThisIsFine; BumLeg ]
             WorkLearn  0.9
-            Social     0.75
+            Social     0.5
             LazyStress -1
 			Relationships
 				{
-				Short-tempered	-0.2
+				Short-tempered	0.25
 				}
             }
 			{
             Name       Ambitious
+			Traits		  [ Skyscraper; Stressed ]
             WorkLearn  0
             Social     0.5
             LazyStress 1
             }
 			{
             Name       Creative
+			Traits		[ Sunshine; SlowEater ] #idea behind sloweater: they are thinking of creative ideas etc
             WorkLearn  0.75
-            Social     -0.1
+            Social     0
             LazyStress -0.2
 			Relationships
 				{
@@ -260,6 +274,7 @@ PersonalityGraph
             }
 			{
             Name       Geek
+			Traits		[ RGBThumb; SilentButDeadly ]
             WorkLearn  1
             Social     -0.5
             LazyStress -0.25
@@ -270,72 +285,34 @@ PersonalityGraph
 				}
             }
 			{
-            Name       Perfectionist
-            WorkLearn  -0.5
-            Social     0
-            LazyStress 1
-			Relationships
-				{
-				Goofy			-0.25
-				Stubborn		-0.1
-				}
-            }
-			{
-            Name       Clumsy
-            WorkLearn  0.5
-            Social     -0.1
-            LazyStress -0.1
-			Relationships
-				{
-				Goofy			0.5
-				Perfectionist	-0.2
-				Short-tempered	-0.1
-				Laidback		0.5
-				}
-            }
-			{
             Name       Slob
+			Traits		[ Humble; OldSole ]
             WorkLearn  0.5
             Social     0.1
             LazyStress -1
 			Relationships
 				{
-				Clumsy			0.2
-				Perfectionist	-0.5
 				Short-tempered	-0.1
-				Laidback		0.5
+				Zen				0.5
 				}
             }
 			{
             Name       Pushover
+			Traits		[ Humble; Stressed ]
             WorkLearn  0
             Social     -0.25
             LazyStress 0.5
             }
 			{
-            Name       Spontaneous
-            WorkLearn  0.5
-            Social     0.75
-            LazyStress 0
-			Relationships
-				{
-				Goofy		0.75
-				Ambitious	0.5
-				Stubborn	-0.25
-				Optimistic	0.75
-				Generous	0.5
-				}
-			}
-			{
             Name       Square
+			Traits		[ Watch ]
             WorkLearn  0
             Social     -0.8
             LazyStress 0.6
 			Relationships
 				{
 				Goofy		-0.1
-				Laidback	0.1
-				Spontaneous	-0.2
+				Zen			0.1
 				Dramatic	-0.1
 				}
             }
@@ -350,25 +327,16 @@ PersonalityGraph
         [ Mean; Flirt ]
         [ Flirt; Introvert ]
         [ Introvert; Extrovert ]
-		[ Energetic; Laidback ]#NEW down from here
+		[ Energetic; Zen ]#NEW down from here
 		[ Energetic; Pessimistic ]
-		[ Laidback; Short-tempered ]
-		[ Ambitious; Laidback ]
+		[ Zen; Short-tempered ]
+		[ Ambitious; Zen ]
 		[ Ambitious; Misanthropist ]
 		[ Geek; Pessimistic ]
 		[ Geek; Flirt ]
-		[ Perfectionist; Laidback ]
-		[ Perfectionist; Goofy ]
-		[ Clumsy; Perfectionist ]
-		[ Clumsy; Flirt ]
-		[ Clumsy; Snob ]
-		[ Slob; Perfectionist ]
 		[ Pushover; Ambitious ]
 		[ Pushover; Short-tempered ]
 		[ Pushover; Cocky ]
-		[ Spontaneous; Stubborn ]
-		[ Spontaneous; Pessimistic ]
-		[ Spontaneous; Misanthropist ]
 		[ Square; Spontaneous ]
 		[ Square; Dramatic ]
 		[ Square; Goofy ]

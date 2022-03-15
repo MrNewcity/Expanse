@@ -2,7 +2,6 @@ SoftwareType
 	{
 	Name			"2D Editor"
 	Override		True
-	Category		Graphics
 	Description		"Program that allows you to handle 2 dimensional arrays of color information"
 	Random			0.1
 	Popularity		0.7

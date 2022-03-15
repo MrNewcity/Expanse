@@ -2,7 +2,6 @@ SoftwareType
 	{
 	Name			"Office Software"
 	Override		True
-	Category		Productivity
 	Description		"For all your officing needs"
 	Categories
 		[
@@ -350,6 +349,117 @@ if (supportWork != null)
 			Submarkets		[ 0; 1; 1 ]
 			Features
 				[
+				]
+			}
+		]
+	AddOns
+		[
+			{
+			Name 			"Content Pack"
+			OptimalDevTime 	4
+			Retention 		6
+			IdealPrice		20
+			NameGenerator	"ContentPack"
+			Features
+				[
+					{
+					Name	"Clipart"
+					Spec	"2D"
+					DevTime	0.5
+					Level	1
+					CodeArt	0
+					MaxFactor	4
+					AmountScript	"(x * 25) + ' ' + Localize('PressPicture')"
+					Submarkets	[ 1; 0; 1 ]
+					SoftwareCategories	[ Presentation; Word Processor; Publisher ]
+					DependsOn	"Clipart"
+					}
+					{
+					Name	"Sound effects"
+					Spec	"Audio"
+					Description	"Someone's going to enjoy this presentation and it ain't me"
+					DevTime	0.5
+					Level	1
+					CodeArt	0
+					Submarkets	[ 1; 0; 1 ]
+					DependsOn	"Audio playback"
+					}
+					{
+					Name	"Math library"
+					Spec	"System"
+					DevTime	0.5
+					Level	2
+					CodeArt	1
+					SoftwareCategories	[ Spreadsheet ]
+					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name	"Fonts"
+					Spec	"2D"
+					Description	"<b><color=#FF0000>Papyrus</color></b>"
+					DevTime	1
+					Level	2
+					CodeArt	0
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name	"Slide templates"
+					Spec	"2D"
+					DevTime	0.5
+					Level	1
+					CodeArt	0
+					Submarkets	[ 4; 1; 0 ]
+					SoftwareCategories	[ Presentation ]
+					MaxFactor	4
+					AmountScript	"(x * 10) + ' ' + Localize('Templates')"
+					DependsOn	"Templates"
+					}
+					{
+					Name	"Document templates"
+					Spec	"2D"
+					DevTime	0.75
+					Level	1
+					CodeArt	0
+					Submarkets	[ 4; 1; 0 ]
+					SoftwareCategories	[ Word Processor ]
+					MaxFactor	4
+					AmountScript	"(x * 10) + ' ' + Localize('Templates')"
+					DependsOn	"Templates"
+					}
+					{
+					Name	"Publication templates"
+					Spec	"2D"
+					DevTime	0.75
+					Level	1
+					CodeArt	0
+					Submarkets	[ 4; 1; 0 ]
+					SoftwareCategories	[ Publisher ]
+					MaxFactor	4
+					AmountScript	"(x * 10) + ' ' + Localize('Templates')"
+					DependsOn	"Templates"
+					}
+					{
+					Name	"Sheet templates"
+					Spec	"2D"
+					DevTime	0.5
+					Level	1
+					CodeArt	0
+					Submarkets	[ 4; 1; 0 ]
+					SoftwareCategories	[ Spreadsheet ]
+					MaxFactor	4
+					AmountScript	"(x * 10) + ' ' + Localize('Templates')"
+					DependsOn	"Templates"
+					}
+					{
+					Name	"Charts"
+					Spec	"System"
+					Description	"Nesting a treemap into this timeline chart would honestly save the annual report"
+					DevTime	1
+					Level	2
+					CodeArt	0.8
+					Submarkets	[ 0; 2; 1 ]
+					DependsOn	"Charts and graphs"
+					}
 				]
 			}
 		]

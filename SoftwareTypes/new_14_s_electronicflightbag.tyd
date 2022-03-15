@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Electronic Flight Bag"
-	Category		Aviation
 	Description		"An Electronic Flight Bag application helps flight crews and pilots perform flight management tasks"
 	Unlock			2000
 	Random			0.1

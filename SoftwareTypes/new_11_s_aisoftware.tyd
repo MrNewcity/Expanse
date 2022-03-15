@@ -1,7 +1,6 @@
 SoftwareType
 	{				
 	Name			"Artificial Intelligence Software"
-	Category		"Artificial Intelligence"
 	Unlock			2010
 	Description		"Developing Artificial Intelligence allows you to contribute to computers becoming the dominant species on Earth"
 	Random			0.35

@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"3D Printing System"
-	Category		"3D Printing"
 	Unlock			2010
 	Description		"A 3D printer is a lot like a normal printer, just with an extra dimension"
 	Random			0.3

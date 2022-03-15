@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Video Editor"
-	Category		Video
 	Unlock			1980
 	Description		"A video editor is used for post-production of digital video"
 	Random			0.1

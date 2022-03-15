@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Development Environment"
-	Category		Development
 	Description		"An IDE is a software platform that provides a set of tools for software development in a single application."
 	Random			0.2
 	Popularity		0.15

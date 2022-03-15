@@ -2,7 +2,6 @@ SoftwareType
 	{
 	Name			"Audio Tool"
 	Override		True
-	Category		Audio
 	Description		"The audio tool is for recording and mixing sound effects and music."
 	Random			0.1
 	Popularity		0.5
@@ -72,7 +71,7 @@ SoftwareType
 					Name		"Synthesizer presets"
 					DevTime		4
 					Level		1
-					CodeArt		0
+					CodeArt		0.5
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
@@ -175,7 +174,6 @@ SoftwareType
 					Level		3
 					CodeArt		1
 					Submarkets	0
-					
 					Script_NewCopies
 "var loss = NewCopies * 10;//Calculate $10 per copy
 Product.DevCompany.MakeTransaction(-loss, Distribution, \"Audio hardware\");//Remove money
@@ -215,6 +213,111 @@ Product.AddToCashflow(0, 0, 0, extra, 0, Time);//Add to product income chart"
 					Level		2
 					CodeArt		1
 					Submarkets	[ 1; 1; 1 ]
+					}
+				]
+			}
+		]
+	AddOns
+		[
+			{
+			Name		   "Synthesizer plug-in"
+			Description    "ooOOooOO"
+			NameGenerator  s_audiotool_synthesizer
+			IdealPrice 	   30
+			OptimalDevTime 12
+			Retention      18
+			Features
+				[
+					{
+					Name       "New samples"
+					Spec       "Audio"
+					DevTime    0.5
+					Level      1
+					CodeArt    0
+					MaxFactor  6
+					Submarkets [ 1; 0; 0 ]
+					AmountScript "LocalizePlural(\"Instrument\", x)"
+					DependsOn	"Sound bank"
+					}
+					{
+					Name       "New presets"
+					Spec       "Audio"
+					DevTime    0.25
+					Level      1
+					CodeArt    0.5
+					MaxFactor  4
+					Submarkets [ 1; 0; 0 ]
+					DependsOn	"Synthesizer presets"
+					}
+					{
+					Name       "Phaser"
+					Spec       "Audio"
+					DevTime    1
+					Level      1
+					CodeArt    1
+					Submarkets [ 1; 0; 0 ]
+					}
+					{
+					Name       "Filters"
+					Description	"Low-pass? High-pass? So many passes to choose from!"
+					Spec       "Audio"
+					DevTime    0.25
+					Level      1
+					CodeArt    1
+					MaxFactor	5 
+					Submarkets [ 1; 0; 0 ]
+					}
+					{
+					Name       "Equalizer"
+					Spec       "Audio"
+					DevTime    1
+					Level      1
+					CodeArt    1
+					Submarkets [ 1; 0; 0 ]
+					DependsOn	"EQ and compression"
+					}
+					{
+					Name       "Harmonizer"
+					Spec       "Audio"
+					DevTime    2
+					Level      1
+					CodeArt    1
+					Submarkets [ 1; 0; 0 ]
+					}
+					{
+					Name       "Amplifier"
+					Spec       "Audio"
+					DevTime    2
+					Level      1
+					CodeArt    1
+					Submarkets [ 1; 0; 0 ]
+					DependsOn	"Amp simulation"
+					}
+					{
+					Name       "Piano roll"
+					Spec       "2D"
+					DevTime    1
+					Level      1
+					CodeArt    0.9
+					Submarkets [ 1; 0; 0 ]
+					}
+					{
+					Name       "LF oscillator"
+					Description	"Vibrato, tremolo, spaghetti-o"
+					Spec       "System"
+					DevTime    1
+					Level      2
+					CodeArt    1
+					Submarkets [ 1; 0; 0 ]
+					}
+					{
+					Name		"VST synthesizer"
+					Spec      	"System"
+					DevTime		1
+					Level		2
+					CodeArt		1
+					Submarkets	[ 2; 1; 1 ]
+					DependsOn	"VST integration"
 					}
 				]
 			}

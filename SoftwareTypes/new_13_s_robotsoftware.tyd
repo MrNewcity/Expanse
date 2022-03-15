@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Robot Software"
-	Category		Robotics
 	Unlock			1980
 	Description		"Without this software, robots are nothing. Without robots, this software is nothing."
 	Random			0.3

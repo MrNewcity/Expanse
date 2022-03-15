@@ -3,7 +3,7 @@ CompanyType
 	Specialization		"Hobby Products"
 	PerYear				0.2
 	Min					2
-	Max					3
+	Max					4
 	Frameworks			False
 	Types
 		[
@@ -14,6 +14,14 @@ CompanyType
 			{
 			Software	"Drone"
 			Chance		1
+			}
+		]
+	Addons
+		[
+			{
+			Software   "Drone"
+			Addon      "Remote control"
+			Chance     0.05
 			}
 		]
 	}

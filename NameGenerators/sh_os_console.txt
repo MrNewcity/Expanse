@@ -1,30 +1,41 @@
--start(pre,base,base,base,base)
--pre(base)
-The 
--base(base2,stop)
+-start(base,base,baseConnect)
+-base(base2Connect,base2)
+Go
+Game
+Hyper
+Play
+Pluto
+Saturn
+Mars
 Couch
 Home
-House
-Room
-Set
-Screen
-Window
-Game
-Game
-Play
-Epic
 Max
--base2(stop,stop,stop,ext)
-Player
-Gamer
- Shade
- Blinds
- Thing
-Bro
+-baseConnect(base2Connect)
+A-
+E-
+G-
+I-
+J-
+M-
+O-
+V-
+X-
+Y-
+Z-
+g
+i
+x
+z
+-base2Connect(base2,stop,stop)
+Box
+Station
+Friend
+Unit
 Boy
+Set
 Girl
 Zone
- Box
--ext(stop)
-X
+-base2(stop)
+ Base
+ Connect
  X

@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Mapping Application"
-	Category		Mapping
 	Description		"Maps apps give users access to global map data"
 	Unlock			1995
 	Random			0.2

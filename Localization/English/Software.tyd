@@ -1,22 +1,4 @@
-﻿Video                  "Video"
-GameDevelopment        "Game Development"
-Development            "Development"
-QuantumComputing       "Quantum Computing"
-Peripherals            "Peripherals"
-UAV                    "UAV"
-3DPrinting             "3D Printing"
-Streaming              "Streaming"
-Communication          "Communication"
-CloudStorage           "Cloud Storage"
-Mapping                "Mapping"
-Trading                "Trading"
-ArtificialIntelligence "Artificial Intelligence"
-Livestreaming          "Livestreaming"
-Robotics               "Robotics"
-Aviation               "Aviation"
-Benchmarking           "Benchmarking"
-FileManagement         "File Management"
-Software
+﻿Software
     {
     VideoEditor
         [
@@ -213,6 +195,32 @@ Software
                 "Allow users to sell and purchase custom assets online. You take a small royalty from every purchase on this platform"
                 ]
             }
+        Feature { Newsoundeffects "New sound effects" }
+        Feature { New3Dassets "New 3D assets" }
+        Feature { New2Dassets "New 2D assets" }
+        Feature { HUDelements "HUD elements" }
+        Feature { Music "Music" }
+        Feature { Gameworldenvironments "Game world environments" }
+        Feature { NPCAItemplates "NPC AI templates" }
+        Feature
+            {
+            Optimizedassets [ "Optimized assets"; "Less polygons = More FPS!" ]
+            }
+        Feature
+            {
+            Modularmodels
+                [
+                "Modular models"
+                "Swap parts of 3D objects out on the fly, such as clothing, props, and faces!"
+                ]
+            }
+        ]
+    Categories
+        [
+        Category
+            {
+            Assetpack [ "Asset pack"; "Noice" ]
+            }
         ]
     }
 
@@ -275,7 +283,7 @@ Software
             AI-enhancedcodecompletion
                 [
                 "AI-enhanced code completion"
-                "Look into user's projects with AI to improve code completion. This can increase sales due to the better coding experience, but will also create more bugs"
+                "Look into user's projects with AI to improve code completion. This can increase sales due to the better coding experience, but can also lead to more bugs"
                 ]
             }
         Feature
@@ -497,213 +505,6 @@ Software
 
 Software
     {
-    HardwarePeripheral
-        [
-        "Hardware Peripheral"
-        "Hardware peripherals combine hardware with software to configure it"
-        ]
-    Features
-        [
-        Feature { System "System" }
-        Feature { DPIconfiguration "DPI configuration" }
-        Feature
-            {
-            Custommacros
-                [
-                "Custom macros"
-                "Make any combination of keybinds to do virtually anything"
-                ]
-            }
-        Feature { Customprofilesaving "Custom profile saving" }
-        Feature
-            {
-            Configurationsaving
-                [
-                "Configuration saving"
-                "Once you find those perfect sound settings, you don't want to lose them!"
-                ]
-            }
-        Feature
-            {
-            Hardwareintegration
-                [
-                "Hardware integration"
-                "Integrate external hardware such as PC fans, cases and lighting into the app for complete control"
-                ]
-            }
-        Feature
-            {
-            Premadegameprofiles
-                [
-                "Premade game profiles"
-                "Integrate premade settings and optimizations for specific games"
-                ]
-            }
-        Feature { Interface "Interface" }
-        Feature
-            {
-            Hardwarevisualization
-                [
-                "Hardware visualization"
-                "Show users what their hardware looks light right in the app, because looking down at your desk is a lot of work"
-                ]
-            }
-        Feature
-            {
-            Audiovisualization
-                [
-                "Audio visualization"
-                "Listening to sound waves is boring, you should be able to look at them too!"
-                ]
-            }
-        Feature { Animations "Animations" }
-        Feature { Network "Network" }
-        Feature
-            {
-            Usagedatasharing
-                [
-                "Usage data sharing"
-                "Allow users to opt-in to automatically share their usage data, which will allow you to fix some bugs before they are reported"
-                ]
-            }
-        Feature
-            {
-            Profilesharing
-                [
-                "Profile sharing"
-                "Allow users to easily share their configurations and profiles"
-                ]
-            }
-        Feature { Automaticdriverupdates "Automatic driver updates" }
-        Feature
-            {
-            Cloudbackup
-                [
-                "Cloud backup"
-                "Are computer peripheral settings really important enough to backup to the cloud? Yes!"
-                ]
-            }
-        Feature { Hardware "Hardware" }
-        Feature
-            {
-            RGBlighting
-                [
-                "RGB lighting"
-                "It's scientifically proven that RGB lighting improves skill"
-                ]
-            }
-        Feature { Wirelesstechnology "Wireless technology" }
-        Feature
-            {
-            Open-backearcups
-                [
-                "Open-back earcups"
-                "Are you tired of the isolation of closed-back headphones? Try open-back headphones!"
-                ]
-            }
-        Feature { Audio "Audio" }
-        Feature
-            {
-            Soundeffects
-                [
-                "Sound effects"
-                "Enable users to add virtual sound effects when they click or press a key. Sure to become annoying after five minutes!"
-                ]
-            }
-        Feature
-            {
-            Audioinput
-                [
-                "Audio input"
-                "Not only can you listen to audio, you can now create it with your mouth!"
-                ]
-            }
-        Feature
-            {
-            Compressor [ "Compressor"; "Make quiet sounds louder and make loud sounds quieter" ]
-            }
-        Feature { Integratedequalizer "Integrated equalizer" }
-        Feature
-            {
-            Dialogenhancement
-                [
-                "Dialog enhancement"
-                "Apply audio processing magic so that dialog is easier to hear"
-                ]
-            }
-        Feature
-            {
-            Voicechanger
-                [
-                "Voice changer"
-                "You don't have to swallow helium to pitch your voice up anymore!"
-                ]
-            }
-        Feature { Virtualsurroundsound "Virtual surround sound" }
-        Feature
-            {
-            Soundpickupmodes
-                [
-                "Sound pickup modes"
-                "Choose whether the mic hears everything, or only hears some things"
-                ]
-            }
-        Feature { Activenoisecancellation "Active noise cancellation" }
-        Feature { Backgroundnoisecancellation "Background noise cancellation" }
-        Feature { Gainadjustment "Gain adjustment" }
-        ]
-    Categories
-        [
-        Category
-            {
-            Mouse [ "Mouse"; "These are used to interface with modern computers" ]
-            }
-        Category
-            {
-            Keyboard
-                [
-                "Keyboard"
-                "These serve as the middleman between your brain and your word documents"
-                ]
-            }
-        Category
-            {
-            Headphones [ "Headphones"; "These blast soundwaves into your ears" ]
-            }
-        Category
-            {
-            Microphone [ "Microphone"; "These blast soundwaves into a device" ]
-            }
-        ]
-    Components
-        [
-        Component { Plastic "Plastic" }
-        Component { Switches "Switches" }
-        Component { Opticalsensor "Optical sensor" }
-        Component { Wirelessreceiver "Wireless receiver" }
-        Component { Microcontroller "Microcontroller" }
-        Component { Boardassembly "Board assembly" }
-        Component { Mousebody "Mouse body" }
-        Component { LEDlights "LED lights" }
-        Component { Keyswitches "Key switches" }
-        Component { Keycaps "Key caps" }
-        Component { Keyboardbody "Keyboard body" }
-        Component { ANCprocessor "ANC processor" }
-        Component { Microphone "Microphone" }
-        Component { Drivers "Drivers" }
-        Component { Innerassembly "Inner assembly" }
-        Component { Headphonebody "Headphone body" }
-        Component { Ventilation "Ventilation" }
-        Component { Audiochip "Audio chip" }
-        Component { Condenser "Condenser" }
-        Component { Microphonebody "Microphone body" }
-        Component { Grille "Grille" }
-        Component { Muteswitch "Mute switch" }
-        ]
-    }
-
-Software
-    {
     Drone
         [
         "Drone"
@@ -792,19 +593,35 @@ Software
                 "Connect drones together to synchronize cinematic shots, perform multi-drone missions, or do whatever else you wanna do with a bunch of drones"
                 ]
             }
+        Feature
+            {
+            Displayfeed
+                [
+                "Display feed"
+                "Display the drone's view right on the remote control!"
+                ]
+            }
+        Feature { Motioncontrols "Motion controls" }
+        ]
+    Categories
+        [
+        Category { Remotecontrol "Remote control" }
         ]
     Components
         [
         Component { Camera "Camera" }
         Component { GPS "GPS" }
-        Component { Screen "Screen" }
-        Component { Board "Board" }
         Component { Battery "Battery" }
         Component { Gyroscope "Gyroscope" }
         Component { Motors "Motors" }
         Component { Plastic "Plastic" }
-        Component { Remotecontrol "Remote control" }
-        Component { Drone "Drone" }
+        Component { Dronebody "Drone body" }
+        Component { Motherboard "Motherboard" }
+        Component { Batterypack "Battery pack" }
+        Component { Controller "Controller" }
+        Component { Case "Case" }
+        Component { Screen "Screen" }
+        Component { Antenna "Antenna" }
         ]
     }
 
@@ -1131,6 +948,14 @@ Software
             }
         Feature
             {
+            Speechdetection
+                [
+                "Speech detection"
+                "Turns your microphone off when you're not talking, and turns it on when you are. Pretty simple, really"
+                ]
+            }
+        Feature
+            {
             Videotelephony [ "Videotelephony"; "Enable users to see each other's beautiful faces" ]
             }
         Feature
@@ -1149,6 +974,7 @@ Software
                 "People really like watching other people play games for some reason"
                 ]
             }
+        Feature { Videofilters "Video filters" }
         ]
     }
 
@@ -1332,103 +1158,6 @@ Software
                 [
                 "3D map view"
                 "It's like a virtual vacation, from the comfort of your own phone!"
-                ]
-            }
-        ]
-    }
-
-Software
-    {
-    TradingTool
-        [
-        "Trading Tool"
-        "Trading tools give anyone an easy way to invest in the stock market"
-        ]
-    Features
-        [
-        Feature { System "System" }
-        Feature { Dataencryption "Data encryption" }
-        Feature
-            {
-            Screeners [ "Screeners"; "Scan, organize and track stocks based on filters" ]
-            }
-        Feature { Commoditiestrading "Commodities trading" }
-        Feature
-            {
-            Passcodelock
-                [
-                "Passcode lock"
-                "Enter a passcode every time you want to open the app. Sounds like fun"
-                ]
-            }
-        Feature
-            {
-            Currencyexchanger
-                [
-                "Currency exchanger"
-                "Allow users to change currency so they can invest in different exchanges"
-                ]
-            }
-        Feature
-            {
-            Conditionalorders
-                [
-                "Conditional orders"
-                "Attach criteria to orders based on specified factors"
-                ]
-            }
-        Feature
-            {
-            Tradingfees
-                [
-                "Trading fees"
-                "Charge users a fee when they make a trade. This will net you more cash, but may also drive users away"
-                ]
-            }
-        Feature { Interface "Interface" }
-        Feature
-            {
-            Graphs
-                [
-                "Graphs"
-                "Bar graphs, line graphs, candle graphs, there's so many graphs to choose from!"
-                ]
-            }
-        Feature { Watchlists "Watchlists" }
-        Feature
-            {
-            Alerts [ "Alerts"; "BUY, BUY, BUY!!!" ]
-            }
-        Feature { Marketnewsaggregator "Market news aggregator" }
-        Feature
-            {
-            Integratedtutorials
-                [
-                "Integrated tutorials"
-                "Before people invest their life savings into stocks, you might want to teach them a thing or two"
-                ]
-            }
-        Feature { Network "Network" }
-        Feature
-            {
-            Instantmarketdataupdates [ "Instant market data updates"; "Update market data with zero delay" ]
-            }
-        Feature { Two-factorauthentication "Two-factor authentication" }
-        Feature { Cryptocurrencytrading "Cryptocurrency trading" }
-        Feature
-            {
-            Activitymonitoring
-                [
-                "Activity monitoring"
-                "Make sure nobody but you has access to your account"
-                ]
-            }
-        Feature
-            {
-            Bankaccountconnection
-                [
-                "Bank account connection"
-                "Allow users to withdraw and deposit directly to their bank account"
                 ]
             }
         ]
@@ -2073,4 +1802,9 @@ Software
         Component { Remotecontrol "Remote control" }
         ]
     }
+
+Hardware 
+	{ 
+	Headphones	"Headphones"
+	}
 

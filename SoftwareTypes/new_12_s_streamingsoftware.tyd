@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Livestreaming Software"
-	Category		Livestreaming
 	Description		"Livestreaming is a very technically annoying thing to do. Make it slightly easier with your own streaming software"
 	Unlock			2010
 	Random			0.3

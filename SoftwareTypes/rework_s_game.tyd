@@ -2,7 +2,6 @@ SoftwareType
 	{
 	Name			"Game"
 	Override		True
-	Category		Gaming
 	Description		"Interactive art."
 	Categories
 		[
@@ -170,11 +169,28 @@ SoftwareType
 					Submarkets	[ 1; 0; 0 ]
 					}
 					{
-					Name		"Customizable character"#7
+					Name		"Customizable characters"#7
 					DevTime		3
 					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 1; 1 ]
+					}
+					{
+					Name		"Quick time events"#26
+					DevTime		3
+					Level		1
+					CodeArt		0.8
+					SoftwareCategories	[ Adventure ]
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Game speed control"#26
+					Description	"Modify the game's simulation speed on the fly to suit your taste, or pause the simulation and go outside"
+					DevTime		3
+					Level		1
+					CodeArt		1
+					SoftwareCategories	[ RTS; Simulation ]
+					Submarkets	[ 1; 0; 0 ]
 					}
 				]
 			}
@@ -202,6 +218,23 @@ SoftwareType
 					Level		1
 					CodeArt		0.75
 					Submarkets	[ 0; 1; 0 ]
+					}
+					{
+					Name		"Photo mode"#24
+					Description	"You didn't spend all that time on swanky graphics just to NOT let players take pictures of it... did you?"
+					DevTime		3
+					Level		2
+					CodeArt		0.75
+					Submarkets	[ 1; 2; 0 ]
+					}
+					{
+					Name		"Reverse Uno"
+					Description	"Negates lead designer IP ownership on release"
+					DevTime		9
+					Level		3
+					CodeArt		0
+					Submarkets	0
+					Script_OnRelease "Product.GetEntireIP().ForEach(x.DesignerOwned = false);"
 					}
 				]
 			}
@@ -240,7 +273,7 @@ SoftwareType
 					}
 					{
 					Name		"Procedural generation"#15
-					DevTime		6
+					DevTime		8
 					Level		2
 					CodeArt		1
 					Submarkets	[ 0; 1; 0 ]
@@ -292,16 +325,34 @@ SoftwareType
 				]
 			}
 			{
-			Name			"Cutscenes"#17
-			Description		"Make your game C I N E M A T I C"
+			Name			"Video"#17
+			Description		""
 			Spec			Video
 			Unlock			1980
 			Optional		True
 			DevTime			5
-			CodeArt			0.25
+			CodeArt			1
 			Dependencies	"Game Engine"
-			Submarkets		[ 0; 0; 1 ]
-			Features	[ ]
+			Submarkets		[ 0; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Pre-rendered cutscenes"#25
+					Description "Make your game C I N E M A T I C"
+					DevTime		6
+					Level		2
+					CodeArt		0
+					Submarkets	[ 0; 1; 2 ]
+					}
+					{
+					Name		"In-game replays"#26
+					DevTime		3
+					Level		1
+					CodeArt		0.9
+					SoftwareCategories	[ FPS; RPG; Sports; Party ]
+					Submarkets	[ 1; 1; 0 ]
+					}
+				]
 			}
 			{
 			Name			"Multiplayer"#22
@@ -334,6 +385,178 @@ SoftwareType
 					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+		]
+	AddOns
+		[
+			{
+			Name		   "Expansion pack"
+			Description    "Wowee"
+			NameGenerator  GameExpansion
+			IdealPrice 	   20
+			OptimalDevTime 8
+			Retention      6
+			Features
+				[
+					{
+					Name       "New dialog"
+					Spec       "Audio"
+					DevTime    1
+					Level      1
+					CodeArt    0
+					MaxFactor  6
+					Submarkets [ 1; 0; 4 ]
+					DependsOn  "Recorded dialog"
+					AmountScript "LocalizePlural(\"Hour\", x*2)"
+					}
+					{
+					Name       "New cutscenes"
+					Spec       "Video"
+					DevTime    1
+					Level      1
+					CodeArt    0
+					MaxFactor  5
+					Submarkets [ 0; 1; 2 ]
+					DependsOn  "Pre-rendered cutscenes"
+					}
+					{
+					Name       "Character customization"
+					Description "Bald is a hairstyle"
+					Spec       "3D"
+					DevTime    0.5
+					Level      2
+					CodeArt    0.2
+					MaxFactor  5
+					Submarkets [ 0; 4; 1 ]
+					DependsOn  "Customizable characters"
+					AmountScript "LocalizePlural(\"Style\", x)"
+					}
+					{
+					Name       "New storyline"
+					SoftwareCategories	[ "RPG"; "Adventure"; "RTS"; "FPS" ]
+					Spec       "2D"
+					DevTime    1
+					Level      1
+					CodeArt    0
+					Submarkets [ 2; 0; 4 ]
+					DependsOn  "Branching story"
+					}
+					{
+					Name       "New minigames"
+					SoftwareCategories	[ "Party" ]
+					Spec       "2D"
+					DevTime    1
+					Level      1
+					CodeArt    0
+					Submarkets [ 1; 0; 0 ]
+					}
+					{
+					Name       "Sports teams"
+					Description "Add some rows to the spreadsheet and call it a day"
+					SoftwareCategories [ "Sports" ]
+					Spec       "2D"
+					DevTime    0.2
+					Level      1
+					CodeArt    0.8
+					MaxFactor  20
+					Submarkets [ 4; 1; 0 ]
+					}
+					{
+					Name       "Music"
+					Spec       "Audio"
+					DevTime    0.25
+					Level      2
+					CodeArt    0
+					MaxFactor  5
+					Submarkets [ 1; 0; 4 ]
+					AmountScript "LocalizePlural(\"SoundTrack\", x)"
+					}
+					{
+					Name       "Guns"
+					Description "Maybe you can add one with a little more pew pew"
+					SoftwareCategories [ "FPS" ]
+					Spec       "3D"
+					DevTime    0.25
+					Level      1
+					CodeArt    0.5
+					MaxFactor  3
+					Submarkets [ 5; 1; 0 ]
+					}
+					{
+					Name       "Playable characters"
+					SoftwareCategories [ "RPG"; "Adventure"; "FPS" ]
+					Spec       "2D"
+					DevTime    0.5
+					Level      1
+					CodeArt    0.5
+					MaxFactor  3
+					Submarkets [ 5; 1; 0 ]
+					}
+					{
+					Name       "Map"
+					Spec       "2D"
+					Description "Make your open world game even more open"
+					DevTime    0.7
+					Level      2
+					CodeArt    0.7
+					MaxFactor  3
+					Submarkets [ 3; 1; 2 ]
+					DependsOn  "Open world"
+					AmountScript "Switch(x, false, true, 'Small', 'Medium', 'Big')"
+					}
+					{
+					Name       "Boss fights"
+					SoftwareCategories [ "RPG"; "Adventure"; "RTS"; "FPS" ]
+					Spec       "2D"
+					DevTime    1
+					Level      2
+					CodeArt    0.5
+					MaxFactor  3
+					Submarkets [ 2; 1; 1 ]
+					DependsOn  "MMO"
+					}
+					{
+					Name       "Environment objects"
+					Spec       "3D"
+					DevTime    0.5
+					Level      2
+					CodeArt    0
+					MaxFactor  3
+					AmountScript "x*10"
+					Submarkets [ 0; 1; 0 ]
+					}
+					{
+					Name       "Sprites"
+					Spec       "2D"
+					DevTime    0.5
+					Level      1
+					CodeArt    0
+					MaxFactor  5
+					AmountScript "x*10"
+					Submarkets [ 0; 1; 0 ]
+					}
+					{
+					Name       "Procedural parameters"
+					Spec       "3D"
+					DevTime    0.5
+					Level      1
+					CodeArt    1
+					MaxFactor  5
+					AmountScript "LocalizePlural(\"Variable\", x)"
+					Submarkets [ 1; 2; 0 ]
+					DependsOn  "Procedural generation"
+					}
+					{
+					Name       "AI archetypes"
+					SoftwareCategories [ "Simulation"; "RTS" ]
+					Spec       "System"
+					DevTime    0.5
+					Level      2
+					CodeArt    1
+					MaxFactor  2
+					Submarkets [ 1; 0; 0 ]
 					}
 				]
 			}

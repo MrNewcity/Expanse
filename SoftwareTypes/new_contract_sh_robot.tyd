@@ -1,7 +1,6 @@
 SoftwareType
 {
 	Name			"Custom Robot"
-	Category		Robotics
 	Random			0
 	Popularity		0
 	Retention		1

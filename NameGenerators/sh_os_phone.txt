@@ -1,32 +1,46 @@
--start(pre,base,base,base,base)
--pre(base)
-The 
--base(base2,ext,stop)
+-start(base,baseConnect)
+-base(base2Connect,base2)
+Mobile
+Smart
+Pocket
 Note
 Mobi
 Go
 Flex
-Frame
 Pen
-Bot
 Tiny
 Acrobat
-Pocket
 Eye
--base2(ext,stop,stop,stop,stop)
-Side
-Flash
-View
-Slim
-Stop
-Face
- Thing
- Droid
- Mini
-Wave
-Board
-Candy
+-baseConnect(base2Connect)
+A-
+E-
+G-
+I-
+J-
+M-
+O-
+V-
+X-
+Y-
+Z-
+g
+i
+x
+z
+-base2Connect(base2,stop,stop)
+Phone
+Touch
+Home
+Net
+Ring
+Call
+Tone
+Droid
 Fruit
--ext(stop)
+-base2(stop)
+ Connect
+ Online
+ Wireless
+ Slim
  Pro
  X

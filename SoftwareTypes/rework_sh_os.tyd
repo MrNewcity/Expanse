@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Operating System"
-	Category		Computing
 	Override		True
 	Description		"The Operating System is the largest piece of software in Software Inc.
 Most software needs an Operating System to run on. When people stop buying a line of Operating Systems, they will also stop buying software for them."
@@ -20,7 +19,6 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			{
 			Name		Console
 			Description	"For the TV"
-			LagBehind	5
 			Popularity	0.75
 			Retention	48
 			TimeScale	0.8
@@ -34,35 +32,22 @@ Most software needs an Operating System to run on. When people stop buying a lin
 				Components
 					[
 						{
-						Name 				Gyroscope
-						BuiltInThumbnail	Gyroscope
-						Price				15
-						Time				8
-						DependsOn			"Motion detection"
-						}
-						{
-						Name 				"Rumble unit"
-						BuiltInThumbnail	Vibration
-						Price				10
-						Time				4
-						DependsOn			"Vibration"
-						}
-						{
 						Name 				Plastic
 						BuiltInThumbnail	Plastic
-						Price				5
-						Time				4
-						}
-						{
-						Name 				Board
-						BuiltInThumbnail	PCB
-						Price				5
+						Price				10
 						Time				8
 						}
 						{
-						Name 				Joystick
-						BuiltInThumbnail	Joystick
-						Price				5
+						Name 				Antenna
+						BuiltInThumbnail	Antenna
+						Price				10
+						Time				4
+						DependsOn           "Wireless communication"
+						}
+						{
+						Name 				Motherboard
+						BuiltInThumbnail	PCB
+						Price				10
 						Time				8
 						}
 						{
@@ -70,43 +55,50 @@ Most software needs an Operating System to run on. When people stop buying a lin
 						BuiltInThumbnail	Harddrive
 						Price				10
 						Time				8
-						DependsOn			"External drive"
+						DependsOn			"Removable drive"
 						}
 						{
 						Name 				Controller
 						BuiltInThumbnail	Microchip
-						Price				100
+						Price				40
 						Time				16
 						}
 						{
-						Name 				Console
+						Name 				Case
 						BuiltInThumbnail	Console
-						Price				50
-						Time				16
+						Price				5
+						Time				8
+						}
+						{
+						Name				"Device input"
+						BuiltInThumbnail	USB
+						Price				10
+						Time				4
+						DependsOn			"Standardized input"
 						}
 					]
 				Processes
 					[
 						{
-						Inputs	[ "Gyroscope"; "Rumble unit"; "Plastic" ]
-						Output	Joystick
+						Inputs	[ "Controller"; "Antenna"; "Device input" ]
+						Output	Motherboard
 						}
 						{
-						Inputs	[ "Board"; "Drive bay"; "Controller" ]
-						Output	Console
+						Inputs	[ "Plastic"; "Drive bay" ]
+						Output	Case
 						}
 						{
-						Inputs	[ "Joystick"; "Console" ]
+						Inputs	[ "Motherboard"; "Case" ]
 						Output	Final
 						}
 					]
 				FinalTime	4
+				Design		[ "Console"; "OldConsole" ]
 				}
 			}
 			{
 			Name		Phone
 			Description	"For the pocket"
-			LagBehind	10
 			Popularity	1
 			Retention	36
 			TimeScale	0.7
@@ -192,12 +184,12 @@ Most software needs an Operating System to run on. When people stop buying a lin
 						}
 					]
 				FinalTime	16
+				Design		[ "CellPhone"; [ "SmartPhone" ; 2000 ] ]
 				}
 			}
 			{
 			Name		Watch
 			Description	"For the wrist"
-			LagBehind	10
 			Popularity	0.75
 			Retention	36
 			TimeScale	0.65
@@ -295,7 +287,6 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			{
 			Name		Car
 			Description	"For the dashboard"
-			LagBehind	10
 			Popularity	0.7
 			Retention	48
 			TimeScale	0.7
@@ -480,9 +471,11 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Name		"3D rendering"#21
 			Spec		3D
 			Optional	True
+			Forced		[ Computer; Console ]
 			Unlock		1985
 			DevTime		10
 			CodeArt		1
+			SoftwareCategories [ Computer; [ Console; 1990 ]; [ Phone; 1995 ]; Server; Watch; Car ]
 			Submarkets	[ 1; 0; 1 ]
 			Features	[ ]
 			}
@@ -528,7 +521,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					DevTime		4
 					Level		2
 					CodeArt		1
-					SoftwareCategories	[ Phone; Watch ]
+					SoftwareCategories	[ Phone; Watch; Console ]
 					Submarkets	[ 0; 0; 1 ]
 					}
 					{
@@ -565,9 +558,11 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			{
 			Name		"Network"#28
 			Optional	True
+			Forced		[ Computer; Phone; Server; Car ]
 			Spec		Network
 			Description	"How will anonymous people troll each other all over the world without this handy feature?"
 			Unlock		1985
+			SoftwareCategories [ Computer; [ Console; 1995 ]; [ Phone; 2000 ]; Server; Watch; Car ]
 			DevTime		8
 			CodeArt		1
 			Submarkets	[ 1; 1; 1 ]
@@ -667,13 +662,32 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					Submarkets	[ 1; 0; 1 ]
 					}
 					{
-					Name				"Vibration"#4
-					Description			"Device go brrr"
+					Name				"Wireless communication"
+					Description			"Can't trip over electromagnetism"
+					DevTime				1
+					Level				2
+					CodeArt				1
+					Unlock				1985
+					Submarkets			[ 4; 0; 1 ]
+					SoftwareCategories	[ Console; Phone; Watch ]
+					}
+					{
+					Name				"Removable drive"
+					Description			"We put save games on memory cards and save games on hard drives"
 					DevTime				1
 					Level				1
 					CodeArt				1
+					Submarkets			[ 1; 1; 4 ]
 					SoftwareCategories	[ Console ]
-					Submarkets			[ 1; 0; 3 ]
+					}
+					{
+					Name				"Standardized input"
+					Description			"You'll need a keyboard to make games on your game console"
+					DevTime				2
+					Level				2
+					CodeArt				1
+					Submarkets			[ 2; 0; 1 ]
+					SoftwareCategories	[ Console; Phone; Watch ]
 					}
 					{
 					Name		"Fingerprint scanner"#10
@@ -683,24 +697,6 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					CodeArt		1
 					Submarkets	[ 1; 1; 0 ]
 					SoftwareCategories	[ Phone; Watch ]
-					}
-					{
-					Name				"Motion detection"
-					Description			"Who doesn't want joysticks embedded in their TVs?"
-					DevTime				1
-					Level				2
-					CodeArt				1
-					Submarkets			[ 2; 0; 1 ]
-					SoftwareCategories	[ Console ]
-					}
-					{
-					Name				"External drive"
-					Description			"We put save games on memory cards and save games on hard drives"
-					DevTime				2
-					Level				1
-					CodeArt				1
-					Submarkets			[ 0; 2; 4 ]
-					SoftwareCategories	[ Console ]
 					}
 					{
 					Name				"Super optimization"
@@ -720,6 +716,348 @@ Most software needs an Operating System to run on. When people stop buying a lin
 					CodeArt		1
 					SoftwareCategories [ Server ]
 					Submarkets	[ 0; 0; 1 ]
+					}
+				]
+			}
+		]
+		AddOns
+		[
+			{
+			Name		   "Joystick"
+			NameGenerator  Joystick
+			IdealPrice 	   100
+			OptimalDevTime 8
+			Retention      6
+			Categories     "Console"
+			Forced         0.4
+			PerUser        2
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name 				Gyroscope
+						BuiltInThumbnail	Gyroscope
+						Price				10
+						Time				4
+						DependsOn			"Motion detection"
+						}
+						{
+						Name 				"Small battery pack"
+						BuiltInThumbnail	Battery
+						Price				5
+						Time				2
+						DependsOn			"Wireless"
+						DependencyFactor	1
+						}
+						{
+						Name 				"Medium battery pack"
+						BuiltInThumbnail	Battery
+						Price				10
+						Time				2
+						DependsOn			"Wireless"
+						DependencyFactor	2
+						}
+						{
+						Name 				"Big battery pack"
+						BuiltInThumbnail	Battery
+						Price				12
+						Time				2
+						DependsOn			"Wireless"
+						DependencyFactor	3
+						}
+						{
+						Name 				"Rumble unit"
+						BuiltInThumbnail	Vibration
+						Price				5
+						Time				2
+						DependsOn			"Vibration"
+						}
+						{
+						Name 				Plastic
+						BuiltInThumbnail	Plastic
+						Price				5
+						Time				2
+						}
+						{
+						Name 				Speaker
+						BuiltInThumbnail	Speaker
+						Price				2
+						Time				2
+						DependsOn			"Built-in speaker"
+						}
+						{
+						Name 				LED
+						BuiltInThumbnail	LED
+						Price				2
+						Time				2
+						DependsOn			"RGB lighting"
+						}
+						{
+						Name 				Motherboard
+						BuiltInThumbnail	PCB
+						Price				5
+						Time				4
+						}
+						{
+						Name 				Controller
+						BuiltInThumbnail	Microchip
+						Price				15
+						Time				8
+						}
+						{
+						Name 				Case
+						BuiltInThumbnail	Joystick
+						Price				5
+						Time				4
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Small battery pack"; "Medium battery pack"; "Big battery pack"; "Controller"; "Gyroscope"; "Speaker" ]
+						Output	Motherboard
+						}
+						{
+						Inputs	[ "Rumble unit"; "Plastic"; "LED" ]
+						Output	Case
+						}
+						{
+						Inputs	[ "Motherboard"; "Case" ]
+						Output	Final
+						}
+					]
+				FinalTime	4
+				Design		"TestJoystick"
+				}
+			BaseFeature
+				{
+				Spec       Hardware
+				DevTime    4
+				CodeArt    1
+				Submarkets [ 1; 4; 1 ]
+				}
+			Features
+				[
+					{
+					Name       "Wireless"
+					Spec       "Hardware"
+					DevTime    0.15
+					Level      2
+					CodeArt    1
+					MaxFactor  3
+					Submarkets [ 3; 0; 0 ]
+					DependsOn  "Wireless communication"
+					AmountScript "Switch(x, false, true, 'COMPONENTOperatingSystemSmallbatterypack', 'COMPONENTOperatingSystemMediumbatterypack', 'COMPONENTOperatingSystemBigbatterypack')"
+					}
+					{
+					Name				"Vibration"
+					Description			"Device go brrr"
+					Spec				Hardware
+					DevTime				0.5
+					Level				1
+					CodeArt				1
+					Submarkets			[ 1; 0; 3 ]
+					}
+					{
+					Name				"Motion detection"
+					Description			"Who doesn't want joysticks embedded in their TVs?"
+					Spec				Hardware
+					DevTime				0.25
+					Level				2
+					CodeArt				1
+					Submarkets			[ 1; 0; 1 ]
+					}
+					{
+					Name				"Built-in speaker"
+					Spec				Hardware
+					DevTime				0.25
+					Level				1
+					CodeArt				1
+					Submarkets			[ 1; 0; 3 ]
+					DependsOn			"Standardized input"
+					}
+					{
+					Name				"RGB lighting"
+					Spec				Hardware
+					MaxFactor			3
+					DevTime				0.1
+					Level				1
+					CodeArt				1
+					Submarkets			[ 0; 0; 1 ]
+					DependsOn			"Standardized input"
+					AmountScript "LocalizePlural('LightStrip', x)"
+					}
+				]
+			}
+			{
+			Name		   "Headphones"
+			Description		"These blast soundwaves into your ears"
+			NameGenerator  h_audioaccessory_headphones
+			IdealPrice 	   200
+			OptimalDevTime 12
+			Retention      12
+			Unlock			1985
+			Categories     [ Console; Phone; Watch ]
+			PerUser        1
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name				Plastic
+						BuiltInThumbnail	Plastic
+						Price				6
+						Time				4
+						}
+						{
+						Name				"Microcontroller"
+						BuiltInThumbnail	Microchip
+						Price				15
+						Time				8
+						}
+						{
+						Name				"ANC processor"
+						BuiltInThumbnail	"Icons/transistor_128.png"
+						Price				30
+						Time				8
+						DependsOn			"Noise cancellation"
+						}
+						{
+						Name				"Wireless receiver"
+						BuiltInThumbnail	USB
+						Price				15
+						Time				8
+						DependsOn			"Wireless"
+						}
+						{
+						Name				"Microphone"
+						BuiltInThumbnail	PlasticCase
+						Price				10
+						Time				4
+						DependsOn			"Audio input"
+						}
+						{
+						Name				"Drivers"
+						BuiltInThumbnail	Speaker
+						Price				30
+						Time				8
+						}
+						{
+						Name 				"Inner assembly"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				"Headphone body"
+						Thumbnail			"Icons/headset_128.png"
+						BuiltInThumbnail	PCB
+						Price				10
+						Time				8
+						}
+						{
+						Name 				LED
+						BuiltInThumbnail	LED
+						Price				10
+						Time				4
+						DependsOn			"RGB lighting"
+						}
+						{
+						Name 				"Ventilation"
+						BuiltInThumbnail	Fingerprint
+						Price				35
+						Time				2
+						DependsOn			"Open-back earcups"
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Ventilation" ]
+						Output	"Drivers"
+						}
+						{
+						Inputs	[ "Microcontroller"; "ANC processor"; "Drivers" ]
+						Output	"Inner assembly"
+						}
+						{
+						Inputs	[ "Plastic"; "Microphone"; "LED" ]
+						Output	"Headphone body"
+						}
+						{
+						Inputs	[ "Headphone body"; "Inner assembly"; "Wireless receiver" ]
+						Output	Final
+						}
+					]
+				FinalTime	4
+				Design		"Headphones"
+				}
+			BaseFeature
+				{
+				Spec       Hardware
+				DevTime    6
+				CodeArt    1
+				Submarkets [ 1; 4; 1 ]
+				}
+			Features
+				[
+					{
+					Name       "Wireless"
+					Spec       "Hardware"
+					DevTime    0.15
+					Level      2
+					CodeArt    1
+					MaxFactor  3
+					Submarkets [ 3; 0; 0 ]
+					DependsOn  "Wireless communication"
+					}
+					{
+					Name				"RGB lighting"
+					Spec				Hardware
+					MaxFactor			3
+					DevTime				0.1
+					Level				1
+					CodeArt				1
+					Submarkets			[ 0; 0; 1 ]
+					DependsOn			"Standardized input"
+					AmountScript "LocalizePlural('LightStrip', x)"
+					}
+					{
+					Name				"Noise cancellation"
+					Spec				Audio
+					Unlock				2005
+					DevTime				1
+					Level				2
+					CodeArt				1
+					Submarkets			[ 1; 0; 1 ]
+					}
+					{
+					Name				"Open-back earcups"
+					Description			"Are you tired of the isolation of closed-back headphones? Try open-back headphones!"
+					Spec				Hardware
+					DevTime				1
+					Level				1
+					CodeArt				1
+					Submarkets			[ 0; 0; 1 ]
+					}
+					{
+					Name				"Audio input"
+					Description			"Not only can you listen to audio, you can now create it with your mouth!"
+					Spec				Audio
+					DevTime				2
+					Level				1
+					CodeArt				1
+					Submarkets			[ 4; 0; 1 ]
+					}
+					{
+					Name				"Virtual surround sound"
+					Spec				Audio
+					DevTime				1
+					Level				2
+					CodeArt				1
+					Submarkets			[ 1; 0; 2 ]
+					DependsOn			"Spatial headphone support"
 					}
 				]
 			}

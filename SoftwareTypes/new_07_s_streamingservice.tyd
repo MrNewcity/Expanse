@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Streaming Service"
-	Category		Streaming
 	Description		"Streaming services allow users to stream content such as music or movies over the internet"
 	Unlock			2005
 	Random			0.4

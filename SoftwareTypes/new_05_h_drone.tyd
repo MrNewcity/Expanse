@@ -1,13 +1,12 @@
 SoftwareType
 	{
 	Name			"Drone"
-	Category		UAV
 	Unlock			2005
 	Description		"A drone is like a mini-helicopter, which requires no license or training to fly. This might be a problem..."
 	Random			0.2
 	Popularity		0.35
 	Retention		48
-	IdealPrice		360
+	IdealPrice		410
 	OptimalDevTime	45
 	SubmarketNames	[ Recreation; Videography; Utility ]
 	Iterative		1
@@ -34,18 +33,6 @@ SoftwareType
 				DependsOn			"GPS"
 				}
 				{
-				Name 				Screen
-				BuiltInThumbnail	LCD
-				Price				40
-				Time				8
-				}
-				{
-				Name 				Board
-				BuiltInThumbnail	PCB
-				Price				10
-				Time				8
-				}
-				{
 				Name 				Battery
 				BuiltInThumbnail	PlasticCase
 				Price				25
@@ -54,48 +41,48 @@ SoftwareType
 				{
 				Name 				Gyroscope
 				BuiltInThumbnail	Gyroscope
-				Price				20
-				Time				8
+				Price				15
+				Time				4
 				DependsOn			"Auto-stabilization"
 				}
 				{
 				Name 				Motors
 				BuiltInThumbnail	Vibration
-				Price				35
+				Price				25
 				Time				8
 				}
 				{
 				Name 				Plastic
 				BuiltInThumbnail	Plastic
-				Price				5
+				Price				10
 				Time				4
 				}
 				{
-				Name 				"Remote control"
-				BuiltInThumbnail	Joystick
-				Price				10
+				Name 				"Drone body"
+				Thumbnail			"Icons/drone_128.png"
+				BuiltInThumbnail	Console
+				Price				0
 				Time				8
 				}
 				{
-				Name 				Drone
-				Thumbnail			"Icons/drone_128.png"
-				BuiltInThumbnail	Console
-				Price				40
+				Name 				Motherboard
+				BuiltInThumbnail	PCB
+				Price				0
 				Time				8
 				}
 			]
 		Processes
 			[
 				{
-				Inputs	[ "Motors"; "Board"; "GPS"; "Camera"; "Battery"; "Gyroscope" ]
-				Output	"Drone"
+				Inputs	[ "Motors"; "Plastic"; "Camera" ]
+				Output	"Drone body"
 				}
 				{
-				Inputs	[ "Plastic"; "Screen" ]
-				Output	"Remote control"
+				Inputs	[ "GPS"; "Battery"; "Gyroscope" ]
+				Output	"Motherboard"
 				}
 				{
-				Inputs	[ "Drone"; "Remote control" ]
+				Inputs	[ "Drone body"; "Motherboard" ]
 				Output	Final
 				}
 			]
@@ -295,6 +282,119 @@ SoftwareType
 				]
 			}
 		]
-	}
+		AddOns
+		[
+			{
+			Name		   "Remote control"
+			NameGenerator  h_drone_remote
+			IdealPrice 	   180
+			OptimalDevTime 8
+			Retention      12
+			Forced         0.4
+			PerUser        1
+			Manufacturing
+				{
+				Components
+					[
+						{
+						Name 				Gyroscope
+						BuiltInThumbnail	Gyroscope
+						Price				10
+						Time				4
+						DependsOn			"Motion controls"
+						}
+						{
+						Name 				"Battery pack"
+						BuiltInThumbnail	Battery
+						Price				10
+						Time				2
+						}
+						{
+						Name 				Plastic
+						BuiltInThumbnail	Plastic
+						Price				5
+						Time				2
+						}
+						{
+						Name 				Motherboard
+						BuiltInThumbnail	PCB
+						Price				5
+						Time				4
+						}
+						{
+						Name 				Controller
+						BuiltInThumbnail	Microchip
+						Price				15
+						Time				8
+						}
+						{
+						Name 				Case
+						BuiltInThumbnail	Joystick
+						Price				5
+						Time				4
+						}
+						{
+						Name 				Screen
+						BuiltInThumbnail	LCD
+						Price				20
+						Time				8
+						DependsOn			"Display feed"
+						}
+						{
+						Name 				Antenna
+						Thumbnail			"Icons/transistor_128.png"
+						BuiltInThumbnail	Microchip
+						Price				10
+						Time				4
+						}
+					]
+				Processes
+					[
+						{
+						Inputs	[ "Battery pack"; "Controller"; "Gyroscope"; "Antenna" ]
+						Output	Motherboard
+						}
+						{
+						Inputs	[ "Plastic"; "Screen" ]
+						Output	Case
+						}
+						{
+						Inputs	[ "Motherboard"; "Case" ]
+						Output	Final
+						}
+					]
+				FinalTime	4
+				Design		"TestJoystick"
+				}
+			BaseFeature
+				{
+				Spec       Hardware
+				DevTime    6
+				CodeArt    1
+				Submarkets [ 1; 1; 1 ]
+				}
+			Features
+				[
+					{
+					Name				"Display feed"
+					Description			"Display the drone's view right on the remote control!"
+					Spec				Hardware
+					DevTime				1
+					Level				1
+					CodeArt				1
+					Submarkets			[ 1; 2; 1 ]
+					DependsOn			"Videography"
+					}
+					{
+					Name				"Motion controls"
+					Spec				Hardware
+					DevTime				0.5
+					Level				2
+					CodeArt				1
+					Submarkets			[ 4; 1; 2 ]
+					}
+				]
+			}
+		]
 	}
 #Expanse Software Suite

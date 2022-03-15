@@ -1,6 +1,6 @@
 INSTALL
 ----------
-This mod is for Alpha 11.7+
+This mod is for Software Inc. Beta 1 and newer
 Move the Expanse folder that is inside the zip to the Mods folder in your Software Inc directory.
 
 CONTRIBUTING TRANSLATIONS
@@ -11,7 +11,7 @@ https://github.com/MrNewcity/Expanse-Software-Suite
 LICENSE
 ----------
 Expanse is a data mod for Software Inc which adds various additional content and reworks to the game.
-Copyright (C) 2021 Michael Villeneuve
+Copyright (C) 2022 Michael Villeneuve
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

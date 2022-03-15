@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Quantum Computer"
-	Category		"Quantum Computing"
 	Description		"Quantum computers are sort of like normal computers, but they use quantum mechanics instead of boring old classical mechanics"
 	Unlock			2025
 	Popularity		0.02

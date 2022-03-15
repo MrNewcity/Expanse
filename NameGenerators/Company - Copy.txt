@@ -1,0 +1,60 @@
+[REPLACE]
+-start(base,base2)
+-base2(base3)
+Prime
+Spark
+Shark
+Brain
+Cool
+Macro
+Electro
+Space
+Win
+One
+Tri
+Bad
+Semi
+Skip
+Super
+Tango
+Fringe
+Delta
+Hyper
+Micro
+Chip
+Fruity
+Epic
+Cloud
+Board
+-base(smallsecond,largesecond,ext)
+/Word
+-base3(largesecond,ext)
+/Word
+-smallsecond(ext,largesecond,stop)
+Ware
+Soft
+Net
+Biz
+Shop
+soft
+ware
+Works
+-largesecond(stop)
+ Digital
+ Interactive
+ Expanse
+ Reality
+ Show
+ Cell
+ Technology
+ Software
+ Project
+-ext(stop)
+ Inc.
+ Corp.
+ Ltd.
+ LLC
+ Studios
+ Studio
+ Industries
+ Productions

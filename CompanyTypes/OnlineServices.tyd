@@ -18,9 +18,5 @@ CompanyType
 			Software	"Communication Application"
 			Chance		1
 			}
-			{
-			Software	"Trading Tool"
-			Chance		1
-			}
 		]
 	}

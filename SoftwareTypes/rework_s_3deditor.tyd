@@ -2,7 +2,6 @@ SoftwareType
 {
 	Name			"3D Editor"
 	Override		True
-	Category		Graphics
 	Description		"Points in space, basically"
 	Random			0.1
 	Popularity		0.6

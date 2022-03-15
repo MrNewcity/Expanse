@@ -1,7 +1,6 @@
 SoftwareType
 	{
 	Name			"Benchmark Software"
-	Category		Benchmarking
 	Description		"Let users test and score their system's hardware"
 	Unlock			2000
 	Random			0.2

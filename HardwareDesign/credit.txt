@@ -1,3 +1,4 @@
 Headphones Model: 
+(c) 2022 Michael Villeneuve
 Model created by egyriz.
 Texture and tweaks by MrNewcity.

@@ -1,90 +1,60 @@
 [REPLACE]
--start(base)
--base(smallsecond,largesecond,ext)
+-start(base,base2)
+-base2(base3)
+Prime
+Spark
+Shark
+Brain
+Cool
 Macro
+Electro
+Space
+Win
+One
+Tri
+Bad
+Semi
+Skip
 Super
-Punch
-Alley
-Stab
-Fist
 Tango
-Treat
 Fringe
-Slide
-Smile
-Stick
-Throw
-Drive
-Flash
-Sick
-Kick
-Alpha
-Beta
-Theta
-Shadow
-Slide
-Time
-Fly
-Shine
-Age
-Eye
-Man
-Giant
-Cloud
-Dock
-Fancy
-Chip
-Micro
-Little
-Epic
-Fruity
-Loop
-Board
-Hyper
 Delta
+Hyper
+Micro
+Chip
+Fruity
+Epic
+Cloud
+Board
+-base(smallsecond,largesecond,ext)
+/Word
+-base3(largesecond,ext)
+/Word
 -smallsecond(ext,largesecond,stop)
-hard
-blow
-throw
-back
-top
-spin
-slam
-book
+Ware
+Soft
+Net
+Biz
+Shop
+soft
 ware
-trap
-clap
-tap
-breeze
-like
-trip
-swing
-hook
-soft
-soft
--largesecond(ext,stop)
- Blade
- Camp
- Face
- Delight
- Show
- Style
- Reach
- Monday
- Kingdom
- Garden
- Street
- Trials
- Cell
+Works
+-largesecond(stop)
  Digital
  Interactive
- Reality
  Expanse
+ Reality
+ Show
+ Cell
+ Technology
+ Software
+ Project
 -ext(stop)
  Inc.
  Corp.
  Ltd.
  LLC
  Studios
- Technology
- Software
+ Studio
+ Industries
+ Productions

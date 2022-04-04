@@ -5,7 +5,7 @@ Expanse is a mod for Software Inc. that adds new software types, new company typ
 The idea behind Expanse is to enhance the experience playing Software Inc. by adding new content that is faithful to the original style of the game, as well as technically accurate and balanced.
 
 # Installation
-This mod is for Alpha 11.7+
+This mod is for Beta 1
 
 **Workshop:** https://steamcommunity.com/sharedfiles/filedetails/?id=2186957033
 

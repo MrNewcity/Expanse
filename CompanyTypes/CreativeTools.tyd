@@ -33,7 +33,7 @@ CompanyType
 			{
 			Software   "Operating System"
 			Addon      "Headphones"
-			Chance     0.05
+			Chance     0.03
 			}
 		]
 	}

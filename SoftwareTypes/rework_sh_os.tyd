@@ -257,6 +257,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 						}
 						{
 						Name 				Strap
+						Thumbnail			"Icons/watchband_128.png"
 						BuiltInThumbnail	Phone
 						Price				6
 						Time				2

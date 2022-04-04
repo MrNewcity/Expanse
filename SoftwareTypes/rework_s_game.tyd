@@ -179,7 +179,7 @@ SoftwareType
 					Name		"Quick time events"#26
 					DevTime		3
 					Level		1
-					CodeArt		0.8
+					CodeArt		1
 					SoftwareCategories	[ Adventure ]
 					Submarkets	[ 1; 0; 0 ]
 					}

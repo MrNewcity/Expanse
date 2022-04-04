@@ -1803,8 +1803,16 @@ Software
         ]
     }
 
-Hardware 
-	{ 
-	Headphones	"Headphones"
-	}
+Hardware
+    {
+    Headphones         "Headphones"
+    EarcupWidth        "Earcup Width"
+    HeadbandCurve      "Headband Curve"
+    Offset             "Offset"
+    HeadbandTopWidth   "Headband Top Width"
+    EarcupHeight       "Earcup Height"
+    HeadbandSidesWidth "Headband Sides Width"
+    Button1c           "Button1c"
+    Button2c           "Button2c"
+    }
 

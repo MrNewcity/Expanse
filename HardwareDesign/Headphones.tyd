@@ -19,8 +19,22 @@ Design
                 { Label "Headband Sides Width"; VertexIndex 613 }
                 ]
             }
-        { ID Button1c; Name Button1c; Mesh Button1c.obj }
-        { ID Button2c; Name Button2c; Mesh Button2c.obj }
+            {
+            ID         Button1c
+            Name       Button1c
+            Mesh       Button1c.obj
+            AtlasCount 2
+            AtlasX     0.1622807
+            AtlasY     0.4122807
+            }
+            {
+            ID         Button2c
+            Name       Button2c
+            Mesh       Button2c.obj
+            AtlasCount 2
+            AtlasX     0.1710526
+            AtlasY     0.4692982
+            }
         ]
     Attachments
         [

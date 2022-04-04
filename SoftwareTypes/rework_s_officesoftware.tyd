@@ -456,7 +456,7 @@ if (supportWork != null)
 					Description	"Nesting a treemap into this timeline chart would honestly save the annual report"
 					DevTime	1
 					Level	2
-					CodeArt	0.8
+					CodeArt	1
 					Submarkets	[ 0; 2; 1 ]
 					DependsOn	"Charts and graphs"
 					}

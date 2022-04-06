@@ -19,7 +19,7 @@ To use the translation, you have to first download your respective language's tr
 Finally, to add it to the mod, please make a pull request on GitHub. I will be sure to give credit to anyone who does a translation! Please contact me for more info, or if you need help with anything.
 
 # License
-Copyright © 2021 Michael Villeneuve
+Copyright © 2022 Michael Villeneuve
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 

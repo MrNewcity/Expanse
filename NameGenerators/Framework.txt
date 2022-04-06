@@ -1,0 +1,61 @@
+[REPLACE]
+-start(base,base,base,pre)
+-pre(base)
+The 
+-base(base2,base2,base3,ext,ext)
+Source
+Real
+Bit
+True
+Vision
+Poly
+Fast
+Field
+Land
+Opti
+Core
+New
+Front
+Wire
+Back
+Soft
+Structure
+Adapt
+Dynamo
+Clean
+Over
+Pure
+Run
+-base2(base3,ext,ext,ext,stop)
+Go
+man
+ness
+Bash
+Fit
+Code
+Run
+Test
+Scape
+Base
+Trim
+Frame
+Bin
+Code
+Script
+time
+-base3(ext,stop)
+ 4D
+ 3D
+ View
+ 3000
+ Net
+-ext(stop)
+ Tech
+ Framework
+ API
+ SDK
+ Platform
+ Library
+Lib
+Kit
+ Devkit

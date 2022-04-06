@@ -3,3 +3,14 @@
 #NewAddons
 	Item { Name "Biome"; Plural "Biomes"; Value "{0} [Biome|Biomes]" }
 	Item { Name "Instrument"; Plural "Instruments"; Value "{0} [Instrument|Instruments]" }
+#VideoSpec
+	Video "Video"
+#NewPersonalities
+	Energetic "Energetic"
+	Zen "Zen"
+	Ambitious "Ambitious"
+	Creative "Creative"
+	Geek "Geek"
+	Slob "Slob"
+	Pushover "Pushover"
+	Square "Square"

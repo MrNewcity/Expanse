@@ -1,0 +1,150 @@
+Design
+    {
+    ID                    WatchSquare
+    Name                  WatchSquare
+    BaseMesh              watchsquare_main
+    Objects
+        [
+            {
+            ID           watchsquare_main
+            Name         watchsquare_main
+            Mesh         watchsquare_main.glb
+            MorphTargets
+                [
+                { Label "Overall Width"; VertexIndex 3229 }
+                { Label "Buckle Base"; VertexIndex 631 }
+                { Label "Buckle Length"; VertexIndex 5370 }
+                { Label "Watch Face Shear"; VertexIndex 3633 }
+                { Label "Engraving Size"; VertexIndex 1233 }
+                { Label "Watch Thickness"; VertexIndex 3810; DoubleMorph True }
+                { Label "Watch Width"; VertexIndex 3319 }
+                ]
+            }
+            {
+            ID         watch_button
+            Name       "Large Button"
+            Mesh       watch_button.obj
+            AtlasCount 2
+            AtlasX     0
+            AtlasY     0.0745614
+            }
+            {
+            ID         watch_dial
+            Name       Dial
+            Mesh       watch_dial.obj
+            AtlasCount 2
+            AtlasX     0
+            AtlasY     0.07894737
+            }
+            {
+            ID         headphones_button2
+            Name       "Small Button"
+            Mesh       headphones_button2.obj
+            AtlasCount 3
+            AtlasX     0
+            AtlasY     0.07017544
+            }
+        ]
+    Attachments
+        [
+            {
+            Name        Point
+            Index       1030
+            Type        Vertex
+            CanRemove   True
+            Attachments
+                [
+                    {
+                    Object   watch_dial
+                    Offset   [ 0.001058619; 0.006415782; 0.01026187 ]
+                    Rotation [ 330.6866; 264.0938; 0.621333 ]
+                    Roll     True
+                    }
+                    {
+                    Object   watch_button
+                    Offset   [ 0.01015079; -0.0035451; -0.00725167 ]
+                    Rotation [ 356.6378; 356.8751; 354.7399 ]
+                    Roll     True
+                    }
+                ]
+            }
+            {
+            Name        Point
+            Index       1036
+            Type        Vertex
+            CanBeEmpty  True
+            Attachments
+                [
+                    {
+                    Object   watch_button
+                    Offset   [ 0.006701688; -0.003995568; -0.007386156 ]
+                    Rotation [ 0.9963215; 355.6407; 168.4171 ]
+                    Roll     True
+                    }
+                    {
+                    Object   headphones_button2
+                    Offset   [ 0.003804309; -0.007760163; 0.006532454 ]
+                    Rotation [ 0.3579148; 356.9525; 347.1707 ]
+                    Roll     True
+                    }
+                ]
+            }
+            {
+            Name        Point
+            Index       3204
+            Type        Vertex
+            CanBeEmpty  True
+            Attachments
+                [
+                    {
+                    Object   watch_button
+                    Offset   [ -0.006096061; 0.003732995; -0.01771813 ]
+                    Rotation [ 2.247616; 6.126671; 176.2359 ]
+                    Roll     True
+                    }
+                    {
+                    Object   headphones_button2
+                    Offset   [ -0.007702561; -0.01414663; 0.008582933 ]
+                    Rotation [ 1.173367; 1.591227; 355.079 ]
+                    Roll     True
+                    }
+                ]
+            }
+        ]
+    BaseTexture           TextureSheetSm.png
+    SecondaryColorEnabled True
+    TertiaryColorEnabled  True
+    ColorSets
+        [
+        
+            {
+            PrimaryColors   [ 262626; A7A7A7; F4F4F4 ]
+            SecondaryColors
+                [
+                5A5A5A
+                262626
+                F0F0F0
+                2FA22F
+                BE0D0D
+                F39F2D
+                3596D9
+                D62DC9
+                25D2BB
+                88524D
+                9B764F
+                603F20
+                ]
+            TertiaryColors  [ 363636; A2A2A2; F4F4F4 ]
+            }
+        
+            {
+            PrimaryColors   [ FFD467; D5D5D5; 282828; FF977D; F0F0F0 ]
+            SecondaryColors [ 333333; DFDFDF ]
+            TertiaryColors  [ FFD467; D5D5D5; 282828; FF977D; F0F0F0 ]
+            }
+        ]
+    ZoomOffset            -0.2
+    RotYOffset            -30
+    RotXOffset            196
+    }
+

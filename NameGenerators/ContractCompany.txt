@@ -58,6 +58,9 @@ Plus
 Night
 town
 view
+Stamp
+Fudge
+Pack
 -largesecond(companytype,ext,stop)
  Sausage
  Carrot
@@ -73,6 +76,7 @@ view
  Hills
  Bay
  Oaks
+ Electric
 -companytype(ext,stop)
  Industries
  Contracting
@@ -81,6 +85,9 @@ view
  Studios
  Middlemen
  Group
+ Consulting
+ Farms
+ Media
 -ext(stop)
  Inc.
  Corp.

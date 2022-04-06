@@ -87,6 +87,8 @@ SoftwareType
 				}
 			]
 		FinalTime	16
+		Design		"Drone"
+		FeatureBinding	[ "Drone"; "drone_cam"; "Videography" ]
 		}
 	Features
 		[

@@ -8,7 +8,7 @@ Design
             {
             ID           HeadphoneCustomized
             Name         HeadphoneCustomized
-            Mesh         HeadphoneCustomized.glb
+            Mesh         headphones_main.glb
             MorphTargets
                 [
                 { Label "Earcup Width"; VertexIndex 883 }
@@ -21,19 +21,19 @@ Design
             }
             {
             ID         Button1c
-            Name       Button1c
-            Mesh       Button1c.obj
+            Name       "Triple Button"
+            Mesh       headphones_button1.obj
             AtlasCount 2
-            AtlasX     0.1622807
-            AtlasY     0.4122807
+            AtlasX     0
+            AtlasY     0.1447368
             }
             {
             ID         Button2c
-            Name       Button2c
-            Mesh       Button2c.obj
+            Name       "Single Button"
+            Mesh       headphones_button2.obj
             AtlasCount 2
-            AtlasX     0.1710526
-            AtlasY     0.4692982
+            AtlasX     0
+            AtlasY     0.1491228
             }
         ]
     Attachments
@@ -55,21 +55,21 @@ Design
             }
             {
             Name        Point
-            Index       315
-            Type        Vertex
+            Index       1512
+            Type        Triangle
             CanBeEmpty  True
             Attachments
                 [
                     {
                     Object   Button1c
-                    Offset   [ -0.01464873; -0.02066821; -0.02635646 ]
-                    Rotation [ 358.2277; 357.6393; 52.47218 ]
+                    Offset   [ 0.06031423; -0.01261637; -0.02349764 ]
+                    Rotation [ 356.5867; 10.33945; 89.8554 ]
                     Roll     True
                     }
                 ]
             }
         ]
-    BaseTexture           Headphonetexture.png
+    BaseTexture           TextureSheetSm.png
     SecondaryColorEnabled True
     TertiaryColorEnabled  True
     ColorSets

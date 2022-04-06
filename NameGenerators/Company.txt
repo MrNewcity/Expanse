@@ -26,6 +26,7 @@ Fruity
 Epic
 Cloud
 Board
+Pied
 -base(smallsecond,largesecond,ext)
 /Word
 -base3(largesecond,ext)
@@ -49,6 +50,7 @@ Works
  Technology
  Software
  Project
+ Piper
 -ext(stop)
  Inc.
  Corp.

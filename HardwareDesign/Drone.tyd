@@ -1,0 +1,177 @@
+Design
+    {
+    ID                    Drone
+    Name                  Drone
+    BaseMesh              drone_main
+    Objects
+        [
+            {
+            ID           drone_main
+            Name         "Drone Body"
+            Mesh         drone_main.glb
+            MorphTargets
+                [
+                { Label "Overall Height"; VertexIndex 826 }
+                { Label "Nose Angle"; VertexIndex 147 }
+                { Label "Chin Angle"; VertexIndex 491 }
+                { Label Tail; VertexIndex 1712 }
+                { Label Stabilizers; VertexIndex 826 }
+                ]
+            }
+        { ID drone_cam; Name Camera; Mesh drone_cam.obj }
+            {
+            ID         drone_rotors_2_hi
+            Name       "Front Double Rotors"
+            Mesh       drone_rotors_2_hi.obj
+            AtlasCount 2
+            AtlasX     0
+            AtlasY     0.0745614
+            }
+            {
+            ID         drone_rotors_2_lo
+            Name       "Back Double Rotors"
+            Mesh       drone_rotors_2_lo.obj
+            AtlasCount 2
+            AtlasX     0
+            AtlasY     0.0745614
+            }
+            {
+            ID         drone_rotors_3_hi
+            Name       "Front Triple Rotors"
+            Mesh       drone_rotors_3_hi.obj
+            AtlasCount 2
+            AtlasX     0
+            AtlasY     0.0745614
+            }
+            {
+            ID         drone_rotors_3_lo
+            Name       "Back Triple Rotors"
+            Mesh       drone_rotors_3_lo.obj
+            AtlasCount 2
+            AtlasX     0
+            AtlasY     0.07894737
+            }
+            {
+            ID         headphones_button1
+            Name       "Triple Button"
+            Mesh       headphones_button1.obj
+            AtlasCount 3
+            AtlasX     0
+            AtlasY     0.0745614
+            }
+            {
+            ID   headphones_button2
+            Name headphones_button2
+            Mesh headphones_button2.obj
+            }
+            {
+            ID         watch_button
+            Name       Button
+            Mesh       watch_button.obj
+            AtlasCount 2
+            AtlasX     0
+            AtlasY     0.07894737
+            }
+        ]
+    Attachments
+        [
+            {
+            Name        "Rear Rotors"
+            Index       1001
+            Type        Vertex
+            Attachments
+                [
+                    {
+                    Object   drone_rotors_2_lo
+                    Offset   [ -2.546617; 0.003749356; 0.1236438 ]
+                    Rotation [ 88.26437; 3.201827E-07; -3.202189E-07 ]
+                    Roll     True
+                    }
+                    {
+                    Object   drone_rotors_3_lo
+                    Offset   [ -2.55742; 0.04096316; 0.1264362 ]
+                    Rotation [ 88.03258; 180; 180 ]
+                    Roll     True
+                    }
+                ]
+            }
+            {
+            Name        "Front Rotors"
+            Index       1000
+            Type        Vertex
+            Attachments
+                [
+                    {
+                    Object   drone_rotors_2_hi
+                    Offset   [ -2.947952; -0.002905384; 0.1187427 ]
+                    Rotation [ 88.99927; -0.0001956987; -0.0001952719 ]
+                    Roll     True
+                    }
+                    {
+                    Object   drone_rotors_3_hi
+                    Offset   [ -2.957075; 0.02918397; 0.1252974 ]
+                    Rotation [ 87.89811; -2.327131E-05; -2.327136E-05 ]
+                    Roll     True
+                    }
+                ]
+            }
+            {
+            Name        "Camera Point"
+            Index       1139
+            Type        Vertex
+            CanBeEmpty  True
+            Attachments
+                [
+                    {
+                    Object   drone_cam
+                    Offset   [ -0.06247535; 0.1730834; 0.1880377 ]
+                    Rotation [ 300.8339; 300.5506; 62.4495 ]
+                    Roll     True
+                    }
+                ]
+            }
+            {
+            Name        "Button Point"
+            Index       409
+            Type        Vertex
+            CanBeEmpty  True
+            Attachments
+                [
+                    {
+                    Object   headphones_button1
+                    Offset   [ 0.005973922; -0.01164185; -0.00594218 ]
+                    Rotation [ 356.8824; 358.4127; 27 ]
+                    Roll     True
+                    }
+                    {
+                    Object   watch_button
+                    Offset   [ 0.002941514; 0.001491593; -0.01411697 ]
+                    Rotation [ 358.2003; 356.8232; 26.99928 ]
+                    Roll     True
+                    }
+                ]
+            }
+        ]
+    BaseTexture           TextureSheetSm.png
+    SecondaryColorEnabled True
+    TertiaryColorEnabled  True
+    ColorSets
+        [
+        
+            {
+            PrimaryColors   [ FDFDFD; ECECEC ]
+            SecondaryColors [ 3C3C3C; 0C0C0C; BDBDBD; FDFDFD; ECECEC; 29C610; EB5B18; EA0E0E; 1E7CEF ]
+            TertiaryColors  [ 3C3C3C; 0C0C0C; BDBDBD; FDFDFD; ECECEC; 29C610; EB5B18; EA0E0E; 1E7CEF ]
+            }
+        
+            {
+            PrimaryColors   [ 101010; 2F2F2F; 414141 ]
+            SecondaryColors [ 101010; 2F2F2F; 414141; FA1515; FDE720; 34F921; 32EEFA; F5F5F5; F71CDC ]
+            TertiaryColors  [ 101010; 2F2F2F; 414141; FA1515; FDE720; 34F921; 32EEFA; F5F5F5; F71CDC ]
+            }
+        ]
+    ZoomOffset            -7
+    RotYOffset            -9
+    RotXOffset            180
+    }
+

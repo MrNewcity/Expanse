@@ -8,6 +8,8 @@ Easy
 One
 Zippy
 Arc
+Weissman
+End
 -base2(stop)
 Zip
 Filer

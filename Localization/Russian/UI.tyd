@@ -1,0 +1,16 @@
+#NewLawsuit	
+	LyingToUsers "Введение потребителей в заблуждение"
+#NewAddons
+	Item { Name "Биом"; Plural "Биомы"; Value "{0} [Биом|Биомы]" }
+	Item { Name "Инструмент"; Plural "Инструменты"; Value "{0} [Инструмент|Инструменты]" }
+#VideoSpec
+	Video "Видео"
+#NewPersonalities
+	Energetic "Энергичный"
+	Zen "Дзен"
+	Ambitious "Абмициозный"
+	Creative "Креативный"
+	Geek "Гик"
+	Slob "Неряха"
+	Pushover "Слабак"
+	Square "Квадратный"

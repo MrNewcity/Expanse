@@ -13,7 +13,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Retention	72
 			TimeScale	1
 			Iterative	1
-			IdealPrice	180
+			IdealPrice	150
 			Submarkets	[ 1; 4; 4]
 			}
 			{
@@ -24,7 +24,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			TimeScale	0.8
 			Iterative	1
 			Submarkets	[ 4; 1; 0]
-			IdealPrice	320
+			IdealPrice	300
 			NameGenerator	sh_os_console
 			Hardware	True
 			Manufacturing
@@ -103,7 +103,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 			Retention	36
 			TimeScale	0.7
 			Iterative	1
-			IdealPrice	420
+			IdealPrice	400
 			Unlock		1995
 			Submarkets	[ 4; 1; 2]
 			NameGenerator	sh_os_phone
@@ -283,6 +283,7 @@ Most software needs an Operating System to run on. When people stop buying a lin
 						}
 					]
 				FinalTime	8
+				Design		[ "Watch"; "WatchSquare" ]
 				}
 			}
 			{

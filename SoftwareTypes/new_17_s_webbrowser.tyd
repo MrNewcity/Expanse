@@ -5,7 +5,7 @@ SoftwareType
 	Random			0.2
 	Popularity		0.8
 	Retention		64
-	IdealPrice		30
+	IdealPrice		65
 	OptimalDevTime	20
 	SubmarketNames	[ Simplicity; Versatility; Optimization ] #accessibility; optimization; technology? Graphics; Programming; Stability 
 	Iterative		1

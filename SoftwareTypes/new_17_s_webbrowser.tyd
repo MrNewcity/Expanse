@@ -3,10 +3,10 @@ SoftwareType
 	Name			"Web Browser"
 	Description		"A web browser is a software application for accessing the World Wide Web"
 	Random			0.2
-	Popularity		0.8
+	Popularity		1
 	Retention		64
 	IdealPrice		65
-	OptimalDevTime	20
+	OptimalDevTime	25
 	SubmarketNames	[ Simplicity; Versatility; Optimization ] #accessibility; optimization; technology? Graphics; Programming; Stability 
 	Iterative		1
 	NameGenerator	s_webbrowser

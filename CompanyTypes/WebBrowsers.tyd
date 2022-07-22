@@ -8,7 +8,7 @@ CompanyType
 		[
 			{
 			Software	"Web Browser"
-			Chance		0.4
+			Chance		1.3
 			}
 		]
 	}

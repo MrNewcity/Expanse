@@ -1,0 +1,198 @@
+SoftwareType
+{
+	Name			"Web Browser"
+	Description		"A web browser is a software application for accessing the World Wide Web"
+	Random			0.2
+	Popularity		0.8
+	Retention		64
+	IdealPrice		30
+	OptimalDevTime	20
+	SubmarketNames	[ Simplicity; Versatility; Optimization ] #accessibility; optimization; technology? Graphics; Programming; Stability 
+	Iterative		1
+	NameGenerator	s_webbrowser
+	OSSupport		[ Computer; Phone ]
+	InHouse			False
+	Features
+		[
+			{
+			Name			System
+			Spec			System
+			DevTime			4
+			CodeArt			1
+			Dependencies	"Development Environment"
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Debugger"
+                    Description "See how much ram, cpu and internet connection it requires to be on a site!"
+					DevTime		5
+					Level		1
+					CodeArt		1
+					Submarkets	[ 0; 1; 1 ]
+					}
+					{
+					Name		"Multi-Tabs"
+                    Description "Tabs allow you to load multiple websites and quickly switch between them."
+					DevTime		3
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}						
+					{
+					Name		"Plug-in support"
+					DevTime		4
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 2 ]
+					}
+					{
+					Name		"Search History"
+					Description "Something that you clear after making a mess on your monitor."
+					DevTime		5
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 0; 0 ]
+					}
+					{
+					Name		"Download manager"
+                    Description "Allow users to download files from websites and check any information about them."
+					DevTime		3
+					Level		2
+					CodeArt		1
+					Submarkets	[ 1; 1; 0 ]
+					}
+                    {
+                    Name        "Favorite tabs"
+                    Description "Save your favorite website so you don't need to type a big link again!"
+                    DevTime     2
+                    Level       1
+                    CodeArt     1
+                    Submarkets [ 1; 0; 0 ]
+                    }
+                    {
+                    Name        "Page-rendering"
+                    Description "How users will see website without rendering it?"
+                    DevTime 5
+                    Level 2
+                    CodeArt 1
+                    Submarkets [ 0; 1; 0 ]
+                    }
+				]
+			}
+			{
+			Name			"2D Design"
+			Spec			2D
+			DevTime			4
+			CodeArt			0.7
+			Submarkets		[ 2; 0; 1 ]
+			Features
+				[
+					{
+					Name		"Sidebar for plugins"
+					Description	"Easily toggle on/off plugins."
+					DevTime		1
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 0; 1 ]
+					}
+				]
+			}
+			{
+			Name			Audio
+			Spec			Audio
+			DevTime			3
+			Dependencies	"Audio Tool"
+			CodeArt			0.9
+			Submarkets		[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"Sound effects"
+					Description	"Allow developers to play some sounds on their website!"
+					DevTime		3
+					Level		1
+					CodeArt		0
+					Submarkets	[ 1; 0; 0 ]
+					}
+				]
+			}
+			{
+			Name			Video
+			Spec			Video
+			Unlock			1990
+			Optional		True
+			DevTime			4
+			CodeArt			0.9
+			Submarkets		[ 2; 1; 1 ]
+			Features		[ ]
+			}
+			{
+			Name		Network
+			Spec		Network
+			Optional	True
+			Unlock		1985
+			DevTime		2
+			CodeArt		1
+			Submarkets	[ 1; 1; 1 ]
+			Features
+				[
+					{
+					Name		"User accounts"
+                    Description "Save favorite tabs and history to your account!"
+					DevTime		4
+                    Server      0.001
+					Level		1
+					CodeArt		1
+					Submarkets	[ 1; 3; 1 ]
+					}
+					{
+					Name		"Plugins marketplace"
+					Description	"Allow users to sell and purchase custom plugins online. You take a small royalty from every purchase on this platform"
+					Server		0.0014
+					DevTime		8
+					Level		3
+					CodeArt		0.8
+					Submarkets	[ 1; 1; 2 ]
+					Script_EndOfDay
+	"var cut = (Product.Userbase * 0.10);//Calculate $0.10 per user, per day
+	Product.DevCompany.MakeTransaction(cut, Sales, \"Plugins marketplace royalties\");//Add money
+	Product.AddToCashflow(0, 0, 0, cut, 0, Time);//Product income chart"
+					}
+				]
+			}
+		]
+	AddOns
+		[
+			{
+			Name		   "Assets pack"
+			Description    "Noice"
+			NameGenerator  s_webbrowser_assetpack
+			IdealPrice 	   20
+			OptimalDevTime 5
+			Retention      8
+			Features
+				[
+					{
+					Name       "Updating security"
+					Spec       "System"
+					DevTime    0.25
+					Level      1
+					CodeArt    1
+					MaxFactor  4
+					Submarkets [ 0; 3; 0 ]
+					}
+					{
+					Name       "New UI Design"
+					Spec       "2D"
+					DevTime    0.5
+					Level      1
+					CodeArt    0
+					MaxFactor  3
+					Submarkets [ 2; 1; 0 ]
+					}
+
+				]
+			}
+		]
+	}

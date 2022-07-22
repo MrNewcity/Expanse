@@ -1816,8 +1816,8 @@ Software
         Feature { Debugger [ "Debugger" "See how much ram, cpu and internet connection it requires to be on a site!"]}
         Feature { Multi-Tabs [ "Multi-tabs" "Tabs allow you to load multiple websites and quickly switch between them." ] }
         Feature { Plug-insupport "Plug-in support" }
-        Feature { WebHistory [ "Search History" "Something that you clear after making a mess on your monitor."] }
-        Feature { DownloadManager [ "Download Manager" "Allow users to download files from websites and check any information about them." ] }
+        Feature { SearchHistory [ "Search History" "Something that you clear after making a mess on your monitor."] }
+        Feature { Downloadmanager [ "Download Manager" "Allow users to download files from websites and check any information about them." ] }
         Feature { Favoritetabs ["Favorite tabs" "Save your favorite website so you don't need to type a big link again!" ] }  
         Feature { Page-rendering [ "Page-rendering" "How users will see website without rendering it?" ] }   
         Feature { Sidebarforplugins [ "Sidebar for plugins" "Easily toggle on/off plugins." ]}

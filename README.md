@@ -12,11 +12,11 @@ This mod is for Beta 1
 **DRM-Free:** Simply download the latest release from this GitHub page. To install, place the folder that is located inside the zip into the Mods folder of your Software Inc directory.
 
 # Contributing Translations
-If you'd like to add a translation for your language, please create a branch on GitHub, and add a new folder in the "Localization" folder with the name of the language you would like to add. Example, German. Then, simply copy the "Software.tyd" file from the English folder and paste it in your new language folder, and change the English words in quotation marks to your own language.
+If you'd like to add a translation for your language, please copy the "English" folder in the Localization folder and rename it for your language (eg. German). Then, simply open and translate the 2 files ("Software.tyd" and "UI.tyd") that are in the folder. See existing localizations for examples.
 
-To use the translation, you have to first download your respective language's translation from localizor via the in-game console command LOAD_FROM_LOCALIZOR, then restart the game to load the language translation. Type HELP in the game console for more details. After that, simply change to your language in the top left of the game screen and the mod's language will change to match the in-game language. To see languages currently on localizor, go here: https://www.localizor.com/software-inc
+To use the translation, you have to first download your respective language's translation from localizor via the in-game console command LOAD_FROM_LOCALIZOR, then restart the game to load the language translation. Type HELP in the game console for more details. After that, simply change to your language in the top left of the game screen and the mod's language will change to match the in-game language. To see languages currently on localizor, go here: https://www.localizor.com/software-inc. For more details, see this guide: https://steamcommunity.com/sharedfiles/filedetails/?id=2499604205
 
-Finally, to add it to the mod, please make a pull request on GitHub. I will be sure to give credit to anyone who does a translation! Please contact me for more info, or if you need help with anything.
+To have your localization added to the mod, please contact me on discord. Feel free to contact me for more information or if you need help, and I will try to get back to you!
 
 # License
 Copyright © 2022 Michael Villeneuve

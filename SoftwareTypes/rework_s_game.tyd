@@ -163,8 +163,8 @@ SoftwareType
 					{
 					Name		"Mod support"#6
 					Description	"You can mod this feature out of the game if you want"
-					DevTime		4
-					Level		2
+					DevTime		3
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 0; 0 ]
 					}

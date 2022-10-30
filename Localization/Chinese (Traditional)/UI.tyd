@@ -1,0 +1,25 @@
+#NewLawsuit	
+	LyingToUsers "誤導消費者"
+#NewAddons
+	Item { Name "Biome"; Plural "Biomes"; Value "{0} [Biome|Biomes]" }
+	Item { Name "樂器"; Plural "Instruments"; Value "{0} [Instrument|Instruments]" }
+#VideoSpec
+	Video "影像"
+#ModdedPersonalities
+	Energetic "精力充沛"
+	Zen "佛系大師"
+	Ambitious "雄心勃勃"
+	Creative "創意滿滿"
+	Geek "怪胎"
+	Slob "邋遢"
+	Pushover "心腸軟"
+	Square "不懂變通"
+#NewSubmarkets
+    Versatility "功能性"
+    Productivity "生產力"
+    Collaboration  "合作性"
+    Editing "編輯性"
+    Professionalism "專業性"
+    Configurability "可配置性"
+    Scalability "擴展性"
+    Compression "壓縮性"

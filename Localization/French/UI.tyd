@@ -1,19 +1,19 @@
 #NewLawsuit	
-	LyingToUsers "Misleading consumers"
+	LyingToUsers "Consommateurs trompeurs"
 #NewAddons
 	Item { Name "Biome"; Plural "Biomes"; Value "{0} [Biome|Biomes]" }
 	Item { Name "Instrument"; Plural "Instruments"; Value "{0} [Instrument|Instruments]" }
 #VideoSpec
-	Video "Video"
+	Video "Vidéo"
 #NewPersonalities
-	Energetic "Energetic"
+	Energetic "Énergique"
 	Zen "Zen"
-	Ambitious "Ambitious"
-	Creative "Creative"
+	Ambitious "Ambitieux"
+	Creative "Créatif"
 	Geek "Geek"
-	Slob "Slob"
-	Pushover "Pushover"
-	Square "Square"
+	Slob "Plouc"
+	Pushover "jeu d'enfant"
+	Square "Carré"
 #NewSubmarkets
     Versatility "Versatility"
     Productivity "Productivity"

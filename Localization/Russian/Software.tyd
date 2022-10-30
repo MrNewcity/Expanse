@@ -2,7 +2,7 @@ Software
     {
     VideoEditor
         [
-        "Видео редактор "
+        "Видео редактор"
         "Видео редактор используется для пост-производства цифрового видео"
         ]
     Features
@@ -1117,6 +1117,14 @@ Software
                 ]
             }
         Feature { Interface "Интерфейс" }
+		Feature
+            {
+            Favourites [ "Favourites"; "Keep track of your favourite places" ]
+            }
+		Feature
+            {
+            Nightmode [ "Night mode"; "Change the map to dark colours during nighttime hours for better visibility" ]
+            }
         Feature
             {
             Satelliteview [ "Вид со спутника"; "Вы должны проверить Зону 51" ]
@@ -1839,3 +1847,350 @@ Hardware
     WatchWidth         "Ширина часов"
     }
 
+Software
+    {
+    OperatingSystem
+		[
+		]
+    Features
+        [
+		Feature
+            {
+            Automaticdrivermanagement [ "Автоматическое управление драйвером"; "Проблемы с драйверами являются причиной номер 1 сбоев в системах. Помогите устранить эту проблему с помощью этой функции" ]
+            }
+		Feature
+            {
+            Integratedscreencapture [ "Встроенный захват экрана"; "Кто хочет купить карту захвата? Никто, вот кто!" ]
+            }
+        Feature { Hardwaresupport "Аппаратная поддержка" }
+        Feature
+            {
+            Haptictechnology [ "Тактильная технология"; "Вибрация - это старьё. Тактильная технология - это круто!" ]
+            }
+		Feature
+            {
+            Fingerprintscanner [ "Сканер отпечатков пальцев"; "Интегрируйте распознавание отпечатков пальцев в ОС, чтобы пользователи могли чувствовать себя шпионами, когда они разблокируют свою систему" ]
+            }
+		Feature
+            {
+            Advancedhardwaresupport [ "Расширенная аппаратная поддержка"; "Позволяют пользователям использовать несколько процессоров и огромные объемы оперативной памяти, что весьма полезно для серверов" ]
+            }
+        Feature { Pushnotifications "Push-уведомления" }
+		Feature
+            {
+            Securityalerts [ "Предупреждения о безопасности"; "Теперь вы можете знать, когда программы шпионят за вами!" ]
+            }
+		Feature
+            {
+            Universaldarkmode [ "Универсальный темный режим"; "Автоматически изменяйте настройки для приложений по всей системе, чтобы не обжигать глаза" ]
+            }
+		Feature { Video "Видео" }
+		Feature
+            {
+            HDRvideosupport [ "Поддержка HDR-видео"; "Вроде как стандартное видео, но динамический диапазон выше. Что это значит? Кто знает... Но посмотрите, какие красивые цвета!" ]
+            }
+		Feature { Spatialheadphonesupport "Пространственная поддержка наушников" }
+		Feature { Cloudserverbackup "Резервное копирование облачного сервера" }
+		Feature
+            {
+            Cloudmigrationtools
+                [
+                "Инструменты облачной миграции"
+                "Интегрируйте инструменты, которые помогают пользователям переносить свои данные в службу облачных вычислений"
+                ]
+            }
+		Feature
+            {
+            Hotspotcreation
+                [
+                "Создание горячей точки"
+                "Разрешить сотовым устройствам создавать точки доступа Wi-Fi для неклеточных плебеев"
+                ]
+            }
+		Feature
+            {
+            Virtualnetworkmanager [ "Менеджер виртуальной сети"; "Виртуальные сети не собираются управлять сами собой!" ]
+            }
+        ]
+    Categories
+        [
+        Category
+            {
+            Watch [ "Часы"; "Для запястья" ]
+            }
+        Category
+            {
+            Server [ "Сервер"; "Для стойки" ]
+            }
+        Category
+            {
+            Car [ "Машина"; "Для приборной панели" ]
+            }
+        ]
+    Components
+        [
+        Component { Hapticengine "Тактильный двигатель" }
+		Component { Strap "Ремень" }
+		Component { Watchassembly "Сборка часов" }
+		Component { Ventilation "Вентиляция" }
+		Component { Drivers "Драйвера" }
+		Component { Microcontroller "Микроконтроллер" }
+		Component { ANCprocessor "Процессор ANC" }
+		Component { Innerassembly "Внутренняя сборка" }
+		Component { Microphone "Микрофон" }
+		Component { Headphonebody "Корпус наушников" }
+		Component { Wirelessreceiver "Беспроводной приемник" }
+        ]
+    }
+
+Software
+    {
+    2DEditor
+        [
+        ]
+    Features
+        [
+		Feature { Imagecodecs "Кодеки изображений" }
+		Feature { Plug-insupport "Поддержка плагинов" }
+		Feature { Network "Сеть" }
+		Feature
+            {
+            Integratedsocialmediauploader
+                [
+                "Встроенный загрузчик из социальных сетей"
+                "Загружайте свои красивые изображения прямо на лица ваших друзей"
+                ]
+            }
+		Feature
+            {
+            Auto-update
+                [
+                "Автообновление"
+                "Иногда эта функция работает корректно!"
+                ]
+            }
+		Feature { Cloudsync "Облачная синхронизация" }
+        ]
+    }
+	
+Software
+    {
+    3DEditor 
+		[
+		]
+    Features
+        [
+        Feature { Interface "Интерфейс" }
+		Feature
+            {
+            Keyframetimeline [ "Временная шкала ключевого кадра"; "Кадры - это ключ к анимации" ]
+            }
+		Feature
+            {
+            Grapheditor [ "Редактор графиков"; "Посмотрите на эти изгибы движения!" ]
+            }
+		Feature { Videoeditor "Видеоредактор" }
+		Feature
+            {
+            Compositor [ "Композитор"; "Исправьте это в посте!" ]
+            }
+		Feature { Tracking "Отслеживание" }
+		Feature { Plug-insupport "Поддержка плагинов" }
+		Feature	{ Network "Сеть" }
+		Feature { Auto-update "Автообновление" }
+		Feature
+            {
+            Cloudsync [ "Облачная синхронизация"; "Store your points in the cloud" ]
+            }
+        ]
+    }
+	
+Software
+    {
+    AudioTool
+        [
+        ]
+    Features
+        [
+		Feature { VSTintegration "Интеграция VST" }
+		Feature { Network "Сеть" }
+		Feature
+            {
+            Auto-update [ "Автообновление"; "Пользователи по достоинству оценят автоматические обновления, вызывающие новые проблемы с каждым выпуском" ]
+            }
+		Feature
+            {
+            Cloudsync [ "Облачная синхронизация"; "Облачная синхронизация - это новая волна, подключите к ней и свои звуковые волны!" ]
+            }
+		Feature { Newsamples "Новые образцы" }
+		Feature { Newpresets "Новые пресеты" }
+		Feature { Phaser "Фазер" }
+		Feature
+            {
+            Filters [ "Фильтры"; "Низкочастотный? Высокочастотный? Так много проходов на выбор!" ]
+            }
+		Feature { Equalizer "Эквалайзер" }
+		Feature { Harmonizer "Гармонизатор" }
+		Feature { Amplifier "Усилитель" }
+		Feature { Pianoroll "Фортепианный ролл" }
+		Feature
+            {
+            LFoscillator [ "Низкочастотный генератор"; "Вибрато, тремоло, спагетти-о" ]
+            }
+		Feature { VSTsynthesizer "Синтезатор VST" }
+        ]
+	Categories
+        [
+        Category { Synthesizerplug-in "Подключаемый модуль синтезатора" }
+        ]
+    }
+	
+Software
+    {
+    Game
+		[
+		]
+    Features
+        [
+		Feature
+            {
+            Leaderboard
+                [
+                "Таблица лидеров"
+                "Ведите учет лучших игроков. 100% просто для хвастовства"
+                ]
+            }
+		Feature
+            {
+            Economy
+                [
+                "Экономика"
+                "Имитируйте живую экономику, чтобы привнести в вашу игру азарт реального мира"
+                ]
+            }
+		Feature
+            {
+            Teammanagement
+                [
+                "Управление командой"
+                "Игрокам нравится чувствовать себя ответственными, особенно когда задействованы спортивные команды"
+                ]
+            }
+		Feature
+            {
+            Customminigames
+                [
+                "Пользовательские мини-игры"
+                "Дайте игрокам инструменты для создания их собственных ужасных мини-игр"
+                ]
+            }
+		Feature { Quicktimeevents "События быстрого времени" }
+		Feature
+            {
+            Gamespeedcontrol [ "Контроль скорости игры"; "Измените скорость симуляции игры на лету по своему вкусу или приостановите симуляцию и выйдите на улицу" ]
+            }
+		Feature
+            {
+            Photomode [ "Режим фотосъемки"; "Вы же не потратили столько времени на шикарную графику только для того, чтобы не позволять игрокам ее фотографировать... не так ли?" ]
+            }
+		Feature { Video "Видео" }
+		Feature
+            {
+            Pre-renderedcutscenes [ "Предварительно отрисованные ролики"; "Сделайте свою игру К И Н Е М А Т О Г Р А Ф И Ч Н О Й" ]
+            }
+		Feature { In-gamereplays "Внутриигровые повторы" }
+		Feature
+            {
+            LANconnection [ "Локальная сеть"; "Позвольте игрокам подключать свои устройства друг к другу через локальную сеть. Звучит очень весело!" ]
+            }
+		Feature { Newminigames "Новые мини-игры" }
+        Feature
+            {
+            Sportsteams [ "Спортивные команды"; "Добавьте несколько строк в электронную таблицу и на этом закончим" ]
+            }
+        ]
+    Categories
+        [
+		Category { Party "Вечеринка" }
+        ]
+    }
+	
+Software
+    {
+    OfficeSoftware 
+	[
+	]
+    Features
+        [
+		Feature
+            {
+            Autolayout
+                [
+                "Автоматический макет страницы"
+                "Т.е. потратить 30 минут на то, чтобы картинка поместилась на свое место"
+                ]
+            }
+		Feature { Guidesandgrids "Направляющие и решетки" }
+		Feature { Templates "Шаблоны" }
+		Feature
+            {
+            Complextextrendering [ "Сложный рендеринг текста"; "Эти нечитаемые скорописные шрифты просто не были бы прежними без этого" ]
+            }
+		Feature
+            {
+            Commandbuttons
+                [
+                "Командные кнопки"
+                "Добавление кнопок позволяет выполнять команды одним щелчком мыши"
+                ]
+            }
+        Feature { Mathfunctionslibrary "Библиотека математических функций" }
+        Feature
+            {
+            XMLsupport [ "Поддержка XML"; "XML. Он находится на полпути между написанием и кодированием" ]
+            }
+		Feature { Scripting "Описание" }
+		Feature
+            {
+            Proprietaryformat
+                [
+                "Фирменный формат"
+                "Создание проприетарного формата увеличит продажи, если у вашего программного обеспечения много активных пользователей, но снизит продажи, если у вашего программного обеспечения их нет"
+                ]
+            }
+		Feature { Plug-insupport "Поддержка плагинов" }
+        Feature { Cloudsync "Облачная синхронизация" }
+		Feature
+            {
+            Auto-update [ "Автообновление"; "Почему бы и нет?" ]
+            }
+		Feature
+            {
+            Simultaneouscollaboration [ "Одновременное сотрудничество"; "Позвольте нескольким пользователям работать над проектом одновременно" ]
+            }
+		Feature { Videoplayback "Воспроизведение видео" }
+		Feature { Slidetemplates "Шаблоны слайдов" }
+		Feature { Publicationtemplates "Шаблоны публикаций" }
+		Feature { Sheettemplates "Шаблоны листов" }
+        ]
+    }
+
+Software
+    {
+    Antivirus
+        [
+        "Антивирус"
+        "Защита компьютеров от цифровых нарушителей спокойствия с тех пор, как это стало выгодно делать."
+        ]
+    Features
+        [
+		Feature
+            {
+            Virtualprivatenetwork
+                [
+                "Виртуальная частная сеть"
+                "VPN можно использовать по-разному, но давайте будем честны, в основном он используется для просмотра фильмов, которые недоступны в вашем регионе"
+                ]
+            }
+        ]
+    }

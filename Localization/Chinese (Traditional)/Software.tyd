@@ -1,0 +1,2424 @@
+Software
+    {
+    VideoEditor
+        [
+        "影片編輯器"
+        "影片編輯器是用於影片後期製作的工具"
+        ]
+    Features
+        [
+        Feature
+            {
+            Video [ "影片"; "影片是影片編輯器缺一不可的元素之一" ]
+            }
+        Feature
+            {
+            Videotransitions
+                [
+                "影片轉場"
+                "擦拭，褪色，淡入淡出，裁剪，幻燈片和更多！"
+                ]
+            }
+        Feature
+            {
+            Textrendering
+                [
+                "文字渲染"
+                "不然你怎麼在電影前加一打片場學分呢？"
+                ]
+            }
+        Feature
+            {
+            Noisereduction [ "降噪"; "從粗製濫造的影片中獲取清晰的影片" ]
+            }
+        Feature
+            {
+            Colourcorrection [ "顏色校正"; "現在每個人都在做這件事" ]
+            }
+        Feature
+            {
+            Videoeffects [ "影片特效"; "爆炸！ 模糊！雨！ 彎曲！煙霧！" ]
+            }
+        Feature { Stabilization "穩定" }
+        Feature { Tracking "追踪" }
+        Feature
+            {
+            Transformations [ "影片效果"; "放大、縮小、旋轉等。" ]
+            }
+        Feature { Interface "介面" }
+        Feature
+            {
+            Multi-tracktimeline
+                [
+                "多軌時間線"
+                "假設您在影片中想要不止一件事，這是必不可少的."
+                ]
+            }
+        Feature
+            {
+            Multicamediting
+                [
+                "多機位編輯"
+                "同一主題有多達一百萬個角度。 哇，好刺激。"
+                ]
+            }
+        Feature { System "系統" }
+        Feature { RAWvideoimport "原始影片導入" }
+        Feature
+            {
+            Videocodecs
+                [
+                "影片編碼解碼器"
+                "由於存在大約 480 億種不同的影片格式，這些都是非常重要的！"
+                ]
+            }
+        Feature { Plug-insupport "插件支援" }
+        Feature
+            {
+            Bundledhardwarecontrolpanel
+                [
+                "集合式控制面板硬件"
+                "實體銷售會帶來額外的{Currency:75}，但的製作成本會額外增加{Currency:50}"
+                ]
+            }
+        Feature
+            {
+            Audio [ "音頻"; "影片和音頻像牛奶和餅乾融合在一起一樣" ]
+            }
+        Feature { Audiomixing "音頻混合" }
+        Feature { Audioeffects "音頻效果" }
+        Feature
+            {
+            3Dworkspace [ "3D 工作區"; "直接在編輯器中處理3D物件" ]
+            }
+        Feature { 3Deffects "3D效果" }
+        Feature { Network "網絡" }
+        Feature
+            {
+            Auto-update
+                [
+                "自動更新"
+                "祈禱新的版本不會破壞您的專案！"
+                ]
+            }
+        Feature { Cloudsync "雲端同步" }
+        ]
+    }
+
+Software
+    {
+    GameEngine
+        [
+        "遊戲引擎"
+        "遊戲引擎是專門提供創建電子遊戲而設計的軟件開發環境。"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature { Debugger "偵錯工具" }
+        Feature { Scripting "腳本" }
+        Feature { Plug-insupport "插件支援" }
+        Feature
+            {
+            Devicesimulator
+                [
+                "設備模擬"
+                "比每次你想測試它時將游戲發送到設備要容易得多"
+                ]
+            }
+        Feature { Performanceprofiling "效能分析" }
+        Feature { Threadmanagement "線程管理" }
+        Feature { 2Drendering "2D 渲染" }
+        Feature
+            {
+            Filebrowser
+                [
+                "文件瀏覽器"
+                "Well，您不會只用一個文件存放所有檔案，對嗎？"
+                ]
+            }
+        Feature
+            {
+            2Dassets [ "2D資產"; "幫助開發人員以及一些預打包的資產" ]
+            }
+        Feature
+            {
+            Visualprogramming
+                [
+                "圖形化編程"
+                "這就像常規編程，但你更多地使用鼠標"
+                ]
+            }
+        Feature { UIcreationtool "用戶介面創作套件" }
+        Feature { Multi-displayrendering "多畫面渲染" }
+        Feature { 3Drendering "3D渲染" }
+        Feature
+            {
+            3Dassets [ "3D資產"; "類似於 2D 資產，但具有額外的維度" ]
+            }
+        Feature { Physicsengine "物理引擎" }
+        Feature
+            {
+            Integratedshaders [ "整合著色器"; "幾乎不費吹灰之力就能讓遊戲看起來不錯！" ]
+            }
+        Feature
+            {
+            Assetoptimization [ "資產優化"; "幫助優化複雜3D模型的工具" ]
+            }
+        Feature
+            {
+            Pointcloudintegration
+                [
+                "點雲整合"
+                "允許開發人員導入通過激光掃描真實世界對象獲得的點雲模型"
+                ]
+            }
+        Feature { Audio "音頻" }
+        Feature
+            {
+            Soundeffects
+                [
+                "聲音特效"
+                "通過為遊戲開發者提供一些免費的音效來幫助他們"
+                ]
+            }
+        Feature { Video "影片" }
+        Feature { Network "網絡" }
+        Feature { Cloudsync "雲端同步" }
+        Feature { Simultaneouscollaboration "同步協作" }
+        Feature { Multiplayerdeploymenttools "多人遊戲開發套件" }
+        Feature
+            {
+            Assetmarketplace
+                [
+                "資產市場"
+                "允許用戶在線銷售和購買自定義資產。平台上的每次購買交易，你都會獲得少量版稅"
+                ]
+            }
+        Feature { Newsoundeffects "新的聲音特效" }
+        Feature { New3Dassets 新的3D資產" }
+        Feature { New2Dassets "新的2D資產" }
+        Feature { HUDelements "HUD元素" }
+        Feature { Music "音樂" }
+        Feature { Gameworldenvironments "遊戲世界環境" }
+        Feature { NPCAItemplates "NPC AI 範本" }
+        Feature
+            {
+            Optimizedassets [ "優化資產"; "更少的多邊形 = 更多的 FPS！" ]
+            }
+        Feature
+            {
+            Modularmodels
+                [
+                "模塊化模型"
+                "快速切換3D 物件的部分，比如服裝、道具、臉！"
+                ]
+            }
+        ]
+    Categories
+        [
+        Category
+            {
+            Assetpack [ "資產包"; "Noice" ]
+            }
+        ]
+    }
+
+Software
+    {
+    DevelopmentEnvironment
+        [
+        "整合開發環境"
+        "IDE 是一個軟件平台，它為單個應用程序中的軟件開發提供一組工具。"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Compiler
+                [
+                "編譯器"
+                "這個漂亮的工具會將您的代碼翻譯成電腦語言"
+                ]
+            }
+        Feature { Debugger "偵錯工具" }
+        Feature
+            {
+            Liveerrordetection
+                [
+                "實時錯誤檢測"
+                "現在您不必等到構建時間來了解您在編程方面有多糟糕了！"
+                ]
+            }
+        Feature
+            {
+            Multipleprogramminglanguages
+                [
+                "多種編程語言"
+                "讓您的用戶使用多種語言"
+                ]
+            }
+        Feature { Versioncontrolsystem "版本控制系統" }
+        Feature { Plug-insupport "插件支援" }
+        Feature { Codeprofiler "代碼分析器" }
+        Feature
+            {
+            Intelligentcodecompletion
+                [
+                "智能代碼整合"
+                "讓電腦猜你要輸入甚麼。 有時它猜對了！"
+                ]
+            }
+        Feature
+            {
+            Devicesimulator
+                [
+                "設備模擬器"
+                "在電腦上舒適地玩手機"
+                ]
+            }
+        Feature
+            {
+            AI-enhancedcodecompletion
+                [
+                "AI代碼增強整合"
+                "使用 AI 查看用戶的項目以提高代碼完成度。 由於更好的編碼體驗，這可以增加銷售額，但也可能導致更多錯誤"
+                ]
+            }
+        Feature
+            {
+            Interface [ "介面"; "用戶介面將使開發更容易" ]
+            }
+        Feature
+            {
+            Syntaxhighlighting
+                [
+                "語法高亮"
+                "您喜愛和知道的代碼，現在是彩色的了！"
+                ]
+            }
+        Feature
+            {
+            Filebrowser
+                [
+                "文件瀏覽器"
+                "Well，您不會只用一個文件存放所有檔案，對嗎？"
+                ]
+            }
+        Feature
+            {
+            Searchbox [ "搜索框"; "丟失了東西？ 嘗試搜索它！" ]
+            }
+        Feature
+            {
+            Visualprogramming
+                [
+                "圖形化編程"
+                "與其輸入代碼，不如嘗試用鼠標移動圖形來編程？"
+                ]
+            }
+        Feature { Network "網絡" }
+        Feature
+            {
+            Cloudsync
+                [
+                "雲端同步"
+                "擔心你的硬盤壞了？ 將您的項目委託給服務器吧！"
+                ]
+            }
+        Feature
+            {
+            Databaseintegration
+                [
+                "數據庫整合"
+                "直接從IDE中訪問數據庫！多麼驚人！哇！"
+                ]
+            }
+        Feature
+            {
+            Simultaneouscollaboration
+                [
+                "同步協作"
+                "讓程序員對互相的代碼實時爭論"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    QuantumComputer
+        [
+        "量子電腦"
+        "量子電腦有點像普通電腦，但它們使用量子力學而不是無聊的舊經典力學"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Physicssimulator
+                [
+                "物理模擬"
+                "在量子電腦上模擬量子物理學……量子感知？"
+                ]
+            }
+        Feature { Chemistrysimulator "化學模擬" }
+        Feature
+            {
+            Biologysimulator
+                [
+                "生物學模擬"
+                "也許這會幫助我們找到生命的意義?"
+                ]
+            }
+        Feature { Integerfactorization "整數分解" }
+        Feature { Quantummachinelearning "量子機器學習" }
+        Feature
+            {
+            Programmingkit
+                [
+                "編程套件"
+                "讓用戶更容易編寫自己的量子函數和算法"
+                ]
+            }
+        Feature
+            {
+            Optimizationalgorithms
+                [
+                "優化演算法"
+                "使用高級模型解決物流、資源管理等方面的優化問題。 這聽起來不是很有趣嗎？"
+                ]
+            }
+        Feature
+            {
+            Financialalgorithms
+                [
+                "金融演算法"
+                "風險分析、信用評分、投資組合優化等等！"
+                ]
+            }
+        Feature { Plug-insupport "插件支援" }
+        Feature
+            {
+            Decoherencemitigation
+                [
+                "退相干緩解"
+                "量子退相干，也稱為\"noise\"，是量子電腦的一大難題。 使用此功能有助於減少噪音的影響。 這將使用戶不太可能退還產品"
+                ]
+            }
+        Feature { Interface "介面" }
+        Feature
+            {
+            Searchtool
+                [
+                "搜索工具"
+                "借助量子計算的力量，搜索大量數據的速度要快得多"
+                ]
+            }
+        Feature
+            {
+            Quantumimageencoding
+                [
+                "量子圖像編碼"
+                "事實證明，使用量子計算處理圖像速度更快，效率更高"
+                ]
+            }
+        Feature
+            {
+            Modelvisualization
+                [
+                "圖形化模型"
+                "人們可能會厭倦查看代碼、算法和數據。 向他們展示漂亮的圖表和圖表"
+                ]
+            }
+        Feature { Visualcircuitcomposer "圖形化量子計算介面" }
+        Feature
+            {
+            3Drendering
+                [
+                "3D渲染"
+                "讓您的量子系統能夠渲染 3D 對象並與之互動"
+                ]
+            }
+        Feature
+            {
+            Videosupport
+                [
+                "影片支援"
+                "讓你的量子系統能夠與影片互動"
+                ]
+            }
+        Feature { Quantumvideoencoding "量子影片編碼" }
+        Feature { Network "網絡" }
+        Feature { Auto-update "自動更新" }
+        Feature
+            {
+            Cloudbackup
+                [
+                "雲端備份"
+                "將用戶的量子數據備份到量子雲端。 開個玩笑，它只是一個普通的雲端"
+                ]
+            }
+        Feature { Hardware "硬件" }
+        Feature
+            {
+            Lowpressureoperation
+                [
+                "低壓運行"
+                "降低量子電腦中的大氣壓力可以使其更加可靠"
+                ]
+            }
+        Feature
+            {
+            Dopplercooling
+                [
+                "多普勒冷卻"
+                "基本上冷卻Qubits使它們成為更好的Qubits "
+                ]
+            }
+        Feature
+            {
+            Midcircuitmeasurement
+                [
+                "中間電路測量"
+                "在中途測量量子態並動態更改計算"
+                ]
+            }
+        ]
+    Components
+        [
+        Component { Lasercooler "激光冷卻器" }
+        Component { Vacuumpump "真空泵" }
+        Component { Board "電路板" }
+        Component { Screen "屏幕" }
+        Component { Qubitregister "量子位寄存器" }
+        Component { Advancedgates "高級閘口" }
+        Component { Quantumprocessor "量子處理器" }
+        Component { Signalconverter "信號轉換器" }
+        Component { Controller "控制器" }
+        Component { Controlcomputer "控制電腦" }
+        Component { Quantumcomputer "量子電腦" }
+        ]
+    }
+
+Software
+    {
+    Drone
+        [
+        "無人機"
+        "無人機就像一架迷你直升機，無需執照或培訓即可飛行。 這可能是個問題..."
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature { Plug-insupport "插件支援" }
+        Feature
+            {
+            Droneprogramming
+                [
+                "無人機編程"
+                "高級用戶可能想為他們的無人機編寫程序而不是駕駛它們。 書呆子！"
+                ]
+            }
+        Feature
+            {
+            Followmode [ "跟隨模式"; "想無人機跟隨你？ 現在可以了" ]
+            }
+        Feature { Interface "介面" }
+        Feature { Integratedtutorials "綜合教程" }
+        Feature { Logbook "日誌" }
+        Feature
+            {
+            On-screencontroller
+                [
+                "屏幕控制器"
+                "把無人機的控制器忘在家裡了嗎？ 改用屏幕控制！ 只是稍微糟糕一點"
+                ]
+            }
+        Feature { Missionplanner "任務規劃功能" }
+        Feature { Terrainmapping "地形映射" }
+        Feature { Videography "錄像功能" }
+        Feature
+            {
+            FPVsystem
+                [
+                "FPV系統"
+                "使用戶能夠連接 VR 耳機並以第一人稱視角駕駛無人機！"
+                ]
+            }
+        Feature { Digitalzoom "數碼變焦" }
+        Feature { Tracking "追踪" }
+        Feature
+            {
+            Autocameraadjustment
+                [
+                "相機自動調整"
+                "感光度？光圈刻度？ 曝光？ 沒人想處理這一切"
+                ]
+            }
+        Feature
+            {
+            Obstacleavoidance
+                [
+                "避障功能"
+                "無人機可以看到並避開障礙物。 對我們人類來說很正常，但無人機更難做到"
+                ]
+            }
+        Feature { Hardware "硬件" }
+        Feature { Auto-stabilization "自動穩定" }
+        Feature
+            {
+            GPS [ "全球定位系統-GPS"; "使用全球定位系統改進無人機自動駕駛！" ]
+            }
+        Feature
+            {
+            Sportmode [ "運動模式"; "為馬達提供更多動力以獲得更快的速度" ]
+            }
+        Feature { Network "網絡" }
+        Feature
+            {
+            Cloudsync
+                [
+                "雲端同步"
+                "將影片記錄、GPS 數據等無人機數據同步到雲端，以防萬一您摔壞無人機"
+                ]
+            }
+        Feature
+            {
+            Multi-droneconnection
+                [
+                "多重無人機連接"
+                "將無人機連接在一起以同步電影鏡頭、執行多無人機任務或用一堆無人機做任何你想做的事情"
+                ]
+            }
+        Feature
+            {
+            Displayfeed
+                [
+                "顯示饋送"
+                "在遙控器上顯示無人機的視角！"
+                ]
+            }
+        Feature { Motioncontrols "運動控制" }
+        ]
+    Categories
+        [
+        Category { Remotecontrol "遙控控制" }
+        ]
+    Components
+        [
+        Component { Camera "相機" }
+        Component { GPS "全球定位系統-GPS" }
+        Component { Battery "電池" }
+        Component { Gyroscope "陀螺儀" }
+        Component { Motors "馬達" }
+        Component { Plastic "塑膠" }
+        Component { Dronebody "無人機機身" }
+        Component { Motherboard "主機板" }
+        Component { Batterypack "電池組" }
+        Component { Controller "控制器" }
+        Component { Case "盒子" }
+        Component { Screen "屏幕" }
+        Component { Antenna "天線" }
+        ]
+    }
+
+Software
+    {
+    3DPrintingSystem
+        [
+        "3D打印系統"
+        "3D 打印機很像普通打印機，只是多了一個維度"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature { Plug-insupport "插件支援" }
+        Feature
+            {
+            Manualprintercontrol
+                [
+                "手動打印控制"
+                "你是神經外科醫生嗎？不是？那麼，祝你好運"
+                ]
+            }
+        Feature { Batchoperationstool "批次作業工具" }
+        Feature { Interface "介面" }
+        Feature { Integratedtutorials "綜合教程" }
+        Feature { 3Dslicing "3D切面圖" }
+        Feature
+            {
+            Presets
+                [
+                "預設功能"
+                "為不同的打印機和應用程序集合至預製的設置文件"
+                ]
+            }
+        Feature
+            {
+            Printsimulation
+                [
+                "打印模擬"
+                "準確了解 3D 打印機將如何在打印對象之前先打印出來。 它就像一台時光機，但遠沒有那麼酷"
+                ]
+            }
+        Feature { Supportmaterialgenerator "支援素材生成器" }
+        Feature
+            {
+            Sequencing
+                [
+                "定序功能"
+                "打印一件東西，然後打印另一件東西，全部在同一個工作上！"
+                ]
+            }
+        Feature
+            {
+            Dynamiclayerthickness
+                [
+                "動態層厚"
+                "在理想情況下從高細節變為高速"
+                ]
+            }
+        Feature { Hardware "硬件" }
+        Feature { Wirelesstechnology "無線技術" }
+        Feature { Autolevelling "自動調平功能" }
+        Feature
+            {
+            Dualextruders [ "雙推料器"; "兩倍的樂趣！" ]
+            }
+        Feature { Network "網絡" }
+        Feature
+            {
+            Multi-printerconnection
+                [
+                "多重打印機連接"
+                "允許用戶從一台電腦中連接多台打印機！"
+                ]
+            }
+        Feature
+            {
+            Cloudsync
+                [
+                "雲端同步"
+                "我猜有些人可能需要從任何地方使用他們的 3D 打印機？"
+                ]
+            }
+        ]
+    Components
+        [
+        Component { Printingframe "印刷框架" }
+        Component { Case "機身" }
+        Component { Levellingsensor "水平感應器" }
+        Component { Display "顯示器" }
+        Component { Controlunit "控制單元" }
+        Component { Wirelessreceiver "無線接收器" }
+        Component { Microprocessor "微處理器" }
+        Component { Extruder "推料器" }
+        Component { Dualextruder "雙推料器" }
+        Component { Motors "馬達" }
+        Component { Axiscarriages "軸托架" }
+        Component { Filamentspool "長絲線軸" }
+        ]
+    }
+
+Software
+    {
+    StreamingService
+        [
+        "媒體影音串流平台"
+        "媒體影音串流平台允許用戶通過互聯網觀賞音樂或電影等內容"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Recommendationalgorithm
+                [
+                "推薦演算法"
+                "根據用戶的興趣和喜歡的類型向用戶推薦內容"
+                ]
+            }
+        Feature { Customplaylists "自定義播放列表" }
+        Feature
+            {
+            Subscriptions
+                [
+                "訂閱功能"
+                "使用戶能夠訂閱他們喜歡的創作者"
+                ]
+            }
+        Feature { Downloading "媒體下載功能" }
+        Feature
+            {
+            Auto-play [ "自動播放功能"; "使永無止境地觀看節目更容易" ]
+            }
+        Feature { Shuffleplayback "隨機播放功能" }
+        Feature
+            {
+            Queue [ "排列播放功能"; "排列歌曲，然後將它們擊倒" ]
+            }
+        Feature { Interface "介面" }
+        Feature
+            {
+            Coverart
+                [
+                "封面藝術圖"
+                "顯示影片、電影和節目的封面藝術圖和縮略圖"
+                ]
+            }
+        Feature
+            {
+            Thumbnailsandalbumart
+                [
+                "縮略圖和專輯封面"
+                "顯示音樂的專輯封面以及網絡廣播和電子書的縮略圖"
+                ]
+            }
+        Feature { Sceneselectionmenu "場景選擇目錄" }
+        Feature
+            {
+            On-screenwidgets
+                [
+                "頂部小視窗"
+                "允許創作者在影片頂部添加播放連結、影片連結和文本等小視窗"
+                ]
+            }
+        Feature
+            {
+            Charts
+                [
+                "圖表功能"
+                "通過繪製最受歡迎的內容圖表，讓用戶輕鬆加入潮流功能"
+                ]
+            }
+        Feature { Network "網絡" }
+        Feature
+            {
+            Continuity
+                [
+                "連續觀賞功能"
+                "用戶在關閉應用程序或切換設備時保留影片最後觀看位置"
+                ]
+            }
+        Feature
+            {
+            On-airstreaming [ "直播串流功能"; "在電視頻道播放時串流式直播節目" ]
+            }
+        Feature
+            {
+            Radiochannelstreaming
+                [
+                "電台頻道直播功能"
+                "廣播電台直播。我猜...因為你想聽廣告？"
+                ]
+            }
+        Feature
+            {
+            Video
+                [
+                "影片"
+                "影片對於電影、節目以及廣播很重要"
+                ]
+            }
+        Feature { Highdefinitionvideo "高清影片" }
+        Feature
+            {
+            3Dfilmsupport [ "3D電影支援"; "戴上那個3D眼鏡！" ]
+            }
+        Feature
+            {
+            Advertisements
+                [
+                "廣告功能"
+                "在影片之前播放廣告以賺取額外收入。這可能會使一些用戶離開平台"
+                ]
+            }
+        Feature { Audio "音頻" }
+        Feature
+            {
+            Hi-fiaudio
+                [
+                "高傳真音響"
+                "發燒友喜歡假裝他們能分得清這個和普通音頻之間的區別！"
+                ]
+            }
+        Feature { Integratedequalizer "融合式音頻均衡器" }
+        Feature
+            {
+            Exclusiveartists
+                [
+                "獨家藝人"
+                "向一群當紅藝人支付銷售額的 15% 以獨家使用您的平台，並增加銷售額"
+                ]
+            }
+        ]
+    Categories
+        [
+        Category
+            {
+            Audio [ "音頻"; "以耳朵為導向的媒體，如音樂和廣播" ]
+            }
+        Category
+            {
+            Video [ "影片"; "以眼睛為導向的媒體，例如電影和節目" ]
+            }
+        ]
+    }
+
+Software
+    {
+    CommunicationApplication
+        [
+        "社交通訊應用程式"
+        "社交程式允許人們通過互聯網與他人互動"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Codecs [ "編解碼器"; "你得壓縮一下。頻寬不會長在樹上！" ]
+            }
+        Feature { Encryption "加密功能" }
+        Feature
+            {
+            Customchannels
+                [
+                "自定義頻道"
+                "允許用戶為一群人創建和管理他們自己的頻道或“服務器”"
+                ]
+            }
+        Feature
+            {
+            Filesharing [ "文件分享功能"; "讓用戶分享圖片、影片和文件" ]
+            }
+        Feature
+            {
+            Interface [ "介面"; "如果你看不到聊天介面，那有甚麼意義呢？" ]
+            }
+        Feature
+            {
+            Readreceipts [ "顯示已讀功能"; "找出誰在故意偷看你" ]
+            }
+        Feature { Emojisandavatars "表情符號和頭像" }
+        Feature
+            {
+            In-appoverlay
+                [
+                "疊加介面"
+                "當在使用另一個應用程式時, 可以快速瀏覽社交程式的介面"
+                ]
+            }
+        Feature
+            {
+            Contactslist [ "聯繫人列表"; "好像有人想記住他們的朋友" ]
+            }
+        Feature { Network "網絡" }
+        Feature { Auto-update "自動更新" }
+        Feature
+            {
+            Cloudsync
+                [
+                "雲端同步"
+                "允許用戶跨設備同步聯繫人清單、信息記錄等"
+                ]
+            }
+        Feature
+            {
+            VoIP [ "網絡電話"; "夠了，跟人說話吧！" ]
+            }
+        Feature
+            {
+            Voicemessages [ "語音信息"; "因為有些人不可能一直在你身邊" ]
+            }
+        Feature
+            {
+            Speechtotext
+                [
+                "語音轉換文字功能"
+                "將語音轉換為文本的能力對於聽力受損的用戶或只是不想聽到朋友聲音的人很有用"
+                ]
+            }
+        Feature
+            {
+            Voicechanger [ "變聲器"; "這個噱頭永遠不會老……對吧？" ]
+            }
+        Feature
+            {
+            Speechdetection
+                [
+                "語音感應功能"
+                "當你不說話時關閉麥克風，當你說話時打開它。 很簡單，真的"
+                ]
+            }
+        Feature
+            {
+            Videotelephony [ "視訊通話"; "讓用戶看到彼此的美麗面孔" ]
+            }
+        Feature
+            {
+            Groupvideocalls
+                [
+                "群組視訊通話"
+                "讓很多人一起在一個視訊通話中。 如果有全球流行的嚴重病毒爆發，那就完美了！"
+                ]
+            }
+        Feature
+            {
+            Screensharing
+                [
+                "分享畫面功能"
+                "出於某種原因，人們真的很喜歡看別人玩遊戲"
+                ]
+            }
+        Feature { Videofilters "影片過濾器" }
+        ]
+    }
+
+Software
+    {
+    CloudStorageTool [ "雲端存儲工具"; "將文件和數據存儲在'雲'中" ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature { Fileencryption "文件加密" }
+        Feature
+            {
+            Losslesscompression
+                [
+                "無損壓縮"
+                "文件可能非常鬆散，您可以利用這點來使它在傳輸之前變得更小"
+                ]
+            }
+        Feature
+            {
+            Filespanning
+                [
+                "文件拆卸功能"
+                "在傳輸之前自動將大文件拆卸為更小的文件，以使其更容易"
+                ]
+            }
+        Feature
+            {
+            Filelocking
+                [
+                "文件上鎖功能"
+                "每次要查看文件時輸入密碼。 一點都不煩！"
+                ]
+            }
+        Feature { Interface "介面" }
+        Feature { Search "搜尋功能" }
+        Feature
+            {
+            Storagereports
+                [
+                "存儲報告"
+                "向用戶展示雲端空間如何被分配使用的精美圖表"
+                ]
+            }
+        Feature
+            {
+            Network
+                [
+                "網絡"
+                "啟動雲端服務？ 你最好有足夠的伺務器容量！"
+                ]
+            }
+        Feature
+            {
+            Auto-update [ "自動更新"; "確保用戶使用最新的版本" ]
+            }
+        Feature
+            {
+            Trashretention
+                [
+                "垃圾保留功能"
+                "將文件放在垃圾箱中一段時間，以防有人改變主意"
+                ]
+            }
+        Feature
+            {
+            Remotedevicemanagement [ "遠程設備管理"; "設備被盜？炸掉它！" ]
+            }
+        Feature { Publicfilesharing "公共文件共享" }
+        Feature { High-speedtransfer "高速傳輸" }
+        Feature
+            {
+            Mediastreaming [ "媒體串流"; "直接從雲端直播媒體文件" ]
+            }
+        Feature
+            {
+            Automaticbackup [ "自動備份"; "將用戶的設備備份到雲端" ]
+            }
+        Feature
+            {
+            Foldersharing [ "文件夾共享"; "授予其他人訪問整個文件夾的權限" ]
+            }
+        Feature { Bulktransfer "批量傳輸" }
+        ]
+    }
+
+Software
+    {
+    MappingApplication
+        [
+        "地圖應用程式"
+        "地圖應用程式允許用戶查閱全球地圖數據"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Mapdownloading
+                [
+                "地圖下載"
+                "現在您無需網絡連接即可在某處開車！"
+                ]
+            }
+        Feature
+            {
+            Routestops
+                [
+                "路線中途點"
+                "您不僅可以從 A 開車到 B，還可以從 A 開車到 B 到 C！"
+                ]
+            }
+        Feature
+            {
+            Livefuelprices
+                [
+                "實時燃料價格"
+                "向用戶展示沿途最便宜的加油地點"
+                ]
+            }
+        Feature
+            {
+            Editor
+                [
+                "編輯器功能"
+                "用戶可以完成你做的工作並修復地圖上不見的東西，您可以將其稱為功能"
+                ]
+            }
+        Feature
+            {
+            Ratings [ "評分功能"; "讓用戶直接在應用程式中對企業和服務進行評分" ]
+            }
+        Feature { Distancetracker "距離追踪器" }
+        Feature
+            {
+            Promotebusinesses
+                [
+                "企業推廣服務"
+                "允許企業每天支付{Currency:2}，使其在應用程式中排名稍高"
+                ]
+            }
+        Feature { Interface "介面" }
+		Feature
+            {
+            Favourites [ "Favourites"; "Keep track of your favourite places" ]
+            }
+		Feature
+            {
+            Nightmode [ "Night mode"; "Change the map to dark colours during nighttime hours for better visibility" ]
+            }
+        Feature
+            {
+            Satelliteview [ "衛星圖"; "你應該看看51區" ]
+            }
+        Feature { Turn-by-turnnavigation "導航系統" }
+        Feature { Network "網絡" }
+        Feature
+            {
+            Real-timedatatransmission
+                [
+                "實時數據傳輸"
+                "讓用戶的設備自動傳輸有關其速度和行程長度的數據，以實時更改交通信息和最佳路線"
+                ]
+            }
+        Feature
+            {
+            Cloudsync
+                [
+                "雲端同步"
+                "萬一你忘記你的房子在哪裡，但知道它的位置在雲端，你就安心了"
+                ]
+            }
+        Feature
+            {
+            Informationcrowdsourcing
+                [
+                "信息眾包"
+                "讓用戶在開車時提交交通和商業信息。 肯定不會有問題的"
+                ]
+            }
+        Feature { Spokendirections "語音指示" }
+        Feature
+            {
+            Customvoices [ "自定義語音"; "你不想Darth Vader給你指路嗎？" ]
+            }
+        Feature
+            {
+            3Dmapview
+                [
+                "3D地圖檢視"
+                "這就像一個虛擬的假期，從你手機的舒適度看！"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    ArtificialIntelligenceSoftware
+        [
+        "人工智能軟件"
+        "開發人工智能可以讓您為電腦成為地球上的主導物種做出貢獻"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Chatbottoolkit
+                [
+                "聊天機器人工具包"
+                "你真正的朋友現在都不想說話嗎？ 製作一個可以與之交談的自定義聊天機器人！"
+                ]
+            }
+        Feature
+            {
+            Machinelearningalgorithms
+                [
+                "機器學習演算法"
+                "使用戶能夠讓他們的電腦自己學習新事物"
+                ]
+            }
+        Feature { Naturallanguageprocessing "自然語言處理" }
+        Feature { Automaticdatamanagement "自動數據管理" }
+        Feature
+            {
+            Dataencryption
+                [
+                "數據加密"
+                "不完全信任人工智能？ 在人工智能處理數據之前加密您的數據！"
+                ]
+            }
+        Feature
+            {
+            Logging [ "記錄日誌"; "留意AI軟件在做甚麼" ]
+            }
+        Feature
+            {
+            AIprocessexplainability
+                [
+                "可解釋人工智能"
+                "查看人工智能在輸入和輸出之間實際在做甚麼。"
+                ]
+            }
+        Feature
+            {
+            Neuralnetworking
+                [
+                "神經網絡"
+                "有大腦的電腦比沒有大腦的電腦好"
+                ]
+            }
+        Feature { Plug-insupport "插件支援" }
+        Feature { Interface "介面" }
+        Feature { Datavisualization "數據圖像化" }
+        Feature { Visualmodelbuilding "圖像化模型構建" }
+        Feature
+            {
+            Imageidentification
+                [
+                "圖像識別"
+                "識別圖像中的文本、面部、物體等"
+                ]
+            }
+        Feature { Network "網絡" }
+        Feature
+            {
+            Cybersecuritythreatdetection
+                [
+                "網絡安全威脅檢測"
+                "使人工智能能夠了解網絡安全威脅，然後檢測它們。 因為讓人工智能系統進入您的網絡中心肯定是個好主意！"
+                ]
+            }
+        Feature
+            {
+            Deploymenttools
+                [
+                "部署工具"
+                "為用戶提供工具以將他們的人工智能系統部署到他們的數據庫和網絡"
+                ]
+            }
+        Feature { Cloudplatform "雲端平台" }
+        Feature
+            {
+            Auto-update [ "自動更新"; "確保人工智能系統保持最新版本" ]
+            }
+        Feature
+            {
+            Video [ "影片"; "人工智能系統會成為下一個Martin Scorsese嗎？" ]
+            }
+        Feature
+            {
+            Videoidentification
+                [
+                "影像識別"
+                "識別影像中的人物、文字、地點等內容"
+                ]
+            }
+        Feature
+            {
+            Roboticsintegration
+                [
+                "機器人合集"
+                "使用戶能夠將人工智能集合到他們的機器人系統中。 現在我們考慮它可能不是一個好主意......"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    LivestreamingSoftware
+        [
+        "直播軟件"
+        "直播在技術上是一件非常煩人的事情。使用您自己的串流媒體軟件稍微輕鬆一些"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Codecs
+                [
+                "編解碼器"
+                "除非您希望串流媒體每月支付 10,000 美元的網絡賬單，否則您應該擁有這個"
+                ]
+            }
+        Feature { Plug-insupport "插件支援" }
+        Feature
+            {
+            Randomizer
+                [
+                "隨機生成器"
+                "選擇一個隨機的追隨者、訂閱者或觀眾。 做你想做的事"
+                ]
+            }
+        Feature
+            {
+            Interface [ "介面"; "你必須有那個酷酷的串流媒體介面設計！" ]
+            }
+        Feature
+            {
+            Widgets
+                [
+                "小視窗"
+                "透過聊天室、捐款特效等方式擋住遊戲畫面！"
+                ]
+            }
+        Feature
+            {
+            Interfacelayouteditor
+                [
+                "介面設計編輯器"
+                "讓直播主移動他們的介面"
+                ]
+            }
+        Feature
+            {
+            In-gameoverlay
+                [
+                "遊戲內疊加視窗"
+                "允許直播主在遊戲中控制直播！ 工作中真正的多任務處理！"
+                ]
+            }
+        Feature
+            {
+            Network [ "網絡"; "直播很大程度上依賴網絡" ]
+            }
+        Feature
+            {
+            Multi-platformstreaming
+                [
+                "多平台串流直播"
+                "真的很想要播放率嗎？同時直播好幾個平台！"
+                ]
+            }
+        Feature
+            {
+            Automaticsocialmediapost
+                [
+                "自動發佈社交媒體帖子"
+                "直播時自動發布帖子"
+                ]
+            }
+        Feature
+            {
+            Auto-update
+                [
+                "自動更新"
+                "串流媒體是技術的地獄。 通過自動更新減少地獄般的痛苦"
+                ]
+            }
+        Feature
+            {
+            Chatbot
+                [
+                "聊天室管理機器人"
+                "如果機器人可以在國際象棋上擊敗你，他們可以為你控制一些孩子"
+                ]
+            }
+        Feature
+            {
+            Donationservice
+                [
+                "捐款服務"
+                "為直播主提供捐款服務，並從此服務向直播主獲得的捐款中分一杯羹"
+                ]
+            }
+        Feature { Video "影片" }
+        Feature
+            {
+            Filters [ "色彩過濾器"; "為戲劇性的道歉流添加戲劇性的色彩" ]
+            }
+        Feature
+            {
+            Integrateddisplaycapture
+                [
+                "屏幕截取工具"
+                "無需讓用戶下載另一個屏幕截取軟件，而是將屏幕截取工具集合到您自己的程式中！"
+                ]
+            }
+        Feature
+            {
+            Backgrounddetection
+                [
+                "背景檢測"
+                "使直播主能夠在沒有綠幕的情況下更改其背景內容"
+                ]
+            }
+        Feature { Audio "音頻" }
+        Feature
+            {
+            Audiomixing [ "音頻混合"; "所有最好的直播主都在這樣做" ]
+            }
+        Feature
+            {
+            Texttospeech
+                [
+                "文字轉換語音功能"
+                "讓機器人讀出捐贈者向直播主發送令人作嘔的信息"
+                ]
+            }
+        Feature
+            {
+            Musiclibrary
+                [
+                "音樂庫"
+                "串流直播網站因版權警示變得瘋狂。為用戶提供一些無版權的音樂以便他們在直播中使用"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    RobotSoftware
+        [
+        "機器人軟件"
+        "沒有這個軟件，機器人甚麼都不是。 沒有機器人，這個軟件甚麼都不是。"
+        ]
+    Features
+        [
+        Feature
+            {
+            System [ "系統"; "把它想像成機器人的靈魂。或者不要" ]
+            }
+        Feature { Timecodesupport "時間碼支援" }
+        Feature
+            {
+            Deploymenttools
+                [
+                "部署工具"
+                "如果你想接管世界，你不能一次一個地慢慢升級機器人"
+                ]
+            }
+        Feature
+            {
+            GPSintegration
+                [
+                "全球定位系统整合"
+                "\"現在，那些該死的機器人去哪兒了？\" 這可能是你不想聽到的"
+                ]
+            }
+        Feature { Robotcalibration "機器人校準" }
+        Feature
+            {
+            Postprocessors
+                [
+                "後置處理器"
+                "爲許多不同的專有機器人語言啓用程序生成"
+                ]
+            }
+        Feature
+            {
+            Metricsaggregation
+                [
+                "指標型聚合"
+                "允許保存和查看有關機器人的大量信息"
+                ]
+            }
+        Feature { Rootcauseanalysis "根本原因分析" }
+        Feature
+            {
+            Softwaredevelopmentkit
+                [
+                "軟件開發工具包"
+                "用戶可能希望為他們的機器人創建自定義應用程序"
+                ]
+            }
+        Feature { Plug-insupport "插件支援" }
+        Feature { Interface "介面" }
+        Feature
+            {
+            Customizableinterface [ "可自定介面"; "只看你想看的" ]
+            }
+        Feature
+            {
+            2Dvisualization
+                [
+                "2D圖像化"
+                "當您有圖表時，對機器人進行編程會容易得多"
+                ]
+            }
+        Feature
+            {
+            Multi-cameraview [ "多鏡頭視圖"; "立即查看您的整個機器人大軍" ]
+            }
+        Feature { 3Dvisualization "3D圖像化" }
+        Feature
+            {
+            Roboticsimulation
+                [
+                "機器人模擬"
+                "提前進行模擬程序比讓機器人撞牆容易得多"
+                ]
+            }
+        Feature
+            {
+            VRvisualization [ "虛擬現實視覺化"; "沉浸其中~" ]
+            }
+        Feature { Network "網絡" }
+        Feature
+            {
+            Teleoperation
+                [
+                "遠端控制"
+                "厭倦了自動化程序所獲得的樂趣？現在您可以從您的電腦控制機器人！"
+                ]
+            }
+        Feature
+            {
+            Remotecontrols
+                [
+                "遙控器支援"
+                "連接手機、遊戲手柄等成為機器人的控制器"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    ElectronicFlightBag
+        [
+        "電子飛行包"
+        "電子飛行包應用程序可幫助機組人員和飛行員執行飛行管理任務"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Optimizedautorouting
+                [
+                "改善自動選路"
+                "根據您的飛機、天氣等自動創建理想飛行路線。"
+                ]
+            }
+        Feature
+            {
+            IntegratedE6B
+                [
+                "內置領航計算尺-E6B"
+                "E6B是一種飛行計劃工具，用於計算燃料消耗、航路時間等"
+                ]
+            }
+        Feature { Avionicsconnectivity "航空電子設備連接" }
+        Feature { Interface "介面" }
+        Feature
+            {
+            Charts [ "圖表"; "目視飛航規則-VFR、儀器飛行-IFR、飛機滑行-taxi，有很多圖表可供選擇！" ]
+            }
+        Feature { Missionplanner "航空任務規劃功能" }
+        Feature { Militarycharts "軍事圖表" }
+        Feature { Logbook "日誌" }
+        Feature { Flightplanfiling "飛行計劃備案" }
+        Feature { Militaryformfiling "軍事表格歸檔" }
+        Feature { Jetfuelordering "航油訂購功能" }
+        Feature
+            {
+            Pilottraining
+                [
+                "機師培訓功能"
+                "將機師培訓模組直接集合到應用程式中"
+                ]
+            }
+        Feature
+            {
+            Militarymapdata
+                [
+                "軍事地圖數據"
+                "將軍事訓練路線和空中加油軌蹟等軍事專用地圖數據集合到地圖中"
+                ]
+            }
+        Feature
+            {
+            Weatherradarmapdata
+                [
+                "天氣雷達地圖數據"
+                "將實時天氣信息集成到地圖中"
+                ]
+            }
+        Feature { 3D "3D圖像" }
+        Feature
+            {
+            3Dairportview
+                [
+                "3D機場圖像"
+                "從上方查看您最喜歡的機場，您也可以在它們上方飛行"
+                ]
+            }
+        Feature { Terrainvisualization "地形3D圖像化" }
+        Feature { Network "網絡" }
+        Feature { Planningcollaboration "規劃協作" }
+        Feature
+            {
+            Webapp
+                [
+                "網絡應用程式"
+                "開設一個網站，允許機師從瀏覽器計劃航班"
+                ]
+            }
+        Feature
+            {
+            Auto-update
+                [
+                "自動更新"
+                "自動更新最新的圖表、地圖和數據"
+                ]
+            }
+        Feature
+            {
+            Passengerappconnectivity
+                [
+                "乘客應用程式連接"
+                "避免\"我們到了嗎？\"為乘客提供應用程序，以便他們自己回答"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    BenchmarkSoftware
+        [
+        "基準程式"
+        "讓用戶對其系統的硬件進行測試和評分"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Temperaturemonitoring [ "溫度監測"; "不能讓你的電腦發燒！" ]
+            }
+        Feature
+            {
+            Mathematicstest
+                [
+                "數理測試"
+                "讓您的電腦通過數理測試，就像我們小時候都必須做的那樣"
+                ]
+            }
+        Feature { Name "Read/writethroughputtest"; Value "讀/寫吞吐量測試" }
+        Feature { Physicssimulationtest "物理模擬測試" }
+        Feature { IOPStest "每秒輸入/輸出運算-IOS測試" }
+        Feature { Simultaneousmultithreadingsupport "聯合多線程支援" }
+        Feature { 4Ksectortesting "4K 磁區測試" }
+        Feature
+            {
+            Multi-GPUsupport [ "多GPU支援"; "為甚麼還停留在電腦中只有一個顯示卡上？" ]
+            }
+        Feature { 2Drenderingtest "2D渲染測試" }
+        Feature
+            {
+            Realtimedataoverlay
+                [
+                "實時數據疊加"
+                "看看你有多少幀......在你玩的時候！ 身臨其境"
+                ]
+            }
+        Feature { Multi-displayrendering "多顯示渲染" }
+        Feature { 3Drenderingtest "3D渲染測試" }
+        Feature { Fluidsimulationtest "流體模擬測試" }
+        Feature
+            {
+            Configurablegraphics
+                [
+                "可設置的圖形"
+                "數十種不同的設置使圖形測試變得過於復雜"
+                ]
+            }
+        Feature
+            {
+            Benchmarkdatabase
+                [
+                "基準數據庫"
+                "託管一個彙總所有用戶測試結果的數據庫"
+                ]
+            }
+        Feature
+            {
+            Comparisons [ "比較功能"; "幫助人們做出購買哪款硬件的決定" ]
+            }
+        Feature
+            {
+            Resultskewing
+                [
+                "偏袒測試結果"
+                "為某個製造商提高硬件基準分數，以換取每位活躍用戶的{Currency:0.5}。小心，如果你被抓到，這可能會導致消費者訴訟"
+                ]
+            }
+        ]
+    }
+
+Software
+    {
+    FileArchiver
+        [
+        "檔案歸檔器"
+        "檔案歸檔器是用於將文件組合成歸檔檔案的實用程式"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature { Encryption "加密" }
+        Feature { Shellintegration "工具集合" }
+        Feature
+            {
+            Diskimagesupport [ "磁盤圖片支援"; "支援開啟磁盤圖片" ]
+            }
+        Feature { Passwordlocking "密碼鎖功能" }
+        Feature
+            {
+            Adaptivedictionarycompression
+                [
+                "自適應詞典壓縮"
+                "將諸如\"The theatrical theives loathe the thespian\"之類的內容壓縮為\"% %atrical %ives loa% % %spian\"之類的內容。壓縮工作！"
+                ]
+            }
+        Feature
+            {
+            Huffmancoding
+                [
+                "霍夫曼編碼"
+                "這種壓縮方法非常複雜，但它確實有效。 這就是你需要知道的一切，其餘的讓書呆子弄清楚"
+                ]
+            }
+        Feature { Archiverepairtool "檔案修復工具" }
+        Feature
+            {
+            Self-extractingarchives
+                [
+                "自解壓檔案"
+                "允許用戶創建會自己解解壓的檔案！"
+                ]
+            }
+        Feature
+            {
+            Archivescanning [ "檔案掃描"; "使用戶能夠掃描檔案中的病毒" ]
+            }
+        Feature { Interface "介面" }
+        Feature { Search "搜尋功能" }
+        Feature
+            {
+            Command-lineinterface
+                [
+                "命令行介面"
+                "通過命令行啟用自動化和腳本"
+                ]
+            }
+        Feature
+            {
+            Themes [ "自定義主題"; "使文件歸檔看起來不那麼無聊" ]
+            }
+        Feature { Network "網絡" }
+        Feature
+            {
+            Cloudbackup [ "雲端備份"; "自動備份用戶檔案到雲端" ]
+            }
+        ]
+    }
+
+Software
+    {
+    CustomRobot "自定義機器人"
+    Features
+        [
+        Feature { Movementprogram "運動程式" }
+        Feature { Autonomousprogram "自主程式" }
+        Feature { Hardwaredesign "硬件設計" }
+        Feature { Camera "鏡頭" }
+        Feature { Remotecontrol "遙控" }
+        Feature { GPS "全球定位系統-GPS" }
+        Feature { Gyroscope "陀螺儀" }
+        Feature { Motor "馬達" }
+        Feature { 2Dvisualization "2D圖像化" }
+        Feature { 3Dvisualization "3D圖像化" }
+        Feature { Custom3Dmodel "自定義 3D 模型" }
+        Feature { Programsimulation "程式模擬" }
+        Feature { Networkintegration "網絡整合" }
+        ]
+    Components
+        [
+        Component { Camera "鏡頭" }
+        Component { Motor "馬達" }
+        Component { GPS "全球定位系統-GPS" }
+        Component { Board "電路板" }
+        Component { Gyroscope "陀螺儀" }
+        Component { Body "機身" }
+        Component { Microcontroller "微控器" }
+        Component { Robotassembly "機器人組裝" }
+        Component { Remotecontrol "遙控" }
+        ]
+    }
+
+Hardware
+    {
+    Drone              "無人機"
+    OverallHeight      "總高度"
+    NoseAngle          "機頭角度"
+    ChinAngle          "機底角度"
+    Tail               "機尾"
+    Stabilizers        "穩壓器"
+    drone_cam          "鏡頭"
+    headphones_button1 "三重按鈕"
+    watch_button       "按鈕"
+    Headphones         "耳機"
+    EarcupWidth        "耳罩寬度"
+    HeadbandCurve      "頭帶曲度"
+    Offset             "偏移量"
+    HeadbandTopWidth   "頭帶頂部寬度"
+    EarcupHeight       "耳罩高度"
+    HeadbandSidesWidth "頭帶邊寬"
+    Button1c           "三重按鈕"
+    Button2c           "單按鈕"
+    Watch              "圓形手錶"
+    BuckleBase         "搭扣底座"
+    OverallWidth       "整體寬度"
+    EngravingSize      "雕刻尺寸"
+    BezelThickness     "邊框厚度"
+    BuckleLength       "扣長"
+    StrapEdge          "錶帶邊沿"
+    WatchThickness     "手錶厚度"
+    watch_dial         "錶盤"
+    headphones_button2 "小按鈕"
+    WatchSquare        "方形手錶"
+    WatchFaceShear     "手錶面"
+    ScreenBorder       "屏幕邊框"
+    WatchWidth         "手錶寬度"
+    }
+
+Software
+    {
+    OperatingSystem
+        [
+        "作業系統"
+        "作業系統是Software inc.中最大的軟件。
+大多數的軟件都需要一個作業系統來運行。當人們停止購買一系列作業系統時，他們也將停止為這些作業系統購買軟件"
+        ]
+    Features
+        [
+        Feature { System "系統" }
+        Feature
+            {
+            Multitasking
+                [
+                "多任務處理"
+                "讓你的用戶假裝可以隨時打開多個應用程序來進行多任務處理"
+                ]
+            }
+        Feature { Useraccounts "用戶帳號" }
+        Feature
+            {
+            Name  "Plug'n'Play"
+            Value
+                [
+                "隨插即用"
+                "允許用戶與作業系統以多種方式互動"
+                ]
+            }
+        Feature { Fileencryption "文件加密" }
+        Feature { Systemrecovery "系統復原" }
+        Feature
+            {
+            Virtualization [ "虛擬機"; "在你的作業系統中放置另一個作業系統，等等.." ]
+            }
+        Feature { Codesigning "代碼簽名" }
+		Feature
+            {
+            Automaticdrivermanagement [ "自動驅動管理"; "驅動程式問題是系統損壞的第一大原因。使用此功能幫助緩解該問題" ]
+            }
+		Feature
+            {
+            Integratedscreencapture [ "屏幕截圖"; "誰想買屏幕截圖卡？沒有人！" ]
+            }
+        Feature { Hardwaresupport "硬件支援" }
+        Feature
+            {
+            Touch
+                [
+                "觸控"
+                "你的屏幕會永遠有足夠多的指紋痕跡"
+                ]
+            }
+        Feature
+            {
+            Haptictechnology [ "觸覺回饋技術"; "振動技術是舊時代的產物。觸覺回饋技術很酷！" ]
+            }
+        Feature
+            {
+            Wirelesscommunication [ "無線通信"; "比起電線，你不會被電磁波絆倒" ]
+            }
+        Feature
+            {
+            Removabledrive
+                [
+                "快閃驅動器"
+                "我們將游戲存儲保存在記憶體裏，將游戲保存在硬碟上"
+                ]
+            }
+        Feature
+            {
+            Standardizedinput
+                [
+                "標準化輸入"
+                "您會需要一個鍵盤才能在家機上製作遊戲"
+                ]
+            }
+		Feature
+            {
+            Fingerprintscanner [ "指紋掃描"; "將指紋識別功能內置到作業系統中，讓用戶像間諜一樣解鎖作業系統" ]
+            }
+        Feature
+            {
+            Superoptimization
+                [
+                "超級最佳化"
+                "在開發上花額外時間，但節省訂購硬件的費用（在生產該產品時移除額外成本）"
+                ]
+            }
+		Feature
+            {
+            Advancedhardwaresupport [ "進階硬件支援"; "使用戶能夠使用多個處理器和大量記憶體，這對於伺服器來說非常有用" ]
+            }
+        Feature { Interface "界面" }
+        Feature { Customthemes "自定義主題" }
+        Feature { Windowingsystem "視窗系統" }
+        Feature { Unifiedsearch "整合搜索" }
+        Feature { Themes "主題" }
+        Feature { Widgets "小部件" }
+        Feature { Pushnotifications "推送通知" }
+		Feature
+            {
+            Securityalerts [ "安全警報"; "現在你可以知道程式甚麼時候監視你了" ]
+            }
+		Feature
+            {
+            Universaldarkmode [ "通用黑暗模式"; "自動更改整個系統的應用程式設置，以避免高亮灼傷您的眼睛！" ]
+            }
+        Feature { 3Drendering "3D渲染" }
+		Feature { Video "影像" }
+		Feature
+            {
+            HDRvideosupport [ "HDR影片支援"; "有點像標準影片，但動態範圍更高。 這意味著什麼？ 誰知道。 但你看！是漂亮的顏色！" ]
+            }
+        Feature { Audio "音頻" }
+        Feature { Surroundsound "環繞聲" }
+		Feature { Spatialheadphonesupport "空間耳機支援" }
+        Feature { Speechrecognition "語音識別" }
+        Feature
+            {
+            Microphonesurveillance
+                [
+                "麥克風監控"
+                "監聽用戶的談話，冒著被發現的風險在BUG被公布之前發現並修復它們"
+                ]
+            }
+        Feature
+            {
+            Network
+                [
+                "網絡功能"
+                "你能想像那些鍵盤俠失去這個功能時的樣子嗎？"
+                ]
+            }
+        Feature
+            {
+            Auto-update
+                [
+                "自動更新"
+                "修復漏洞，防禦惡意軟件，並在未保存60頁的文件下中重新啟動
+                ]
+            }
+        Feature { Appstore "應用商店" }
+        Feature { Cloudbackup "雲端備份" }
+		Feature { Cloudserverbackup "雲端伺服器備份" }
+		Feature
+            {
+            Cloudmigrationtools
+                [
+                "雲端遷移工具"
+                "一個幫助用戶將數據遷移到雲端運算服務的整合工具"
+                ]
+            }
+		Feature
+            {
+            Hotspotcreation
+                [
+                "熱點創建"
+                "使行動裝置能夠為其他裝置用戶創建 wi-fi 熱點"
+                ]
+            }
+		Feature
+            {
+            Virtualnetworkmanager [ "虛擬網絡管理"; "虛擬網絡不會自行管理！" ]
+            }
+        Feature { Wireless "無線" }
+        Feature
+            {
+            Motiondetection
+                [
+                "運動檢測"
+                "誰不想在電視中嵌入操縱桿？"
+                ]
+            }
+        Feature { Built-inspeaker "内置喇叭" }
+        Feature { RGBLighting "RGB燈效" }
+        ]
+    Categories
+        [
+        Category
+            {
+            Computer [ "電腦"; "桌面設備" ]
+            }
+        Category
+            {
+            Console [ "遊戲主機"; "家用遊戲主機" ]
+            }
+        Category
+            {
+            Phone [ "Phone"; "移動設備" ]
+            }
+        Category { Joystick "搖桿" }
+        ]
+    Components
+        [
+        Component { Plastic "塑膠" }
+        Component { Antenna "天線" }
+        Component { Motherboard "主機板" }
+        Component { Drivebay "驅動機機架" }
+        Component { Controller "控制器" }
+        Component { Case "機身" }
+        Component { Deviceinput "輸入裝置" }
+        Component { Touchsensor "觸控感應器" }
+        Component { Hapticengine "觸覺致動器" }
+        Component { Screen "螢幕" }
+        Component { Fingerprintscanner "指紋掃描儀" }
+        Component { Gyroscope "陀螺儀" }
+        Component { Smallbatterypack "小型電池組" }
+        Component { Mediumbatterypack "中型電池組" }
+        Component { Bigbatterypack "大型電池組" }
+        Component { Rumbleunit "聲音元件" }
+        Component { Speaker "喇叭" }
+        Component { LED "二極管" }
+		Component { Phoneassembly "電話部件" }
+		Component { Strap "錶帶" }
+		Component { Watchassembly "手錶部件" }
+		Component { Ventilation "通風裝置" }
+		Component { Drivers "驅動硬件" }
+		Component { Microcontroller "微控器" }
+		Component { ANCprocessor "主動降噪處理器" }
+		Component { Innerassembly "內部組件" }
+		Component { Microphone "麥克風" }
+		Component { Headphonebody "耳機機身" }
+		Component { Wirelessreceiver "無線接收器" }
+        ]
+    }
+
+Software
+    {
+    OperatingSystem
+		[
+		]
+    Features
+        [
+		Feature
+            {
+            Automaticdrivermanagement [ "自動驅動管理"; "驅動程式問題是系統損壞的第一大原因。使用此功能幫助緩解該問題" ]
+            }
+		Feature
+            {
+            Integratedscreencapture [ "屏幕截圖"; "誰想買屏幕截圖卡？沒有人！" ]
+            }
+        Feature { Hardwaresupport "硬件支援" }
+        Feature
+            {
+            Haptictechnology [ "觸覺回饋技術"; "振動技術是舊時代的產物。觸覺回饋技術很酷！" ]
+            }
+		Feature
+            {
+            Fingerprintscanner [ "Fingerprint scanner"; "Integrate fingerprint recognition into the OS to allow users to feel like spies when they unlock their system" ]
+            }
+		Feature
+            {
+            Advancedhardwaresupport [ "進階硬件支援"; "使用戶能夠使用多個處理器和大量記憶體，這對於伺服器來說非常有用" ]
+            }
+        Feature { Pushnotifications "推送通知" }
+		Feature
+            {
+            Securityalerts [ "安全警報"; "現在你可以知道程式甚麼時候監視你了" ]
+            }
+		Feature
+            {
+            Universaldarkmode [ "通用黑暗模式"; "自動更改整個系統的應用程式設置，以避免高亮灼傷您的眼睛！" ]
+            }
+
+		Feature { Video "影像" }
+		Feature
+            {
+            HDRvideosupport [ "HDR影片支援"; "有點像標準影片，但動態範圍更高。 這意味著什麼？ 誰知道。 但你看！是漂亮的顏色！" ]
+            }
+		Feature { Spatialheadphonesupport "空間耳機支援" }
+		Feature { Cloudserverbackup "雲端伺服器備份" }
+		Feature
+            {
+            Cloudmigrationtools
+                [
+                "雲端遷移工具"
+                "一個幫助用戶將數據遷移到雲端運算服務的整合工具"
+                ]
+            }
+		Feature
+            {
+            Hotspotcreation
+                [
+                "熱點創建"
+                "使行動裝置能夠為其他裝置用戶創建 wi-fi 熱點"
+                ]
+            }
+		Feature
+            {
+            Virtualnetworkmanager [ "虛擬網絡管理"; "虛擬網絡不會自行管理！" ]
+            }
+        ]
+    Categories
+        [
+        Category
+            {
+            Watch [ "手錶"; "手腕設備" ]
+            }
+        Category
+            {
+            Server [ "伺服器"; "伺服器機架" ]
+            }
+        Category
+            {
+            Car [ "車輛"; "儀表板" ]
+            }
+        ]
+    Components
+        [
+        Component { Hapticengine "觸覺致動器" }
+		Component { Strap "錶帶" }
+		Component { Watchassembly "手錶部件" }
+		Component { Ventilation "通風裝置" }
+		Component { Drivers "驅動硬件" }
+		Component { Microcontroller "微控器" }
+		Component { ANCprocessor "主動降噪處理器" }
+		Component { Innerassembly "內部組件" }
+		Component { Microphone "麥克風" }
+		Component { Headphonebody "耳機機身" }
+		Component { Wirelessreceiver "無線接收器" }
+        ]
+    }
+
+Software
+    {
+    2DEditor
+        [
+        ]
+    Features
+        [
+		Feature { Imagecodecs "圖片編解碼器" }
+		Feature { Plug-insupport "插件支援" }
+		Feature { Network "網絡" }
+		Feature
+            {
+            Integratedsocialmediauploader
+                [
+                "社交媒體上傳工具"
+                "將您美麗的圖像直接上傳到您朋友的臉上"
+                ]
+            }
+		Feature
+            {
+            Auto-update
+                [
+                "自動更新"
+                "有時此功能可以正常運作！"
+                ]
+            }
+		Feature { Cloudsync "雲端同步" }
+        ]
+    }
+	
+Software
+    {
+    3DEditor 
+		[
+		]
+    Features
+        [
+        Feature { Interface "介面" }
+		Feature
+            {
+            Keyframetimeline [ "關鍵影格時間線"; "幀是動畫的關鍵" ]
+            }
+        Feature
+            {
+            Grapheditor [ "圖形編輯器"; "看看那些運動曲線！" ]
+            }
+        Feature { Videoediting "影片編輯" }
+        Feature
+            {
+            Compositor [ "影片合成器"; "完美修復！" ]
+            }
+		Feature { Tracking "追踪功能" }
+		Feature { Plug-insupport "插件支援" }
+		Feature	{ Network "網絡" }
+		Feature { Auto-update "自動更新" }
+		Feature
+            {
+            Cloudsync [ "雲端同步"; "將您的專案存儲在雲端！" ]
+            }
+        ]
+    }
+	
+Software
+    {
+    AudioTool
+        [
+        ]
+    Features
+        [
+		Feature { VSTintegration "虛擬工作室技術-VST整合" }
+		Feature { Network "網絡" }
+		Feature
+            {
+            Auto-update [ "自動更新"; "Users will appreciate auto-updates causing new problems with each release" ]
+            }
+		Feature
+            {
+            Cloudsync [ "雲端同步"; "將您的專案存儲在雲端！" ]
+            }
+        Feature { Newsamples "新音樂樣本" }
+        Feature { Newpresets "新的預設" }
+        Feature { Phaser "新的移相器" }
+		Feature
+            {
+            Filters [ "篩選器"; "Low-pass? High-pass?有太多pass可供選擇！" ]
+            }
+        Feature { Equalizer "等化器" }
+        Feature { Harmonizer "調和器" }
+        Feature { Amplifier "擴音器" }
+        Feature { Pianoroll "新的鋼琴譜" }
+        Feature
+            {
+            LFoscillator [ "低頻振盪器"; "振音、顫音、捲音" ]
+            }
+		Feature { VSTsynthesizer "VST 合成器" }
+        ]
+	Categories
+        [
+        Category { Synthesizerplug-in "合成器插件" }
+        ]
+    }
+	
+Software
+    {
+    Game
+		[
+		]
+    Features
+        [
+        Feature
+            {
+            Leaderboard
+                [
+                "排行榜"
+                "記錄最好的玩家。100% 只為炫耀"
+                ]
+            }
+        Feature
+            {
+            Economy
+                [
+                "經濟系統"
+                "模擬現場經濟，將真實世界的刺激帶入您的遊戲"
+                ]
+            }
+        Feature
+            {
+            Teammanagement
+                [
+                "團隊管理"
+                "玩家們喜歡當家作主的感覺，尤其是當運動隊參與其中時。"
+                ]
+            }
+        Feature
+            {
+            Customminigames
+                [
+                "自定義小遊戲"
+                "為玩家提供工具來幫助他們自己創建糟糕的迷你游戲"
+                ]
+            }
+		Feature { Quicktimeevents "時間限定事件" }
+		Feature
+            {
+            Gamespeedcontrol [ "遊戲速度控制"; "即時修改遊戲的速度以適合您的口味，或暫停遊戲並外出" ]
+            }
+		Feature
+            {
+            Photomode [ "拍照模式"; "你把所有時間都花在設計精美的畫面上，但不會不讓玩家拍照...對吧？" ]
+            }
+		Feature { Video "動畫" }
+		Feature
+            {
+            Pre-renderedcutscenes [ "預渲染過場動畫"; "讓你的遊戲電~影~化~" ]
+            }
+		Feature { In-gamereplays "遊戲重播" }
+		Feature
+            {
+            LANconnection [ "內聯網連接"; "讓玩家通過本地網絡將他們的設備相互連接。 聽起來很有趣！" ]
+            }
+		Feature { Newminigames "新的小遊戲" }
+        Feature
+            {
+            Sportsteams [ "新的運動隊伍"; "在電子表格中添加一些行，然後結束" ]
+            }
+        ]
+    Categories
+        [
+		Category { Party "派對遊戲" }
+        ]
+    }
+	
+Software
+    {
+    OfficeSoftware 
+	[
+	]
+    Features
+        [
+		Feature
+            {
+            Autolayout
+                [
+                "自動佈局"
+                "例如花 30 分鐘試圖使圖片適合這個地方"
+                ]
+            }
+		Feature { Guidesandgrids "格線佈局" }
+		Feature { Templates "範本" }
+		Feature
+            {
+            Complextextrendering [ "複雜文本渲染"; "沒有這個，那些無法讀懂的草書字體就不會看起來都是一樣的了。" ]
+            }
+		Feature
+            {
+            Commandbuttons
+                [
+                "指令按鈕"
+                "添加按鈕可讓您一鍵執行命令"
+                ]
+            }
+        Feature { Mathfunctionslibrary "數學函數庫" }
+        Feature
+            {
+            XMLsupport [ "XML支援"; "XML。 它介於寫作和編碼之間" ]
+            }
+		Feature { Scripting "腳本" }
+		Feature
+            {
+            Proprietaryformat
+                [
+               "專用格式"
+               "如果您的軟件有很多活躍用戶，創建專用格式會增加銷售額，但如果您的軟件沒有，則會減少銷售額"
+                ]
+            }
+		Feature { Plug-insupport "插件支援" }
+        Feature { Cloudsync "雲端同步" }
+		Feature
+            {
+            Auto-update [ "自動更新"; "為什麼不？" ]
+            }
+		Feature
+            {
+            Simultaneouscollaboration [ "同步協作"; "讓多個用戶同時處理一個項目" ]
+            }
+		Feature { Videoplayback "影片重播" }
+		Feature { Slidetemplates "幻燈片範本" }
+		Feature { Publicationtemplates "刊物範本" }
+		Feature { Sheettemplates "書頁範本" }
+        ]
+    }
+
+Software
+    {
+    Antivirus
+        [
+        "殺毒軟件"
+        "保護電腦不受病毒制造者的破壞，不讓他們從中非法獲益！"
+        ]
+    Features
+        [
+		Feature
+            {
+            Virtualprivatenetwork
+                [
+                "虛擬私人網絡-VPN"
+                "VPN 有很多用途，但老實說，它主要使您可以觀看本地禁止的電影"
+                ]
+            }
+        ]
+    }

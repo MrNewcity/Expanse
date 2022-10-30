@@ -1117,6 +1117,10 @@ Software
                 ]
             }
         Feature { Interface "Interface" }
+		Feature
+            {
+            Favourites [ "Favourites"; "Keep track of your favourite places" ]
+            }
         Feature
             {
             Satelliteview [ "Satellite view"; "You should check out Area 51" ]
@@ -1766,6 +1770,354 @@ Software
         Feature
             {
             Cloudbackup [ "Cloud backup"; "Backup users' archives to the cloud automatically" ]
+            }
+        ]
+    }
+	
+Software
+    {
+    OperatingSystem
+		[
+		]
+    Features
+        [
+		Feature
+            {
+            Automaticdrivermanagement [ "Automatic driver management"; "Driver issues are the number 1 cause of smashed systems. Help alleviate that issue with this feature" ]
+            }
+		Feature
+            {
+            Integratedscreencapture [ "Integrated screen capture"; "Who wants to buy a capture card? Nobody, that's who!" ]
+            }
+        Feature { Hardwaresupport "Hardware support" }
+        Feature
+            {
+            Haptictechnology [ "Haptic technology"; "Vibration is old news. Haptic technology is cool!" ]
+            }
+		Feature
+            {
+            Fingerprintscanner [ "Fingerprint scanner"; "Integrate fingerprint recognition into the OS to allow users to feel like spies when they unlock their system" ]
+            }
+		Feature
+            {
+            Advancedhardwaresupport [ "Advanced hardware support"; "Enable users to use multiple processors and huge amounts of RAM, which is quite useful for servers" ]
+            }
+        Feature { Pushnotifications "Push notifications" }
+		Feature
+            {
+            Securityalerts [ "Security alerts"; "Now you can know when programs are spying on you!" ]
+            }
+		Feature
+            {
+            Universaldarkmode [ "Universal dark mode"; "Automatically change settings for apps across the system to avoid burning your eyes out" ]
+            }
+		Feature { Video "Video" }
+		Feature
+            {
+            HDRvideosupport [ "HDR video support"; "Sorta like standard video, but the dynamic range is higher. What does that mean? Who knows. But look, pretty colours!" ]
+            }
+		Feature { Spatialheadphonesupport "Spatial headphone support" }
+		Feature { Cloudserverbackup "Cloud server backup" }
+		Feature
+            {
+            Cloudmigrationtools
+                [
+                "Cloud migration tools"
+                "Integrate tools that help users migrate their data to a cloud computing service"
+                ]
+            }
+		Feature
+            {
+            Hotspotcreation
+                [
+                "Hotspot creation"
+                "Enable cellular devices to create wi-fi hotspots for the non-cellular plebs"
+                ]
+            }
+		Feature
+            {
+            Virtualnetworkmanager [ "Virtual network manager"; "Virtual networks aren't going to manage themselves!" ]
+            }
+        ]
+    Categories
+        [
+        Category
+            {
+            Watch [ "Watch"; "For the wrist" ]
+            }
+        Category
+            {
+            Server [ "Server"; "For the rack" ]
+            }
+        Category
+            {
+            Car [ "Car"; "For the dashboard" ]
+            }
+        ]
+    Components
+        [
+        Component { Hapticengine "Haptic engine" }
+		Component { Strap "Strap" }
+		Component { Watchassembly "Watch assembly" }
+		Component { Ventilation "Ventilation" }
+		Component { Drivers "Drivers" }
+		Component { Microcontroller "Microcontroller" }
+		Component { ANCprocessor "ANC processor" }
+		Component { Innerassembly "Inner assembly" }
+		Component { Microphone "Microphone" }
+		Component { Headphonebody "Headphone body" }
+		Component { Wirelessreceiver "Wireless receiver" }
+        ]
+    }
+
+Software
+    {
+    2DEditor
+        [
+        ]
+    Features
+        [
+		Feature { Imagecodecs "Image codecs" }
+		Feature { Plug-insupport "Plug-in support" }
+		Feature { Network "Network" }
+		Feature
+            {
+            Integratedsocialmediauploader
+                [
+                "Integrated social media uploader"
+                "Upload your beautiful images straight to your friends' faces"
+                ]
+            }
+		Feature
+            {
+            Auto-update
+                [
+                "Auto-update"
+                "Sometimes, this feature works correctly!"
+                ]
+            }
+		Feature { Cloudsync "Cloud sync" }
+        ]
+    }
+	
+Software
+    {
+    3DEditor 
+		[
+		]
+    Features
+        [
+        Feature { Interface "Interface" }
+		Feature
+            {
+            Keyframetimeline [ "Keyframe timeline"; "The frames are the key to animation" ]
+            }
+		Feature
+            {
+            Grapheditor [ "Graph editor"; "Look at those motion curves!" ]
+            }
+		Feature { Videoeditor "Video editor" }
+		Feature
+            {
+            Compositor [ "Compositor"; "Fix it in post!" ]
+            }
+		Feature { Tracking "Tracking" }
+		Feature { Plug-insupport "Plug-in support" }
+		Feature	{ Network "Network" }
+		Feature { Auto-update "Auto-update" }
+		Feature
+            {
+            Cloudsync [ "Cloud sync"; "Store your points in the cloud" ]
+            }
+        ]
+    }
+	
+Software
+    {
+    AudioTool
+        [
+        ]
+    Features
+        [
+		Feature { VSTintegration "VST integration" }
+		Feature { Network "Network" }
+		Feature
+            {
+            Auto-update [ "Auto-update"; "Users will appreciate auto-updates causing new problems with each release" ]
+            }
+		Feature
+            {
+            Cloudsync [ "Cloud sync"; "Cloud sync is the new wave, get your sound waves on it too!" ]
+            }
+		Feature { Newsamples "New samples" }
+		Feature { Newpresets "New presets" }
+		Feature { Phaser "Phaser" }
+		Feature
+            {
+            Filters [ "Filters"; "Low-pass? High-pass? So many passes to choose from!" ]
+            }
+		Feature { Equalizer "Equalizer" }
+		Feature { Harmonizer "Harmonizer" }
+		Feature { Amplifier "Amplifier" }
+		Feature { Pianoroll "Piano roll" }
+		Feature
+            {
+            LFoscillator [ "LF oscillator"; "Vibrato, tremolo, spaghetti-o" ]
+            }
+		Feature { VSTsynthesizer "VST synthesizer" }
+        ]
+	Categories
+        [
+        Category { Synthesizerplug-in "Synthesizer plug-in" }
+        ]
+    }
+	
+Software
+    {
+    Game
+		[
+		]
+    Features
+        [
+		Feature
+            {
+            Leaderboard
+                [
+                "Leaderboard"
+                "Keep a record of the best players. 100% just for bragging rights"
+                ]
+            }
+		Feature
+            {
+            Economy
+                [
+                "Economy"
+                "Simulate a live economy to bring the excitement of the real world into your game"
+                ]
+            }
+		Feature
+            {
+            Teammanagement
+                [
+                "Team management"
+                "Players love feeling in charge, especially when sports teams are involved"
+                ]
+            }
+		Feature
+            {
+            Customminigames
+                [
+                "Custom minigames"
+                "Give players tools to create their very own terrible minigames"
+                ]
+            }
+		Feature { Quicktimeevents "Quick time events" }
+		Feature
+            {
+            Gamespeedcontrol [ "Game speed control"; "Modify the game's simulation speed on the fly to suit your taste, or pause the simulation and go outside" ]
+            }
+		Feature
+            {
+            Photomode [ "Photo mode"; "You didn't spend all that time on swanky graphics just to NOT let players take pictures of it... did you?" ]
+            }
+		Feature { Video "Video" }
+		Feature
+            {
+            Pre-renderedcutscenes [ "Pre-rendered cutscenes"; "Make your game C I N E M A T I C" ]
+            }
+		Feature { In-gamereplays "In-game replays" }
+		Feature
+            {
+            LANconnection [ "LAN connection"; "Let players connect their devices to each other via a local network. Sounds like a lot of fun!" ]
+            }
+		Feature { Newminigames "New minigames" }
+        Feature
+            {
+            Sportsteams [ "Sports teams"; "Add some rows to the spreadsheet and call it a day" ]
+            }
+        ]
+    Categories
+        [
+		Category { Party "Party" }
+        ]
+    }
+	
+Software
+    {
+    OfficeSoftware 
+	[
+	]
+    Features
+        [
+		Feature
+            {
+            Autolayout
+                [
+                "Auto page layout"
+                "I.e. spending 30 minutes trying to make the picture fit in the place"
+                ]
+            }
+		Feature { Guidesandgrids "Guides and grids" }
+		Feature { Templates "Templates" }
+		Feature
+            {
+            Complextextrendering [ "Complex text rendering"; "Those unreadable cursive fonts just wouldn't be the same without this" ]
+            }
+		Feature
+            {
+            Commandbuttons
+                [
+                "Command buttons"
+                "Inserting buttons lets you execute commands with one click"
+                ]
+            }
+        Feature { Mathfunctionslibrary "Math functions library" }
+        Feature
+            {
+            XMLsupport [ "XML support"; "XML. It lives halfway between writing and coding" ]
+            }
+		Feature { Scripting "Scripting" }
+		Feature
+            {
+            Proprietaryformat
+                [
+                "Proprietary format"
+                "Creating a proprietary format will increase sales if your software has a lot of active users, but will decrease sales if your software does not"
+                ]
+            }
+		Feature { Plug-insupport "Plug-in support" }
+        Feature { Cloudsync "Cloud sync" }
+		Feature
+            {
+            Auto-update [ "Auto-update"; "Why not?" ]
+            }
+		Feature
+            {
+            Simultaneouscollaboration [ "Simultaneous collaboration"; "Let multiple users work on a project at the same time" ]
+            }
+		Feature { Videoplayback "Video playback" }
+		Feature { Slidetemplates "Slide templates" }
+		Feature { Publicationtemplates "Publication templates" }
+		Feature { Sheettemplates "Sheet templates" }
+        ]
+    }
+
+Software
+    {
+    Antivirus
+        [
+        "Antivirus"
+        "Protecting computers from digital troublemakers since it became profitable to do so."
+        ]
+    Features
+        [
+		Feature
+            {
+            Virtualprivatenetwork
+                [
+                "Virtual private network"
+                "There's many uses for a VPN, but let's be honest, it's mostly used to watch movies that are not available in your region"
+                ]
             }
         ]
     }

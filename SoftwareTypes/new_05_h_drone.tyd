@@ -102,8 +102,8 @@ SoftwareType
 				[
 					{
 					Name		"Plug-in support"
-					DevTime		4
-					Level		2
+					DevTime		3
+					Level		1
 					CodeArt		1
 					Submarkets	[ 1; 1; 1 ]
 					}

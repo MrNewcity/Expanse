@@ -1,0 +1,14 @@
+CompanyType
+	{
+	Specialization		"Web Browsers"
+	PerYear			0.2
+	Min			2
+	Max			5
+	Types
+		[
+			{
+			Software	"Web Browser"
+			Chance		1.3
+			}
+		]
+	}

@@ -2155,6 +2155,31 @@ Software
         ]
     }
 
+
+    Software 
+    {
+    WebBrowser [
+        "Web Browser"
+        "A web browser is a software application for accessing the World Wide Web"
+    ]
+    Features
+        [
+        Feature { System "System" }
+        Feature { Debugger [ "Debugger" "See how much ram, cpu and internet connection it requires to be on a site!"]}
+        Feature { Multi-Tabs [ "Multi-tabs" "Tabs allow you to load multiple websites and quickly switch between them." ] }
+        Feature { Plug-insupport "Plug-in support" }
+        Feature { SearchHistory [ "Search History" "Something that you clear after making a mess on your monitor."] }
+        Feature { Downloadmanager [ "Download Manager" "Allow users to download files from websites and check any information about them." ] }
+        Feature { Favoritetabs ["Favorite tabs" "Save your favorite website so you don't need to type a big link again!" ] }  
+        Feature { Page-rendering [ "Page-rendering" "How users will see website without rendering it?" ] }   
+        Feature { Sidebarforplugins [ "Sidebar for plugins" "Easily toggle on/off plugins." ]}
+        Feature { Soundeffects [ "Sound effects" "Allow developers to play some sounds on their website!" ] }
+        Feature { Useraccounts [ "User accounts" "Save favorite tabs and history to your account!" ] }
+        Feature { Pluginsmarketplace [ "Plugins marketplace" "Allow users to sell and purchase custom plugins online. You take a small royalty from every purchase on this platform" ] }
+
+    ]
+    }
+
 Hardware
     {
     Drone              "Drone"
